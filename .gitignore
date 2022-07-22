@@ -1,0 +1,28 @@
+/*
+!/.gitignore
+!/README.md
+
+# etc配下は再起動のたびに変化するものとセキュリティ関連とファイルサイズが大きいものを除外
+!/etc/
+/etc/fonts/
+/etc/multipath/
+/etc/mysql/debian.cnf
+/etc/shadow*
+/etc/ssl/
+/etc/sudoers*
+/etc/systemd/system/snap*
+/etc/systemd/system/*wants
+
+!/home/
+/home/*
+!/home/isucon/
+/home/isucon/go/
+/home/isucon/local/
+/home/isucon/pprof/
+/home/isucon/.*
+
+!/result/
+
+# vim関連
+*~
+*.sw[op]
