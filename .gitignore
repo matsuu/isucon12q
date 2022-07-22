@@ -136,6 +136,7 @@
 /etc/xattr.conf
 /etc/xdg/
 /etc/zsh_command_not_found
+/etc/.*
 
 !/home/
 /home/*
