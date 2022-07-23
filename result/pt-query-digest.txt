@@ -1,83 +1,83 @@
 
-# Current date: Sat Jul 23 08:27:03 2022
+# Current date: Sat Jul 23 08:33:43 2022
 # Hostname: ip-192-168-0-11
 # Files: /dev/stdin
-# Overall: 411.49k total, 68 unique
+# Overall: 412.19k total, 68 unique
 # Attribute          total     min     max     avg     95%  median
 # =============    ======= ======= ======= ======= ======= =======
-# Exec time        130.18s   2.0us   2.04s 316.4us 866.0us  90.0us
-# Lock time        534.6ms       0   5.2ms   1.3us   2.0us   1.0us
-# Rows sent          9.68M       0   8.05k   23.00     100       1
-# Rows examined     34.89M       0   3.22M   84.00     139       1
+# Exec time        132.55s   2.0us   2.06s 321.6us 874.0us  92.0us
+# Lock time        537.7ms       0   7.5ms   1.3us   2.0us   1.0us
+# Rows sent          9.75M       0   8.00k   23.00     100       1
+# Rows examined     34.65M       0   3.22M   84.00     139       1
 
 # Profile
 # Rank Query ID           Response time  Calls  R/Call
 # ==== ================== ============== ====== ======
-#    1 0x12AE65530A8CDE56 35.9265  27.6%  20873 0.0017 SELECT last_player_score player
-#    2 0x8CFEA9CD31A70652 18.7891  14.4%  17872 0.0011 SELECT visit
-#    3 0xE7D6FD09EBFCB334 17.5445  13.5%  27694 0.0006 SELECT competition last_player_score
-#    4 0xCFB1AE847A886271 13.0942  10.1%  98869 0.0001 INSERT last_player_score
-#    5 0x5AC3B50503CE9D8F  9.4412   7.3%  78696 0.0001 SELECT player
-#    6 0xB608081050A9AE17  8.0246   6.2%  17872 0.0004 SELECT last_player_score
-#    7 0x3635BEFFE5F2117E  6.7437   5.2%  52435 0.0001 SELECT tenant
-#    8 0x3ADEB61102CCFE5E  4.3671   3.4%  39329 0.0001 SELECT competition
-#    9 0x91AF3FDB050EDC72  2.5993   2.0%  20873 0.0001 INSERT visit
-#   10 0xA0719EAF93CC4D19  2.2818   1.8%  20873 0.0001 SELECT tenant
-#   11 0xB3AF60EB673242FD  2.2214   1.7%     11 0.2019 INSERT
-#   12 0x348974B3D332E575  2.0415   1.6%      1 2.0415 DELETE visit_history
-#   13 0x30F5260CBEC302E1  1.8624   1.4%    304 0.0061 SELECT
-#   14 0x6B489DFEA3F0C668  1.2521   1.0%      8 0.1565 INSERT
-#   15 0xD6793F4A922CC139  1.0990   0.8%    268 0.0041 SELECT player
-#   16 0xB099F0576D4C8510  0.7807   0.6%   9033 0.0001 INSERT player
-#   17 0x0827D5A14DD47F0A  0.6774   0.5%   2610 0.0003 SELECT competition
-#   18 0x60EB49FD82480245  0.5056   0.4%    303 0.0017 DELETE last_player_score
-#   19 0x4E39CD28A560644F  0.2595   0.2%   1308 0.0002 SELECT competition
-#   20 0x7999228A4DB29D7A  0.2571   0.2%      1 0.2571 INSERT
-#   21 0x6C642D7A6D30AA17  0.0808   0.1%    274 0.0003 UPDATE competition
-#   22 0x6E5D84A8CC6E9DB3  0.0580   0.0%    284 0.0002 INSERT competition
-#   23 0xC8CCC170F178D27C  0.0551   0.0%      1 0.0551 DROP TABLE last_player_score
-#   24 0x813031B8BBC3B329  0.0423   0.0%    350 0.0001 COMMIT 
-#   25 0xCE0293B4FFBDE858  0.0276   0.0%    145 0.0002 SELECT tenant
-#   26 0xB711A299ADC32792  0.0247   0.0%    350 0.0001 PREPARE
-#   27 0x13425781EDD3EB5A  0.0238   0.0%      1 0.0238 INSERT
-#   28 0x34E11DDE0FBF5564  0.0152   0.0%    350 0.0000 BEGIN 
-#   29 0xB450066D90FC6363  0.0128   0.0%      1 0.0128 DROP TABLE visit
-#   30 0xE50C5678DE5242F0  0.0126   0.0%      1 0.0126 CREATE TABLE last_player_score
-#   31 0x49E901B289AC257D  0.0100   0.0%      1 0.0100 DROP TABLE player
-#   32 0xB5BAC17B1AEBDAD3  0.0080   0.0%      1 0.0080 CREATE TABLE competition
-#   33 0xBFB9DE435E7BDB0E  0.0080   0.0%      1 0.0080 CREATE TABLE visit
-#   34 0xD1728D93BC031D69  0.0080   0.0%      1 0.0080 CREATE TABLE player
-#   35 0xA32F20DF9C2ADA38  0.0067   0.0%     20 0.0003 UPDATE player
-#   36 0x90F72AD1188B60BA  0.0052   0.0%     17 0.0003 INSERT tenant
-#   37 0x6AC7EC870DA0766D  0.0036   0.0%      1 0.0036 DROP TABLE competition
-#   38 0x0C45BAAA21BF497C  0.0021   0.0%    350 0.0000 CLOSE
+#    1 0x12AE65530A8CDE56 36.4647  27.5%  20791 0.0018 SELECT last_player_score player
+#    2 0x8CFEA9CD31A70652 19.1572  14.5%  17945 0.0011 SELECT visit
+#    3 0xE7D6FD09EBFCB334 17.9905  13.6%  27070 0.0007 SELECT competition last_player_score
+#    4 0xCFB1AE847A886271 13.3488  10.1% 101511 0.0001 INSERT last_player_score
+#    5 0x5AC3B50503CE9D8F  9.6185   7.3%  77353 0.0001 SELECT player
+#    6 0xB608081050A9AE17  8.3476   6.3%  17945 0.0005 SELECT last_player_score
+#    7 0x3635BEFFE5F2117E  6.5959   5.0%  51706 0.0001 SELECT tenant
+#    8 0x3ADEB61102CCFE5E  4.5218   3.4%  39316 0.0001 SELECT competition
+#    9 0x91AF3FDB050EDC72  2.6722   2.0%  20791 0.0001 INSERT visit
+#   10 0xA0719EAF93CC4D19  2.3988   1.8%  20791 0.0001 SELECT tenant
+#   11 0xB3AF60EB673242FD  2.2114   1.7%     11 0.2010 INSERT
+#   12 0x348974B3D332E575  2.0577   1.6%      1 2.0577 DELETE visit_history
+#   13 0x30F5260CBEC302E1  1.9506   1.5%    300 0.0065 SELECT
+#   14 0xD6793F4A922CC139  1.2334   0.9%    264 0.0047 SELECT player
+#   15 0x6B489DFEA3F0C668  1.1445   0.9%      8 0.1431 INSERT
+#   16 0xB099F0576D4C8510  0.7890   0.6%   9945 0.0001 INSERT player
+#   17 0x0827D5A14DD47F0A  0.6457   0.5%   2595 0.0002 SELECT competition
+#   18 0x60EB49FD82480245  0.5063   0.4%    299 0.0017 DELETE last_player_score
+#   19 0x4E39CD28A560644F  0.2403   0.2%   1298 0.0002 SELECT competition
+#   20 0x7999228A4DB29D7A  0.2224   0.2%      1 0.2224 INSERT
+#   21 0x6C642D7A6D30AA17  0.0901   0.1%    274 0.0003 UPDATE competition
+#   22 0xC8CCC170F178D27C  0.0584   0.0%      1 0.0584 DROP TABLE last_player_score
+#   23 0x6E5D84A8CC6E9DB3  0.0583   0.0%    281 0.0002 INSERT competition
+#   24 0x813031B8BBC3B329  0.0379   0.0%    349 0.0001 COMMIT 
+#   25 0xB711A299ADC32792  0.0331   0.0%    349 0.0001 PREPARE
+#   26 0xCE0293B4FFBDE858  0.0286   0.0%    144 0.0002 SELECT tenant
+#   27 0x13425781EDD3EB5A  0.0257   0.0%      1 0.0257 INSERT
+#   28 0xB450066D90FC6363  0.0141   0.0%      1 0.0141 DROP TABLE visit
+#   29 0x34E11DDE0FBF5564  0.0136   0.0%    349 0.0000 BEGIN 
+#   30 0xE50C5678DE5242F0  0.0123   0.0%      1 0.0123 CREATE TABLE last_player_score
+#   31 0xB5BAC17B1AEBDAD3  0.0105   0.0%      1 0.0105 CREATE TABLE competition
+#   32 0x49E901B289AC257D  0.0104   0.0%      1 0.0104 DROP TABLE player
+#   33 0xD1728D93BC031D69  0.0091   0.0%      1 0.0091 CREATE TABLE player
+#   34 0xBFB9DE435E7BDB0E  0.0085   0.0%      1 0.0085 CREATE TABLE visit
+#   35 0x6AC7EC870DA0766D  0.0039   0.0%      1 0.0039 DROP TABLE competition
+#   36 0xA32F20DF9C2ADA38  0.0035   0.0%     20 0.0002 UPDATE player
+#   37 0x90F72AD1188B60BA  0.0021   0.0%     17 0.0001 INSERT tenant
+#   38 0x0C45BAAA21BF497C  0.0021   0.0%    349 0.0000 CLOSE
 #   39 0x73036F33D790BF39  0.0007   0.0%      1 0.0007 LOCK TABLES last_player_score
-#   40 0x930E954F280EC5B1  0.0005   0.0%      1 0.0005 LOCK TABLES player
-#   41 0x41FB9AE43520EACA  0.0005   0.0%      1 0.0005 LOCK TABLES competition
+#   40 0x41FB9AE43520EACA  0.0005   0.0%      1 0.0005 LOCK TABLES competition
+#   41 0x930E954F280EC5B1  0.0005   0.0%      1 0.0005 LOCK TABLES player
 #   42 0x0BCCCBC2945C66AA  0.0005   0.0%      1 0.0005 LOCK TABLES visit
 #   43 0xE3A3649C5FAC418D  0.0004   0.0%      5 0.0001 SELECT 
 #   44 0xD91A15ED91D39170  0.0003   0.0%      1 0.0003 DELETE tenant
 #   45 0x6CCBD6845398A3D8  0.0003   0.0%      1 0.0003 UPDATE id_generator
-#   46 0x2AE2B3044B313A97  0.0003   0.0%      4 0.0001 SET 
-#   47 0xCECC8C8C21B7B656  0.0003   0.0%      4 0.0001 SET 
-#   48 0x23E3E3AAC552EBC7  0.0003   0.0%      4 0.0001 UNLOCK TABLES 
-#   49 0x98A511337022B422  0.0003   0.0%      4 0.0001 SET 
-#   50 0x591DCE6A753564F4  0.0002   0.0%      4 0.0001 SET 
-#   51 0xA21600B51919C17E  0.0002   0.0%      4 0.0000 SET 
+#   46 0x98A511337022B422  0.0003   0.0%      4 0.0001 SET 
+#   47 0x591DCE6A753564F4  0.0002   0.0%      4 0.0001 SET 
+#   48 0x2AE2B3044B313A97  0.0002   0.0%      4 0.0001 SET 
+#   49 0xCECC8C8C21B7B656  0.0002   0.0%      4 0.0001 SET 
+#   50 0xA21600B51919C17E  0.0002   0.0%      4 0.0001 SET 
+#   51 0x23E3E3AAC552EBC7  0.0002   0.0%      4 0.0001 UNLOCK TABLES 
 #   52 0x880B089EBD9A2CAD  0.0002   0.0%      4 0.0000 SET 
-#   53 0xD58C2EC55E332D45  0.0001   0.0%      4 0.0000 SET 
-#   54 0xD9F25F1131019AB8  0.0001   0.0%      4 0.0000 SET 
-#   55 0x7B8FDA41126FA26B  0.0001   0.0%      4 0.0000 SET 
-#   56 0x576EF5EB51F5D753  0.0001   0.0%      4 0.0000 SET 
-#   57 0x05171C9B2C3DBE62  0.0001   0.0%      4 0.0000 SET 
-#   58 0x404C7B72CAF91ECA  0.0001   0.0%      4 0.0000 SET 
-#   59 0x135A37D729549779  0.0001   0.0%      4 0.0000 SET 
-#   60 0xCF298A80F7E31AF9  0.0001   0.0%      4 0.0000 SET 
-#   61 0xF3D856BFA86157CE  0.0001   0.0%      4 0.0000 SET 
-#   62 0x7F22BBB9FF2EFA83  0.0001   0.0%      4 0.0000 SET 
-#   63 0x7A1208BDC805D902  0.0001   0.0%      4 0.0000 SET 
-#   64 0x7F8290E05162B254  0.0001   0.0%      4 0.0000 SET 
-#   65 0xC6794245484061FB  0.0001   0.0%      4 0.0000 SET 
+#   53 0xD58C2EC55E332D45  0.0002   0.0%      4 0.0000 SET 
+#   54 0x05171C9B2C3DBE62  0.0002   0.0%      4 0.0000 SET 
+#   55 0x7B8FDA41126FA26B  0.0002   0.0%      4 0.0000 SET 
+#   56 0xF3D856BFA86157CE  0.0001   0.0%      4 0.0000 SET 
+#   57 0xD9F25F1131019AB8  0.0001   0.0%      4 0.0000 SET 
+#   58 0x576EF5EB51F5D753  0.0001   0.0%      4 0.0000 SET 
+#   59 0x404C7B72CAF91ECA  0.0001   0.0%      4 0.0000 SET 
+#   60 0x135A37D729549779  0.0001   0.0%      4 0.0000 SET 
+#   61 0x7F22BBB9FF2EFA83  0.0001   0.0%      4 0.0000 SET 
+#   62 0xCF298A80F7E31AF9  0.0001   0.0%      4 0.0000 SET 
+#   63 0x7F8290E05162B254  0.0001   0.0%      4 0.0000 SET 
+#   64 0xC6794245484061FB  0.0001   0.0%      4 0.0000 SET 
+#   65 0x7A1208BDC805D902  0.0001   0.0%      4 0.0000 SET 
 #   66 0x23F6EB3A0ECD9E84  0.0001   0.0%      4 0.0000 SET 
 #   67 0x45788F3F8DFCDAFC  0.0001   0.0%      4 0.0000 SET 
 #   68 0x8ED794C0D5413D5A  0.0000   0.0%      5 0.0000 QUIT
@@ -85,148 +85,148 @@
 # Query 1: ID 0x12AE65530A8CDE56
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           5   20873
-# Exec time      28  35.93s 161.0us  75.2ms   1.7ms   6.0ms 869.0us
-# Lock time       8  41.4ms       0   4.3ms   2.0us   2.0us   1.0us
-# Rows sent      11   1.04M       0     100   50.00     100      52
-# Rows examined   6   2.24M       0     398  107.00     260     104
+# Count           5   20791
+# Exec time      28  36.46s 166.0us  59.5ms   1.8ms   6.4ms 865.0us
+# Lock time       7  40.0ms       0   4.1ms   1.9us   2.0us   1.0us
+# Rows sent      11   1.03M       0     100   49.00     100      41
+# Rows examined   6   2.21M       0     398  106.00     262      82
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT S.player_id, P.display_name AS player_display_name, score, row_num FROM last_player_score S JOIN player P ON S.player_id = P.id AND S.tenant_id = P.tenant_id WHERE S.tenant_id = 136 AND competition_id = 'fbd1f206-ab17-4649-9da2-1cb78f44906b' ORDER BY score DESC, row_num ASC LIMIT 100 OFFSET 0\G
+SELECT S.player_id, P.display_name AS player_display_name, score, row_num FROM last_player_score S JOIN player P ON S.player_id = P.id AND S.tenant_id = P.tenant_id WHERE S.tenant_id = 1 AND competition_id = '273aa1cb-2659-4637-b9c1-7efc4c59bbb9' ORDER BY score DESC, row_num ASC LIMIT 100 OFFSET 0\G
 
 # Query 2: ID 0x8CFEA9CD31A70652
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4   17872
-# Exec time      14  18.79s  83.0us 173.9ms   1.1ms   1.1ms 174.0us
-# Lock time       4  19.4ms       0   1.0ms   1.1us   1.0us   1.0us
-# Rows sent      38   3.70M       0   5.02k  206.00     190      70
-# Rows examined  68  23.73M       0 200.48k   1.33k     192      70
+# Count           4   17945
+# Exec time      14  19.16s  84.0us 164.7ms   1.1ms   1.1ms 179.0us
+# Lock time       4  19.0ms       0 359.0us   1.1us   1.0us   1.0us
+# Rows sent      38   3.71M       0   5.01k  206.00     190      70
+# Rows examined  68  23.55M       0 200.48k   1.31k     192      70
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 19 AND competition_id = '17b2046a0'\G
+SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 100 AND competition_id = '610b39bd9'\G
 
 # Query 3: ID 0xE7D6FD09EBFCB334
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           7   27694
-# Exec time      13  17.54s 147.0us  17.5ms 633.5us   1.8ms 460.0us
-# Lock time      10  53.0ms       0   4.2ms   1.9us   2.0us   1.0us
-# Rows sent       4 386.90k       1      25   13.00      24      15
-# Rows examined   3 878.22k       2   1.25k   31.00      48      32
+# Count           7   27070
+# Exec time      14  17.99s 149.0us  41.4ms 664.6us   2.0ms 471.0us
+# Lock time      10  54.7ms       0   4.1ms   2.0us   2.0us   1.0us
+# Rows sent       4 373.49k       1      25   13.00      23      14
+# Rows examined   2 851.67k       2   1.23k   31.00      48      32
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT C.title AS competition_title, S.score AS score FROM competition C JOIN last_player_score S ON C.id = S.competition_id AND C.tenant_id = S.tenant_id WHERE S.player_id = '229c1537-ca09-496b-a52b-c7c35883950b' AND C.tenant_id = 147 ORDER BY C.created_at ASC\G
+SELECT C.title AS competition_title, S.score AS score FROM competition C JOIN last_player_score S ON C.id = S.competition_id AND C.tenant_id = S.tenant_id WHERE S.player_id = '473fe09d-7673-4c62-bbf7-0eac1db5ea69' AND C.tenant_id = 1 ORDER BY C.created_at ASC\G
 
 # Query 4: ID 0xCFB1AE847A886271
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          24   98869
-# Exec time      10  13.09s  29.0us  20.1ms 132.4us 182.0us  71.0us
-# Lock time      15  77.9ms       0 996.0us 787.8ns   1.0us   1.0us
+# Count          25  101511
+# Exec time      10  13.35s  30.0us  51.7ms 131.5us 176.0us  71.0us
+# Lock time      15  81.3ms       0   3.0ms 801.1ns   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-REPLACE INTO last_player_score (tenant_id, player_id, competition_id, score, row_num, created_at, updated_at) VALUES (147, '6a8a3688-63ea-4dc7-9e48-f25c916eeaf8', 'c7e59fb4-d32a-40ef-b47d-88591610ccc1', 822, 35, 1658564695, 1658564695)\G
+REPLACE INTO last_player_score (tenant_id, player_id, competition_id, score, row_num, created_at, updated_at) VALUES (1, 'bd42cab3-3b73-4d50-9733-0d842fc5efc2', '273aa1cb-2659-4637-b9c1-7efc4c59bbb9', 715, 654, 1658565127, 1658565127)\G
 
 # Query 5: ID 0x5AC3B50503CE9D8F
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          19   78696
-# Exec time       7   9.44s  49.0us  13.5ms 120.0us 131.0us  88.0us
-# Lock time      23 122.3ms       0   5.2ms   1.6us   2.0us   1.0us
-# Rows sent       1  78.69k       0       1       0       1       1
-# Rows examined   0  78.69k       0       1       0       1       1
+# Count          19   77353
+# Exec time       7   9.62s  53.0us  33.0ms 124.3us 131.0us  89.0us
+# Lock time      19 104.6ms       0   2.1ms   1.4us   2.0us   1.0us
+# Rows sent       1  77.35k       0       1       0       1       1
+# Rows examined   0  77.35k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM player WHERE id = '2e14e5a6-b617-4dc7-b2c7-2e6ba5a5fa36'\G
+SELECT * FROM player WHERE id = '6fb1921e-6b43-4a69-a1ae-5d382e947676'\G
 
 # Query 6: ID 0xB608081050A9AE17
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4   17872
-# Exec time       6   8.02s  90.0us  30.2ms 449.0us   1.5ms 201.0us
-# Lock time       5  24.8ms       0   1.4ms   1.4us   1.0us   1.0us
-# Rows sent      43   4.11M       0   4.54k  230.00     279      95
-# Rows examined  12   4.11M       0   4.54k  230.00     279      95
+# Count           4   17945
+# Exec time       6   8.35s  88.0us  25.6ms 465.2us   1.6ms 208.0us
+# Lock time       4  23.7ms       0   1.1ms   1.3us   1.0us   1.0us
+# Rows sent      43   4.19M       0   4.54k  233.00     500      95
+# Rows examined  12   4.19M       0   4.54k  233.00     500      95
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT player_id FROM last_player_score WHERE tenant_id = 1 AND competition_id = '37ee070b2'\G
+SELECT player_id FROM last_player_score WHERE tenant_id = 1 AND competition_id = '5d5e808a3'\G
 
 # Query 7: ID 0x3635BEFFE5F2117E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          13   52435
-# Exec time       5   6.74s  53.0us  15.1ms 128.6us 148.0us  89.0us
-# Lock time      14  74.6ms       0   3.6ms   1.4us   2.0us   1.0us
-# Rows sent       1  52.43k       0       1       0       1       1
-# Rows examined   0  52.43k       0       1       0       1       1
+# Count          13   51706
+# Exec time       5   6.60s  53.0us  16.1ms 127.6us 147.0us  91.0us
+# Lock time      16  85.6ms       0   3.7ms   1.7us   2.0us   1.0us
+# Rows sent       1  51.70k       0       1       0       1       1
+# Rows examined   0  51.70k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE name = 'u-yxw-1658564666'\G
+SELECT * FROM tenant WHERE name = 'uic-gvnfr-1658565081'\G
 
 # Query 8: ID 0x3ADEB61102CCFE5E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          10   39329
-# Exec time       3   4.37s  50.0us   9.2ms 111.0us 126.0us  86.0us
-# Lock time       9  45.9ms       0   1.0ms   1.2us   1.0us   1.0us
-# Rows sent       0  39.33k       0       1       0       1       1
-# Rows examined   0  39.33k       0       1       0       1       1
+# Count          10   39316
+# Exec time       3   4.52s  55.0us  11.5ms 115.0us 125.0us  87.0us
+# Lock time       9  50.2ms       0   1.2ms   1.3us   2.0us   1.0us
+# Rows sent       0  39.31k       0       1       0       1       1
+# Rows examined   0  39.31k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE id = '6993cb91-aee6-4d10-8061-dc03d1a084fc'\G
+SELECT * FROM competition WHERE id = 'ecf6d6f7-a1eb-4c39-b4cc-80c78e9754e7'\G
 
 # Query 9: ID 0x91AF3FDB050EDC72
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           5   20873
-# Exec time       2   2.60s  52.0us  13.8ms 124.5us 136.0us  89.0us
-# Lock time       5  29.1ms       0   2.1ms   1.4us   2.0us   1.0us
+# Count           5   20791
+# Exec time       2   2.67s  49.0us  13.0ms 128.5us 147.0us  91.0us
+# Lock time       6  34.5ms       0   7.5ms   1.7us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (149, '6caf36d6-5fb3-4102-8597-7ece7e99c7e2', '16db6653-4131-49dc-be25-5bdd0a0a5255', 1658564687)\G
+INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (167, '8a3a7183-4e57-4e49-8ddd-10bce66356df', '1ae40d10-84fd-4fe9-95ea-776957f8184a', 1658565102)\G
 
 # Query 10: ID 0xA0719EAF93CC4D19
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           5   20873
-# Exec time       2   2.28s  49.0us  10.0ms 109.3us 120.0us  82.0us
-# Lock time       6  31.2ms       0   3.0ms   1.5us   2.0us   1.0us
-# Rows sent       0  20.87k       1       1    1.00       1       1
-# Rows examined   0  20.87k       1       1    1.00       1       1
+# Count           5   20791
+# Exec time       2   2.40s  52.0us  14.0ms 115.4us 119.0us  83.0us
+# Lock time       6  30.5ms       0   2.0ms   1.5us   2.0us   1.0us
+# Rows sent       0  20.79k       1       1    1.00       1       1
+# Rows examined   0  20.79k       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE id = 29\G
+SELECT * FROM tenant WHERE id = 161\G
 
 # Query 11: ID 0xB3AF60EB673242FD
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0      11
-# Exec time       2   2.22s 160.3ms 356.8ms 201.9ms 356.8ms 189.7ms
+# Exec time       2   2.21s 160.3ms 349.2ms 201.0ms 349.2ms 188.4ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -240,7 +240,7 @@ INSERT INTO `last_player_score` VALUES (1,'0001','174f069ca',324800,64199,165326
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       2   2.04s   2.04s   2.04s   2.04s   2.04s   2.04s
+# Exec time       2   2.06s   2.06s   2.06s   2.06s   2.06s   2.06s
 # Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   9   3.22M   3.22M   3.22M   3.22M   3.22M   3.22M
@@ -253,22 +253,36 @@ DELETE FROM visit_history WHERE created_at >= '1654041600'\G
 # Query 13: ID 0x30F5260CBEC302E1
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     304
-# Exec time       1   1.86s  97.0us  74.4ms   6.1ms  34.9ms   2.3ms
-# Lock time       0 339.0us       0  10.0us   1.1us   2.0us   1.0us
-# Rows sent       0     304       1       1    1.00       1       1
-# Rows examined   0  74.57k       0   1.00k  245.00   1.00k     188
+# Count           0     300
+# Exec time       1   1.95s  83.0us  72.0ms   6.5ms  41.6ms   2.4ms
+# Lock time       0 378.0us       0  11.0us   1.3us   2.0us   1.0us
+# Rows sent       0     300       1       1    1.00       1       1
+# Rows examined   0  77.71k       0   1.00k  259.00   1.00k     194
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT COUNT(id) FROM player WHERE id IN ('6cf8bdbf-1b11-4c45-9573-b6228a487dec', '97db16ed-9ecb-4c91-b863-2d7d97a1751a', '96cf3f63-b02f-4f6d-b35b-527cbc568df3', '8e1e5fd1-1dce-4c19-a982-8e664d6aac4a', '62b531965', '146b666d-abda-486c-8340-64e2aa7de12b', '62433ac83', '61c05b5d4', '5fdb760f3', '94b5d54e-0094-49c3-8835-64545dcc55cf', '62b645788', '624438b05', '1421c516-da36-4599-926f-f94998973935', 'b34f32d5-1087-48ed-a9ec-cc0bc2b08a96', 'bfcc0b7a-534d-44c7-809b-2dc6cebfce89', '8f9f49d3-ac28-40e5-9370-e93adeb7e618', 'fdc96a6b-ae69-4e09-8d87-d0cdfe76ff31', '631208ad0', '616f46876', '24fb01da-6088-4817-9a34-144ad1266de8', '5e318f01-8fb3-4e94-a808-2de5f20a0501', 'cea915af-b6a4-4294-8316-fdb738926099', 'f5c57dc6-bf30-4e76-aad4-63352569d834', '60ffaac31', '60021aa1d', '32b2e46c-0b8a-42ee-ae56-66f3b24519f1', 'de71e8be-f06c-4cde-9d2a-bedbed21d132', '33f76687-6518-404d-b081-cfc66ec10b7c', 'f3493a7a-03e4-4098-bcca-a471d789f132', '62e664cbe', '2ae23fac-2618-493f-8d7d-314c88d4f363', 'a63a1d30-c7e2-4fda-8581-e8fa5b18ca6b', '019ae2b6-7e3d-4249-aef6-56e050d27f88', '6f69e8b5-bdfd-489a-9ac8-8b862bbf0bce', '6153d1bb1', '604a29e55', '5f68e5729', '7bcd128d-9a66-4ac7-aa62-5472170cbdcc', 'd214b18a-4c22-40fa-892c-65a246168a13', '9bca7686-101a-42a6-a4c9-36d1b5fef9fd', 'baa17cea-3e96-4552-b5b1-57760703b275', 'd4f85bff-7824-4b65-a8c6-703734bd85cb', '27822c29-be3c-4503-a762-227e14be7e99', '60c63545f', 'f8d9fc0f-b51b-4782-a162-83f0257910ed', '4041530d-a283-4d3e-9973-72573b0afca0', '45cc3010-a2d7-4246-8915-8a2efd63d7c3', '81703361-39b9-4ad6-b84a-5cc4eda9a415', 'c5593bc2-6f56-4a40-a06b-d4bad518b0ed', '36c7bb8e-ca03-43a4-8465-16c50c5bc578', 'dc918c2d-96cf-4d72-b709-a67ee989007a', 'add1f25a-aae2-4598-a301-61d3a313a895', 'd1bef53f-eb2f-4438-9348-7081536edd44', '60d8f0301', '031922df-e098-49ad-ae48-1d18c401ef68', 'fd2d9b30-0cb2-4a63-884a-13d716880d5a', 'c9d35706-ec81-41ea-ad41-e5565443746b', 'c1f444ae-634c-40ac-a3df-3a781cf1dc16', 'eeb46674-001b-4442-ad61-99e4b45e1818', 'f0d809eb-4b87-483b-83a9-a491a756ee31', '51691ddd-a551-496b-a405-b520b5c0f9fc', '3f5566a2-b25c-4d0a-bf37-f7cf9196fbeb', '741732d7-4f59-4b04-8b76-9f06b1dc8986', 'bf77eb7a-5ba7-48da-a133-82be4a9e2d58', '5f0688c6e', '10598f0b-7a31-42a1-a998-0dd0d32b72af', '4667b363-9f70-47c4-8475-c1defacde3d2', '6b31dae1-c67c-488e-a6cb-031f569a0dbc', '9ba3a98b-5604-430d-9bcc-d73a8a92530f', '4e4e7fdb-f468-43eb-9588-5146e5c0f035', '49e64e7c-0fdf-4e4e-a6e3-56ff2bdf00c6', '63997e6b0', '8293928d-b9ad-4c15-aaf5-f1e6799cea8d', 'f8552207-69fe-45c1-bf47-9a306c1e57c6', '60061245b', '635b9e90f', 'ba1a5b64-677c-4ebd-a5d1-a2c6d6050e69', '2082a4d6-11df-416c-bd94-95a9a2aae8e0', '8766a99b-33f9-4ba9-b40c-824983436d13', 'f59b5a47-d8f8-4fff-8a0d-a45103ead6a6', '51f7d397-36ad-40c4-b92f-04bdb44c6c0a', '6e275e4f-0497-4657-bbb2-6bb99d091e3d', 'ae551e78-7ab9-420c-b962-8a3c8108be15', '230e244f-ae0c-4aad-aa30-1fc1aeb83dec', 'c7c64f26-28c1-4cf3-b6b5-6a0e941afe43', 'bd015063-7949-40dc-9719-de1310913f19', '5f82f2e2-bb7c-4661-9f26-d72f0646565e', '63bf4c243', '3568afb5-8a32-46a2-a523-07c103e36410', '5f003141c', '69e14451-47e9-4009-a53c-16d64988733b', '80173e6e-6788-4c21-902f-5631f48bfa7d', '8af0e371-d1f1-4b87-a320-5c2648f02b4b', 'b8705e9b-8761-493a-9cad-187251fa787b', '5f53ea5b1', '69aa48c8-3875-4194-ac00-713797dd9ce5', 'bd93ff1c-ae54-4ea0-8b27-97786baab64b', 'f2bcb548-a58e-4d72-8e35-a6433d4ad01e', 'b3993149-3ceb-4dc6-a885-c39e570f8dbd', 'ccecabd1-fd0b-453d-a1d5-5d3d0a28495a', '63175130-01f9-438a-b51e-37de6dd4a69e', '8742f325-c0ac-47b2-b794-209d3f238d74', '118b741b-0422-4405-99be-bd5b1498e1a4', '6025e7add', '5f302e65a', '61b78910c', '4fb3a295-cc7f-477f-8a63-3b7ccd3d00a4', 'f2bbe30c-6dfd-41a4-b520-0df3df504afa', '8ddbb142-a179-4831-bd52-6e57c1666fa4', '63b0e0be4', '5fc6a59f-8e65-42d6-8ba2-90f0bbc93fff', 'ce141e0a-f213-4185-92a2-721b88303179', '354cb859-9814-4001-bb8d-107ac8613eef', '68a06a95-e307-4e24-a4bb-7f045aa2ab9d', '39004475-d92f-4cb7-9716-1949c7c98773', '568e2525-7670-405a-a0fc-755d25ede64e', 'a63e5035-beaf-4c1b-84bd-8fd351d7ee4f', '9cc07cd7-2cac-4c80-bd53-4b96a12f7939', 'cdf9e827-9a06-46ca-ae29-58a9d7a6d6ba', '24fb01a0-7468-4f2e-bba9-5cb829452e5d', '5f725dc13', '372fa7f4-776b-4319-89d9-135f15ecfd0c', '4a3d1eec-26fd-4b7e-a5c7-c9a4a2e02c94', 'e4f3cc03-e27f-43ec-99d4-33592bbce322', '6105045e3', '49a2500f-0f7d-4edb-bc28-06b056d3f6fb', 'c61e7905-7e77-4216-8eb0-017ec2f22beb', '6303b33cf', '6082a1767', '31a679b2-1db3-40c2-a802-dfdca81e0f55', 'e8c682f9-f908-4a03-b4f0-09acba453620', '410d85c0-6435-4695-bb44-1a59d6564632', '8c38da43-00dd-44bb-b3e9-60009d6344aa', '7a426713-5ce3-40c0-a75e-e5bcf3d27ad3', '80673ba0-5445-442e-a055-86ac6ae84b05', 'b9f772be-7928-4d36-a7be-2450b9826b05', '60894c070', '41238579-c4bd-45fc-bd7b-e87c9aed131c', '63b931a38', '61765ef1b', '07779049-b8fc-4149-b53f-20f46121bf7a', '67533cba-e7bd-454f-9891-ef888e74bd10', '97b55e1a-0af8-4c88-a147-2a276a3cebea', '61d4d030a', '6a3d98ca-ae4e-49cf-8e9a-d4649664d274', 'd93c8ff6-5fd0-46f1-8656-ef8506dcae28', '5fd857b94', '5f60b449e', 'f617f43b-446e-451c-869b-26ae05b639dd', '8eaa56e9-9929-44da-a75c-8912936c8eec', 'c79be152-a8b6-4d2a-874d-e6cb02b43d3d', '08b809a4-5e7e-489e-a76c-cb32d3cc9bf2', '62173f01a', '620c2c8a1', '35a9e15e-4d6d-4484-a46d-5103a3ac30de', '809983a7-3d4e-4e31-918d-d19f2b0d4f2f', 'c74fe20c-165b-4767-be4e-1cd335179aba', 'b7b5e09d-cacb-42f2-83f9-a6779eb8a199', '635cb271b', '60d0d01d8', '4d9e0352-0f6b-4c21-ba60-e7ecadb90156', '21954f36-549b-4bdc-a5b6-ae976bd1b9b2', 'b4a3bb19-1483-4f8b-bbdb-0c001e9943e3', '62ef434cc', 'f4e91e69-275b-4fd0-afbd-7fe7c851af8b', '5870ed7c-522a-4fce-9f22-98f1427c1a09', 'b46b7fe5-3f7c-4ded-a952-b9d0895de026', '61f075d06', 'adf8795d-aff0-4530-a83f-cb1e7b5652d5', 'bdd89c35-2adf-49e2-bcc4-c6d65f1d3802', '9e119019-e926-4609-a7dd-4b615d468785', 'bdbe5ec1-0a58-451d-9026-3c4f658b4892', '5f05ec8a3', 'ef57657d-44ba-4755-9492-e114292c572e', '92024707-f782-4cfd-b5db-852bce4b7bce', 'd14d3a91-9999-4335-8f68-2e2fed00f949', '62ee9866d', '57b7665d-cd87-4ef9-801c-b6c8d05fa3b4', '3715ebc8-fd52-487b-8792-8ab49caa0999', '95ee41f5-94e7-4075-9e5f-9471ae52538c', 'c66311d9-8cf6-49a5-9f0d-70670a731a2d', 'ef3374b9-f492-402e-84ca-a902dd00009f', '316c5c98-9eb6-45db-8de2-eb6a799a8aa0', '8ab05574-3473-4b1d-8753-dcf532e4ca6c', '634e6e186', '60d719037', '68e619e7-8431-42c2-b760-b866418e8101', '81aae3fb-6395-408a-a379-414e295b65af', '0e1ea632-b751-426c-9910-c013e4bbecec', '2bde7f4c-c144-4168-a99d-9f62542a4348', 'b915ce47-a97c-4bac-a116-c584967527b0', '094908ee-6607-42c5-844d-465793a59163', '63b36a24e', '5f72fc770', 'e745db27-cc81-4b64-b565-000fc7f17ac3', 'd1a27923-4092-41c8-8141-206abb8cdde2', 'd1d081e7-4782-4577-b590-8ba2bbed4af4', '08efca42-c7fd-453c-b158-c4691bdd104f', 'e408557b-cf17-43e9-972e-035fb6e0ebb6', 'c6d74670-3503-47e9-b733-674bba40db85', '63aefae59', '87c4e463-90c3-4ee6-8307-fbed568aca11', '1e9b3bb6-bda5-4fb0-bfc2-07aca8659ced', '3b6dc434-6182-4fe5-952f-8ec14fa0a65b', '15c9a202-d046-4d9f-b7b0-10af7f5d60c7', '698c38b5-9fd8-4b24-ab88-8f5dcc26713d', '0f76fb39-0314-4d82-8fce-cd9f39e5c50c', 'ad898ce2-162d-4e37-a470-a1e96f22b010', '621f26f17', '5f11f5987', '4a33367f-7360-46ea-a3d7-dd95149a2338', 'e8b1939b-7111-42b4-8a66-10c0d653bdcd', 'a120eb03-5f58-4354-8065-04f74d2c57d3', '629d92380', 'c278e181-231d-4a27-9fc7-00c347223361', '02c0ddbf-cd10-4c91-bf0b-f1c5fbb271d3', 'ae750f08-824b-48b1-a712-484c6c7eb17b', '05d2b897-9591-4633-83d1-a126acb9bb86', 'c4f0b2f3-112f-464f-b092-c0e0fb6e4f37', '0fcffc9d-213c-44b4-a3d6-731e70c8837e', '62982ed23', '622164a93', '23248d23-87af-4a13-8b2d-5d53d03fcc88', '4072587c-d7f2-4716-882e-4eb1d7ab5701', '4b081974-45ea-4ba3-9188-ce78b30f2459', '57fd96dd-d010-4573-96b9-fe7f1d30f27f', '06c31a4c-90fd-4492-89a9-5471546805ac', '19c821d2-8bb0-4c44-a174-87b52bcb73db', 'b6d8500a-2dbc-47d1-abcc-e8751001b893', '59e55707-cc29-4128-bce7-0c6999d3c1ce', '6378ea8eb', '5f1abbae6', '3aecf6a5-8cd8-4903-847f-602058fe7eba', '8b2bde44-11ca-4f8e-8b6b-0d635bc5aaa7', 'e83fb841-b5b0-4b8d-9dc3-dae4722f06c2', '600aa625e', 'abc7dd2a-6f73-46c9-b32d-a0e759e1ede9', 'b5db024f-65da-4223-9634-b7f925fc5e94', 'b3ded931-fb42-48e8-8f56-912025a59b42', '5f8cb00f2', 'f62317d8-0e96-4711-9bb6-ee5f5eb6fd6c', '211c108f-6170-45ad-a660-0766294ec576', '53309411-b44e-46f2-859e-e04eceb25827', '9e702cad-7cb5-4d90-a8f9-33e6c1799a11', '76d6aae5-b013-449c-8ee4-a9d6870df22f', '636f994f3', '4d1247f3-f248-436d-bb8f-3724e978b6a7', '0b580d34-2260-4d44-b73d-037f58de9574', 'd85139ba-4475-47ca-a46e-7cff4ece333a', '5f7dea4f4', '611e7020-749a-40e3-9ced-3395afce3203', '624f352d9', '4efa60fa-777a-4f88-9ff4-6043115b2f9c', '34a67142-8524-41bb-a582-e04fa87cf238', '50d0dc43-d1bb-49ed-8c38-0c11b270690f', '4602286a-3dba-40ae-9c9d-2f2760da7982', '47952853-4aa6-483b-8f2e-a38e1a8e54df', '6176e7a51', 'dc07afec-813c-4074-92f9-f9484c02b35c', 'a5175ed4-b943-4151-82b0-7c97fc8565f9', 'd358427a-94cb-4ce1-9d69-b0124d81dd94', '61805b168', '85367196-dbaa-4f3e-bcb8-33992b33e529', '3496bdcc-6e93-4f8f-b09e-b3e60ea5e5b0', '5043eaba-4708-4ce4-82a5-aa28c1a97615', '61aab7d17', 'd95d9f04-a3d8-4e3d-8303-ff29f66394bb', '83221003-4cfa-40a5-b30b-3a308b9476ad', '60221991a', '59eef5f9-9c3d-46a1-8f5a-682fdea71012', '3d89b593-2148-4e4f-9bc1-8d07bd499a7d', 'ac2381e8-3121-44a7-affb-f5a77426dc10', '5fa41740b', 'cde5c1f2-9c08-4222-ae02-71c82922d00a', '61ccb4f9a', 'db047af1-3f55-415b-866c-81f865c6b591', '615febdf4', 'f67f8b0e-8102-4542-906e-8c4374403f53', '5fe88459c', '52029b7c-d6ca-4f3f-81bf-25793e819459', '633c3704e', '2f31e797-1b02-4462-9dff-4a0a5024cf24', '2b3a36f8-0406-4d67-9417-01f8718d42db', '63932e33f', '6012c8abc', '7c2b528b-f389-4315-aafe-4cca8937cdd9', 'da9acd92-047e-4edc-a8c1-c5426b4c0281', 'ebaa0ca8-ad4d-41b2-80a6-1a4ce22e9377', '634024dea', '5f8e0d2b8', '3ec1b0a0-bb35-4742-9fef-408d672bbabc', '936d4d61-25c8-488e-a95f-76bb90a7c774', '1ca02e3d-4bdc-4611-bef3-cb2958390115', '610439be0', 'cae3b9f5-43f0-4211-89a5-f858385e3c3c', '7bf69c31-c074-43bc-813d-468b776544d4', '620b4e60f', '613877c54', '626f9f885', 'da273cb4-3d4a-456e-9be7-1619820c8c04', '55ababcc-dac8-46e5-87f3-811a8eeee485', 'b514320d-7584-4884-92af-8af7807a8f53', 'f16fb97a-a972-4f76-9cdc-2bfd6c5fc32c', '6b2ad7fe-0739-4751-b82e-b27c0cb1c85c', 'c0e74829-934d-4add-8e79-36328145c9a8', '7ae032bd-3a04-4216-a26f-338f345b1ae3', 'e71bad60-693d-45e6-8254-87a08d9f4f08', '4ca74edd-7403-445b-ae82-2061d3f702db', '57e65136-a51d-4988-9e90-bb70a03a19ae', '631839252', '90f628ec-3c25-462b-af76-54ae8dfc55de', '5fc5c8f4-0ee8-4b76-8bef-29af9081421a', 'c40b9cdb-a871-4cbe-bd68-01a467a70ad9', 'ddcab941-cb1e-4241-921e-12788be42e3c', '93df89b3-7d5e-412d-93ae-ca6277084acc', '6147362ba', '60b46c10f', '5fc86f76f', '107cf025-8745-40d2-ae02-2e553f755431', 'b405ab50-16ff-42fa-9e25-6f5ce46b8208', '0e307299-c659-4943-b927-54173f9a9ddf', '751258ff-20b8-4044-ad7e-b7b92873d340', '60d7d9e3b', '3fd43991-78cf-44c8-9270-a7471082a813', '54892858-4cb0-426e-9a59-e3041009a016', '224888b0-40a5-41b9-aa48-b0e22cc26830', '5a143676-aa36-46ef-87f7-74d940f0d098', '5ea4bda2-a323-4ffd-b66d-030d3fa62267', '83f557f1-f45c-41c3-a9a6-5fe8b9c24395', '63c11e74a', '638488340', '5c5b2eeb-8157-49a6-91fa-39c3684fcd46', 'f84af0b8-0bec-45e9-8dfb-48fdd9502b46', '2bf531af-a59a-4ec4-8bbb-18813e64f08d', 'd8d09dfd-10fc-465e-bd0d-84a1faf8e9f3', '60d26a44f', '5f3c6d2d1', '6de37da5-6fa9-4c19-9754-4d67993e515e', 'b64af97f-763d-42ef-b131-a34db61ae1f4', '6369a84f3', '480dd2e8-4ed8-4877-aed8-2bb9d0abd166', '707ce180-23cb-440f-a4c6-5d31aa6bbd4e', '20d65ab1-8e7e-4056-aa85-ce8ff879d423', 'f8a6310b-5eb0-4581-8168-15de351f2a5f', '617035cba', '62651f8a9', '621c5e0e7', '608f75273', '6566c7ac-20be-4359-91d5-fb4a47dff531', '4c2c56e1-9986-4762-b2e6-45e8d15b2cd3', '4c6dc739-dd72-43c1-8fd6-e76f993d1461', '62ecbec40', 'a8472614-6d2c-4a44-8686-cf9baddeed0c', 'c16410b0-3cb2-4a93-9633-f546525afed2', '7cfa093c-6ebb-4b0b-a7ad-c2ed33e297c6', '604eacb16', '055ab554-de19-4f47-9c5c-0401ec1d5fda', 'd9d770e4-e351-4aec-a089-4699b5382de4', 'f2397834-bad8-4a61-ac21-3893ba085e32', '48207848-5487-4f36-aba2-ba5401a3a0e5', '5e193a81-4b4c-4a8b-baf6-716409ff6b75', '9ccae847-115d-44ce-8cab-a25a5beed5bc', 'be021d74-abee-4f6e-9bdf-bee81c02de54', '0faf78a7-15bd-4f71-b7fb-09a8f494ccb6', '2e0554ee-ed21-41c6-b27a-9e302e458ae2', '62641088c', '942d8970-f76c-4844-8729-d8382c8bb810', '073a9332-8dee-42b8-978f-ff47aff9def4', 'e27d2633-db59-4b08-8dfe-4cbddbae346b', '63744f5e1', '5fd5f07a4', '86e90ba1-c8cc-4bbc-a5e5-201b17539e66', '786f2af1-78e8-42c6-9c1b-fe8f16b6f84b', '8b1d4876-85d7-4b33-8991-284fcd0df657', '639e4ce1d', 'f9b3699e-b56c-4ce7-a2ac-729bde45f0d9', '0c5cafcc-0178-4ea5-add8-1855cc1a76d3', '5ad201e1-be12-4741-ac98-46ff43925c94', '619399d5a', '9f3149a3-cc6e-4b81-b951-020ef1b8ab31', '9f359d7c-1479-477b-89b6-53f86edb6f2f', '638b4b296', '218eeb5d-36bc-403b-9480-35b367a67716', '5ad1da80-4fae-41c1-90ce-ce4f667635b3', 'f5e10c7a-6459-4f1d-991d-4493cb255c6a', '5a403ee1-9db8-4a46-9bfa-1c4adfcb31b0', 'e3e49c9f-d80d-49e5-8f71-7e41cd0a9bec', '6275ba089', 'a6b615b6-6d33-44bb-be4b-5c1109ab854c', '47e99bdc-3e7e-4d04-a6c1-8cfdc4e5081e', 'e5b5898c-81a8-4c0c-af1e-cf1ae6dcbaa2', 'f39f748d-d338-4a82-8d2d-0a474b3b1705', '625e8615a', '61c1c9923', '60f8a3701', '2e2f26b4-b8c0-4bf0-b99a-054c0ef4fcaf', '5f874ca74', '19a176d6-15a8-4107-a10e-81bbd43c8fb4', '6463e9a3-2010-4400-b9ee-80b77b49e3d4', '3b1ac409-5957-4cfa-9008-b147862162ae', 'c05b9877-9662-410e-b581-8057a3dc5c51', '2c2c09fe-3b87-4d1e-a281-4d96c3a75351', '82a28080-e04b-4ec8-81a3-8c938201b27b', '81200466-f821-4960-9de3-024238c70c1b', '29865af2-954a-4f0e-b36a-4531d9921edc', '91913101-05da-46ef-8b51-bf68b99d3ccb', '636e597f7', '61db9f58f', '26832984-6f65-484c-822b-23188a300f7e', '2714a5cf-62f0-45af-94ac-d755d5eb3b51', '61b681658', 'b42dbece-3e08-4504-a729-cefe884a5b6b', '638a919e0', '0901af54-35e5-4113-8265-ff4b1d105306', '52d9ebbd-609d-4427-b89b-9d4fa164cff2', 'e79a17b6-b743-4a58-a916-19075771a837', '130e9157-e358-4b95-8688-2a25c9f6d2c4', 'c095f8bd-5ea3-4649-bfd4-04e624cf2814', 'ff6bfecb-0218-4f10-8dc4-bd7ab07aca6d', '60cca2c72', '5f9741204', 'b97834aa-94b0-401c-9f73-278c7c94cc4d', 'e3ea65b8-dd42-4bc9-a686-93c8c37b8a69', '0f25256f-4018-4118-b749-593d60156d92', '610def16d', 'bc1b790d-44ee-4060-a7e5-c55a2f49f2bb', '5c076e07-8f34-4bbe-ac3f-4abd81ec2ee6', '608b69ff4', '017cf350-2a6c-4f71-a2ec-58f5ff95e9ff', 'ed77e4e2-b823-43b3-a9b0-0a4670e03c03', '6048811ba', '82ca1069-96ce-4372-9100-e16e4859031d', 'a8af9360-4553-4f4e-95c1-e6555e769c32', 'bad59d18-6dc4-4f97-a12c-358cffc6a154', 'f6218242-0b51-4e8b-aa7b-222b1eef71a9', '164ec995-8c91-4292-bfdf-511f4b477b75', '83246c5f-d0f6-4cf7-bb42-f4a6e11a9192', '5f4a0b81d', '54f714b5-d60b-48c8-a789-13a64a647908', 'e2a5a034-8fb8-421e-b0ae-ad6bbfbdf3b5', '80a4627b-f26b-4cc0-be1c-9e4524b9777f', '8f853b0e-3bb1-4380-be9f-0ed9ff724169', '359edfab-1010-49d1-a11f-67a89e5f2da2', 'e3f05ed3-a1ae-4ebf-8299-595a184742a1', '5fa31e3c3', 'f90acb91-70bf-42ed-890d-13ae5d7f0584', '63b3f5500', '41d39c29-3818-4245-87b1-e5d6b481e2c8', 'a237e0db-772f-48fe-b7c2-f93721923072', '90a4fda9-62cc-41fd-99a0-3d37f5d0512e', '2f961112-1019-43f1-b083-443faa28e826', 'f8a5201c-36dd-4af8-ac27-2f785a32d1d7', '01bb06ac-a79f-4462-b9a9-8f88645a5d95', '5b8f5559-1f67-48bf-8253-5b0fe5602c2c', '4c6bd45b-0ac4-435a-9ccc-325fa5333f09', '462c9a40-1900-4a6f-808f-e553202d69a7', 'bb1d98fb-f1e9-441e-a24a-e635aea94a70', '61b00f00c', '600e129ab', '1d0bfc02-dc03-4104-9bbc-23c274ea3624', '4df3f9d6-2ec8-494c-ac96-7be07d8e09e2', 'e395dfa1-4778-43f3-99b3-ad6dce1d9287', '62ccdab52', 'b984820f-ac8f-4e5d-a0a4-30c8a4b80a17', 'd86c1002-7158-46a8-bf34-ff8321b8ff50', '83b0c128-3729-4bda-860d-67dc9dae2e5e', '5ffe934f6', '696d9ae3-1d62-4728-aea9-433d3808386b', '113f775c-26ab-4318-a473-180ad8cb429c', 'b5f65265-8c6b-41a4-b7c7-08746235c047', 'b9766aa0-c408-4290-a660-47ab8cdc89dc', '3d43ba95-3dba-43f6-89eb-49e1c4d58cf1', '637ae8d13', '60c93da4a', '5f71190cc', '1a266baa-f43c-4fa2-a698-a36213b8d565', '0c383e47-a0c1-4fc1-9064-d24e3ec0a4f5', '47837637-e8dd-4ae3-acaa-4c95c3567df3', '144e5710-abf0-48dc-aaa3-173c2b422f87', '71715e37-a731-4594-8443-a0633e81ba53', 'bbe51821-96ef-4027-bba7-1b97432165c4', 'c8de0058-7155-4a76-b0df-77306f943e4c', 'bcbb363a-0ac9-4a88-b36b-24b87b20dc92', '0f0f4fd1-5211-481c-bd86-897dd62e802d', '49a2d1e5-afdc-4196-b5a2-13d509fb06e9', '605e41f0a', '5f55d7840', 'dfd70ecb-310e-4606-97d1-5fd7a650653e', '54657fa8-2c66-4293-bdde-bd81866565ed', '5f41b5b67', '5177fd62-8571-403d-8c3e-4459f9ddc2ea', 'f5e9869a-ff9d-45e0-91b4-f2a120f557bd', '7f96c767-867c-460d-a0e3-dd34e6685e37', 'c0b40fc6-c477-47ed-b044-3f2fbae1934f', 'c5f1fbac-a98c-4909-8daf-2686120b380c', '60de5ae9d', '429bde44-46a1-4259-ad8a-a6f405242430', 'b1edf980-4b00-42f2-a58a-fa3fbe023ebb', 'f207b3b7-05d9-4395-a2c3-d1886ff0c9af', '2a55ddb3-a34e-45a4-ac46-cc0d55adc023', 'ce1f1d65-b0b8-4bc3-84e3-3ebbcdae9dbd', '99f98e37-53c4-44c3-8fcf-a0068e532e8b', '6d1fdff2-c7cb-4ace-b7b4-b6029f41d7f5', 'd43d27ca-48e4-4c9e-9b63-69b0e5de3254', '63c653770', '5f358a786', '4cb61c23-6f4d-4b48-9967-6cc94abebb45', 'a1efa780-7d1d-458a-8fa8-46789a6b32f5', 'f4b92ebd-ce68-47f2-b617-37c6ff5e8fc1', '205d15e8-691a-4463-a45a-9a1d7422b805', '5f08897d8', 'a872ad3b-9c99-45ff-bd42-8d63265cdd21', 'af5e9770-9ad2-4c2d-a439-2932bf255ad1', 'ef0442f9-49d6-4e99-ae49-6ae9365c2b18', '27917246-3021-497d-adee-cbc36e29e46e', 'e9164d24-adec-4034-aa13-c38888ba3d82', 'fd3266f9-b260-4729-b86a-a1583fcb56db', '75fb16f0-feeb-47c4-b4c7-4c8ebafeb3bd', 'ef67db3d-f312-4b29-b792-a967ee3ecf25', 'f6f166d0-1902-417f-a78b-f765af691a5a', '0b3d8549-d92f-47b3-b102-7ecacc85317a', '6f43f3c0-3462-4090-b77a-e94e3977c480', '617a0119e', 'a652e467-6148-4879-a90c-daa5313a63f0', '4e1b91e7-6a63-4842-8ffd-3ec2ddcaaa7b', '42d61cf8-9879-461c-a6cf-54ae23325acb', '5af541ab-716a-474f-bc93-e0692c11a415', '13bd78c3-5f8e-4c77-adcf-09ed61ec27c5', '2f5803d9-faec-4f25-84f6-a2304bbea4d1', '2b8a4af9-1145-4e1d-9add-8a241c13fdde', '6295fadfe', '60b180f9d', '7b389392-161d-4e45-bf55-e7d10e003e85', 'e2e5dc26-2adb-4955-9f7f-7250f0c9c41a', '020436b3-62b6-4d2b-9bd3-503c07ffd2d3', 'ec73b0d3-f945-4989-b9e5-197c628e4fde', 'b4997e7f-8018-44f4-939a-b3fe0e9f17e1', '87bf7759-38ff-4b71-bfbd-e6e0be332225', '5fbc184a2', '61567ef1-af17-4398-909c-d1f4c70f3bcb', '74f53d30-bbbe-4eb5-b36d-46caf122e8f3', '15afc385-e389-4d38-b67d-6af104344775', '38564ed4-94d7-42a0-809d-897305f81ecd', '15d2982a-4b6e-4a93-a6cc-6d52a20cac18', '70723291-858a-454d-bd56-c509ce2c5678', '0ef8e30b-cdc4-47bb-b925-78555bbf56d6', 'cd033c78-8173-40b4-adb4-11ca9a144f05', '3a415487-a049-4bf7-b66e-d46e49d124b5', '2bc4e146-3f5f-46ed-8689-283c2d79cc17', '34f003aa-013a-469b-ac0f-5b870a699840', '626e97d84', '6ec1b76b-a123-43e6-830d-b654f5b327f8', 'b34d473a-ec06-4263-87e3-9a459f9bd1b5', '697c12da-59d2-41bf-befb-685ef565eab1', '88864496-a5d4-4298-9030-8442131fd8e0', '61fc1ac6c', '602c37e22', '635e5b3ef', '602ad3725', '5f8f3e55e', 'f99e7585-8fab-44e6-a721-595c95339f70', '0210bab9-bf77-40e5-8b3e-765652cc4b56', 'ca6d1d58-5919-4b12-9513-94d5a7648275', '63810d143', '584dcba7-2f5a-40ec-8a15-b0714c922e43', '0bf1ecd7-54fd-4b07-ba8e-e764aa7ceee1', '1f96d5c5-882c-4e8c-a797-b07d7a5aec73', '61f95e141', '815c6beb-5f44-47fd-ba09-be22185b6e10', '78ccceb0-d348-47fb-9523-c208dfaa07e0', '60d259313', '67f6ba58-3b0e-4057-8453-5829681c334a', 'cffd94f0-4786-4d9d-bd0a-383414e431ed', '2b6c6f6c-151b-461b-a173-bee4e9b4bbf5', '63699e8f0', '5f9a449ef', 'fbf4ccad-9929-461d-a42a-a74296e6451f', '94f692e9-54ff-4e43-b974-45854013a1b9', '9798a78c-30a0-4ad1-b53a-1aa06d816c85', '607804318', '5f8553478', '0f840473-85e3-41cd-9f98-092e8d52f98c', '626cf8cf7', '6139e1173', '606982d08', '6095db575', '984b7340-e9b1-469c-ae9f-b8e1a72aeb08', '487ec7f0-83e6-4228-befe-cec12c59d05b', '9b7badff-6ecb-4a57-9233-fad5682493b4', '638cf8d93', 'f8d6f8a7-d07c-4b3d-84a6-146c0bb13c2a', '61c8ebc01', '5f9949270', '5f4655c86', '8989e7db-ab81-4c69-a523-82f506db10f3', '9919c85e-44a1-4f8d-b707-e8fd72e07f98', 'b6d99816-d52e-456d-be7c-4e4085c515a3', 'c518e256-ba45-43a0-a4b2-79ba917fe463', '95fac8b4-f7d8-4845-a202-44ad3d19d2ef', 'b1168eb9-6fd0-4232-ac08-f32bda6386a3', '3797d2e8-a515-4791-857b-1ff1b6c41956', '9a1cc382-a5d5-4391-a0d5-bb1d957fcc07', 'fabd0e7b-ff7d-4636-8320-83b9d56a38bf', '3fac6c64-70a0-4bdf-a45a-d252356056d1', 'e45d9075-22af-496c-8cb5-5381e5a6e4b8', 'd1bf924d-54f4-4318-983f-3374ff249bf4', '628f07115', '79a4cf07-0b00-4587-88e1-a7280d080e57', '8def5c4a-3f44-4f22-bcc3-b9f46aa0e080', 'b0a5c34c-2d86-4f8e-88ad-e16cf2f1273e', '918022eb-103f-41b0-9563-395393c4e2c0', 'b278003c-af98-4d32-ab4f-70806a584760', '6f1b24de-24ca-4c92-8f8b-868be4ac39eb', '11ba7876-f581-43e2-b6bb-b2a7549ac9f2', '526ca3e5-e874-4ba6-a4d6-c6f4f7e6194e', '76356418-7c73-4c45-a96b-72692955bc2b', '8cb85a7f-7126-43c8-8cff-50cb26dcd3ea', '4acd62ec-3d03-4542-b...\G
+SELECT COUNT(id) FROM player WHERE id IN ('02d1925b-c84f-45d0-b2d5-5f8c4e579b22', '52cfe35c-3129-4f2c-966c-dff0da1db240', '0c33e53f-4ef8-4d7d-abc7-22fa4e5453fc', '1c9f6290-08cb-4ff2-9f27-81df7aa0807e', '24aefdcc-b4eb-4363-abd4-518bb5b4c36e', '40cbe86d-51e9-44aa-b868-31c0e8abbe5d', '36f87229-5d31-4ece-8851-0e15d5681c5b', 'bd811747-e901-4b7b-a337-41552e33a10e', '8d809985-e986-4dd0-9b8f-e162a75adfa9', 'b7f4ca44-2cf0-49cf-9d0b-3e8d8ad94779', '4003d914-c994-4ab2-9dc3-5ead8d6ed04f', 'b25a4486-ba7d-4d4e-95b2-56228f1f5251', '6df1f189-b7a6-4f74-ae83-ae9fee4beef4', '03e79f84-d19e-4cb3-a0db-cabde0cbae28', '73f80977-31bb-4276-adea-bf970804e383', 'da91dcfb-55cc-4053-98fe-9ea7283c3c27', '198347b3-204f-4a3f-89db-aa727ea60ffe', '553e88b9-439a-410e-a19c-f61ebc6e1e22', '9bd9d78f-b337-4852-b3d5-1c2516e94e9e', '29a7a5bf-428f-4924-aa93-cbf46b512c05', '1d9732bf-123b-4df2-94fe-68b03c2bf2e6', '54bb7e94-7086-4b41-8244-93322517e0c6', '0243ba0f-87f9-4ca1-9e0d-3b76ea126f3e', '05f6df82-be94-46fd-ba17-bbc8c1a69af9', 'fc40f587-2236-4b54-b71d-49a96ed39fbd', '510268c2-d3ee-4718-aae0-010b37d445bc', '87757c44-1d45-4aba-8ec8-d1a3d5672e37', '8926f628-f393-4993-a58d-27663d0b59e4', '9f419502-4435-4e8f-9b18-46a2cf2605ca', '6c6d1a61-aee8-437f-9ac6-24b835977c42', '796b2569-74db-4d81-998b-900b3d12e566', '4fa43e44-4ffc-414c-b0ce-1690ecbc8818', '8be98a23-d9a2-4767-a804-5c1d0e49dd19', '235ed2ce-02f8-41ae-b296-17683ff6277b', '56899a42-c885-405e-b608-4a81790fd998', '3d49222d-afeb-4750-899a-b50bfd49db70', 'db8c1c3a-b019-4d65-a46c-83f694c3108b', '7e81fd0f-a990-4e74-8f99-a534defe65eb', '64d0ead0-515b-4499-99ea-0d80a270bc93', 'd703c4b8-16f1-4f84-8376-05d33cd8928b', 'a1e3bd15-471f-471a-b81b-3aa82279e92a', '19c4ecd2-7d4a-444d-a01e-665487db9aea', '37676ef3-ca6c-4e43-8db3-1da5b7678196', '4033b25e-2e39-4561-8338-a91038720e31', 'f0688744-21cf-4fd6-b271-ba4811dc4cb3', 'ddc12cb6-7243-4f41-926f-af347bd83046', '47565e95-39f5-4725-a915-adab379979f2', '39589efc-7618-41d9-9d12-58e94c98be6e', 'f77fd15e-63ec-4eb3-9fe7-71437e977855', '49cd2dcf-5a86-4847-aaa9-7f79d7ffe7be', 'eaad73ae-6a5b-4910-960e-27b16f7cfe42', 'e13e3923-456e-47d1-b8a7-5b2317cba2fa', '11eb9743-1b95-449e-92f5-e78bed4227d5', '74b2e50f-ee27-45f9-b200-17894bb1130f', '0dcaa27a-61f6-43d1-be2d-9a8d470defee', '49ea0227-7770-43c7-98ce-87fb268b2c80', 'eeabf567-cfc9-4607-965b-45ab7ef5d05d', 'c87ef908-1221-46c9-b096-30a94ddb4662', '3d5ec4f6-87d8-4a38-a18f-0bbda691227a', 'c0c951fb-621f-4dfe-a210-9ce442d52dec', 'db40ce69-8809-4573-bd2e-5c9f15aeaea2', '9340d042-7955-474e-94f2-78142ceabd86', '3615de98-75a9-48b3-b18e-2328a69a28a8', 'ea9c7888-78d4-4626-b2fa-6bfb2dcae2cd', 'a01a8b42-2ada-4949-a9fa-8bf0ab59211f', '05b37a0c-4892-4c50-b332-b1d5cc195369', 'fbdb7932-f9ed-43fe-a571-e06d74487e95', 'aa350687-ea1b-4ec0-b9a6-13b125f48469', '95d73bfd-00b2-4da5-a9d5-55d5970e7c68', 'd823d0a7-ee82-48b6-a96b-ba877a9e41ad', '26c8912b-d537-4c40-b258-4120b41faa08', '9a5a7b18-e1db-4d1f-9cb8-08bcfee291ba', '9ddf7fe4-470e-469f-b698-49f948c219e3', '2fadabe7-700f-408f-aa10-7b24deb3e4e2', '10cbdc9a-783b-4346-8b9c-0f0fc1ffbb0a', 'c991b77a-70da-408c-925a-db22eeb081a1', 'aa9c3817-1527-40c3-ba89-26d146836d66', '36d2bb56-35ee-4eb8-9972-a58563bce136', 'e2d3d366-98ac-4a41-b429-865c4995e9c9', '0fc01fe9-3ae0-4eea-81f2-6e437f28d9d6', '3e8b2ace-523f-44ba-ac0d-d06f4cc0f1d1', '44c2aefc-a336-4e30-b9cd-24cd093794bf', 'ee94ee93-5497-4eed-9f2d-11ce3e3d4fa2', '1a8c89f8-1fc4-4061-82c8-8d55e14803ad', 'a876e808-bcb4-4165-9327-c7a7a414bdb6', '92adf29d-6dc9-4dc2-9c57-5674fbf030f1', '6c2f5a4c-9c77-4ad5-bbc8-b16557eea1dd', '89b2c2dc-edf8-4e63-8db5-584c622efcce', 'cd34ccf6-3571-4e3b-8213-1a994ef53697', '46d58d39-d801-4c94-9f7d-bc5912323e53', 'b7b5fffc-0045-4581-911d-aa52dbd3a4a6', '89d8b33f-81a4-4b6d-97ee-3db15c944928', 'ae91e666-5724-4abf-9328-ada272e18523', '97ad45ea-bfdb-4dbf-a9fb-bbc407796c24', 'bc5b1347-9573-408a-97ca-9a64495a3d17', 'd53644f3-331b-4da5-b220-53c7407ecfc7', 'a290acf9-dc35-4f6c-b49d-8654d1027b99', '923df34c-b13c-45f3-b994-6a47b909d375', 'ae789eaf-e8e7-4be9-812a-ece3cb31ce17', '3dfa5099-47fc-48b5-9c7d-75154bf543bf', '878fb58a-9c7e-445e-9a6e-152e32500a91', 'd79dc47b-ef8e-4848-a130-3509746b38b1', 'c2f2ddb3-d18b-4f4d-85d1-5ebe12338f3e', '6ee92c29-a335-4dd5-b579-b71dbc892d63', '3d9d02c9-1d90-44e5-ad2a-6111b1ceab97', '86e1613c-2cab-472f-840e-ac69c9fdc092', '0324c544-f01d-4b94-875e-ace41be56786', '4abbdeea-c8f0-4732-a25d-8b88bf3ad2dc', 'bddde10b-ed9f-421e-b3e3-2de6570048e7', 'f08e744a-e33a-4f5b-a04d-f0ede09b7723', '0a7ac18d-4bd3-4d0a-9a22-22ef01ae6d6b', '1b27ab24-7397-4606-a2e0-7eac8dfd5dc5', '91884297-ce86-4bac-be60-2273798d5e9e', '7d44bba4-924f-45af-bb6e-b4e881025fb3', '5392ca80-8b63-4371-803b-fc4dc8fe7215', '2b2921fc-5e66-4325-9d33-f91f8d9f312b', 'ca921e67-b393-4218-9dcf-79099a8497d1', '317e68bf-6d4f-492d-bacb-b7cf3352a86c', '61b604b6-d509-455b-9e1e-884329b759d2', '9c94dd3f-55ac-49a2-a84c-1c804b060a09', 'e0b5e5fc-a70c-488f-8dd4-d877d80d4d93', '8d97a245-dfea-403b-a668-4bee67a88669', '7541b8a4-6652-4a07-bd1a-397c672f2714', '934d07a2-55be-4a59-8517-bf2bb69381b0', '5b054e1c-958e-4536-90ee-547a602a9fd4', '8b469693-6404-4347-891b-f270fa1d05d2', 'ba3a5386-356a-4130-96b4-ac773019a91e', 'd435df50-2ed9-4685-b1e0-1ff42101ac50', '1cb408ab-244b-4326-b495-2d1e36013259', '42469296-abef-4101-896a-85ec5a1eb694', 'aa02731f-242b-4fa4-9bc9-16a93088ff6d', '53e6d467-3892-48df-87ea-f2c18773bd6f', '6c3387b0-6620-4d31-8c3c-d802658c95ed', '5fa835af-da3c-45a1-b04c-616d8e451d96', '77ef3397-324e-4c7a-9429-3ace2e837235', '2d32a958-4786-4a7e-886f-4cd5caa04a6f', 'b2966cd7-5aee-4b27-9285-a7eefc9346f0', '4707e6f3-f917-42f8-b90d-3646091c6c26', 'e62ce061-63d0-49e3-8916-957d197cebcb', 'f88091a3-0689-417d-b3bc-8ba0ac60fd9d', 'b2f918f0-7279-462e-901a-7c009da2d7f8', 'e2ea397c-6912-48c4-857e-4c92d27b0af5', '74cb3855-2e3e-43a2-aa66-d67d0c280a58', 'e93e880d-445e-40c0-bbc3-59aea640df1c', '57c82528-7a9a-4a0e-9cc9-6a22271fd6d1', 'bc53d9e1-5f36-4742-b3af-b13b98c0e6a8', '8c4103da-efa2-4ba8-a274-2d5cec06e84c', 'b4870911-6daa-4cc2-af25-b083a2472f73', '1590dc22-9b47-4171-9466-4a53395e1112', '5719f233-96b9-43a1-b8a9-8710a60a20ae', '04f79dd5-217c-4a85-937f-e400fd619b15', '91a6d808-b8ac-4fd6-8b6a-3ff9a3df06b6', '2a9c252d-8214-41cd-a90d-e1eba8072f8e', '4c85f74c-e9b5-4529-bdc1-05372ab92d85', '66569168-7ba0-496a-8f92-6164ee0fc1cf', 'fc488e44-b42b-45cc-af4b-f80b40a3e0cc', '83aeab5c-7157-4fe0-9a8b-a6cc6265830d', 'a3ae7a23-ddf4-4958-ad5e-0938013fd16f', 'c0153842-954c-4844-9187-5134c8af94e4', '05cd6df6-df68-4973-898d-4c6c3b68d4b2', '1317387b-f416-40fe-9404-6e40131b8598', '8b660c32-c1a3-4c92-961e-f17b8dd40018', '51693404-c18a-4d6b-8bf0-a5f377f73cf8', '3015398f-66c7-4c4d-9f79-d47c96cf1555', '90328ad1-6be7-4dbf-a3a3-d52f36888869', '0babf6f3-af0f-44a3-9ce5-1b5e93922a2d', '7c4b852e-ccd6-47af-badf-b4fc04b40987', '739c83a4-a56a-4990-a4d7-b77942c0b72d', 'a511a1a2-8d90-46ce-8083-86ad07b6df1d', '1804d397-461a-43ca-af1a-2e92d39173af', '8c6b7d67-ac1d-4ce5-87ed-e4e975657b69', 'cb01c2ac-a9c4-4beb-9227-47622de21bff', '676e0d82-6e43-49e1-b69d-0deb9046023d', '9fda3ff7-fcee-4605-9c76-f763ef7b97f8', '1ff1b55c-9d06-4b4e-ac73-62050c2b1575', 'efe7b739-15ea-482c-99ed-5b30ef51c617', '796b3a05-1db4-4954-b574-4232c404d558', 'a07a273e-108f-45e7-98f9-772c12d4f0e2', '85744720-3526-4e26-b204-25402e202195', '30cb1c95-4e02-4465-a410-eb83c1bea656', 'ce998342-4d41-4f9a-b23b-b0f4b1f27178', '66c1dab4-7caa-45ea-95a1-ae4387898862', '0e51c857-25e0-40ac-a384-e557aa8d7a68', '1e17e97c-3791-418c-a58a-9b359a2ea048', '91194d94-7a78-46fc-abb1-0a3e06e57ce7', 'ca749049-43dc-44f3-864f-24740334d50a', '4773f47e-4c34-4903-8a15-7e8da9c206de', '5f553061-1ef7-420d-b22c-44acabf22484', '4e359fbb-b1c2-46cd-a583-c187bdaa572a', '4672b05a-4e49-435c-b057-3c711a6ef398', '66f6e98b-332e-4d02-acea-b076921a5e6d', '6c8cd3ef-3af4-4b53-982b-96c7e3d5bd8e', '8f26aea8-2b0b-4839-87d2-eec45bd979e3', 'a1c7b9d7-b164-449d-a48a-1bdf4a8013b5', '1713c009-ecb7-4d38-8fe6-f0b87e204e20', 'b8255b9d-f9aa-4b8f-8281-25d75cb99cc4', '6b4349c5-73f2-4b7a-b02b-03d187648a35', '2f30abcb-d187-4af1-8ecd-a6b77032b779', '507ff725-74d5-4f97-bc97-8c91c611133e', '19036905-10a7-49b0-a2b4-0810bea3d8a2', '2327c6e8-15b2-4869-b2e7-238f397397c9', '4daabb31-4c59-40ca-970a-4dfc5f370669', 'c6e685b6-86bc-41a9-aff5-78a4d977f549', 'a6bab5f9-c5a9-4034-8f95-78e473946b99', '48f569cc-0b6f-47ac-9735-d5d9ee88466e', '65447f3b-b496-4cdf-946f-16af685379ea', '80acd37a-d050-4633-a037-a54a7b916c4c', '1a2d3a4a-4d02-40f1-b448-f4c0f4d41cb1', '6139d871-0760-4e01-825d-b9c6985a41e8', '5c38f026-eee1-403b-a617-0cb367d9dcfb', 'f23ccf12-f1c6-4700-8aed-c1c7ceaf2167', '56a8b76e-a2f3-458c-b95c-3aff4ba4e04f', '525ba18a-0ee8-4af9-8276-24ad8adee02e', 'f0d93e99-123c-47ca-ab0f-0ed974b138ea', '16c7c878-f57b-4150-8b5a-e78363ca7acf', 'f583c754-7247-4673-8688-d1c30bdb82d1', '88d75f39-341e-4d62-943a-77b9d42080c7', '2dabb19c-a9d5-48cf-8937-3d5ae0a6a266', 'e53c4aca-8563-4805-89ea-025949d3e6df', '1c10814e-cfe9-40f6-91c3-e615c31e9880', '569b3cf3-24a9-4a74-9af9-2f0f108459b9', 'a5578779-6797-42f7-9309-561ea9acb161', '386e9def-b0bf-4a89-9b5d-6ee174e619e5', '88c56954-14ed-4da1-8f41-a39e1b2e427a', '7c55547a-c13b-40ba-bf4f-8acce2273b84', 'c92b5f96-4ba6-4aa9-9bd4-7fbb48755b4c', '779e977e-1f53-4d26-bae9-fd7ed264f01e', '9ea97f01-e2f4-4c4f-bf02-9721342a5aed', '90221c47-58c8-4d52-ae3f-e9232e1759e7', 'ac659050-71cf-4fba-8be0-02a7175bed97', 'd7054744-5837-41a5-9701-29a46c65cd92', '8426e471-02df-4294-8338-10c414c8e24d', '192fc4aa-f769-4b80-b8ee-02d85e5f2ce0', 'a4540aa2-ea33-4452-8380-bd5c31c2173e', '134a497f-c513-49ec-bc0c-a1a7df8f077b', '11671d15-6eb8-4769-85ab-db6608cfb6d9', '304321b6-aabd-434f-9c4c-0cbfcd4cd345', '275608f6-75a2-4aa0-95fb-37fe54198301', '88e5536c-55bb-4c3b-a1e7-48cee72afdcd', '0da82789-3efc-4d93-8baa-ea0656c5512a', 'cf4073f8-1903-47cc-ab30-6a537cb57ff4', '72779531-498b-415f-b042-e2712e9f10d4', '8a1316b2-0add-40d6-a52d-1dfe6d5ae6f5', '607d8592-6fed-488e-86f7-480576cbd371', 'b77417d8-cb68-4cf0-b402-5e4007d3ae3e', '2c734d40-fe09-49e2-8c39-6b8705535f13', '6b4ce60f-d663-4697-b2e4-85fa799282ec', '476a5f96-76d3-4f94-88bf-b3cb4c6633f5', 'a6a6a446-9aa2-4b14-b8f9-b38868208b67', '91a48501-503e-4c56-95f9-0053183db7a6', 'd5047195-38d7-4ab4-8057-1c7cf37b588e', 'f331a605-d71e-47a9-b529-d02517b04145', '4baf44a2-a4aa-4b4f-8e2d-b2845ce9522a', '30e136ed-7c10-4c94-bacf-1c977af83c2c', '7be26621-b3cc-4042-b0c4-3faa142fd64b', 'ce0a52d0-f966-4b66-875c-3618cdf33767', 'e2010c5f-4f8c-43b0-9d3b-a14935ddd67a', 'df99e20a-337b-481f-b231-1dde801d9bb3', '17e6bb2b-90f1-4025-93e2-52f455e8f322', '8bcb6b8c-706b-48ab-90c5-bf87b49ab415', '09208614-fbe6-4fd1-b403-102f9e05ffbd', 'a523c607-9b85-4c4e-a599-655df65697c9', 'd2b8eaed-7baf-4fcd-8699-5ca2af13996e', 'de6ff99c-759d-4804-9eb7-ae728bea28fe', '358db58c-8506-434f-92d6-961cb14447a8', 'a5c18752-b517-4645-ac4b-df3f4b73041c', '14d84030-6bf7-41ee-ad33-f08e05a97be8', '19e82496-6c77-4d9b-9a2f-48a98f95877c', '4642e998-675f-4f24-b077-2e777520644a', '90882ce6-8296-43af-9bdd-6ef2001d220d', 'e9ee3300-7005-435c-be9e-248df0dfb320', '7d6271d2-ed18-4391-95e9-017241b9ee74', 'bc5c23f9-4c5d-47e9-8e7d-6a09cf5f73cd', '53c5ff66-f9cb-4f4c-8c55-a56a3b7713d2', 'dc3cf388-1279-4705-8841-e651cbd193f4', 'fe294e7c-f3af-4727-97eb-2e15ba878418', 'a1600e74-c8f8-44f0-8519-ad8103504f2e', 'ab2155bf-49a8-44a3-8dc5-9fd84947fe3e', 'bf01d24f-0eb6-4dc1-af54-ae80d082ab5b', 'f52489bb-8a79-4035-9db7-5a0d16efacd4', 'ce3e645b-5a6e-4600-8412-01b0087f9199', 'b23bf41a-141c-44a9-8559-58b4f4b38206', '1217d07d-1827-4e2d-b0a8-7576eb4984e4', '3237d156-ab39-409b-b309-c192a2e7739d', 'd1ab300c-83d2-4705-806b-17e61ddf434c', 'e3326df0-b294-47bd-87b4-aaf38d723e68', '7f31fc74-7861-4e2b-95ec-1e950b5ff66a', '553fd3c1-51a0-48c4-9c85-f116d5dc1d42', '588e43dd-c024-4bf0-930a-c986180b2f78', '99ccda68-b0f0-4947-9f69-aab5037089e0', '56e92660-b562-43c6-835a-cc2b5f893a43', 'c60c9910-3643-4852-b663-c06f13ff3641', '384080ac-b90d-463d-bef4-263f756e8311', '3e1899c9-5347-4eff-8bd6-5a052401fe4e', '611168a0-0b8b-4bfe-9a6f-82c40fa786a4', '2b3936f5-72c5-460e-84e2-e6e7349af531', '98825fd1-f58f-49f1-be3b-2ba11fc49108', 'cb70aab7-a118-4c07-a9c1-ee8b5e13f66e', '6e8c3ca4-b9ce-4cea-9922-60530bd5b214', '93ccc40f-3354-4736-8159-63ecd3da1310', '18f10768-dea7-4538-b6cd-f0a466f8ac16', '08a6a4a0-7b76-4127-bdac-f79d091e4d72', '78843e96-a8b3-4d1a-ab62-267707392aa9', '8065438b-63f6-45ec-86a1-cf22043c332e', '3006c9a0-4855-4b2c-9fac-66bc84f934f7', '7030ea07-e0ec-4445-bb55-0842638b6739', '207d2c2a-2bb5-45cf-b463-d5d5b5006e08', '7d50c417-fc7b-4f64-accf-6bf7cb72ae0e', '1c5db2a9-7394-4810-901a-21b46572543c', '16af3aee-dd68-43a0-9922-78d8986c9798', '22dd028e-5904-4944-99bc-9149330f5800', 'aecb1ec3-bcc2-4efa-99a4-3f88ad6edf77', '01e03937-87f2-47b1-8936-2138bcd4fb1c', 'c5540932-1a53-44b4-bba5-6f6ff8dd95ae', '0976a5b6-ce23-4aae-b1bc-d70495e1ec8f', '3d34266c-ada3-4108-8588-2f7b0980777f', 'fa799527-7abd-4f87-9c05-001f49ee08d9', '77ca05ec-eeef-450b-9413-3d4e7df2b603', '0adf8d6b-77e9-44f9-a47a-d8ae8b3f95fa', '676654a1-67eb-4f89-a887-29d6e3604c7b', '2b2baab5-310c-46aa-b136-500c99029f87', '46f9d848-6aee-461c-86c6-584450c7d92a', 'e8f71a2e-517a-4d05-8de1-181381818683', '28ec05bc-29c5-4cd2-ab26-b3b0dd621cc3', '299e6425-e853-4c9b-8567-de7b930b5c57', 'bb3e6e1a-6bdb-4785-b76c-d7d84869a945', '965b6b58-2653-43d6-8fb4-cc0115794264', '31190bb2-5e9c-44d3-b009-818f05925d8d', '63b69480-c814-473c-a215-1e585f951bb1', '653a031c-68c9-47c6-ab99-6d466f12a0b0', 'a390faac-54a1-405c-84f1-22cc37bda3e6', '49fe5b19-b169-4b44-b389-da2c91630e8d', '3c9b7b14-6081-4cca-a72c-1ea31ea172a7', '37c7d484-2d77-45b9-9987-4ca1faab143f', '450fc334-2718-4178-85b7-f50d776750ed', '0906afa6-bb3b-4222-adf6-fba0dfd3c802', '85f61459-068c-4aaf-93d7-42fc73896c3a', '4dc495bd-52cb-4299-ab31-fdc3b859248c', '7abff4c9-1636-4319-b4b4-9062253a077d', '29e44599-b001-48f2-9f6b-8ee1dd77ee1d', '8b4563a7-7774-4daf-b122-d6df152b1bb9', '43301cbe-41fb-435a-aafb-b9381b2f517a', '4c0e30c7-e301-41ce-8b9d-13f10ff59aee', '1b6dff3b-6be5-487d-ac90-9c3aef97e216', '0d481daf-1875-4ff1-9199-7f0bae17bd96', 'a9aac15a-cd13-49df-bb50-301ae0371375', '5ae3d7c2-b061-4e91-9ad8-a39170750a56', 'd7fe6a57-bae0-4fd6-8873-19425861ab51', '1aa0c1e9-c90b-4fa8-a3d4-1dac3b7bbb29', 'd7850e1f-bc29-4c86-9b29-ba675004e3ce', 'de751087-3d44-4b82-b240-e160fb0bcb1a', '8c1e8069-0fe6-4893-9489-f53b1c8fee12', 'd1d48220-6af3-4a5a-b110-49e546ff4dae', '22e14fe7-b9a1-4262-ab09-0766f014de73', '510c923e-4a8e-4d43-aa85-7801f1f2cc9f', '56bb2c9b-dcf4-46d4-b0a7-036985620e34', '5b20564d-fd3a-4a09-a367-8f35765e4c05', 'c84bb52f-d029-4e07-b351-fa7d83eae673', '5a7155f4-330f-4fb4-abef-efd9f38153ae', 'c23fe2dd-8324-41da-86b1-cb39c7cf91b4', '80a5e8d1-55c0-47ce-a609-febfd062818c', '78782457-e1d7-4a0d-9f40-edc9c63372a3', '43c1595c-1018-42cc-a6c7-b1622b2d0738', 'f6273ea4-1741-4c77-895f-ae9ea6934671', '0befc4af-bd24-4c5e-95fd-08ce36e03e31', 'efef18a7-8af0-41dd-94ca-98b9f4c294f4', '1626c6ca-f4c6-46b4-9377-cf31c3bd62f8', '031c45a9-9289-4bb1-9afc-22eeb2eae6fc', '9920ed70-881f-4bf6-9b62-3e44270c17df', '07319964-44e3-4738-837b-089ae412d740', '7e89b9c2-4065-421a-bd7f-c679ba420ff2', 'cc18f036-8d38-450a-bd09-712486f6d112', '20b11f7e-227a-4bd8-9bc0-e569bcf0a4d8', '472ef4bd-bea2-4fe8-8acc-7cbe0d2dc013', 'a10b8893-9c86-484c-b2ff-2ff28a50ff2e', 'e67d772c-4e45-483f-9157-535c562d5fab', '3a7650f2-cc48-4e42-87db-7100f338055e', '0b35899f-4810-4a9a-8fd3-42204059e5ba', '4073173c-e3dc-4774-9002-38d0b56a946e', 'c5fb429d-7350-497b-99aa-e2a56749f2de', '2e6ff9f6-52f4-41f5-ada3-f492c989791c', '59e33c8a-0ac6-49cf-b4e8-a6f1a02e9daf', '0dd37ec1-3b84-4cbe-b0ba-af06a45707c9', '23002a88-643d-42dc-9877-ac981b3e57a6', '4abdda30-3aa6-4545-8595-725288dc48c7', '74f0c278-d21d-486a-951b-2134ac8561b8', 'e5fa975b-7cb2-4c45-81ec-8de18d6cfb93', 'def52f4a-8455-4ee8-bafa-92f790083d60', '120035a7-2e98-488f-ba51-4e24c9708f01', '55865c76-0952-455e-9f95-c5d10a55ecfe', 'fa65bfaf-673c-45ce-82fb-12a8afb887c9', '57530190-ef9b-4851-8fb5-6df481107a00', '7de3560d-f7fc-4df8-b9cc-5d4d33a37d08', '1c6c1c38-13a0-4347-b0bc-6d50683113b3', 'd0e4e2c4-6eea-4672-a615-2ab368431d29', '9f72f040-4d58-46df-a8c5-077f33af1a5a', '0a24964d-81a4-4781-adba-5ad990320697', '1406b849-4dfb-48d5-b77a-f114197acce8', '40869c99-83fd-4fd0-b426-b77d5b0712d3', '93d5f624-2467-4551-af4d-30dbae7caff8', 'dc412b5b-4e95-4164-863b-7a529c2ee82e', 'a2b18e8d-a7fb-4b88-8b5c-022fac2705d1', '28ee4b27-a431-482f-b4df-614f2fd42d12', '5e059d5b-21fc-4aed-b58c-44a04640f0ff', '6c34900a-e0a0-408f-861c-3630d1a7d833', '76966dee-431a-44b2-b0ec-bcb59b4ecaeb', 'c6cbd023-1bbb-43f9-a691-ed6f702396b8', 'ec96a103-f6d4-4d7e-b1cb-1282f62a5c1e', '45aea4d2-6318-4572-841c-8ad1bd64ed86', '102396c7-c922-4bdc-b738-0a0397030b68', '9d4adfe7-19be-47e5-bac5-c59d55f20158', 'b7b40e58-5b2f-474f-b436-7ada4c62aa43', '77ef50b5-ea5a-4458-8e3c-9f4d77265759', 'c016d717-56ad-4e94-90a1-e7e7ce99f499', 'df635f30-4791-4dd2-b0f7-985eaec1eddd', '9f48bacf-0853-47a1-8021-9606d86c0aa2', '6fee298d-c387-4880-8511-928d1c9255da', 'd3f17cb8-56e4-4616-98cd-6cb816f416ec', 'fa65fab5-6702-475a-89d6-229f42b80e31', '023e26c0-0fb6-4fc8-af90-e2d760668b65', '1e190a45-9a1f-44ca-b984-9d552cb45f28', '9e7950fd-c344-4ca5-8fee-e5a54ffa965d', '297c2292-4d01-41a4-a14e-371400e96893', 'bae11e5f-0970-4b05-b95b-ad0c8882cc72', '2571e4a5-f745-4a24-b472-04130b987050', '47602d0a-cd63-478d-9677-d2aaeae9b88c', 'f5e7059e-9697-4d41-b0fa-32c27ac3dab6', '10e8394c-fd04-4cb9-a002-533d0df5f8f5', 'd78db2d0-1598-41c9-9aaa-7fbc080cb41d', '57ab82f4-800a-44b3-b3c3-aef0786fa69e', '74c31ec5-ee84-4b9d-b362-8625ef7a20fb', '1ae73043-e650-49fc-a2ab-cc3f16443656', '54c3efac-d08c-463d-98a7-9f09ed04011a', '47ac287d-1019-4a4f-86fe-53e806bba0d6', '5e592363-4ea0-4574-b5bf-5cf97afcb86f', 'e54ec84a-92f3-4a63-9eca-4438fc3d7e20', 'f56ff709-3b71-41d1-8c4e-57666047ff56', '0539d255-f355-4e4d-9f14-8cd0d05c6c8f', '0adbff9f-8168-4f79-98e0-bb29e30cc3b6', '89aeeaa1-4e1f-4eb9-a0b1-47330d1d9d40', '41dbc94d-f019-4f1a-8bd7-d1593a49081e', '422cd152-b18b-4ae5-b20b-0f0853df9e96', '9a6b05e9-f9c2-4d58-a4f1-8458ee0be7c3', '80ec2867-75f9-4ad4-acfb-a00b69343048', 'fab1fe79-c243-45c6-aa3f-832bcccb26d8', '6759c706-8a70-473b-a534-b711df56b1db', '92660076-b3b8-47a5-a8ce-d11234ff9f1e', 'a85a7458-57fc-4b8d-bfe0-268888125c9f', '19adb44c-5745-49d3-b92c-6b0fd806823a', '9f248210-e6a5-4795-8379-b7c72ee3b3fc', 'cf83e861-aa8f-489f-92f9-42bc2bbf86a8', '4fae6988-5c93-425e-b9ef-500a83c5de91', '97754944-f096-4cc4-abe3-a095228b8310', '77b9fb39-0eb5-49e8-a6f0-3fd71aa6849a', 'e2438204-250d-4c30-8e7d-d365a4474d04', '067098be-f849-4608-817a-ae4348ba352a', 'a2a906e1-13c3-42f5-b24c-00c9ffe2b174', '2792e892-b758-4a66-a87d-776b4d6e5ef1', '7ceb66b4-e240-415b-8b4a-5695ca349b0f', '0458a64c-f262-441d-9b98-9bee45cef5f2', 'c401db29-72b5-438b-8fb1-a4e3dc624586', '69b744a5-2089-482e-9be3-f58b9e0a5b2d', '14367f19-f779-488f-97f6-bbb1b7980b25', 'de865a87-3d6d-419c-8afc-f2e7fa206899', '758dd6f5-3a80-4ff5-9f7a-95a38d2c3704', '338569ce-78fc-4e5d-9b61-7862d05f37fb', 'c140c720-862a-4e9f-9bac-2e05312d83b5', '1d5003a3-44a1-4ede-be6b-24dedfe7bf45', '308f92fd-7a58-4860-9c93-02d3f2dc08b4', '023f2459-71b6-4525-a7df-a1ecca322d7a', 'ce6e186c-7c96-4b3c-a819-eae97667cd09', 'f1a7a65a-74bc-40e8-98c3-185d8f070742', '0ceaef84-be73-481d-a38c-b32640cb7599', '509d677b-6dd8-4614-a536-c1c242e2f78e', '680da2ca-d66e-443f-af3b-35ab0e7e630e', 'a00332dd-fab0-4830-bc10-3e97e43e9b5b', '88d08643-bf0b-4f92-834b-6010592849df', '02cafbdd-ccef-4c7a-b8af-f66d827796c7', '459d804c-db64-4bca-b2d8-bba33cbc95b6', '9de044ac-869e-4c14-9e8e-bcd3f57d3ee2', 'afc848af-a0d0-4824-881b-5e4faae63729', '235228ba-5721-40aa-80f4-2ad4323e0e11', '848f606d-2a8e-46a1-8d95-14b6f0f1e81d', '6a63d029-1c88-4b1e-80e1-093daa6b530a', 'a4db37fe-f536-4259-b091-591df2244721', '1346ed29-c527-4bc7-aa39-d8703cb896e7', '5a92e363-3cfc-42f8-9626-c46b4ab39e12', '3b521c1f-a479-4cc7-b675-50cf8aec9847', '82707dca-9848-4723-a639-9a5a96a7605e', '4845f5a0-ebdc-4359-8c46-84342eac5d20', 'e630a0d9-5416-4347-a548-498ecd003b95', '6a27d37e-ef48-45ee-ae04-a584ce5f6c68', '837e1dbd-674b-4d78-a9b0-58fdf0819173', '96203611-fae0-425b-8b43-313df96c83a1', '56e269d5-1ac9-4b8f-9601-548f5f97fe93', '89551c91-d19b-4d7f-bd63-abd085e0b750', 'fc4800ed-6e10-496e-b9d6-79676eba7e2d', '275f995f-f1e3-477d-a17b-3a16ee750ad6', '7f32d714-5bf1-4b00-9709-0d6c7207a30f', 'f48be2ac-e1ba-4042-962e-e06d1d0c1fc4', '80d3bffe-0493-4b29-a055-b016cdfbebae', '0f677b3c-7769-49a8-addc-16f65e431134', '2653166e-48ef-40ae-ae12-6ff35119b620', '4aa4d002-bb00-4ce5-8e06-4b5ab1cfd056', '1f30c0a9-b024-4fa6-9f26-2e3540868aec', '3963be84-a5ea-490b-9b50-7460930da97c', '89aa3e75-9705-4be5-bc24-f6bb013d1d42', '4f484c16-5e5f-4a00-91f1-36c6a4dd40d6', '6e4a8213-9958-411c-a3ae-6a495db37267', '11d82735-edaa-49e5-8204-11e4cd804f6c', 'c3ed28e4-530f-4240-9a0f-56ed38242c...\G
 
-# Query 14: ID 0x6B489DFEA3F0C668
+# Query 14: ID 0xD6793F4A922CC139
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0     264
+# Exec time       1   1.23s 202.0us  81.1ms   4.7ms  27.2ms 865.0us
+# Lock time       0 407.0us       0 127.0us   1.5us   2.0us   1.0us
+# Rows sent       2 190.98k      25   8.00k  723.00   5.42k     212
+# Rows examined   1 190.98k      25   8.00k  723.00   5.42k     212
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT * FROM player WHERE tenant_id=1 ORDER BY created_at DESC\G
+
+# Query 15: ID 0x6B489DFEA3F0C668
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       8
-# Exec time       1   1.25s 100.8ms 265.9ms 156.5ms 265.9ms 143.3ms
+# Exec time       1   1.14s  90.7ms 254.1ms 143.1ms 254.1ms 134.6ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -278,81 +292,67 @@ SELECT COUNT(id) FROM player WHERE id IN ('6cf8bdbf-1b11-4c45-9573-b6228a487dec'
 # EXPLAIN /*!50100 PARTITIONS*/
 INSERT INTO `visit` VALUES (1,'174f069ca','0001',1652621743),(1,'174f069ca','10001b841',1653294394),(1,'174f069ca','10017632f',1653132861),(1,'174f069ca','10073b42e',1652780382),(1,'174f069ca','1010852e2',1653040249),(1,'174f069ca','10111c8dd',1652672750),(1,'174f069ca','101165cee',1652611036),(1,'174f069ca','1015d77da',1653201132),(1,'174f069ca','10190e408',1652150503),(1,'174f069ca','101ca1c69',1652276209),(1,'174f069ca','101cc6637',1652248084),(1,'174f069ca','101d39213',1653080431),(1,'174f069ca','101de8ed4',1652921154),(1,'174f069ca','101e9d980',1653061862),(1,'174f069ca','10208abf7',1652028401),(1,'174f069ca','10279210a',1652549210),(1,'174f069ca','102a5fd6b',1652709388),(1,'174f069ca','10329fa8a',1652200474),(1,'174f069ca','1034cc4d5',1652241020),(1,'174f069ca','103668e72',1652461977),(1,'174f069ca','103c7730e',1652147057),(1,'174f069ca','104f5b9f5',1652098933),(1,'174f069ca','10536936e',1652636174),(1,'174f069ca','1060be4eb',1652617766),(1,'174f069ca','1062475de',1652883088),(1,'174f069ca','1068c8694',1652793641),(1,'174f069ca','106d4b30a',1653112888),(1,'174f069ca','1081ac776',1653308232),(1,'174f069ca','1087c6f9b',1653221923),(1,'174f069ca','108deb3d5',1652183088),(1,'174f069ca','1094b0e6',1652198261),(1,'174f069ca','1094c69bc',1653311723),(1,'174f069ca','109732bb2',1652892228),(1,'174f069ca','1099b9f7',1653291379),(1,'174f069ca','10a2cb795',1653301182),(1,'174f069ca','10ae5f587',1652919776),(1,'174f069ca','10b1eb8a9',1653211488),(1,'174f069ca','10b234c81',1652954703),(1,'174f069ca','10b6cb1d3',1652157680),(1,'174f069ca','10b738f8b',1652623879),(1,'174f069ca','10bc5ce18',1652860616),(1,'174f069ca','10be0a936',1652976491),(1,'174f069ca','10c56c3b6',1652718462),(1,'174f069ca','10c6bab3a',1652944448),(1,'174f069ca','10cbbc6fa',1652805823),(1,'174f069ca','10ddec2f1',1652517095),(1,'174f069ca','10df160b1',1652934394),(1,'174f069ca','10df669dc',1652275287),(1,'174f069ca','10e52e1b0',1652916717),(1,'174f069ca','10e60c472',1652488258),(1,'174f069ca','10e93942d',1652922460),(1,'174f069ca','10eb91d6f',1652460569),(1,'174f069ca','10f4aafa',1652223368),(1,'174f069ca','10f6785f4',1652389769),(1,'174f069ca','10fabbb03',1652377708),(1,'174f069ca','10fe20d4c',1652183964),(1,'174f069ca','11084b5aa',1652943855),(1,'174f069ca','110eb8e04',1652937624),(1,'174f069ca','111559a3c',1652209504),(1,'174f069ca','111886e2',1652361062),(1,'174f069ca','111e41ee7',1652998327),(1,'174f069ca','1122df907',1653218969),(1,'174f069ca','11262767d',1652111864),(1,'174f069ca','112845657',1652284515),(1,'174f069ca','112f1e563',1652412855),(1,'174f069ca','11311f05c',1653050476),(1,'174f069ca','1133b7134',1652475799),(1,'174f069ca','11442f628',1652276722),(1,'174f069ca','115100a2a',1652466804),(1,'174f069ca','11534f79c',1652958037),(1,'174f069ca','115ca0b96',1652177940),(1,'174f069ca','115ddbab1',1652955687),(1,'174f069ca','1161ebba',1652948516),(1,'174f069ca','116d58837',1652440072),(1,'174f069ca','116fee1e8',1652424222),(1,'174f069ca','1170e246e',1653233367),(1,'174f069ca','11776f81b',1653040424),(1,'174f069ca','117fec5c3',1652142477),(1,'174f069ca','1184348c5',1652366869),(1,'174f069ca','11938a538',1653127976),(1,'174f069ca','11958897c',1652999650),(1,'174f069ca','119bc546b',1653011169),(1,'174f069ca','11a605c9c',1652737834),(1,'174f069ca','11a6676e7',1652687673),(1,'174f069ca','11b110f02',1653091525),(1,'174f069ca','11b367131',1653223894),(1,'174f069ca','11b4bcdd2',1652485625),(1,'174f069ca','11b8442ea',1652200699),(1,'174f069ca','11c5c53c3',1652454628),(1,'174f069ca','11c942c63',1652972649),(1,'174f069ca','11c9a1fcf',1652312310),(1,'174f069ca','11cc3a0f2',1652384794),(1,'174f069ca','11ceb774',1652980475),(1,'174f069ca','11d1606ca',1653072060),(1,'174f069ca','11d26818a',1652181404),(1,'174f069ca','11d2c4db8',1653318589),(1,'174f069ca','11da0933f',1652384507),(1,'174f069ca','11de76062',1652144149),(1,'174f069ca','11e56c42e',1653136756),(1,'174f069ca','11edc6ecf',1652268040),(1,'174f069ca','11f2c8a93',1652752859),(1,'174f069ca','11fa42b65',1652417868),(1,'174f069ca','1205b6dc3',1652650360),(1,'174f069ca','120c18267',1652514630),(1,'174f069ca','120e1b4bc',1652022478),(1,'174f069ca','121f791a3',1652665830),(1,'174f069ca','121fdd330',1652949655),(1,'174f069ca','12289bf6a',1652347748),(1,'174f069ca','12298dab2',1653041266),(1,'174f069ca','123a1229f',1652734067),(1,'174f069ca','1243d147a',1652624990),(1,'174f069ca','12454705',1653332808),(1,'174f069ca','124581685',1653074336),(1,'174f069ca','1248bd0c9',1652148970),(1,'174f069ca','124a5e86e',1652761326),(1,'174f069ca','124c4bb40',1652548936),(1,'174f069ca','1257bd8f',1652975300),(1,'174f069ca','125a9009f',1652463785),(1,'174f069ca','125e964e0',1652491894),(1,'174f069ca','1267fd8af',1652102376),(1,'174f069ca','1269b9e0c',1652378765),(1,'174f069ca','126a1435e',1652719392),(1,'174f069ca','126a93271',1653108666),(1,'174f069ca','127325fb8',1652939564),(1,'174f069ca','12801e4cd',1653026563),(1,'174f069ca','1283be09f',1653272518),(1,'174f069ca','128b83c58',1652645238),(1,'174f069ca','128eedccb',1653111832),(1,'174f069ca','129032c1',1652123214),(1,'174f069ca','12931d947',1653091139),(1,'174f069ca','129422d1f',1652343089),(1,'174f069ca','129514b9',1652892719),(1,'174f069ca','1295f78d0',1652859032),(1,'174f069ca','129826a7e',1652433434),(1,'174f069ca','129b699e1',1652267064),(1,'174f069ca','129f37bac',1653282270),(1,'174f069ca','12a715e56',1652196976),(1,'174f069ca','12a8e351e',1653242796),(1,'174f069ca','12ad6fdc9',1653153372),(1,'174f069ca','12b45ec64',1652592091),(1,'174f069ca','12bb3f078',1652991133),(1,'174f069ca','12bd4226c',1652286518),(1,'174f069ca','12bfabd58',1653066277),(1,'174f069ca','12c171f1b',1652882339),(1,'174f069ca','12c330b5c',1652084846),(1,'174f069ca','12c81c7cc',1652872487),(1,'174f069ca','12c9353c4',1653112463),(1,'174f069ca','12d16dba1',1653015379),(1,'174f069ca','12d6aa126',1652875853),(1,'174f069ca','12d9644ff',1652430551),(1,'174f069ca','12dc14ca8',1652477697),(1,'174f069ca','12e029b10',1652856845),(1,'174f069ca','12e722618',1652942793),(1,'174f069ca','12edcf5a8',1652881346),(1,'174f069ca','12ee707f5',1652743954),(1,'174f069ca','12faf39af',1652842678),(1,'174f069ca','12fb0e794',1653047450),(1,'174f069ca','12fcdbe5b',1653028802),(1,'174f069ca','13001edc5',1652818720),(1,'174f069ca','13007e124',1653291172),(1,'174f069ca','13013c82e',1653117214),(1,'174f069ca','130279e1a',1653125561),(1,'174f069ca','130283a3b',1653074513),(1,'174f069ca','1303c1089',1652515833),(1,'174f069ca','13065918b',1652032533),(1,'174f069ca','1308dd9e7',1653260924),(1,'174f069ca','130a53260',1652506203),(1,'174f069ca','130d3208b',1652572550),(1,'174f069ca','130da9a7e',1652710643),(1,'174f069ca','131604558',1652252034),(1,'174f069ca','131807733',1652699064),(1,'174f069ca','131a258',1652648580),(1,'174f069ca','131c855ff',1652888143),(1,'174f069ca','13250bfba',1652494606),(1,'174f069ca','13269c621',1653254275),(1,'174f069ca','132bca10b',1652921604),(1,'174f069ca','1330bf938',1652976613),(1,'174f069ca','133243c69',1653252215),(1,'174f069ca','1335bee26',1652245742),(1,'174f069ca','1340f868b',1652326987),(1,'174f069ca','1344b5745',1652865314),(1,'174f069ca','134659609',1652788240),(1,'174f069ca','13472400f',1652007937),(1,'174f069ca','134e26702',1652454134),(1,'174f069ca','134fc3076',1652370038),(1,'174f069ca','135855da3',1653128046),(1,'174f069ca','135d57973',1652021190),(1,'174f069ca','13651d5aa',1653264041),(1,'174f069ca','137117c21',1652774135),(1,'174f069ca','1373000a1',1652283216),(1,'174f069ca','137647e1d',1652405003),(1,'174f069ca','137dc464d',1653107990),(1,'174f069ca','137e28799',1652178395),(1,'174f069ca','1392c45c0',1652286531),(1,'174f069ca','1395418e3',1653169559),(1,'174f069ca','139702c97',1653204967),(1,'174f069ca','139c8fb18',1652867451),(1,'174f069ca','139f22ddb',1653333771),(1,'174f069ca','139f69a8a',1653065671),(1,'174f069ca','13a06ee25',1652754026),(1,'174f069ca','13a32e048',1652525714),(1,'174f069ca','13a441e4d',1653282245),(1,'174f069ca','13afd0dfb',1653076624),(1,'174f069ca','13bc9d3e7',1652706201),(1,'174f069ca','13bf1ce4f',1652991449),(1,'174f069ca','13c4da9f9',1652489718),(1,'174f069ca','13cb6f2f4',1652990213),(1,'174f069ca','13cf1b25f',1652439121),(1,'174f069ca','13d17feb6',1652493506),(1,'174f069ca','13d195e5a',1652505374),(1,'174f069ca','13d262f94',1652691925),(1,'174f069ca','13d2bfc3b',1653219582),(1,'174f069ca','13d8036bb',1652910799),(1,'174f069ca','13d842f8',1652372165),(1,'174f069ca','13da375f5',1652644685),(1,'174f069ca','13f456663',1652329614),(1,'174f069ca','13f56cb43',1653058512),(1,'174f069ca','13f5fcbde',1652833037),(1,'174f069ca','13f881463',1653303081),(1,'174f069ca','13f881464',1652715637),(1,'174f069ca','13fda2c00',1652617785),(1,'174f069ca','13ff83b4f',1653195487),(1,'174f069ca','1404019b0',1653281911),(1,'174f069ca','14048f37f',1652888395),(1,'174f069ca','14091bc44',1652850268),(1,'174f069ca','140a7686',1652839825),(1,'174f069ca','140de07b7',1652744551),(1,'174f069ca','140e35ef3',1653120619),(1,'174f069ca','14201ee4e',1652940201),(1,'174f069ca','1426ee0bc',1652699230),(1,'174f069ca','1428c7ab2',1652123927),(1,'174f069ca','1428e0198',1652894497),(1,'174f069ca','1429a3695',1653048793),(1,'174f069ca','142bfe6c7',1652445511),(1,'174f069ca','142ccb84f',1652523989),(1,'174f069ca','143757b64',1653038751),(1,'174f069ca','143d1f8f',1652249277),(1,'174f069ca','143d43d50',1653185324),(1,'174f069ca','143dc7a5d',1652262420),(1,'174f069ca','1443bd8a6',1652861414),(1,'174f069ca','14445c3a5',1653064856),(1,'174f069ca','144672e4b',1652806152),(1,'174f069ca','144a9dca7',1652497048),(1,'174f069ca','144ad85f7',1652039841),(1,'174f069ca','144adfb6e',1652375844),(1,'174f069ca','144cad1f9',1652335582),(1,'174f069ca','1454dbda7',1652944768),(1,'174f069ca','145684a88',1652319850),(1,'174f069ca','1457bab73',1652836353),(1,'174f069ca','145b81843',1652561823),(1,'174f069ca','1461ec986',1652225958),(1,'174f069ca','146250ad6',1653141387),(1,'174f069ca','146857a73',1652951791),(1,'174f069ca','146a00723',1652655775),(1,'174f069ca','146b78712',1652844525),(1,'174f069ca','1473edf74',1652087046),(1,'174f069ca','1473f549c',1652392729),(1,'174f069ca','14746f585',1653205009),(1,'174f069ca','147e7f09a',1652134048),(1,'174f069ca','14857f0a7',1652618188),(1,'174f069ca','148854218',1652411567),(1,'174f069ca','148c1d5bd',1652475817),(1,'174f069ca','148e47932',1653154890),(1,'174f069ca','149593413',1652717392),(1,'174f069ca','14984b082',1653259117),(1,'174f069ca','14a03cbda',1653227002),(1,'174f069ca','14a0be22f',1652441797),(1,'174f069ca','14a199daf',1652451537),(1,'174f069ca','14ab84eb1',1652681896),(1,'174f069ca','14b84c659',1653285017),(1,'174f069ca','14c103d79',1653163830),(1,'174f069ca','14ceae651',1653009496),(1,'174f069ca','14cfdd1b4',1652960223),(1,'174f069ca','14d791c5a',1653017145),(1,'174f069ca','14db254ed',1653086829),(1,'174f069ca','14e127629',1653059455),(1,'174f069ca','14e855c4e',1653313143),(1,'174f069ca','14ea910ca',1652793213),(1,'174f069ca','14ebd8336',1652236271),(1,'174f069ca','14f069cb',1653222221),(1,'174f069ca','14f47e901',1653107779),(1,'174f069ca','14f607a01',1653236600),(1,'174f069ca','14fff03ed',1652845932),(1,'174f069ca','15040ef0a',1652532228),(1,'174f069ca','15055612e',1653277361),(1,'174f069ca','1506abe08',1652423010),(1,'174f069ca','15073e5fa',1652479180),(1,'174f069ca','150c0844',1652543670),(1,'174f069ca','150e8c7dd',1653091973),(1,'174f069ca','150f598f0',1652267132),(1,'174f069ca','15123116e',1652557463),(1,'174f069ca','151973032',1652928335),(1,'174f069ca','151c7dd43',1653263168),(1,'174f069ca','151f68e27',1652512043),(1,'174f069ca','1524bda08',1652414185),(1,'174f069ca','15281b74c',1652184400),(1,'174f069ca','152a592f6',1652142119),(1,'174f069ca','152e4229e',1653163040),(1,'174f069ca','15345a35c',1652533313),(1,'174f069ca','1534ad374',1652804102),(1,'174f069ca','1535a640e',1652445346),(1,'174f069ca','1539e71d6',1652506663),(1,'174f069ca','153f8c6f1',1652630392),(1,'174f069ca','154ae343d',1652298927),(1,'174f069ca','154dda87b',1652775649),(1,'174f069ca','154e019b1',1652666727),(1,'174f069ca','1553146d9',1652362754),(1,'174f069ca','15561a598',1652400763),(1,'174f069ca','155975ba3',1652224474),(1,'174f069ca','155b7dc0e',1652647164),(1,'174f069ca','1562a73b4',1652500025),(1,'174f069ca','156c8d6dc',1653337326),(1,'174f069ca','1570ee08b',1652267927),(1,'174f069ca','15715be72',1653146266),(1,'174f069ca','1571a7df',1653028461),(1,'174f069ca','1573af995',1653182964),(1,'174f069ca','157573400',1652930930),(1,'174f069ca','1578fd014',1652727301),(1,'174f069ca','15791f31f',1652154982),(1,'174f069ca','157c7d062',1652454041),(1,'174f069ca','1581701be',1653074782),(1,'174f069ca','15859fe29',1652113272),(1,'174f069ca','158899989',1652929756),(1,'174f069ca','158dc2654',1652525981),(1,'174f069ca','158f812c3',1652287500),(1,'174f069ca','1592711f1',1652523745),(1,'174f069ca','1594bd814',1652985064),(1,'174f069ca','159c044c6',1653172613),(1,'174f069ca','159c4ff99',1652551712),(1,'174f069ca','15a0208c9',1652938351),(1,'174f069ca','15a42e226',1653263799),(1,'174f069ca','15a48126f',1652345357),(1,'174f069ca','15c62b533',1652863999),(1,'174f069ca','15caf002b',1652404918),(1,'174f069ca','15cc8f0d3',1652974916),(1,'174f069ca','15cfa3a4f',1653294788),(1,'174f069ca','15e363c7b',1652838836),(1,'174f069ca','15ed8e84',1652865629),(1,'174f069ca','15efc72dc',1652973435),(1,'174f069ca','15f2111ef',1652620296),(1,'174f069ca','15f2e0a39',1653295167),(1,'174f069ca','15f70912c',1652721810),(1,'174f069ca','15fa9a2ad',1653140530),(1,'174f069ca','15fd594b1',1652150795),(1,'174f069ca','15fe5e883',1652673093),(1,'174f069ca','15ff837b1',1653059463),(1,'174f069ca','16035dd40',1652968779),(1,'174f069ca','160677496',1652290614),(1,'174f069ca','1609c191c',1652522270),(1,'174f069ca','160b37195',1653063041),(1,'174f069ca','160d1cefa',1653302506),(1,'174f069ca','160f890bd',1653183363),(1,'174f069ca','1610f7412',1653295229),(1,'174f069ca','1613b3f2e',1652947758),(1,'174f069ca','16148d3a2',1652400367),(1,'174f069ca','161ad61c3',1652310057),(1,'174f069ca','162025fb0',1652182000),(1,'174f069ca','162564bf9',1652989669),(1,'174f069ca','1625a1c97',1652525494),(1,'174f069ca','1627c4ab4',1652136114),(1,'174f069ca','162b2eae2',1652853364),(1,'174f069ca','162b47186',1653140677),(1,'174f069ca','162e67f1',1653258533),(1,'174f069ca','162fa075',1652842117),(1,'174f069ca','1630f8a15',1652752611),(1,'174f069ca','1637ccab8',1653244211),(1,'174f069ca','163cf305f',1652111055),(1,'174f069ca','163d7e2f1',1652492193),(1,'174f069ca','163e9483d',1652589777),(1,'174f069ca','16437680e',1653173662),(1,'174f069ca','1651481a2',1652657864),(1,'174f069ca','16526ae9',1652713545),(1,'174f069ca','165466ac',1652526078),(1,'174f069ca','1658ee1cf',1652989426),(1,'174f069ca','165bc0c5b',1652114040),(1,'174f069ca','1669f8e93',1652930975),(1,'174f069ca','1671979a6',1652770791),(1,'174f069ca','167485187',1652649101),(1,'174f069ca','1677e07b6',1653152109),(1,'174f069ca','1678bc369',1652146122),(1,'174f069ca','167c60d12',1653138948),(1,'174f069ca','1683c0051',1652263778),(1,'174f069ca','1692d3e7b',1652427614),(1,'174f069ca','1693d43c8',1652305192),(1,'174f069ca','169806784',1652384247),(1,'174f069ca','169a70234',1652050532),(1,'174f069ca','169d8999d',1652718076),(1,'174f069ca','16a97f1b5',1653294465),(1,'174f069ca','16af5a24b',1652785788),(1,'174f069ca','16b7bc215',1652254732),(1,'174f069ca','16b86226c',1652854652),(1,'174f069ca','16b969d0c',1652710348),(1,'174f069ca','16bbb6359',1653006531),(1,'174f069ca','16c756453',1652954023),(1,'174f069ca','16cc6dfcd',1652566946),(1,'174f069ca','16cf91382',1652484756),(1,'174f069ca','16d9182e5',1652101832),(1,'174f069ca','16e62dc76',1652938328),(1,'174f069ca','16e6ca0aa',1652829747),(1,'174f069ca','16e997d06',1652601804),(1,'174f069ca','16ed3edfd',1653156144),(1,'174f069ca','16ed9e136',1653070078),(1,'174f069ca','16ef112a4',1652171731),(1,'174f069ca','16f1870fb',1653333241),(1,'174f069ca','16f428e2b',1652753230),(1,'174f069ca','16fe50fc8',1653219653),(1,'174f069ca','1700a7223',1652371802),(1,'174f069ca','170435c81',1652594211),(1,'174f069ca','1707fc907',1652368818),(1,'174f069ca','170e58fde',1652954152),(1,'174f069ca','170f8c9d1',1652109518),(1,'174f069ca','172351a58',1653077549),(1,'174f069ca','17272e6af',1653033500),(1,'174f069ca','17276b722',1653265234),(1,'174f069ca','1728499c9',1653043038),(1,'174f069ca','172a8c383',1652313871),(1,'174f069ca','172e46ce1',1652494685),(1,'174f069ca','172e72d5',1652603486),(1,'174f069ca','173239923',1652249773),(1,'174f069ca','17355302e',1652843862),(1,'174f069ca','1745b7cc3',1653007000),(1,'174f069ca','1748e73ac',1652810944),(1,'174f069ca','1748fac1b',1653131202),(1,'174f069ca','1758e096b',1652455660),(1,'174f069ca','17593123b',1652394401),(1,'174f069ca','175c8a15f',1652191197),(1,'174f069ca','175fa11a7',1652968802),(1,'174f069ca','1762f05a',1652738642),(1,'174f069ca','17637688a',1652523284),(1,'174f069ca','176415381',1653229814),(1,'174f069ca','17641c8f1',1652162745),(1,'174f069ca','176630c79',1652518428),(1,'174f069ca','17681b7ef',1653017335),(1,'174f069ca','177740765',1652402470),(1,'174f069ca','178117fc7',1652925681),(1,'174f069ca','178216c',1652328501),(1,'174f069ca','17828d86d',1653129878),(1,'174f069ca','1784cb3e7',1652569007),(1,'174f069ca','178941d64',1652140245),(1,'174f069ca','1795faac0',1652265162),(1,'174f069ca','1797c3344',1652841915),(1,'174f069ca','1799e1368',1652788349),(1,'174f069ca','179e57ca9',1652473470),(1,'174f069ca','17a12f520',1652200612),(1,'174f069ca','17a2f08c9',1653081619),(1,'174f069ca','17a3c7648',1652930076),(1,'174f069ca','17a89d2a6',1652532205),(1,'174f069ca','17a94a83c',1653228886),(1,'174f069ca','17a9bfb45',1652291285),(1,'174f069ca','17b871e77',1653282400),(1,'174f069ca','17be89f66',1653157872),(1,'174f069ca','17bff5bcb',1652008133),(1,'174f069ca','17c4194d2',1652698788),(1,'174f069ca','17cd06795',1652019642),(1,'174f069ca','17ce6aeb9',1652324441),(1,'174f069ca','17d0cad15',1652419373),(1,'174f069ca','17d239069',1653274481),(1,'174f069ca','17d5c7aae',1652439700),(1,'174f069ca','17d5cc913',1653055403),(1,'174f069ca','17d82a096',1652231640),(1,'174f069ca','17dec5e95',1652807083),(1,'174f069ca','17e394613',1652105392),(1,'174f069ca','17e854336',1652905886),(1,'174f069ca','17ee368da',1652094650),(1,'174f069ca','17f017817',1653302367),(1,'174f069ca','17f756fc1',1653161252),(1,'174f069ca','17fb02ee0',1652745777),(1,'174f069ca','18037fc44',1652900354),(1,'174f069ca','1805a78a7',1653078451),(1,'174f069ca','181718dea',1652330498),(1,'174f069ca','1818eb2eb',1652592320),(1,'174f069ca','182363d6f',1652361194),(1,'174f069ca','18320052',1652919021),(1,'174f069ca','18321aedb',1652957300),(1,'174f069ca','1834e672',1653015030),(1,'174f069ca','1836bd718',1652685835),(1,'174f069ca','183e0b930',1652069946),(1,'174f069ca','184694a3e',1652131942),(1,'174f069ca','1851345c9',1652954795),(1,'174f069ca','18541f6ec',1653170431),(1,'174f069ca','185f0ad85',1653144306),(1,'174f069ca','186019d46',1653280537),(1,'174f069ca','1860a01e6',1653000117),(1,'174f069ca','18659f674',1652914748),(1,'174f069ca','1866df3ba',1652650847),(1,'174f069ca','186dd0b8',1652018770),(1,'174f069ca','1872b2925',1652710060),(1,'174f069ca','18768a735',1652297048),(1,'174f069ca','18779e55e',1652054306),(1,'174f069ca','187ebe135',1652076419),(1,'174f069ca','18808b7cc',1652350624),(1,'174f069ca','188446148',1652244459),(1,'174f069ca','1885aa873',1652698561),(1,'174f069ca','18871b301',1652980872),(1,'174f069ca','188750e78',1652723995),(1,'174f069ca','188ae1fd1',1652978268),(1,'174f069ca','188f9f5b9',1652186662),(1,'174f069ca','189062a94',1652386073),(1,'174f069ca','1891a0107',1652105751),(1,'174f069ca','1894f4186',1652622370),(1,'174f069ca','1896588bf',1652129493),(1,'174f069ca','189bdbac8',1652827018),(1,'174f069ca','189db2e26',1652439932),(1,'174f069ca','189e42ebc',1652526530),(1,'174f069ca','189e67898',1652320014),(1,'174f069ca','18a5fa037',1652867663),(1,'174f069ca','18a791bc5',1652428199),(1,'174f069ca','18a904d45',1652782611),(1,'174f069ca','18ad67e15',1652841649),(1,'174f069ca','18ae39d63',1653003168),(1,'174f069ca','18b674c44',1652095981),(1,'174f069ca','18b9f732c',1652386039),(1,'174f069ca','18ba69f22',1652295328),(1,'174f069ca','18bcdd666',1652317569),(1,'174f069ca','18c4bdff6',1652671554),(1,'174f069ca','18c607958',1652975449),(1,'174f069ca','18c7e88ac',1653266720),(1,'174f069ca','18cc8ff0e',1652082468),(1,'174f069ca','18d25771b',1652300205),(1,'174f069ca','18d9b1c23',1652230994),(1,'174f069ca','18ddd5560',1652982202),(1,'174f069ca','18e20c6ff',1653217472),(1,'174f069ca','18e5da90a',1653084934),(1,'174f069ca','18ebb8063',1652675983),(1,'174f069ca','18ebeb497',1653088572),(1,'174f06...\G
 
-# Query 15: ID 0xD6793F4A922CC139
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     268
-# Exec time       1   1.10s 130.0us  92.5ms   4.1ms  26.0ms 813.0us
-# Lock time       0 269.0us       0  15.0us   1.0us   1.0us   1.0us
-# Rows sent       2 177.92k      24   8.05k  663.00   5.41k     196
-# Rows examined   1 177.92k      24   8.05k  663.00   5.41k     196
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM player WHERE tenant_id=1 ORDER BY created_at DESC\G
-
 # Query 16: ID 0xB099F0576D4C8510
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           2    9033
-# Exec time       1 780.7ms  27.0us  71.7ms  86.4us  93.0us  55.0us
-# Lock time       1   6.8ms       0 419.0us 756.0ns   1.0us   1.0us
+# Count           2    9945
+# Exec time       1 789.0ms  29.0us  47.2ms  79.3us  86.0us  55.0us
+# Lock time       1   7.2ms       0 105.0us 720.3ns   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO player (id, tenant_id, display_name, is_disqualified, created_at, updated_at) VALUES ('079c1e95-f494-41dd-a48f-f3075283b6e4', 138, 'ranking_check_78', 0, 1658564657, 1658564657)\G
+INSERT INTO player (id, tenant_id, display_name, is_disqualified, created_at, updated_at) VALUES ('fcb49d6b-009d-4734-9251-c7bf1da980bb', 154, 'validate_player82', 0, 1658565064, 1658565064)\G
 
 # Query 17: ID 0x0827D5A14DD47F0A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           1    2610
-# Exec time       1 677.4ms  91.0us  16.8ms 259.6us 573.0us 167.0us
-# Lock time       1   5.2ms       0 706.0us   2.0us   2.0us   1.0us
-# Rows sent       0  32.60k       1      36   12.00      27      12
-# Rows examined   0  50.67k       1   1.23k   19.00      28      12
+# Count           1    2595
+# Exec time       0 645.7ms  91.0us   8.1ms 248.8us 512.0us 174.0us
+# Lock time       1   3.1ms       0 165.0us   1.2us   2.0us   1.0us
+# Rows sent       0  33.90k       1      36   13.00      28      12
+# Rows examined   0  37.50k       1   1.22k   14.00      28      12
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE tenant_id=145 ORDER BY created_at DESC\G
+SELECT * FROM competition WHERE tenant_id=20 ORDER BY created_at DESC\G
 
 # Query 18: ID 0x60EB49FD82480245
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     303
-# Exec time       0 505.6ms 158.0us  24.9ms   1.7ms   5.1ms 947.0us
-# Lock time       0 340.0us       0 118.0us   1.1us   1.0us   1.0us
+# Count           0     299
+# Exec time       0 506.3ms 171.0us  20.5ms   1.7ms   6.0ms 965.0us
+# Lock time       0 254.0us       0  16.0us 849.5ns   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0  74.57k       2   1.00k  246.00   1.00k     188
+# Rows examined   0  77.71k       9   1.00k  259.00   1.00k     194
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-DELETE FROM last_player_score WHERE tenant_id = 29 AND competition_id = 'f6926ea1-ac77-4e8b-95cf-ebafe2246bf4' AND created_at < 1658564711\G
+DELETE FROM last_player_score WHERE tenant_id = 1 AND competition_id = '8210859e-a6b4-4a6e-8602-5763abc4e8cc' AND created_at < 1658565119\G
 
 # Query 19: ID 0x4E39CD28A560644F
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0    1308
-# Exec time       0 259.5ms  81.0us   4.9ms 198.4us 715.0us 132.0us
-# Lock time       0   1.3ms       0  17.0us 971.7ns   1.0us   1.0us
-# Rows sent       0  14.95k       0      33   11.00      20      12
-# Rows examined   0 109.89k       0   1.21k   84.00   1.20k      12
+# Count           0    1298
+# Exec time       0 240.3ms  81.0us   6.1ms 185.1us 343.0us 134.0us
+# Lock time       0   1.4ms       0  16.0us   1.1us   1.0us   1.0us
+# Rows sent       0  14.97k       0      34   11.00      20      12
+# Rows examined   0  36.26k       0   1.21k   27.00      20      12
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE tenant_id=85\G
+SELECT * FROM competition WHERE tenant_id=22\G
 
 # Query 20: ID 0x7999228A4DB29D7A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 257.1ms 257.1ms 257.1ms 257.1ms 257.1ms 257.1ms
+# Exec time       0 222.4ms 222.4ms 222.4ms 222.4ms 222.4ms 222.4ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -366,36 +366,22 @@ INSERT INTO `player` VALUES ('0001',1,'ISUコンボイ',0,1651363200,1651363200)
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0     274
-# Exec time       0  80.8ms 100.0us   5.4ms 295.1us 726.0us 149.0us
-# Lock time       0 297.0us       0  16.0us   1.1us   2.0us   1.0us
+# Exec time       0  90.1ms 103.0us   7.8ms 328.7us   1.2ms 156.0us
+# Lock time       0 312.0us       0  18.0us   1.1us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0     274       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-UPDATE competition SET finished_at = 1658564684, updated_at = 1658564684 WHERE id = '2c2d06a9-9169-4ed6-a4e5-32b99b4369b3'\G
+UPDATE competition SET finished_at = 1658565099, updated_at = 1658565099 WHERE id = '68fa0895-2f90-4cc8-9944-9513c87b6892'\G
 
-# Query 22: ID 0x6E5D84A8CC6E9DB3
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     284
-# Exec time       0  58.0ms  69.0us   6.5ms 204.2us 287.0us 105.0us
-# Lock time       0 303.0us       0  12.0us   1.1us   2.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_at) VALUES ('43cee459-19e1-4b4b-9a78-c9b970f793a9', 149, '赤羽教室 vol.0', NULL, 1658564712, 1658564712)\G
-
-# Query 23: ID 0xC8CCC170F178D27C
+# Query 22: ID 0xC8CCC170F178D27C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  55.1ms  55.1ms  55.1ms  55.1ms  55.1ms  55.1ms
-# Lock time       0  12.0us  12.0us  12.0us  12.0us  12.0us  12.0us
+# Exec time       0  58.4ms  58.4ms  58.4ms  58.4ms  58.4ms  58.4ms
+# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -404,11 +390,25 @@ INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_
 # EXPLAIN /*!50100 PARTITIONS*/
 DROP TABLE IF EXISTS `last_player_score`\G
 
+# Query 23: ID 0x6E5D84A8CC6E9DB3
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0     281
+# Exec time       0  58.3ms  74.0us   7.4ms 207.6us 296.0us 108.0us
+# Lock time       0 311.0us       0  14.0us   1.1us   2.0us   1.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_at) VALUES ('4d276ac3-718a-4596-ac16-082a9cc78d3b', 168, 'サーバ係大会', NULL, 1658565103, 1658565103)\G
+
 # Query 24: ID 0x813031B8BBC3B329
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     350
-# Exec time       0  42.3ms  31.0us   7.8ms 120.8us  91.0us  54.0us
+# Count           0     349
+# Exec time       0  37.9ms  29.0us  10.2ms 108.6us  88.0us  55.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -418,26 +418,12 @@ DROP TABLE IF EXISTS `last_player_score`\G
 # EXPLAIN /*!50100 PARTITIONS*/
 COMMIT\G
 
-# Query 25: ID 0xCE0293B4FFBDE858
+# Query 25: ID 0xB711A299ADC32792
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     145
-# Exec time       0  27.6ms 118.0us   1.5ms 190.6us 244.0us 179.0us
-# Lock time       0 166.0us       0  18.0us   1.1us   1.0us   1.0us
-# Rows sent       0  16.08k     102     116  110.00     115     111
-# Rows examined   0  16.08k     102     116  110.00     115     111
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant ORDER BY id DESC\G
-
-# Query 26: ID 0xB711A299ADC32792
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     350
-# Exec time       0  24.7ms  39.0us   1.5ms  70.6us 114.0us  54.0us
-# Lock time       0   3.0us       0   3.0us   8.6ns       0       0
+# Count           0     349
+# Exec time       0  33.1ms  39.0us   4.6ms  94.9us 130.0us  55.0us
+# Lock time       0   1.0us       0   1.0us   2.9ns       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -446,11 +432,25 @@ SELECT * FROM tenant ORDER BY id DESC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 Prepare\G
 
+# Query 26: ID 0xCE0293B4FFBDE858
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0     144
+# Exec time       0  28.6ms 117.0us   2.3ms 198.7us 236.0us 185.0us
+# Lock time       0 149.0us       0   2.0us   1.0us   2.0us   1.0us
+# Rows sent       0  15.95k     103     116  110.00     115     111
+# Rows examined   0  15.95k     103     116  110.00     115     111
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT * FROM tenant ORDER BY id DESC\G
+
 # Query 27: ID 0x13425781EDD3EB5A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  23.8ms  23.8ms  23.8ms  23.8ms  23.8ms  23.8ms
+# Exec time       0  25.7ms  25.7ms  25.7ms  25.7ms  25.7ms  25.7ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -460,25 +460,11 @@ Prepare\G
 # EXPLAIN /*!50100 PARTITIONS*/
 INSERT INTO `competition` VALUES ('103836525',28,'エンジョイブルーベリー海岸大会',NULL,1651798591,1652684894),('10740e22b',27,'パッションフルーツ丼 vol.4',NULL,1651804866,1652236647),('10c826747',35,'横浜倶楽部大会',NULL,1651813684,1653830848),('1109b4b19',15,'ミニトマト騎士団',1653516935,1651820558,1653516935),('11805077e',33,'第1回 第3ネギ店',1653045930,1651832995,1653045930),('1193fd146',8,'西いちじくず',1652218798,1651835058,1652218798),('11990626b',21,'第9回 ドラゴンフルーツ野郎',NULL,1651835586,1653218553),('12339ae82',15,'箱出しモリスメランコリー',1651863417,1651851795,1651863417),('125ca9262',15,'三軒茶屋オペレーションズカップ',NULL,1651856100,1653396097),('127cddcaf',41,'エールだもの',1652849328,1651859477,1652849328),('127f6e835',30,'-rf鎌倉だねえ杯',1651971768,1651859746,1651971768),('12998634c',22,'和光市中毒 #7',1652176623,1651862482,1652176623),('12b8b3297',34,'シークワーサークラッシャーカップ',NULL,1651865751,1652264645),('12d6549d3',44,'桜木町のお茶会杯',1653912945,1651868858,1653912945),('136372179',21,'JSON色付け計画大会',1653454951,1651883655,1653454951),('138628d31',30,'カジュアルライチマニア大会',1652573577,1651887295,1652573577),('13bfdb55c',30,'おばさんもどき #7',1652389424,1651893345,1652389424),('13cfe357d',33,'大統一渋谷コミック杯',NULL,1651895026,1653675009),('13f4c440f',14,'広尾乙女杯',NULL,1651898893,1653969794),('13f6ceb68',19,'第1回 表参道株式会社',NULL,1651899107,1653963812),('146785b3a',31,'枝豆は諦めたカップ',NULL,1651910926,1653032336),('14714c229',32,'リッチ自作キーボード野郎 #4',NULL,1651911951,1652224945),('1485fdfe8',2,'プレミアムキレまみれ杯',1651938482,1651914121,1651938482),('14d7c5086',36,'リアクティブスマホ劇場杯',1653038937,1651922696,1653038937),('14e3cbaa3',48,'第9回 すべからく魔剤支部',1652121209,1651923957,1652121209),('14e57bc88',18,'第4回 会えるかぼちゃテーマパーク',1653750664,1651924134,1653750664),('14fc7ee53',25,'リッチ東京組 vol.0',NULL,1651926547,1652066675),('155bc48ec',36,'トンポーローキックカップ',NULL,1651936537,1652221720),('155bf560c',3,'業務中にエビチリ部カップ',NULL,1651936557,1653383797),('1562e1d87',19,'スライディング課金システム #2',NULL,1651937283,1653429612),('1588887fd',45,'りんご勢カップ',1652764248,1651941231,1652764248),('15a76c3b4',5,'トマトは諦めた杯',NULL,1651944470,1653478410),('15a88ec1e',45,'第5回 シークワーサー風',NULL,1651944589,1652020995),('15c1690cd',42,'すこしマンゴーマニア vol.0',1653775538,1651947195,1653775538),('15e88c97a',14,'麻婆ブランデー段階',NULL,1651951299,1652920926),('15f0c2a29',20,'甘口ロードアベレージスターズ',NULL,1651952160,1653315589),('161b13288',21,'荻窪本舗大会',NULL,1651956597,1652086675),('1668799cc',25,'今夜は立川ごはん杯',NULL,1651964713,1652560175),('16799ccfb',6,'プロセス同盟カップ',NULL,1651966510,1652967921),('16a837f98',30,'第7回 新宿の如し',NULL,1651971397,1652903829),('16dbd26db',47,'二子玉川商事カップ',1652256508,1651976808,1652256508),('16df8a920',15,'赤ボルダリング工房 #6',NULL,1651977198,1652564058),('16ff4a03b',42,'第3回 リリー大好き',1652533967,1651980527,1652533967),('1700d7f64',49,'白ペペロンチーノ工場カップ',1653890681,1651980690,1653890681),('171992842',43,'プレミアムC10K党 #8',1653248853,1651983283,1653248853),('1724e4789',54,'必勝のモンゴ組 #3',NULL,1651984470,1653617622),('173494944',3,'スピリチュアル町田に全振りカップ',1653236118,1651986115,1653236118),('1748f5dd8',33,'北もやしTHAN',NULL,1651988252,1652114270),('174f069ca',1,'第3回 隠れ家的サーバ都市',1653340832,1651988888,1653340832),('17ad3fb60',14,'第7回 スペシャルココナッツオペレーションズ',1653278042,1651998768,1653278042),('17b0dcfc5',55,'カニします',NULL,1651999147,1652669419),('17b2046a0',19,'やっぱりうどん出張所 #7',1653105215,1651999268,1653105215),('17fd87779',57,'第9回 池袋ラボ',1653149496,1652007186,1653149496),('1818b579a',55,'第9回 椅子C10Kの森',1652434448,1652010036,1652434448),('183992901',12,'すべからくオレンジ合衆国',NULL,1652013482,1652697489),('184b9b3e1',59,'第2回 ほうれん草百貨店',NULL,1652015373,1652546907),('186e1eb48',54,'パッションフルーツ整骨院カップ',NULL,1652018992,1653727147),('187691c88',44,'会えるカメラ書房 #6',1652710498,1652019878,1652710498),('188b48883',55,'徹底的マンゴー乙女',1652877756,1652022050,1652877756),('188fc18d3',39,'第3タゴ無双カップ',1653829647,1652022519,1653829647),('189eae582',39,'第3回 非同期白菜症候群',1653663719,1652024084,1653663719),('18bc2b289',15,'第5回 赤羽から始めるXSUCON',1652742843,1652027176,1652742843),('18cf95e14',42,'北千住テーマパーク大会',NULL,1652029212,1653338729),('18dd69e9d',13,'イスレンジャー',NULL,1652030662,1652528265),('1901eb9e1',33,'自由が丘.js大会',NULL,1652034490,1652730975),('19750eb75',36,'第2回 羽つき浸透依存症',1652329824,1652046563,1652329824),('1976843d5',37,'第3回 無農薬解体茶',1653230814,1652046716,1653230814),('1998c5c8e',61,'第8回 ネギプリン',NULL,1652050308,1652739820),('19f4163d4',17,'新マスクを信じろ杯',NULL,1652059883,1653225581),('19f77b605',13,'多重レタス部',1652600642,1652060239,1652600642),('19f8ee7c0',8,'第2回 ミラで解決',NULL,1652060391,1653420810),('19feda94a',44,'エール症候群 vol.4',NULL,1652061012,1653470790),('1a0205203',1,'すべからくサーバ乃月杯',NULL,1652061344,1652215777),('1a182c84a',47,'第9回 ステージングモリス計画',NULL,1652063667,1652192313),('1a30ceb04',3,'相撲亭',1653378009,1652066250,1653378009),('1a37549b0',42,'平面的ワインの世界 #3',NULL,1652066934,1653100027),('1a5b3ef03',61,'第8回 そば百貨店',NULL,1652070700,1653119192),('1a69770f5',50,'パパイヤだねえ',1653639339,1652072191,1653639339),('1a8829f50',6,'昭和ダッシュを信じろカップ',1652785217,1652075410,1652785217),('1a9c3f914',60,'三度の飯よりペペロンチーノレンジャー大会',NULL,1652077516,1653466095),('1aa6457c9',57,'第9回 出会って5秒で吉祥寺ゼロ',NULL,1652078567,1653554608),('1ac0b9ee7',15,'バンバンジーはバランスいい大会',NULL,1652081341,1653396080),('1af57e3fd',49,'第3回 IPA派',NULL,1652086874,1653841718),('1afd6fee9',9,'ラッキーおじさん本部杯',NULL,1652087707,1652327162),('1b2445541',59,'第4回 恵比寿党',1653251084,1652091779,1653251084),('1b3870e92',22,'第9回 ミルクヶ丘',1653029811,1652093894,1653029811),('1b395669e',27,'第3回 アイドル大宮と俺',1653050939,1652093988,1653050939),('1b4b15ddc',52,'第1回 大きな舞浜する方法',NULL,1652095849,1653724637),('1b562d359',27,'枝豆の晩餐 #8',1653875586,1652097012,1653875586),('1b5d14cbf',4,'第7回 闇の洋梨家',1653744911,1652097736,1653744911),('1b71c4370',50,'ブルーベリーから始めるXSUCON #3',NULL,1652099905,1653920331),('1bb54bcd1',11,'ベンチマーク同好会カップ',1653303323,1652106986,1653303323),('1bc806bb7',8,'今夜はみたらし動物園',NULL,1652108950,1653803833),('1be97167b',65,'浦和！ #4',NULL,1652112454,1652983564),('1c05a9856',58,'第5回 焼き品川入門',NULL,1652115413,1653859603),('1c05d7e9e',39,'和風プロファイリング食べたい vol.1',NULL,1652115432,1652707742),('1c06f8006',50,'すこしキャベツがヤバい vol.8',1652286321,1652115550,1652286321),('1c2910056',44,'マルチハーの世界大会',NULL,1652119125,1653316441),('1c31c0265',8,'スパゲッティ研究所 #3',1653402924,1652120036,1653402924),('1c59b5a77',9,'無限エール単推し杯',1653452891,1652124226,1653452891),('1c8635415',26,'多段いちじく帝国 vol.9',NULL,1652128892,1653979742),('1c9538068',54,'スマホさん杯',1654010416,1652130466,1654010416),('1c957c626',57,'ようこそポンカン物語カップ',1652852462,1652130494,1652852462),('1cd550b69',67,'第3回 にんじんは諦めた',NULL,1652137187,1652391233),('1d028ec0b',36,'よしなに運営づくし #5',NULL,1652141931,1653626787),('1d204fecc',27,'あなたと白菜.js杯',1652351254,1652145051,1652351254),('1d5d20c8f',53,'第4回 腹筋クラッシャー',NULL,1652151428,1653354946),('1d855f85f',26,'限界集落三軒茶屋乃月カップ',NULL,1652155648,1652160191),('1d95b8164',29,'薔薇駆動開発杯',1652869351,1652157362,1652869351),('1d969640a',42,'世界のたまプラーザ完全理解杯',NULL,1652157453,1653564495),('1d98db4b8',71,'第8回 メイン大臀筋帝国',1653522163,1652157691,1653522163),('1de615ce1',71,'ウルトラブロッコリー共和国大会',1652416247,1652165789,1652416247),('1df4f184b',71,'第2回 洋風東京テクノロジーズ',NULL,1652167347,1653073174),('1e0a1fe5c',13,'第4回 子供用みかん絵本',NULL,1652169568,1653397781),('1e150dbd8',72,'第5回 バナナもどき',NULL,1652170714,1652233451),('1e199a485',47,'ミルクシスターズ',1653693270,1652171191,1653693270),('1e19fbef5',46,'浸透する方法',1653333296,1652171231,1653333296),('1e3dd79fd',19,'GPGPUメランコリー大会',1653844371,1652174991,1653844371),('1e3e6a1b3',12,'群馬のパブ方式',1652385054,1652175051,1652385054),('1e5c796c3',49,'大きなミニトマトできた #1',NULL,1652178203,1653286692),('1e6e75ea7',4,'第7回 マジックハードウェア効果',1652557758,1652180089,1652557758),('1e87b4518',27,'和光市食堂杯',NULL,1652182736,1652516833),('1e8f0c32e',59,'西びわの如し大会',1653322621,1652183506,1653322621),('1e9bc50c4',8,'第3回 破壊的アロエ風',1652563012,1652184840,1652563012),('1eb27c77b',44,'第8回 ネットワークしかねえ',NULL,1652187222,1652554654),('1ecea1123',26,'第6回 きゅうりで再起動',1653151402,1652190173,1653151402),('1edb96ed8',7,'第7回 よくわかるマーケティング食べたい',1652638459,1652191532,1652638459),('1efd0dd1d',8,'すべからく寿司中毒 #8',1652423871,1652195041,1652423871),('1f0070890',52,'クライアント家族 vol.3',1652916743,1652195396,1652916743),('1f12597a2',47,'第8回 千葉のアワビごはん',1652214487,1652197274,1652214487),('1f1edc9f3',14,'第2回 アイドルfast中毒',1652957123,1652198586,1652957123),('1f3aa950e',31,'パブ.pl大会',1653506108,1652201501,1653506108),('1f3b3958e',21,'ライブの缶詰 #6',NULL,1652201560,1652245493),('1f43b3c6d',19,'第3回 藤沢通信社',1652460678,1652202449,1652460678),('1f5e876eb',71,'できたて無職屋',NULL,1652205262,1652629722),('1f9082d8b',77,'第6回 あの浦和！',NULL,1652210503,1653491210),('1fa13d113',67,'あわよくばエラービーチ杯',1653691574,1652212257,1653691574),('1fa601c8f',66,'第4回 ミネストローネ部',1652776242,1652212757,1652776242),('1fd2b7172',48,'第5回 マンゴスチン同好会',1654013754,1652217445,1654013754),('1fed020a8',56,'いっけな〜いスイカ神社杯',NULL,1652220202,1652334219),('200bb9d45',61,'マスカット地獄杯',1652321559,1652223423,1652321559),('203f1c1f6',60,'奇跡のチェンソーの如し大会',1652956203,1652228811,1652956203),('204b1b693',79,'秋葉原夜会杯',1653953731,1652230069,1653953731),('20690889d',40,'荻窪興信所杯',1653188944,1652233207,1653188944),('20913b0e8',36,'第5運営株式会社 vol.2',1653912649,1652237422,1653912649),('20a3c045b',19,'山の甘みシステム杯',1652258269,1652239364,1652258269),('20d2ce2a7',65,'元祖サーバ完全理解カップ',NULL,1652244298,1652798097),('20e8f0aed',14,'勝利の年収倶楽部カップ',1653464672,1652246619,1653464672),('20eb46d41',48,'さいたま新都心鎮魂歌 vol.9',NULL,1652246864,1653549116),('20f006a24',44,'青山一丁目大好き #5',1653486848,1652247362,1653486848),('211429239',35,'柿劇場 #6',NULL,1652251151,1653000467),('211a8a6e8',36,'第4回 がんばれマスカット家族',NULL,1652251820,1652582373),('2121ec17e',61,'半二重ブルーベリーオペレーションズカップ',NULL,1652252594,1652595485),('21333657b',67,'スターフルーツ堂大会',1652957707,1652254407,1652957707),('213dd12fa',74,'スキニーアワビ理論 #8',NULL,1652255519,1652951908),('2140caeac',73,'限界集落立川興信所 #3',1652701099,1652255831,1652701099),('2148efdfd',82,'ぶどう本舗大会',NULL,1652256685,1652780751),('214f07ec1',44,'第2回 自動桜木町家族',NULL,1652257324,1654025591),('21a27cad0',24,'実はマーケティング大学 #4',1652724675,1652266075,1652724675),('21a44536e',28,'ハードウェアドーナツカップ',1653615112,1652266262,1653615112),('21b7a899b',82,'インデックスの晩餐 vol.5',1653637746,1652268295,1653637746),('21bd4428f',54,'スライディングProtocolテーマパーク大会',NULL,1652268883,1652321940),('2203ea170',49,'レタスがいる #4',1652317292,1652276291,1652317292),('2226b1e3d',44,'キャベツだねえ杯',NULL,1652279938,1653596543),('22288df9e',39,'第2回 本家川崎整骨院',1653243954,1652280133,1653243954),('22346ff49',60,'第3大宮.pl杯',1653369732,1652281379,1653369732),('223971b13',74,'インデックス同好会杯',1653648751,1652281904,1653648751),('2260a8c04',31,'本番寿司.rb #2',NULL,1652286016,1653275555),('22624078e',57,'最高運営BETTER vol.2',NULL,1652286183,1653417360),('227fb86e8',82,'はやくもピルスナー90%オフ vol.2',NULL,1652289273,1653227567),('228b42893',76,'第2回 無職メランコリー',NULL,1652290483,1653631525),('2293b0b93',44,'アロエしてもろて',1653228249,1652291367,1653228249),('22c60dce0',14,'甘口立川企画',1652369565,1652296648,1652369565),('22cc62e27',16,'データベース海岸大会',NULL,1652297312,1653533022),('230fa61f6',67,'キャベツの世界',NULL,1652304365,1653836062),('2320a998d',26,'第7回 年収人生',NULL,1652306149,1653856204),('23356055c',54,'みなとみらいちゃん vol.2',1653358422,1652308321,1653358422),('23465c797',67,'大人のペットボトル地獄 #4',NULL,1652310102,1653641340),('235516022',78,'第5回 相撲の会',1652811649,1652311646,1652811649),('235feb6f9',5,'第4回 たまプラーザで再起動',1653755543,1652312782,1653755543),('2365e8a82',63,'第8回 野生のgRPC.js',1653421147,1652313410,1653421147),('237ec2f27',54,'栃木の春巻き屋 vol.0',1652748615,1652316016,1652748615),('239d820bf',26,'さあメロン同好会大会',NULL,1652319240,1653840583),('23a6656fb',27,'勝てるたまねぎ本部',NULL,1652320172,1653858405),('23ac36ae9',4,'静的おばさん組合',NULL,1652320782,1653618369),('23c568e63',24,'第5回 表参道はともだち',NULL,1652323424,1653994676),('23d397453',65,'第8回 モリス共和国',1653455880,1652324911,1653455880),('23d484103',59,'りんご役場大会',NULL,1652325008,1652686554),('23df8a56d',50,'ラガー館大会',NULL,1652326164,1652342387),('23e7b4315',19,'オレンジ乗り過ごし大会',NULL,1652327020,1653200385),('23e852dd3',65,'白ライブ整骨院大会',1652936401,1652327085,1652936401),('23edd11d6',36,'キレで再起動杯',NULL,1652327661,1653800702),('240feb98b',72,'自由が丘テクノロジーズ大会',NULL,1652331237,1653139182),('241ab4d51',66,'第5回 秋葉原党',NULL,1652332368,1653974921),('241b4ea29',28,'第5回 量子キウイTHAN',1652425236,1652332431,1652425236),('243d99ed1',16,'第4回 川口効果',1653630969,1652336027,1653630969),('244e20e46',83,'ロックアワビ効果大会',1654029962,1652337760,1654029962),('24867b281',19,'第4回 夜のかぼちゃ地獄',NULL,1652343669,1653798159),('24ae9c956',32,'第1回 マンゴーちゃん',NULL,1652347877,1653819258),('24cae0eea',67,'野生の中野PERFECT vol.5',1653451371,1652350841,1653451371),('24d0b22ea',27,'激辛レンコンタウン #6',NULL,1652351451,1652683953),('24d3df28c',36,'あのセンシティブなら負けない #9',NULL,1652351784,1653821208),('24d81d961',55,'並列サーバレスレンジャー #2',NULL,1652352229,1653252189),('2502fbb57',73,'コーヒーヒーローズ大会',1653237364,1652356724,1653237364),('250ae3a48',85,'第5回 モリス（仮）',NULL,1652357553,1652539238),('250b62996',82,'トンポーロー酒店杯',1653707673,1652357605,1653707673),('2518e612f',66,'カニ5期生カップ',NULL,1652359022,1652562020),('2526909ac',65,'RE:餃子丼',1653967314,1652360455,1653967314),('25587879a',49,'すもも神社',1653934937,1652365688,1653934937),('25875f537',80,'ポンカン完全理解 vol.7',NULL,1652370606,1653658090),('25963d79c',68,'failする方法 #1',NULL,1652372165,1652418403),('259da18ca',88,'第3回 広尾鎮魂歌',NULL,1652372940,1653274636),('25cc8fba8',84,'野生のカルボナーラ厳しいカップ',1653632725,1652377861,1653632725),('25d6c1973',79,'鎌倉クラブカップ',1652931191,1652378930,1652931191),('25dc1da4b',23,'やわらかラガーシンポジウム vol.2',1653708945,1652379492,1653708945),('25e7f3720',43,'ポンカン風杯',NULL,1652380733,1652701309),('25e7f3721',52,'チーズ乗り過ごし杯',1652784140,1652380733,1652784140),('25eaa3e83',72,'顔が良いサービスドロップカップ',1653678507,1652381015,1653678507),('25ee9435f',52,'町田穏健派 #2',NULL,1652381428,1652810868),('25f27fa27',67,'光のさいたま新都心がいる大会',NULL,1652381839,1653716447),('25fb7ddec',77,'第6回 Protocolできた',1652920674,1652382782,1652920674),('2600efecc',77,'すももはバランスいい大会',1653397560,1652383353,1653397560),('2619aa7b2',13,'新卒サービス中毒 #0',1653183691,1652385946,1653183691),('262491035',13,'ウィスキー効果大会',1654024023,1652387089,1654024023),('265d8c6bf',28,'第8回 冬のランブータン5期生',NULL,1652393064,1653564535),('265e8cc6b',80,'リッチキレ教室杯',1653137033,1652393169,1653137033),('2668bc303',71,'みたらしの彼方',NULL,1652394237,1653062932),('267069859',88,'エフェクティブNAT.py #3',NULL,1652395042,1653410857),('267d496c3',52,'ノンアルメモリ風大会',1652783276,1652396392,1652783276),('26847076a',56,'第7回 寿司しかねえ',NULL,1652397142,1653006086),('268d3b700',38,'バ美肉支部大会',1652410211,1652398064,1652410211),('26a42623d',19,'第6回 そば乃月',1652827534,1652400467,1652827534),('26b5d2118',76,'勝てるリキュールの楽園杯',1653329563,1652402320,1653329563),('26c62d181',87,'ミラ家 #4',1653964946,1652404035,1653964946),('26c85e9b4',76,'マスクドチーズ亭 vol.9',NULL,1652404265,1653837596),('26d0eefe2',67,'マネージドドラゴンフルーツコミック杯',NULL,1652405163,1652486633),('26d6d63b0',84,'令和パブちゃんカップ',NULL,1652405782,1652628593),('26d92ecf7',8,'池袋組カップ',1653207573,1652406028,1653207573),('26fa07047',68,'なすのお茶会大会',NULL,1652409472,1652774707),('26fec6d6b',76,'目黒同好会杯',1652727488,1652409970,1652727488),('272c1d498',82,'ようこそハンバーガー連合 #6',NULL,1652414724,1653004529),('273017592',60,'かなり洋梨駆動開発 vol.6',NULL,1652415141,1653293263),('2736e4129',68,'今夜は海老名倶楽部杯',NULL,1652415854,1652969845),('274489ba0',63,'バーチャルGPGPUネイティブ杯',1653245395,1652417285,1653245395),('279120a7c',39,'大人用パブ製作所',NULL,1652425316,1653547485),('27ae98981',75,'鏡整骨院',NULL,1652428406,1653530584),('27c705086',25,'待って甘み探偵大会',1653351093,1652430967,1653351093),('27d0a1fb7',58,'太麺_all杯',1653557843,1652431975,1653557843),('27d0fec26',69,'そばの如し vol.3',NULL,1652432013,1653565441),('27d3e00c4',42,'第7回 苦み高校',1653007278,1652432315,1653007278),('27f659baf',32,'荻窪大好き vol.1',NULL,1652435930,1653933136),('28164ee3b',39,'夏みかん百貨店 vol.7',1653339302,1652439281,1653339302),('281e800ec',65,'マネージドバナナオンライン',1653442292,1652440140,1653442292),('28211f74b',37,'第4回 パワーの缶詰',NULL,1652440415,1654034489),('286e09613',47,'おじさんPERFECTカップ',NULL,1652448480,1652775859),('286ff1a93',29,'船橋劇場 vol.0',1653179802,1652448680,1653179802),('28916fe15',31,'私の清酒の惨劇 #9',NULL,1652452192,1653554791),('289c20b2a',87,'自称レタス株式会社大会',1652912858,1652453313,1652912858),('28b421b8d',26,'グレー...\G
 
-# Query 28: ID 0x34E11DDE0FBF5564
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     350
-# Exec time       0  15.2ms  16.0us   3.2ms  43.4us  41.0us  23.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-START TRANSACTION\G
-
-# Query 29: ID 0xB450066D90FC6363
+# Query 28: ID 0xB450066D90FC6363
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  12.8ms  12.8ms  12.8ms  12.8ms  12.8ms  12.8ms
+# Exec time       0  14.1ms  14.1ms  14.1ms  14.1ms  14.1ms  14.1ms
 # Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -488,12 +474,26 @@ START TRANSACTION\G
 # EXPLAIN /*!50100 PARTITIONS*/
 DROP TABLE IF EXISTS `visit`\G
 
+# Query 29: ID 0x34E11DDE0FBF5564
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0     349
+# Exec time       0  13.6ms  16.0us   2.7ms  38.9us  41.0us  23.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+START TRANSACTION\G
+
 # Query 30: ID 0xE50C5678DE5242F0
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  12.6ms  12.6ms  12.6ms  12.6ms  12.6ms  12.6ms
-# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
+# Exec time       0  12.3ms  12.3ms  12.3ms  12.3ms  12.3ms  12.3ms
+# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -512,26 +512,12 @@ CREATE TABLE `last_player_score` (
   KEY `last_player_score_idx1` (`tenant_id`,`competition_id`,`score` DESC,`row_num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 31: ID 0x49E901B289AC257D
+# Query 31: ID 0xB5BAC17B1AEBDAD3
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  10.0ms  10.0ms  10.0ms  10.0ms  10.0ms  10.0ms
-# Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-DROP TABLE IF EXISTS `player`\G
-
-# Query 32: ID 0xB5BAC17B1AEBDAD3
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms
-# Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
+# Exec time       0  10.5ms  10.5ms  10.5ms  10.5ms  10.5ms  10.5ms
+# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -548,32 +534,26 @@ CREATE TABLE `competition` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 33: ID 0xBFB9DE435E7BDB0E
+# Query 32: ID 0x49E901B289AC257D
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms
-# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
+# Exec time       0  10.4ms  10.4ms  10.4ms  10.4ms  10.4ms  10.4ms
+# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-CREATE TABLE `visit` (
-  `tenant_id` bigint unsigned NOT NULL,
-  `competition_id` varchar(255) NOT NULL,
-  `player_id` varchar(255) NOT NULL,
-  `created_at` bigint NOT NULL,
-  PRIMARY KEY (`tenant_id`,`competition_id`,`player_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
+DROP TABLE IF EXISTS `player`\G
 
-# Query 34: ID 0xD1728D93BC031D69
+# Query 33: ID 0xD1728D93BC031D69
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms   8.0ms
-# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
+# Exec time       0   9.1ms   9.1ms   9.1ms   9.1ms   9.1ms   9.1ms
+# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -590,40 +570,32 @@ CREATE TABLE `player` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 35: ID 0xA32F20DF9C2ADA38
+# Query 34: ID 0xBFB9DE435E7BDB0E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0      20
-# Exec time       0   6.7ms  99.0us   3.8ms 332.6us   3.8ms 133.0us
-# Lock time       0  20.0us       0   2.0us   1.0us   2.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0      19       0       1       0       1       1
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-UPDATE player SET is_disqualified = 1, updated_at = 1658564706 WHERE id = '6139c3cb0'\G
-
-# Query 36: ID 0x90F72AD1188B60BA
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0      17
-# Exec time       0   5.2ms  81.0us   3.1ms 303.5us   3.1ms 109.0us
-# Lock time       0  23.0us       0   3.0us   1.4us   3.0us   1.0us
+# Count           0       1
+# Exec time       0   8.5ms   8.5ms   8.5ms   8.5ms   8.5ms   8.5ms
+# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('vqp-t-1658564673', 'レモン劇場', 1658564673, 1658564673)\G
+CREATE TABLE `visit` (
+  `tenant_id` bigint unsigned NOT NULL,
+  `competition_id` varchar(255) NOT NULL,
+  `player_id` varchar(255) NOT NULL,
+  `created_at` bigint NOT NULL,
+  PRIMARY KEY (`tenant_id`,`competition_id`,`player_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 37: ID 0x6AC7EC870DA0766D
+# Query 35: ID 0x6AC7EC870DA0766D
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   3.6ms   3.6ms   3.6ms   3.6ms   3.6ms   3.6ms
-# Lock time       0   9.0us   9.0us   9.0us   9.0us   9.0us   9.0us
+# Exec time       0   3.9ms   3.9ms   3.9ms   3.9ms   3.9ms   3.9ms
+# Lock time       0  12.0us  12.0us  12.0us  12.0us  12.0us  12.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -632,11 +604,39 @@ INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('vqp-t-1
 # EXPLAIN /*!50100 PARTITIONS*/
 DROP TABLE IF EXISTS `competition`\G
 
+# Query 36: ID 0xA32F20DF9C2ADA38
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0      20
+# Exec time       0   3.5ms 111.0us 711.0us 175.0us 711.0us 137.0us
+# Lock time       0  20.0us       0   2.0us   1.0us   2.0us   1.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0      19       0       1       0       1       1
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+UPDATE player SET is_disqualified = 1, updated_at = 1658565064 WHERE id = 'bc78c749-e515-47a8-abc2-9ebd0f430313'\G
+
+# Query 37: ID 0x90F72AD1188B60BA
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0      17
+# Exec time       0   2.1ms  82.0us 227.0us 124.5us 227.0us 114.0us
+# Lock time       0  20.0us       0   3.0us   1.2us   3.0us   1.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('badrequest-tenantid', 'badRequestCheck-Tenantname', 1658565064, 1658565064)\G
+
 # Query 38: ID 0x0C45BAAA21BF497C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     350
-# Exec time       0   2.1ms   4.0us  37.0us   6.0us  10.0us   5.0us
+# Count           0     349
+# Exec time       0   2.1ms   3.0us  26.0us   5.9us   8.0us   5.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -650,8 +650,8 @@ Close stmt\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 717.0us 717.0us 717.0us 717.0us 717.0us 717.0us
-# Lock time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
+# Exec time       0 706.0us 706.0us 706.0us 706.0us 706.0us 706.0us
+# Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -660,26 +660,12 @@ Close stmt\G
 # EXPLAIN /*!50100 PARTITIONS*/
 LOCK TABLES `last_player_score` WRITE\G
 
-# Query 40: ID 0x930E954F280EC5B1
+# Query 40: ID 0x41FB9AE43520EACA
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 515.0us 515.0us 515.0us 515.0us 515.0us 515.0us
-# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-LOCK TABLES `player` WRITE\G
-
-# Query 41: ID 0x41FB9AE43520EACA
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 500.0us 500.0us 500.0us 500.0us 500.0us 500.0us
-# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
+# Exec time       0 546.0us 546.0us 546.0us 546.0us 546.0us 546.0us
+# Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -688,12 +674,26 @@ LOCK TABLES `player` WRITE\G
 # EXPLAIN /*!50100 PARTITIONS*/
 LOCK TABLES `competition` WRITE\G
 
+# Query 41: ID 0x930E954F280EC5B1
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 534.0us 534.0us 534.0us 534.0us 534.0us 534.0us
+# Lock time       0   8.0us   8.0us   8.0us   8.0us   8.0us   8.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+LOCK TABLES `player` WRITE\G
+
 # Query 42: ID 0x0BCCCBC2945C66AA
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 495.0us 495.0us 495.0us 495.0us 495.0us 495.0us
-# Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
+# Exec time       0 472.0us 472.0us 472.0us 472.0us 472.0us 472.0us
+# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -706,7 +706,7 @@ LOCK TABLES `visit` WRITE\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       5
-# Exec time       0 407.0us  76.0us  93.0us  81.4us  93.0us  78.0us
+# Exec time       0 431.0us  74.0us 106.0us  86.2us 106.0us  79.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       5       1       1    1.00       1       1
 # Rows examined   0       5       1       1    1.00       1       1
@@ -720,10 +720,10 @@ select @@version_comment limit 1\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 292.0us 292.0us 292.0us 292.0us 292.0us 292.0us
+# Exec time       0 313.0us 313.0us 313.0us 313.0us 313.0us 313.0us
 # Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0      17      17      17   17.00      17      17
+# Rows examined   0      16      16      16   16.00      16      16
 # String:
 # Databases     
 # 
@@ -734,7 +734,7 @@ DELETE FROM tenant WHERE id > 100\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 289.0us 289.0us 289.0us 289.0us 289.0us 289.0us
+# Exec time       0 296.0us 296.0us 296.0us 296.0us 296.0us 296.0us
 # Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       1       1       1    1.00       1       1
@@ -744,53 +744,11 @@ DELETE FROM tenant WHERE id > 100\G
 # EXPLAIN /*!50100 PARTITIONS*/
 UPDATE id_generator SET id=2678400000 WHERE stub='a'\G
 
-# Query 46: ID 0x2AE2B3044B313A97
+# Query 46: ID 0x98A511337022B422
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 267.0us  45.0us 105.0us  66.8us 105.0us  59.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */\G
-
-# Query 47: ID 0xCECC8C8C21B7B656
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 266.0us  43.0us 101.0us  66.5us 101.0us  72.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @saved_cs_client     = @@character_set_client */\G
-
-# Query 48: ID 0x23E3E3AAC552EBC7
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 266.0us  41.0us 116.0us  66.5us 116.0us  56.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-UNLOCK TABLES\G
-
-# Query 49: ID 0x98A511337022B422
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 262.0us  49.0us  95.0us  65.5us  95.0us  66.0us
+# Exec time       0 263.0us  59.0us  72.0us  65.8us  72.0us  68.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -800,11 +758,11 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET character_set_client = @saved_cs_client */\G
 
-# Query 50: ID 0x591DCE6A753564F4
+# Query 47: ID 0x591DCE6A753564F4
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 235.0us  52.0us  70.0us  58.8us  70.0us  60.0us
+# Exec time       0 232.0us  54.0us  65.0us  58.0us  65.0us  57.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -814,11 +772,39 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */\G
 
-# Query 51: ID 0xA21600B51919C17E
+# Query 48: ID 0x2AE2B3044B313A97
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 198.0us  41.0us  66.0us  49.5us  66.0us  47.0us
+# Exec time       0 231.0us  52.0us  61.0us  57.8us  61.0us  60.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */\G
+
+# Query 49: ID 0xCECC8C8C21B7B656
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 229.0us  45.0us  89.0us  57.2us  89.0us  49.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @saved_cs_client     = @@character_set_client */\G
+
+# Query 50: ID 0xA21600B51919C17E
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 223.0us  42.0us  94.0us  55.8us  94.0us  45.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -828,11 +814,25 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!50503 SET character_set_client = utf8mb4 */\G
 
+# Query 51: ID 0x23E3E3AAC552EBC7
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 219.0us  48.0us  58.0us  54.8us  58.0us  57.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+UNLOCK TABLES\G
+
 # Query 52: ID 0x880B089EBD9A2CAD
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 155.0us  36.0us  42.0us  38.8us  42.0us  40.0us
+# Exec time       0 171.0us  37.0us  52.0us  42.7us  52.0us  41.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -846,7 +846,7 @@ UNLOCK TABLES\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 145.0us  31.0us  47.0us  36.2us  47.0us  34.0us
+# Exec time       0 155.0us  33.0us  54.0us  38.8us  54.0us  34.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -856,53 +856,11 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */\G
 
-# Query 54: ID 0xD9F25F1131019AB8
+# Query 54: ID 0x05171C9B2C3DBE62
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 141.0us  35.0us  36.0us  35.2us  36.0us  35.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */\G
-
-# Query 55: ID 0x7B8FDA41126FA26B
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 140.0us  34.0us  36.0us  35.0us  36.0us  35.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */\G
-
-# Query 56: ID 0x576EF5EB51F5D753
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 140.0us  33.0us  38.0us  35.0us  38.0us  35.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */\G
-
-# Query 57: ID 0x05171C9B2C3DBE62
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 139.0us  34.0us  36.0us  34.8us  36.0us  35.0us
+# Exec time       0 151.0us  37.0us  40.0us  37.8us  40.0us  37.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -912,11 +870,11 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40103 SET TIME_ZONE='+00:00' */\G
 
-# Query 58: ID 0x404C7B72CAF91ECA
+# Query 55: ID 0x7B8FDA41126FA26B
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 137.0us  32.0us  36.0us  34.2us  36.0us  35.0us
+# Exec time       0 150.0us  37.0us  38.0us  37.5us  38.0us  38.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -924,41 +882,13 @@ UNLOCK TABLES\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */\G
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */\G
 
-# Query 59: ID 0x135A37D729549779
+# Query 56: ID 0xF3D856BFA86157CE
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 130.0us  31.0us  34.0us  32.5us  34.0us  33.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */\G
-
-# Query 60: ID 0xCF298A80F7E31AF9
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 126.0us  31.0us  33.0us  31.5us  33.0us  31.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */\G
-
-# Query 61: ID 0xF3D856BFA86157CE
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 124.0us  30.0us  34.0us  31.0us  34.0us  30.0us
+# Exec time       0 150.0us  30.0us  58.0us  37.5us  58.0us  32.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -968,11 +898,67 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */\G
 
-# Query 62: ID 0x7F22BBB9FF2EFA83
+# Query 57: ID 0xD9F25F1131019AB8
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 123.0us  30.0us  32.0us  30.8us  32.0us  31.0us
+# Exec time       0 147.0us  35.0us  39.0us  36.8us  39.0us  37.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */\G
+
+# Query 58: ID 0x576EF5EB51F5D753
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 143.0us  35.0us  36.0us  35.8us  36.0us  36.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */\G
+
+# Query 59: ID 0x404C7B72CAF91ECA
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 136.0us  33.0us  35.0us  34.0us  35.0us  34.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */\G
+
+# Query 60: ID 0x135A37D729549779
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 134.0us  33.0us  34.0us  33.5us  34.0us  34.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */\G
+
+# Query 61: ID 0x7F22BBB9FF2EFA83
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 132.0us  29.0us  37.0us  33.0us  37.0us  34.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -982,11 +968,11 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */\G
 
-# Query 63: ID 0x7A1208BDC805D902
+# Query 62: ID 0xCF298A80F7E31AF9
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 118.0us  27.0us  34.0us  29.5us  34.0us  29.0us
+# Exec time       0 125.0us  31.0us  32.0us  31.2us  32.0us  31.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -994,9 +980,37 @@ UNLOCK TABLES\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */\G
 
-# Query 64: ID 0x7F8290E05162B254
+# Query 63: ID 0x7F8290E05162B254
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 121.0us  29.0us  32.0us  30.2us  32.0us  30.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */\G
+
+# Query 64: ID 0xC6794245484061FB
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 117.0us  28.0us  31.0us  29.2us  31.0us  29.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */\G
+
+# Query 65: ID 0x7A1208BDC805D902
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
@@ -1008,27 +1022,13 @@ UNLOCK TABLES\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */\G
-
-# Query 65: ID 0xC6794245484061FB
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 115.0us  28.0us  30.0us  28.8us  30.0us  29.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */\G
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
 
 # Query 66: ID 0x23F6EB3A0ECD9E84
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 107.0us  26.0us  29.0us  26.7us  29.0us  26.0us
+# Exec time       0 108.0us  26.0us  28.0us  27.0us  28.0us  27.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1042,7 +1042,7 @@ UNLOCK TABLES\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
-# Exec time       0 102.0us  24.0us  28.0us  25.5us  28.0us  25.0us
+# Exec time       0 102.0us  25.0us  27.0us  25.5us  27.0us  25.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1056,7 +1056,7 @@ UNLOCK TABLES\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       5
-# Exec time       0  14.0us   2.0us   3.0us   2.8us   3.0us   3.0us
+# Exec time       0  13.0us   2.0us   3.0us   2.6us   3.0us   3.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
