@@ -358,14 +358,6 @@ func retrievePlayer(ctx context.Context, id string) (*PlayerRow, error) {
 	return &p, nil
 }
 
-func retrievePlayerTransaction(ctx context.Context, tx *sqlx.Tx, id string) (*PlayerRow, error) {
-	var p PlayerRow
-	if err := tx.GetContext(ctx, &p, "SELECT * FROM player WHERE id = ?", id); err != nil {
-		return nil, fmt.Errorf("error Select player: id=%s, %w", id, err)
-	}
-	return &p, nil
-}
-
 // 参加者を認可する
 // 参加者向けAPIで呼ばれる
 func authorizePlayer(ctx context.Context, id string) error {
@@ -776,14 +768,10 @@ func playersAddHandler(c echo.Context) error {
 				id, displayName, false, now, now, err,
 			)
 		}
-		p, err := retrievePlayerTransaction(ctx, tx, id)
-		if err != nil {
-			return fmt.Errorf("error retrievePlayer: %w", err)
-		}
 		pds = append(pds, PlayerDetail{
-			ID:             p.ID,
-			DisplayName:    p.DisplayName,
-			IsDisqualified: p.IsDisqualified,
+			ID:             id,
+			DisplayName:    displayName,
+			IsDisqualified: false,
 		})
 	}
 
