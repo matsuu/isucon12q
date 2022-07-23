@@ -1,103 +1,103 @@
 
-# Current date: Sat Jul 23 07:05:36 2022
+# Current date: Sat Jul 23 07:44:41 2022
 # Hostname: ip-192-168-0-11
 # Files: /dev/stdin
-# Overall: 350.81k total, 88 unique
+# Overall: 341.47k total, 88 unique
 # Attribute          total     min     max     avg     95%  median
 # =============    ======= ======= ======= ======= ======= =======
-# Exec time        200.33s   1.0us  20.82s 571.1us   1.9ms 109.0us
-# Lock time          1.07s       0  63.6ms   3.1us   2.0us   1.0us
-# Rows sent          6.41M       0   6.82k   18.00      98       1
-# Rows examined     13.78M       0   3.22M   39.00     100       1
+# Exec time        211.67s   1.0us  20.80s 619.9us   2.1ms 115.0us
+# Lock time          1.02s       0   8.9ms   3.0us   2.0us   1.0us
+# Rows sent          6.51M       0   6.78k   19.00     100       1
+# Rows examined     13.98M       0   3.22M   40.00     105       1
 
 # Profile
 # Rank Query ID           Response time  Calls  R/Call
 # ==== ================== ============== ====== =======
-#    1 0x12AE65530A8CDE56 38.6611  19.3%  19526 0.0020 SELECT last_player_score player
-#    2 0x5AC3B50503CE9D8F 35.0580  17.5% 110088 0.0003 SELECT player
-#    3 0xE7D6FD09EBFCB334 22.4732  11.2%  16003 0.0014 SELECT competition last_player_score
-#    4 0x65A4D9734693DCF5 20.8197  10.4%      1 20.8197 INSERT visit_history visit
-#    5 0xCFB1AE847A886271 17.0852   8.5%  56506 0.0003 INSERT last_player_score
-#    6 0x3635BEFFE5F2117E 12.2658   6.1%  38422 0.0003 SELECT tenant
-#    7 0xB608081050A9AE17 11.5081   5.7%  13341 0.0009 SELECT last_player_score
-#    8 0x8CFEA9CD31A70652 10.8136   5.4%  13341 0.0008 SELECT visit
-#    9 0x3ADEB61102CCFE5E  9.4142   4.7%  33221 0.0003 SELECT competition
-#   10 0x91AF3FDB050EDC72  6.9094   3.4%  19526 0.0004 INSERT visit
-#   11 0xA0719EAF93CC4D19  5.7577   2.9%  19526 0.0003 SELECT tenant
-#   12 0xB3AF60EB673242FD  2.3459   1.2%     11 0.2133 INSERT
-#   13 0x348974B3D332E575  1.9959   1.0%      1 1.9959 DELETE visit_history
-#   14 0xB099F0576D4C8510  1.4407   0.7%   6249 0.0002 INSERT player
-#   15 0x0827D5A14DD47F0A  1.2259   0.6%   2111 0.0006 SELECT competition
-#   16 0xD6793F4A922CC139  1.2043   0.6%    154 0.0078 SELECT player
-#   17 0x4E39CD28A560644F  0.3892   0.2%   1059 0.0004 SELECT competition
-#   18 0x7999228A4DB29D7A  0.2740   0.1%      1 0.2740 INSERT
-#   19 0xDB3B51ADCC733721  0.1610   0.1%    189 0.0009 DELETE last_player_score
-#   20 0x6C642D7A6D30AA17  0.0893   0.0%    158 0.0006 UPDATE competition
-#   21 0x6E5D84A8CC6E9DB3  0.0874   0.0%    171 0.0005 INSERT competition
-#   22 0x813031B8BBC3B329  0.0525   0.0%    221 0.0002 COMMIT 
-#   23 0xCE0293B4FFBDE858  0.0509   0.0%    117 0.0004 SELECT tenant
-#   24 0x13425781EDD3EB5A  0.0336   0.0%      1 0.0336 INSERT
-#   25 0xB711A299ADC32792  0.0333   0.0%    221 0.0002 PREPARE
-#   26 0x34E11DDE0FBF5564  0.0318   0.0%    221 0.0001 BEGIN 
-#   27 0xC8CCC170F178D27C  0.0307   0.0%      1 0.0307 DROP TABLE last_player_score
-#   28 0xE87A1F1BB1358261  0.0191   0.0%      1 0.0191 TRUNCATE TABLE visit
-#   29 0xE50C5678DE5242F0  0.0152   0.0%      1 0.0152 CREATE TABLE last_player_score
-#   30 0x90F72AD1188B60BA  0.0133   0.0%     15 0.0009 INSERT tenant
-#   31 0xD1728D93BC031D69  0.0122   0.0%      1 0.0122 CREATE TABLE player
-#   32 0xB5BAC17B1AEBDAD3  0.0100   0.0%      1 0.0100 CREATE TABLE competition
-#   33 0x49E901B289AC257D  0.0078   0.0%      1 0.0078 DROP TABLE player
-#   34 0x911658842DA64DC4  0.0056   0.0%      1 0.0056 SHOW 
-#   35 0xA32F20DF9C2ADA38  0.0045   0.0%     19 0.0002 UPDATE player
-#   36 0x6AC7EC870DA0766D  0.0044   0.0%      1 0.0044 DROP TABLE competition
-#   37 0x40A5548652B4DFDB  0.0038   0.0%      1 0.0038 SHOW 
-#   38 0x0C45BAAA21BF497C  0.0020   0.0%    221 0.0000 CLOSE
-#   39 0x791C5370A1021F19  0.0019   0.0%      1 0.0019 SHOW
-#   40 0x82548DE9C4F3E046  0.0016   0.0%      1 0.0016 SHOW 
-#   41 0xD57560CE9D0852EE  0.0016   0.0%      1 0.0016 SHOW 
-#   42 0x5CBC6BF26D494691  0.0016   0.0%      2 0.0008 SELECT information_schema.TABLES
-#   43 0xE7D5FE66D3400A27  0.0015   0.0%      1 0.0015 SELECT information_schema.TABLES
-#   44 0xE3A3649C5FAC418D  0.0014   0.0%     31 0.0000 SELECT 
-#   45 0x591DCE6A753564F4  0.0013   0.0%      3 0.0004 SET 
-#   46 0xDC5AC4F51E1A7597  0.0012   0.0%      1 0.0012 SHOW 
-#   47 0x64C4F2AE6B6B9BD4  0.0009   0.0%      1 0.0009 SHOW 
-#   48 0x4783AE1E60184291  0.0008   0.0%      1 0.0008 SELECT information_schema.TABLES
-#   49 0x5CBA2034458B5BC9  0.0008   0.0%      2 0.0004 SHOW 
-#   50 0x31DA25F95494CA95  0.0007   0.0%      1 0.0007 SHOW 
-#   51 0x28FC5B5D583E2DA6  0.0006   0.0%      1 0.0006 SHOW 
-#   52 0x73036F33D790BF39  0.0005   0.0%      1 0.0005 LOCK TABLES last_player_score
-#   53 0x41FB9AE43520EACA  0.0005   0.0%      1 0.0005 LOCK TABLES competition
-#   54 0x930E954F280EC5B1  0.0005   0.0%      1 0.0005 LOCK TABLES player
-#   55 0x90D18133B56F55D4  0.0004   0.0%      6 0.0001 SHOW
-#   56 0x6CCBD6845398A3D8  0.0003   0.0%      1 0.0003 UPDATE id_generator
-#   57 0xD91A15ED91D39170  0.0003   0.0%      1 0.0003 DELETE tenant
-#   58 0x98A511337022B422  0.0002   0.0%      3 0.0001 SET 
-#   59 0x2AE2B3044B313A97  0.0002   0.0%      3 0.0001 SET 
-#   60 0x23E3E3AAC552EBC7  0.0002   0.0%      3 0.0001 UNLOCK TABLES 
-#   61 0xCECC8C8C21B7B656  0.0002   0.0%      3 0.0001 SET 
-#   62 0xA21600B51919C17E  0.0001   0.0%      3 0.0000 SET 
-#   63 0x576EF5EB51F5D753  0.0001   0.0%      3 0.0000 SET 
-#   64 0x7B8FDA41126FA26B  0.0001   0.0%      3 0.0000 SET 
-#   65 0x880B089EBD9A2CAD  0.0001   0.0%      3 0.0000 SET 
-#   66 0x2CFF86204BE26813  0.0001   0.0%      1 0.0001 SELECT information_schema.ENGINES
-#   67 0x404C7B72CAF91ECA  0.0001   0.0%      3 0.0000 SET 
-#   68 0xCF298A80F7E31AF9  0.0001   0.0%      3 0.0000 SET 
-#   69 0xD9F25F1131019AB8  0.0001   0.0%      3 0.0000 SET 
-#   70 0x05171C9B2C3DBE62  0.0001   0.0%      3 0.0000 SET 
-#   71 0xD58C2EC55E332D45  0.0001   0.0%      3 0.0000 SET 
-#   72 0x135A37D729549779  0.0001   0.0%      3 0.0000 SET 
-#   73 0xF3D856BFA86157CE  0.0001   0.0%      3 0.0000 SET 
-#   74 0x7F22BBB9FF2EFA83  0.0001   0.0%      3 0.0000 SET 
-#   75 0xC6794245484061FB  0.0001   0.0%      3 0.0000 SET 
-#   76 0x7A1208BDC805D902  0.0001   0.0%      3 0.0000 SET 
-#   77 0x7F8290E05162B254  0.0001   0.0%      3 0.0000 SET 
-#   78 0xA3C958A64E1E64AB  0.0001   0.0%      1 0.0001 SHOW 
-#   79 0x45788F3F8DFCDAFC  0.0001   0.0%      3 0.0000 SET 
-#   80 0x23F6EB3A0ECD9E84  0.0001   0.0%      3 0.0000 SET 
-#   81 0xD68A038797A4135C  0.0001   0.0%      1 0.0001 SHOW
-#   82 0x8ED794C0D5413D5A  0.0000   0.0%     28 0.0000 QUIT
-#   83 0x7047E58B2A5815B3  0.0000   0.0%      1 0.0000 SELECT 
-#   84 0xEBA5220D6ABC29D5  0.0000   0.0%      1 0.0000 SELECT 
-#   85 0x0C25EDC6C64F42DC  0.0000   0.0%      1 0.0000 SELECT 
+#    1 0x12AE65530A8CDE56 43.9323  20.8%  18830 0.0023 SELECT last_player_score player
+#    2 0x5AC3B50503CE9D8F 34.1124  16.1%  99873 0.0003 SELECT player
+#    3 0xE7D6FD09EBFCB334 25.6120  12.1%  16524 0.0015 SELECT competition last_player_score
+#    4 0x65A4D9734693DCF5 20.7972   9.8%      1 20.7972 INSERT visit_history visit
+#    5 0xCFB1AE847A886271 19.2152   9.1%  59606 0.0003 INSERT last_player_score
+#    6 0x3635BEFFE5F2117E 12.6003   6.0%  38215 0.0003 SELECT tenant
+#    7 0xB608081050A9AE17 11.3836   5.4%  13428 0.0008 SELECT last_player_score
+#    8 0x8CFEA9CD31A70652 10.9406   5.2%  13428 0.0008 SELECT visit
+#    9 0x3ADEB61102CCFE5E  9.8111   4.6%  32621 0.0003 SELECT competition
+#   10 0x91AF3FDB050EDC72  7.0161   3.3%  18830 0.0004 INSERT visit
+#   11 0xA0719EAF93CC4D19  6.1907   2.9%  18830 0.0003 SELECT tenant
+#   12 0xB3AF60EB673242FD  2.3312   1.1%     11 0.2119 INSERT
+#   13 0x348974B3D332E575  1.9893   0.9%      1 1.9893 DELETE visit_history
+#   14 0xB099F0576D4C8510  1.6262   0.8%   6247 0.0003 INSERT player
+#   15 0x0827D5A14DD47F0A  1.2008   0.6%   2057 0.0006 SELECT competition
+#   16 0xD6793F4A922CC139  0.9722   0.5%    161 0.0060 SELECT player
+#   17 0x60EB49FD82480245  0.6100   0.3%    194 0.0031 DELETE last_player_score
+#   18 0x4E39CD28A560644F  0.3925   0.2%   1049 0.0004 SELECT competition
+#   19 0x7999228A4DB29D7A  0.2624   0.1%      1 0.2624 INSERT
+#   20 0x6C642D7A6D30AA17  0.1165   0.1%    162 0.0007 UPDATE competition
+#   21 0x6E5D84A8CC6E9DB3  0.1130   0.1%    176 0.0006 INSERT competition
+#   22 0xCE0293B4FFBDE858  0.0470   0.0%    116 0.0004 SELECT tenant
+#   23 0xB711A299ADC32792  0.0458   0.0%    227 0.0002 PREPARE
+#   24 0x813031B8BBC3B329  0.0394   0.0%    227 0.0002 COMMIT 
+#   25 0xC8CCC170F178D27C  0.0319   0.0%      1 0.0319 DROP TABLE last_player_score
+#   26 0x911658842DA64DC4  0.0273   0.0%      1 0.0273 SHOW 
+#   27 0x13425781EDD3EB5A  0.0271   0.0%      1 0.0271 INSERT
+#   28 0xE7D5FE66D3400A27  0.0253   0.0%      1 0.0253 SELECT information_schema.TABLES
+#   29 0xE87A1F1BB1358261  0.0237   0.0%      1 0.0237 TRUNCATE TABLE visit
+#   30 0x5CBA2034458B5BC9  0.0185   0.0%      2 0.0093 SHOW 
+#   31 0x34E11DDE0FBF5564  0.0181   0.0%    227 0.0001 BEGIN 
+#   32 0xA32F20DF9C2ADA38  0.0160   0.0%     19 0.0008 UPDATE player
+#   33 0xE50C5678DE5242F0  0.0147   0.0%      1 0.0147 CREATE TABLE last_player_score
+#   34 0xD1728D93BC031D69  0.0123   0.0%      1 0.0123 CREATE TABLE player
+#   35 0x31DA25F95494CA95  0.0117   0.0%      1 0.0117 SHOW 
+#   36 0xB5BAC17B1AEBDAD3  0.0105   0.0%      1 0.0105 CREATE TABLE competition
+#   37 0x49E901B289AC257D  0.0087   0.0%      1 0.0087 DROP TABLE player
+#   38 0xA3C958A64E1E64AB  0.0073   0.0%      1 0.0073 SHOW 
+#   39 0x791C5370A1021F19  0.0068   0.0%      1 0.0068 SHOW
+#   40 0x0C45BAAA21BF497C  0.0061   0.0%    227 0.0000 CLOSE
+#   41 0x40A5548652B4DFDB  0.0059   0.0%      1 0.0059 SHOW 
+#   42 0x90F72AD1188B60BA  0.0042   0.0%     15 0.0003 INSERT tenant
+#   43 0xDC5AC4F51E1A7597  0.0041   0.0%      1 0.0041 SHOW 
+#   44 0x6AC7EC870DA0766D  0.0040   0.0%      1 0.0040 DROP TABLE competition
+#   45 0x7047E58B2A5815B3  0.0035   0.0%      1 0.0035 SELECT 
+#   46 0x5CBC6BF26D494691  0.0034   0.0%      2 0.0017 SELECT information_schema.TABLES
+#   47 0x2CFF86204BE26813  0.0033   0.0%      1 0.0033 SELECT information_schema.ENGINES
+#   48 0xD57560CE9D0852EE  0.0029   0.0%      1 0.0029 SHOW 
+#   49 0x90D18133B56F55D4  0.0027   0.0%      6 0.0005 SHOW
+#   50 0xD68A038797A4135C  0.0020   0.0%      1 0.0020 SHOW
+#   51 0xE3A3649C5FAC418D  0.0018   0.0%     31 0.0001 SELECT 
+#   52 0x64C4F2AE6B6B9BD4  0.0018   0.0%      1 0.0018 SHOW 
+#   53 0x82548DE9C4F3E046  0.0018   0.0%      1 0.0018 SHOW 
+#   54 0x0C25EDC6C64F42DC  0.0016   0.0%      1 0.0016 SELECT 
+#   55 0x4783AE1E60184291  0.0013   0.0%      1 0.0013 SELECT information_schema.TABLES
+#   56 0x28FC5B5D583E2DA6  0.0006   0.0%      1 0.0006 SHOW 
+#   57 0x73036F33D790BF39  0.0006   0.0%      1 0.0006 LOCK TABLES last_player_score
+#   58 0x41FB9AE43520EACA  0.0006   0.0%      1 0.0006 LOCK TABLES competition
+#   59 0x930E954F280EC5B1  0.0006   0.0%      1 0.0006 LOCK TABLES player
+#   60 0x6CCBD6845398A3D8  0.0003   0.0%      1 0.0003 UPDATE id_generator
+#   61 0xD91A15ED91D39170  0.0002   0.0%      1 0.0002 DELETE tenant
+#   62 0x98A511337022B422  0.0002   0.0%      3 0.0001 SET 
+#   63 0x591DCE6A753564F4  0.0002   0.0%      3 0.0001 SET 
+#   64 0x2AE2B3044B313A97  0.0002   0.0%      3 0.0001 SET 
+#   65 0x23E3E3AAC552EBC7  0.0002   0.0%      3 0.0001 UNLOCK TABLES 
+#   66 0xCECC8C8C21B7B656  0.0001   0.0%      3 0.0000 SET 
+#   67 0x7B8FDA41126FA26B  0.0001   0.0%      3 0.0000 SET 
+#   68 0xA21600B51919C17E  0.0001   0.0%      3 0.0000 SET 
+#   69 0x880B089EBD9A2CAD  0.0001   0.0%      3 0.0000 SET 
+#   70 0xD9F25F1131019AB8  0.0001   0.0%      3 0.0000 SET 
+#   71 0x135A37D729549779  0.0001   0.0%      3 0.0000 SET 
+#   72 0x576EF5EB51F5D753  0.0001   0.0%      3 0.0000 SET 
+#   73 0x05171C9B2C3DBE62  0.0001   0.0%      3 0.0000 SET 
+#   74 0x404C7B72CAF91ECA  0.0001   0.0%      3 0.0000 SET 
+#   75 0xD58C2EC55E332D45  0.0001   0.0%      3 0.0000 SET 
+#   76 0xCF298A80F7E31AF9  0.0001   0.0%      3 0.0000 SET 
+#   77 0x7F22BBB9FF2EFA83  0.0001   0.0%      3 0.0000 SET 
+#   78 0xF3D856BFA86157CE  0.0001   0.0%      3 0.0000 SET 
+#   79 0xC6794245484061FB  0.0001   0.0%      3 0.0000 SET 
+#   80 0x7F8290E05162B254  0.0001   0.0%      3 0.0000 SET 
+#   81 0x7A1208BDC805D902  0.0001   0.0%      3 0.0000 SET 
+#   82 0x45788F3F8DFCDAFC  0.0001   0.0%      3 0.0000 SET 
+#   83 0x23F6EB3A0ECD9E84  0.0001   0.0%      3 0.0000 SET 
+#   84 0x8ED794C0D5413D5A  0.0001   0.0%     29 0.0000 QUIT
+#   85 0xEBA5220D6ABC29D5  0.0001   0.0%      1 0.0001 SELECT 
 #   86 0xD7288668D3824DC6  0.0000   0.0%      1 0.0000 SELECT 
 #   87 0x876951F96EBB256F  0.0000   0.0%      1 0.0000 STATISTICS
 #   88 0x1D410B4BE5060972  0.0000   0.0%      1 0.0000 PING
@@ -105,51 +105,51 @@
 # Query 1: ID 0x12AE65530A8CDE56
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           6   19526
-# Exec time      19  38.66s 150.0us  60.9ms   2.0ms   8.0ms 730.0us
-# Lock time       6  62.4ms       0   1.8ms   3.2us   2.0us   1.0us
-# Rows sent       9 606.66k       0     100   31.00     100       0
-# Rows examined   9   1.30M       0     398   66.00     200       0
+# Count           6   18830
+# Exec time      21  43.93s 150.0us  76.9ms   2.3ms   9.4ms 791.0us
+# Lock time       8  82.2ms       0   6.6ms   4.4us   2.0us   1.0us
+# Rows sent      10 646.89k       0     100   34.00     100       0
+# Rows examined  10   1.38M       0     398   73.00     200       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT S.player_id, P.display_name AS player_display_name, score, row_num FROM last_player_score S JOIN player P ON S.player_id = P.id AND S.tenant_id = P.tenant_id WHERE S.tenant_id = 1 AND competition_id = 'b798aeeb-feaf-4af2-95b4-4abd49a41ef7' ORDER BY score DESC, row_num ASC LIMIT 100 OFFSET 0\G
+SELECT S.player_id, P.display_name AS player_display_name, score, row_num FROM last_player_score S JOIN player P ON S.player_id = P.id AND S.tenant_id = P.tenant_id WHERE S.tenant_id = 1 AND competition_id = 'd5191d72-7eb5-4306-9fa2-587599e2a2f1' ORDER BY score DESC, row_num ASC LIMIT 100 OFFSET 0\G
 
 # Query 2: ID 0x5AC3B50503CE9D8F
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          31  110088
-# Exec time      18  35.06s  47.0us  36.5ms 318.5us   1.2ms  99.0us
-# Lock time      32 348.6ms       0   4.3ms   3.2us   2.0us   1.0us
-# Rows sent       2 110.08k       0       1       0       1       1
-# Rows examined   1 110.08k       0       1       0       1       1
+# Count          29   99873
+# Exec time      16  34.11s  48.0us  50.5ms 341.6us   1.3ms 101.0us
+# Lock time      32 328.3ms       0   4.4ms   3.3us   2.0us   1.0us
+# Rows sent       2  99.87k       0       1       0       1       1
+# Rows examined   1  99.87k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM player WHERE id = '33faa3da-a975-4ed2-a254-82ed439d2b72'\G
+SELECT * FROM player WHERE id = '3f1a3029-18ba-4f0c-8897-8db866ed1907'\G
 
 # Query 3: ID 0xE7D6FD09EBFCB334
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           5   16003
-# Exec time      11  22.47s 163.0us  36.3ms   1.4ms   4.8ms 468.0us
-# Lock time       6  67.3ms       0   3.0ms   4.2us   2.0us   1.0us
-# Rows sent       3 163.14k       1      22   10.00      17      10
-# Rows examined   3 385.43k       2      50   24.00      42      24
+# Count           5   16524
+# Exec time      12  25.61s 153.0us  33.7ms   1.5ms   5.2ms 548.0us
+# Lock time       6  62.7ms       0   2.3ms   3.8us   2.0us   1.0us
+# Rows sent       3 172.96k       1      25   10.00      18      11
+# Rows examined   3 413.14k       2      57   25.00      44      25
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT C.title AS competition_title, S.score AS score FROM competition C JOIN last_player_score S ON C.id = S.competition_id AND C.tenant_id = S.tenant_id WHERE S.player_id = '6ce89e4e-f34b-4308-b23d-f449ff11b2fd' AND C.tenant_id = 304 ORDER BY C.created_at ASC\G
+SELECT C.title AS competition_title, S.score AS score FROM competition C JOIN last_player_score S ON C.id = S.competition_id AND C.tenant_id = S.tenant_id WHERE S.player_id = '8db355f0-d619-4ea7-9c3c-2d624c63bea2' AND C.tenant_id = 1 ORDER BY C.created_at ASC\G
 
 # Query 4: ID 0x65A4D9734693DCF5
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time      10  20.82s  20.82s  20.82s  20.82s  20.82s  20.82s
-# Lock time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
+# Exec time      10  20.80s  20.80s  20.80s  20.80s  20.80s  20.80s
+# Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined  23   3.22M   3.22M   3.22M   3.22M   3.22M   3.22M
 # String:
@@ -161,106 +161,106 @@ INSERT INTO visit (tenant_id, competition_id, player_id, created_at) SELECT tena
 # Query 5: ID 0xCFB1AE847A886271
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          16   56506
-# Exec time       9  17.09s  38.0us  65.0ms 302.4us   1.1ms  92.0us
-# Lock time      14 151.4ms       0  63.6ms   2.7us   1.0us   1.0us
+# Count          17   59606
+# Exec time       9  19.22s  38.0us  36.6ms 322.4us   1.2ms  96.0us
+# Lock time      10 106.7ms       0   7.4ms   1.8us   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-REPLACE INTO last_player_score (tenant_id, player_id, competition_id, score, row_num, created_at, updated_at) VALUES (297, '0199fffa-c6a3-44d8-a045-2740a72aecce', '01441200-33a8-4384-a604-76e5bdc63d28', 149, 50, 1658559838, 1658559838)\G
+REPLACE INTO last_player_score (tenant_id, player_id, competition_id, score, row_num, created_at, updated_at) VALUES (357, 'a083e472-7d86-408f-b015-e44cd5c1fc10', 'e5f0846d-9727-4ba2-a3d5-d6ccbe44c532', 231, 248, 1658562204, 1658562204)\G
 
 # Query 6: ID 0x3635BEFFE5F2117E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          11   38422
-# Exec time       6  12.27s  49.0us  22.4ms 319.2us   1.2ms 101.0us
-# Lock time      12 131.6ms       0   5.7ms   3.4us   2.0us   1.0us
-# Rows sent       1  38.42k       0       1       0       1       1
-# Rows examined   0  38.42k       0       1       0       1       1
+# Count          11   38215
+# Exec time       6  12.60s  52.0us  25.4ms 329.7us   1.3ms 103.0us
+# Lock time      13 134.0ms       0   3.6ms   3.5us   2.0us   1.0us
+# Rows sent       1  38.21k       0       1       0       1       1
+# Rows examined   0  38.21k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE name = 'hdbf-aemf-1658559848'\G
+SELECT * FROM tenant WHERE name = 'hlvu-iunhb-1658562170'\G
 
 # Query 7: ID 0xB608081050A9AE17
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4   13341
-# Exec time       6  11.51s 108.0us  56.1ms 862.6us   3.2ms 221.0us
-# Lock time       3  30.4ms       0   3.0ms   2.3us   2.0us   1.0us
-# Rows sent      41   2.66M       0   4.54k  199.00     222      88
-# Rows examined  19   2.66M       0   4.54k  199.00     222      88
+# Count           4   13428
+# Exec time       5  11.38s 109.0us  37.0ms 847.8us   3.3ms 230.0us
+# Lock time       3  34.3ms       0   1.8ms   2.6us   2.0us   1.0us
+# Rows sent      42   2.70M       0   4.54k  201.00     228      88
+# Rows examined  19   2.70M       0   4.54k  201.00     228      88
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT player_id FROM last_player_score WHERE tenant_id = 1 AND competition_id = '5d5e808a3'\G
+SELECT player_id FROM last_player_score WHERE tenant_id = 1 AND competition_id = '59cb9aad2'\G
 
 # Query 8: ID 0x8CFEA9CD31A70652
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4   13341
-# Exec time       5  10.81s 104.0us  44.2ms 810.6us   2.8ms 202.0us
-# Lock time       3  29.3ms       0 962.0us   2.2us   2.0us   1.0us
-# Rows sent      41   2.63M       0   5.01k  197.00     190      82
-# Rows examined  19   2.63M       0   5.01k  197.00     190      82
+# Count           4   13428
+# Exec time       5  10.94s  95.0us  46.8ms 814.8us   3.0ms 207.0us
+# Lock time       3  33.9ms       0   2.3ms   2.5us   2.0us   1.0us
+# Rows sent      41   2.64M       0   5.01k  196.00     190      80
+# Rows examined  19   2.64M       0   5.01k  196.00     190      80
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 1 AND competition_id = '174f069ca'\G
+SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 1 AND competition_id = '34433d77a'\G
 
 # Query 9: ID 0x3ADEB61102CCFE5E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           9   33221
-# Exec time       5   9.41s  54.0us  18.2ms 283.4us   1.1ms  97.0us
-# Lock time       9  98.9ms       0   3.1ms   3.0us   2.0us   1.0us
-# Rows sent       1  33.22k       0       1       0       1       1
-# Rows examined   0  33.22k       0       1       0       1       1
+# Count          10   32621
+# Exec time       5   9.81s  52.0us  32.3ms 300.8us   1.2ms  99.0us
+# Lock time       9  94.4ms       0   8.9ms   2.9us   2.0us   1.0us
+# Rows sent       1  32.62k       0       1       0       1       1
+# Rows examined   0  32.62k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE id = '3e8dd9e7a'\G
+SELECT * FROM competition WHERE id = '5348ea4ff'\G
 
 # Query 10: ID 0x91AF3FDB050EDC72
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           6   19526
-# Exec time       3   6.91s  57.0us  25.5ms 353.9us   1.3ms  99.0us
-# Lock time       7  69.9ms       0   2.7ms   3.6us   2.0us   1.0us
+# Count           6   18830
+# Exec time       3   7.02s  54.0us  29.9ms 372.6us   1.4ms 101.0us
+# Lock time       6  63.4ms       0   4.5ms   3.4us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (303, '195c18d5-4b84-4982-ac24-956961e18b0a', '314f6d21-ca12-4d85-a533-cdd3b633c350', 1658559884)\G
+INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (48, 'd278b2d9-0ae6-4644-8e25-8c9df452b29e', '4f015f534', 1658562212)\G
 
 # Query 11: ID 0xA0719EAF93CC4D19
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           6   19526
-# Exec time       3   5.76s  52.0us  18.8ms 294.9us   1.1ms  92.0us
-# Lock time       5  58.5ms       0   2.6ms   3.0us   2.0us   1.0us
-# Rows sent       0  19.53k       1       1    1.00       1       1
-# Rows examined   0  19.53k       1       1    1.00       1       1
+# Count           6   18830
+# Exec time       3   6.19s  50.0us  24.9ms 328.8us   1.3ms  94.0us
+# Lock time       6  64.5ms       0   2.7ms   3.4us   2.0us   1.0us
+# Rows sent       0  18.83k       1       1    1.00       1       1
+# Rows examined   0  18.83k       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE id = 307\G
+SELECT * FROM tenant WHERE id = 361\G
 
 # Query 12: ID 0xB3AF60EB673242FD
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0      11
-# Exec time       1   2.35s 160.7ms 444.8ms 213.3ms 444.8ms 194.5ms
+# Exec time       1   2.33s 160.9ms 420.7ms 211.9ms 420.7ms 193.4ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -274,8 +274,8 @@ INSERT INTO `last_player_score` VALUES (1,'0001','174f069ca',324800,64199,165326
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       1   2.00s   2.00s   2.00s   2.00s   2.00s   2.00s
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Exec time       1   1.99s   1.99s   1.99s   1.99s   1.99s   1.99s
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined  23   3.22M   3.22M   3.22M   3.22M   3.22M   3.22M
 # String:
@@ -287,64 +287,78 @@ DELETE FROM visit_history WHERE created_at >= '1654041600'\G
 # Query 14: ID 0xB099F0576D4C8510
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           2    6249
-# Exec time       1   1.44s  37.0us  15.1ms 230.5us 917.0us  67.0us
-# Lock time       1  11.6ms       0   1.8ms   1.9us   1.0us   1.0us
+# Count           2    6247
+# Exec time       1   1.63s  38.0us  18.3ms 260.3us 920.0us  70.0us
+# Lock time       1   7.4ms       0 597.0us   1.2us   1.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO player (id, tenant_id, display_name, is_disqualified, created_at, updated_at) VALUES ('7f8bdf2f-4719-45da-bbd0-d36038eef1fe', 1, 'NEniifddrPYtYInV', 0, 1658559863, 1658559863)\G
+INSERT INTO player (id, tenant_id, display_name, is_disqualified, created_at, updated_at) VALUES ('fc660e19-e208-4016-aefb-45ee20d200f8', 14, 'bIPWeZHXMxyAcuxN', 0, 1658562188, 1658562188)\G
 
 # Query 15: ID 0x0827D5A14DD47F0A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           1    2111
-# Exec time       1   1.23s  95.0us  17.1ms 580.7us   2.1ms 173.0us
-# Lock time       1   7.5ms       0 918.0us   3.6us   2.0us   1.0us
-# Rows sent       0  20.70k       1      30    9.00      27       8
-# Rows examined   0  20.70k       1      30    9.00      27       8
+# Count           1    2057
+# Exec time       1   1.20s  92.0us  24.8ms 583.8us   2.3ms 183.0us
+# Lock time       1   5.3ms       0 576.0us   2.6us   2.0us   1.0us
+# Rows sent       0  22.65k       1      32   11.00      30       9
+# Rows examined   0  22.65k       1      32   11.00      30       9
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE tenant_id=307 ORDER BY created_at DESC\G
+SELECT * FROM competition WHERE tenant_id=354 ORDER BY created_at DESC\G
 
 # Query 16: ID 0xD6793F4A922CC139
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     154
-# Exec time       1   1.20s 175.0us 131.5ms   7.8ms  48.3ms   1.3ms
-# Lock time       0 804.0us       0 635.0us   5.2us   2.0us   1.0us
-# Rows sent       1  95.42k      20   6.82k  619.00   5.43k     206
-# Rows examined   1  95.42k      20   6.82k  619.00   5.43k     206
+# Count           0     161
+# Exec time       0 972.2ms 216.0us 123.8ms   6.0ms  32.7ms   1.2ms
+# Lock time       0 192.0us       0   2.0us   1.2us   2.0us   1.0us
+# Rows sent       2  99.04k      20   6.78k  615.00   5.20k     210
+# Rows examined   1  99.04k      20   6.78k  615.00   5.20k     210
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 SELECT * FROM player WHERE tenant_id=1 ORDER BY created_at DESC\G
 
-# Query 17: ID 0x4E39CD28A560644F
+# Query 17: ID 0x60EB49FD82480245
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0    1059
-# Exec time       0 389.2ms  89.0us  12.7ms 367.5us   1.5ms 146.0us
-# Lock time       0   2.3ms       0 925.0us   2.2us   2.0us   1.0us
-# Rows sent       0  12.08k       0      29   11.00      20      12
-# Rows examined   0  12.08k       0      29   11.00      20      12
+# Count           0     194
+# Exec time       0 610.0ms 185.0us  21.7ms   3.1ms  12.2ms   1.5ms
+# Lock time       0 164.0us       0   7.0us 845.4ns   1.0us   1.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0  46.01k       5   1.00k  237.00   1.00k     194
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM competition WHERE tenant_id=87\G
+DELETE FROM last_player_score WHERE tenant_id = 1 AND competition_id = '643b14d6-db18-43b6-9702-af83443b8929' AND created_at < 1658562201\G
 
-# Query 18: ID 0x7999228A4DB29D7A
+# Query 18: ID 0x4E39CD28A560644F
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0    1049
+# Exec time       0 392.5ms  96.0us  11.1ms 374.2us   1.4ms 150.0us
+# Lock time       0   1.6ms       0 380.0us   1.5us   2.0us   1.0us
+# Rows sent       0  12.05k       0      31   11.00      20      12
+# Rows examined   0  12.05k       0      31   11.00      20      12
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT * FROM competition WHERE tenant_id=91\G
+
+# Query 19: ID 0x7999228A4DB29D7A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 274.0ms 274.0ms 274.0ms 274.0ms 274.0ms 274.0ms
+# Exec time       0 262.4ms 262.4ms 262.4ms 262.4ms 262.4ms 262.4ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -354,95 +368,53 @@ SELECT * FROM competition WHERE tenant_id=87\G
 # EXPLAIN /*!50100 PARTITIONS*/
 INSERT INTO `player` VALUES ('0001',1,'ISUコンボイ',0,1651363200,1651363200),('0002',2,'fujiwara組',0,1651363500,1651363500),('10001b841',1,'Dejah Towne IV',0,1651792708,1651859677),('10017632f',1,'Javonte Daniel',0,1651792850,1653746087),('10073b42e',1,'Amaya McLaughlin',0,1651793455,1652872432),('100f08561',32,'Darby Borer',1,1651794273,1652226374),('101014dfe',11,'Ms. Abbey Berge',0,1651794383,1652065525),('1010852e2',1,'Luella Gleason',1,1651794429,1652852174),('10111c8dd',1,'Ms. Deja Heller V',0,1651794491,1652873763),('101165cee',1,'Beth Brekke',0,1651794521,1652403046),('1015d77da',1,'Mr. Augustus Macejkovic DVM',0,1651794987,1652512017),('10190e408',1,'Ethan Schaefer',0,1651795324,1652797465),('101ca1c69',1,'Mr. Keon Goldner III',0,1651795699,1652839526),('101ca4354',29,'Reva Stark',0,1651795700,1652820503),('101cc6637',1,'Ms. Lorena Lynch',0,1651795714,1652857294),('101d39213',1,'Lukas Oberbrunner',0,1651795761,1653289874),('101de8ed4',1,'Elfrieda Borer III',0,1651795833,1652412025),('101e9d980',1,'Ms. Beulah Kuhlman',0,1651795907,1651961798),('10208abf7',1,'Mr. Immanuel Shanahan IV',0,1651796109,1654032736),('10279210a',1,'Ms. Pinkie Waelchi Sr.',0,1651796846,1651995134),('102a5fd6b',1,'Magnolia Rau IV',0,1651797140,1652147704),('10329fa8a',1,'Laron Gislason Jr.',0,1651798005,1652253110),('1034cc4d5',1,'Dangelo Wilderman',0,1651798233,1653120272),('1034cc4d6',11,'Devante Hessel',0,1651798233,1652374469),('103668e72',1,'Brody Nolan IV',0,1651798402,1654020473),('103c7730e',1,'Eulah Yost',0,1651799037,1652862219),('103d8ff64',29,'Ms. Freida Rodriguez',1,1651799152,1652522129),('10407d78d',37,'Sydnee Quigley',0,1651799459,1653790038),('104653989',33,'Ms. Concepcion Yost',0,1651800071,1653799690),('104cab239',20,'Ova Hartmann',0,1651800736,1653990910),('104f5b9f5',1,'Mr. Cecil Boehm',0,1651801018,1652339293),('10536936e',1,'Jamal Little V',0,1651801443,1653627417),('105625e43',14,'Mr. Ezra Rodriguez Sr.',0,1651801730,1652928985),('1059b6fb0',8,'Ms. Tia Kuhlman III',0,1651802104,1651874360),('105c73a90',29,'Corene Medhurst V',0,1651802391,1652052531),('1060be4eb',1,'Joyce Willms',0,1651802841,1652725070),('1062475de',1,'Syble Turner',0,1651803002,1651958476),('1068c8694',1,'Lula Jacobson I',0,1651803684,1653535234),('106d4b30a',1,'Ms. Fleta Willms IV',0,1651804157,1653448894),('107376c75',7,'Zane Terry',1,1651804804,1653593206),('10770cc02',18,'Dasia Hilll',0,1651805180,1652877400),('107e18f0f',37,'Ms. Josiane Schneider',0,1651805919,1653813531),('107f369a2',31,'Nellie Upton IV',0,1651806036,1652323978),('10819b627',34,'Claud Jacobi',0,1651806287,1652479290),('1081ac776',1,'Ahmed Strosin PhD',0,1651806294,1653842198),('1081aeebd',35,'Mr. Nikko Reynolds II',1,1651806295,1653364467),('1087c6f9b',1,'Ms. Virgie Streich',0,1651806934,1653662322),('10889dce6',30,'Modesta King',0,1651807022,1652405157),('108afdbba',8,'Rose Batz DVM',0,1651807271,1652293521),('108d787b3',28,'Mr. Tad Nikolaus Sr.',0,1651807531,1653593461),('108deb3d5',1,'Milton O\"Keefe',0,1651807578,1653276864),('1094b0e6',1,'Ray Wuckert',0,1651391018,1651662021),('1094c69bc',1,'Ms. Ollie Nolan DDS',0,1651808297,1653717186),('109732bb2',1,'Ms. Luz Lueilwitz',0,1651808551,1652946706),('1097ffcf6',26,'Milan Stehr',0,1651808635,1651877475),('1099b9f7',1,'Ms. Shaina Hermann',0,1651391051,1653283745),('109cc6f5f',8,'Samir Hane',0,1651809136,1652503684),('10a2cb795',1,'Cullen Anderson',1,1651809767,1654016018),('10a7e59e4',28,'Domenica Jenkins',0,1651810302,1652222956),('10abdad2e',28,'Ms. Dorothy Stiedemann',0,1651810717,1652724665),('10ae5f587',1,'Cicero Larkin',0,1651810981,1652013556),('10b1eb8a9',1,'Mr. Alec Krajcik DDS',0,1651811353,1653004900),('10b234c81',1,'Melisa Haley',0,1651811383,1652137963),('10b6cb1d3',1,'Sabrina Rodriguez',0,1651811864,1653093268),('10b738f8b',1,'Ms. Violette Spencer',0,1651811909,1652627051),('10bc5ce18',1,'Sylvester Maggio III',0,1651812448,1652951458),('10bd97d3c',28,'Mr. Edgar Kohler II',0,1651812577,1653990657),('10be0a936',1,'Jaiden Wyman',1,1651812624,1652728947),('10c41b4e1',24,'Ms. Cynthia Kreiger II',1,1651813260,1653972450),('10c56c3b6',1,'Earnestine Stracke',0,1651813398,1652465458),('10c6bab3a',1,'Rosalind Prosacco',0,1651813535,1652255638),('10cbbc6fa',1,'Jamar Schneider',0,1651814060,1652506192),('10d763d21',40,'Marian Hilll DVM',0,1651815282,1653850124),('10ddec2f1',1,'Arielle Schuster',0,1651815967,1653840679),('10dec09bc',4,'Linnie Kulas DDS',0,1651816054,1652335633),('10df160b1',1,'Jaylon Connelly',0,1651816089,1651879129),('10df669dc',1,'Ms. Wava Little I',0,1651816122,1652216927),('10e0adc48',9,'Rodrigo Gibson',1,1651816256,1652190319),('10e52e1b0',1,'Jane Johnson',0,1651816728,1652583496),('10e60c472',1,'Stephon Hickle',0,1651816819,1652043851),('10e655825',5,'Jaiden Kerluke',0,1651816849,1652647975),('10e93942d',1,'Bria Brekke I',0,1651817152,1652087767),('10eb91d6f',1,'Mr. Vance Beahan',0,1651817398,1653613011),('10ee7326d',33,'Tomasa Dietrich MD',0,1651817700,1652785244),('10f4aafa',1,'Tracey Lebsack',0,1651391647,1653130230),('10f6785f4',1,'Mr. Luigi Champlin',0,1651818541,1652153687),('10f8ebcec',19,'Karson Feil',0,1651818798,1652597465),('10fabbb03',1,'Ms. Birdie Grady IV',0,1651818988,1653131960),('10fdf0006',33,'Celia Thompson',0,1651819324,1651950445),('10fe20d4c',1,'Jonathan Feeney',0,1651819344,1653021534),('1103ab48e',21,'Orlando Murazik Sr.',1,1651819925,1653299477),('11068f04c',20,'Greta Cummerata',0,1651820228,1653313402),('11084b5aa',1,'Delphine Haag',0,1651820410,1651861803),('110b11cfb',15,'Trevion Kohler',0,1651820701,1652226705),('110eb8e04',1,'Ms. Eulalia Barrows Jr.',0,1651821084,1652841106),('1111228bf',32,'Noemy Mills',0,1651821337,1652403782),('111559a3c',1,'Adah Abshire PhD',0,1651821779,1653055369),('111807b13',23,'Ms. Aurelia Schneider',0,1651822060,1654032501),('11180a1d4',28,'Adelle O\"Connell DVM',0,1651822061,1652750983),('111886e2',1,'Mr. Oran Okuneva',0,1651391882,1651732496),('111b82c96',32,'Ms. Isabell Dickens',0,1651822425,1652821604),('111e41ee7',1,'Alvera Bauch',0,1651822713,1652012945),('1121d3044',20,'Mr. Otto Bauch',0,1651823087,1652951276),('1121df38e',8,'Mr. Karl Lemke DVM',0,1651823092,1653202792),('11228058d',42,'Lauren Predovic PhD',0,1651823158,1652802631),('1122df907',1,'Mr. Jan Kunze',0,1651823197,1653646662),('1123a7c04',21,'Ariel Kilback',0,1651823279,1652112824),('11262767d',1,'Gregoria Zboncak',1,1651823541,1652875779),('112845657',1,'Ms. Yvonne Reilly Jr.',0,1651823763,1653770645),('11295e293',17,'Mr. Cameron Hodkiewicz',0,1651823878,1653323903),('112f1e563',1,'Kyleigh Osinski',1,1651824481,1651914276),('11311f05c',1,'Ryann Wehner',0,1651824691,1652923821),('113141351',23,'Clemmie Parker',0,1651824705,1653889930),('1133b7134',1,'Simone Lehner',0,1651824963,1653594057),('11358480f',8,'Reynold Okuneva',0,1651825152,1652471623),('113a3d01e',19,'Ms. Piper Howell Jr.',0,1651825647,1653993627),('113aef3b0',5,'Ms. Drew Bednar I',0,1651825720,1653959554),('113f4d652',42,'Hertha Abbott',1,1651826178,1653822065),('1141110ef',28,'Jaylon Lockman I',0,1651826363,1652178331),('1143e3b5e',37,'Grayce Hilll II',0,1651826659,1652171608),('11442f628',1,'Mr. Houston Konopelski',0,1651826690,1653937466),('114f3f6a2',14,'Mr. Jaime Kutch V',0,1651827850,1652727133),('115100a2a',1,'Xavier Boehm',0,1651828034,1652061421),('11534f79c',1,'Alvis Bartell',0,1651828276,1653110523),('115ca0b96',1,'Mireille Mertz',0,1651829253,1652043570),('115ddbab1',1,'Cassandra Schiller',0,1651829382,1652527592),('115e9efb3',7,'Ms. Anya Stamm PhD',0,1651829462,1652248774),('11602f5bb',20,'Clinton Beahan',0,1651829626,1653438552),('116176827',35,'Ms. Blanca Mueller V',0,1651829760,1653479941),('1161ebba',1,'Ms. Sister Jakubowski',0,1651392363,1653855132),('116b33332',37,'Candace Blanda',0,1651830781,1652419303),('116d58837',1,'Kurtis Sipes',0,1651831006,1652102619),('116fee1e8',1,'Alexys Fritsch II',0,1651831277,1652876192),('1170e246e',1,'Camila Schmidt',0,1651831377,1653463847),('117648189',35,'Gerhard Herman PhD',0,1651831943,1653032194),('11776f81b',1,'Jerrold Hegmann',0,1651832064,1653636618),('11786afc1',18,'Richmond Blanda',0,1651832167,1652785504),('117fec5c3',1,'Ashton Bahringer',0,1651832954,1653932090),('118244f07',16,'Maeve Koelpin IV',0,1651833200,1652446812),('1182c3e71',20,'Jaden Stoltenberg',0,1651833252,1652869885),('1184348c5',1,'Ms. Kimberly Bergstrom',1,1651833403,1653745064),('1186af537',34,'Jessyca Vandervort',0,1651833663,1653379039),('118d9e37c',37,'Ms. Caroline Koelpin',0,1651834390,1652603863),('118dc7b8e',10,'Clovis Veum PhD',1,1651834407,1653002749),('118f42237',33,'Ms. Miracle Hyatt Jr.',0,1651834562,1652878336),('119330020',38,'Mr. Dorcas Predovic',0,1651834974,1652165543),('11938a538',1,'Ms. Joannie Goyette V',1,1651835011,1651843956),('11958897c',1,'Ms. Kenya Daniel',0,1651835220,1653909626),('11986505b',12,'Mr. Zackary Graham Sr.',0,1651835520,1653053048),('119b2692e',25,'Consuelo Cartwright',0,1651835809,1652216468),('119bc546b',1,'Abe Turner',0,1651835874,1653397737),('11a00b043',17,'Birdie Will',0,1651836322,1652297449),('11a605c9c',1,'Darwin Blanda',0,1651836949,1652693996),('11a6676e7',1,'Ms. Roxane Jacobs II',0,1651836989,1652675381),('11adeb44a',35,'Justus Bartoletti',0,1651837777,1653546967),('11b110f02',1,'Freeman Langworth',0,1651838107,1653940917),('11b367131',1,'Kira Paucek',0,1651838352,1652671085),('11b4bcdd2',1,'Ms. Maymie Ledner V',0,1651838492,1653364335),('11b545995',20,'Anastasia Murazik',0,1651838548,1652314974),('11b8442ea',1,'Ms. Teagan Romaguera Sr.',0,1651838862,1652849900),('11c457014',9,'Caroline Gottlieb',1,1651840128,1652491685),('11c5c53c3',1,'Garry Medhurst',0,1651840278,1652019706),('11c942c63',1,'Buford Smitham III',0,1651840644,1653632934),('11c9a1fcf',1,'Ms. Britney Gleason',1,1651840683,1653843097),('11cc3a0f2',1,'Timothy Hickle',0,1651840955,1652955396),('11ceb774',1,'Elisha Schaden',0,1651393076,1651914622),('11d1606ca',1,'Ms. Elnora Upton IV',0,1651841495,1652220517),('11d26818a',1,'Ms. June West DVM',1,1651841603,1652238836),('11d2c4db8',1,'Robbie Kutch',0,1651841641,1652709457),('11d54e46a',42,'Ms. Lilian Nolan Sr.',0,1651841907,1653287350),('11d5691e2',42,'Pink Bosco',0,1651841918,1652075844),('11da0933f',1,'Letitia Larson',0,1651842403,1652700530),('11daf3934',22,'Ashleigh Feest',0,1651842499,1653090336),('11de76062',1,'Sheila Heathcote',0,1651842867,1652137550),('11e56c42e',1,'Paige Hagenes',0,1651843597,1653470198),('11e9af8c7',36,'Coty Hintz',0,1651844044,1653750556),('11ec05b36',13,'Jarod Sanford',0,1651844289,1652534968),('11edc6ecf',1,'Abdul Hegmann',0,1651844473,1653349014),('11edc95d3',10,'Brianne Johns',0,1651844474,1653743794),('11ee87c9b',44,'Wallace Halvorson',0,1651844552,1653604855),('11eea9fc2',31,'Ms. Lulu Metz I',0,1651844566,1653442383),('11f2c8a93',1,'Russell Russel III',0,1651844998,1653105070),('11f37d544',32,'Nya Terry I',0,1651845072,1652900460),('11f53c182',18,'Edna Schaefer',0,1651845255,1652115762),('11fa42b65',1,'Lucas Glover',1,1651845782,1652708544),('11fd04494',31,'Vesta Lakin',0,1651846071,1654021722),('1202b35e2',33,'Roxane Daniel',0,1651846667,1652069598),('120428e57',5,'Ms. Loma Stamm I',0,1651846820,1652393717),('1205b6dc3',1,'Lavern Casper DDS',0,1651846983,1653136003),('1208033a5',30,'Aracely Durgan IV',0,1651847224,1652679799),('120c18267',1,'Markus Padberg PhD',0,1651847652,1654017786),('120e1b4bc',1,'Suzanne Little',0,1651847863,1653749659),('120ea6737',20,'Sandra Rolfson',0,1651847920,1654034815),('121647941',7,'Marcellus Hauck',0,1651848720,1653528229),('121f791a3',1,'Mr. Cicero Russel',0,1651849684,1653518938),('121fdd330',1,'Ms. Corrine Hintz',0,1651849725,1653737037),('1226b620d',30,'Ms. Zula Blick',0,1651850443,1652792584),('12289bf6a',1,'Ms. Lois Heidenreich',0,1651850642,1653356332),('12298dab2',1,'Sammie Reinger',0,1651850741,1653830168),('1229d2056',21,'Zelda Deckow',0,1651850769,1653482286),('12378b34e',41,'Reinhold Wisoky DDS',0,1651852208,1653370779),('1239d7971',35,'Giovanny Weimann',0,1651852449,1652973278),('123a1229f',1,'Abel Wolf',0,1651852473,1652491893),('123a8c3e3',18,'Samson Herman',0,1651852523,1653684003),('12434d727',20,'Demarcus Huels',0,1651853441,1652987755),('1243d147a',1,'Columbus Rogahn',0,1651853495,1653575971),('12454705',1,'Nathanael Veum II',0,1651393853,1653711287),('124581685',1,'Clark Runte Jr.',0,1651853672,1652875307),('12479cf5b',16,'Bernhard Windler III',1,1651853893,1653208958),('12482d01f',31,'Mr. Russell Rodriguez Sr.',0,1651853952,1651951041),('1248bd0c9',1,'Annamae Turcotte',1,1651854011,1652051522),('124a5e86e',1,'Mr. Al Stanton Sr.',0,1651854182,1652254714),('124c4bb40',1,'Mr. Benny Kreiger II',0,1651854384,1651877871),('124e5629d',18,'Ms. Margret Sauer II',0,1651854598,1652434196),('1257bd8f',1,'Lue Jacobi',0,1651393974,1651452848),('125a9009f',1,'Clara Wolf MD',1,1651855880,1653083261),('125e964e0',1,'Ms. Beverly Heathcote III',0,1651856302,1653871658),('125f15472',4,'Janae Graham',0,1651856354,1652638315),('1260a8196',23,'Ava Schimmel',0,1651856519,1653779334),('126316a6d',11,'Delbert Kemmer',0,1651856774,1652875819),('1267fd8af',1,'Rigoberto Rosenbaum MD',1,1651857288,1652231828),('12691da04',32,'Carmen Prosacco',0,1651857406,1652127113),('1269b9e0c',1,'Geraldine Mills',0,1651857470,1651960890),('126a1435e',1,'Jany Lebsack',1,1651857507,1652563532),('126a93271',1,'Ms. Glenda Schroeder',0,1651857559,1652951686),('126e79b04',33,'Tatum Kling DVM',1,1651857968,1653971256),('126f09bb9',10,'Brown Sauer',0,1651858027,1652623971),('127325fb8',1,'Mr. Clyde Wyman MD',0,1651858458,1653609143),('12765a4c3',16,'Ms. Allene Heaney Sr.',0,1651858794,1653972901),('1278e899b',7,'Melba Reinger',1,1651859062,1653412752),('12801e4cd',1,'Carole Lemke',1,1651859818,1653908550),('128082650',26,'Lysanne Johnson',0,1651859859,1653985126),('12831f561',38,'Desmond Russel',0,1651860133,1653237716),('12834665c',30,'Lucile Herman',0,1651860149,1653342272),('1283be09f',1,'Skyla Schowalter',1,1651860198,1652295405),('128b83c58',1,'Ms. Florence Mitchell Sr.',0,1651861013,1651893251),('128eb3354',38,'Ms. Shirley Turner',0,1651861347,1653751089),('128eedccb',1,'Elian Wisoky',0,1651861371,1652660397),('129032c1',1,'Jarret Wolff DDS',0,1651394344,1652342875),('12931d947',1,'Flavio Lockman',0,1651861810,1651944120),('1293582f2',43,'Chelsea Olson',0,1651861834,1653866408),('129422d1f',1,'Shanelle Weimann',1,1651861917,1653657903),('129512127',25,'Ms. Alena Bins DVM',0,1651862015,1652106672),('129514b9',1,'Ms. Nichole Prosacco DVM',1,1651394376,1653027505),('1295f78d0',1,'Earlene Murray',0,1651862109,1653867256),('129826a7e',1,'Ella Kunde',0,1651862338,1653908026),('129b699e1',1,'Mr. Delmer Maggio DVM',0,1651862680,1653629991),('129f37bac',1,'Ms. Vernice Schuster',0,1651863079,1652784163),('12a01faba',20,'Abdul Fay',0,1651863174,1653451407),('12a342e1b',38,'Asia Goyette Sr.',1,1651863503,1652314784),('12a4b5f91',21,'Ms. Reta Adams PhD',0,1651863655,1653168824),('12a715e56',1,'Mr. Damion Pacocha MD',0,1651863904,1653347810),('12a8e351e',1,'Mr. Dewayne Pouros IV',0,1651864093,1652673650),('12aa1bd06',19,'Mr. Bailey Metz',0,1651864221,1651995266),('12aa6c606',32,'Ms. Patience Abernathy',1,1651864254,1652833656),('12ad6fdc9',1,'Ms. Gudrun Jacobson',0,1651864570,1652996019),('12af470cd',45,'Zita Witting I',0,1651864763,1652473589),('12afab25f',19,'Skylar VonRueden',0,1651864804,1653797828),('12b240c35',5,'Lorna Smith',0,1651865075,1652497252),('12b28c729',10,'Alexie Shanahan',0,1651865106,1652454742),('12b45ec64',1,'Ms. Leola Satterfield',0,1651865297,1652117644),('12b4ddb50',8,'Arlie Jakubowski',0,1651865349,1652896932),('12bb3f078',1,'Damaris McCullough',0,1651866018,1653863922),('12bd4226c',1,'Uriah Hettinger I',0,1651866229,1653374061),('12bfabd58',1,'Kaela Rogahn',1,1651866482,1653868166),('12c171f1b',1,'Jennings Witting',0,1651866668,1652977604),('12c330b5c',1,'Jefferey McClure',1,1651866851,1652833634),('12c81c7cc',1,'Mallory Aufderhar MD',1,1651867367,1653103498),('12c9157f1',22,'Grace Roberts IV',0,1651867469,1652897756),('12c9353c4',1,'Julio Bergnaum',0,1651867482,1653558050),('12d16dba1',1,'Xzavier Mohr',0,1651868344,1652880853),('12d2c5f9d',9,'Ottis Marquardt IV',0,1651868485,1653999616),('12d6aa126',1,'Yessenia Gerlach',0,1651868893,1652606826),('12d7835ad',33,'Ms. Mertie Rau',0,1651868982,1652996034),('12d9644ff',1,'Lessie Bartoletti V',0,1651869179,1652270708),('12dc14ca8',1,'Letitia Renner',0,1651869461,1653894692),('12e029b10',1,'Molly Kuphal',1,1651869889,1652843166),('12e2e1801',10,'Bridie Leannon',0,1651870174,1653011113),('12e36a370',10,'Ms. Elouise Zieme',0,1651870230,1653612980),('12e722618',1,'Stewart Brekke',0,1651870620,1652089274),('12e7b4dd0',34,'Stella Wolff PhD',0,1651870680,1653251585),('12e97fda1',4,'Jeanne Flatley',0,1651870868,1652751193),('12eaa25db',17,'Mr. Antone Balistreri',0,1651870987,1653380818),('12ed07272',36,'Adam Wehner',0,1651871238,1653738441),('12edcf5a8',1,'Tanya Powlowski',0,1651871320,1653702050),('12ee707f5',1,'Lesly Mante',0,1651871386,1652584350),('12f95e56a',16,'Kelton McClure',0,1651872532,1651941569),('12faf39af',1,'Miller Williamson DDS',0,1651872698,1653193259),('12fb0e794',1,'Beaulah Ryan DDS',0,1651872709,1652196895),('12fcdbe5b',1,'Kendall Quitzon',0,1651872898,1652424872),('13001edc5',1,'Herminia Powlowski',0,1651873240,1653927821),('13007e124',1,'Mr. Damion Rogahn PhD',0,1651873279,1652212770),('13013c82e',1,'Patrick Denesik',0,1651873357,1651932772),('130279e1a',1,'Mr. Alejandrin Rice',0,1651873487,1653387670),('130283a3b',1,'Natalie Walsh IV',0,1651873491,1653176641),('13031b022',24,'Mr. Maxwell Heller DDS',0,1651873553,1652055452),('1303c1089',1,'Anderson Kris',0,1651873621,1652828427),('13065918b',1,'Mr. Waylon Nienow',0,1651873893,1652454020),('1308dd9e7',1,'Ms. Ova Little',0,1651874157,1653994771),('130a53260',1,'Elissa Halvorson I',0,1651874310,1654031080),('130d3208b',1,'Mr. Layne Willms',0,1651874611,1653725746),('130da9a7e',1,'Gina Kohler',0,1651874660,1653798416),('130df0743',10,'Ms. Cecelia Bosco DVM',0,1651874689,1652503818),('130e1511d',45,'Alisha Dooley I',0,1651874704,1652401902),('1313e3e40',36,'Mr. Edwardo Crist PhD',0,1651875313,1653810269),('131604558',1,'Rocio Hodkiewicz',0,1651875536,1652461834),('131807733',1,'Mariam Kuhic',0,1651875747,1653605926),('1319ab644',31,'Mr. Kiley Schultz',0,1651875919,1653841669),('131a258',1,'Emma Wilderman',1,1651365203,1652440642),('131af7674',21,'Mr. Titus Herman IV',0,1651876055,1652156280),('131c855ff',1,'Nadia McGlynn',0,1651876218,1652204725),('131d30440',4,'Mr. Kyler Wyman II',0,1651876288,1653132225),('131e26d8b',32,'Gretchen Upton',0,1651876389,1653021787),('131f2733b',23,'Mr. Ross Feest DDS',1,1651876494,1653460103),('13250bfba',1,'Ms. Jody Mueller V',0,1651877112,1652638724),('1325ddf38',11,'Sigrid Barrows',1,1651877198,1652826137),('13269c621',1,'Casey Runolfsdottir III',0,1651877276,1652340218),('132bca10b',1,'Rollin Dicki',0,1651877819,1652790021),('132bf873a',42,'Mr. Arnoldo Collins PhD',0,1651877838,1653502871),('1330bf938',1,'Don Welch',0,1651878339,1653159765),('133243c69',1,'Mr. Zechariah Bahringer',0,1651878498,1652211331),('13337eb3f',31,'Carolina Deckow',0,1651878627,1653918862),('1335bee26',1,'Annabelle Kiehn',0,1651878863,1653966768),('13381295d',37,'Darrel Collins III',0,1651879107,1652882753),('133ac581d',11,'Dora Rolfson DVM',1,1651879390,1653919511),('133d89802',8,'Ms. Kailyn Carroll Sr.',0,1651879680,1652722996),('1340f868b',1,'Ms. Hilma Sauer MD',0,1651880040,1652083766),('13446ea5e',5,'Neha Stokes',0,1651880403,1652798510),('1344b5745',1,'Madelyn Kuvalis III',0,1651880432,1652938314),('13455424f',36,'Amparo Rosenbaum Jr.',0,1651880497,1653844033),('134659609',1,'Camylle Daniel',0,1651880604,1652683396),('13472400f',1,'Bryon Hane DVM',0,1651880687,1653436361),('134e26702',1,'Jazmyne Berge',0,1651881422,1652801651),('134fc3076',1,'Derrick Runte',0,1651881591,1652327974),('1352a93b5',13,'Ms. Destinee Ferry Jr.',0,1651881895,1653707075),('1353987c5',30,'Bernadine Sanford',0,1651881993,1653853833),('135855da3',1,'Kennith Lowe',0,1651882490,1652625281),('135d57973',1,'Mr. Keegan Kohler',1,1651883015,1652493792),('135d61601',31,'Mr. Roscoe Hodkiewicz',0,1651883019,1651909849),('13651d5aa',1,'Flossie Boyle',0,1651883830,1653285899),('137117c21',1,'Deon Dare',0,1651885086,1652229700),('1373000a1',1,'Astrid Grady',0,1651885286,1653948535),('137647e1d',1,'Skyla Stoltenberg',0,1651885630,1653146774),('137dc464d',1,'Mr. Alec Lesch',0,1651886415,1653782789),('137e28799',1,'Ivory Yost',0,1651886456,165264...\G
 
-# Query 19: ID 0xDB3B51ADCC733721
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     189
-# Exec time       0 161.0ms 100.0us  16.1ms 852.1us   3.7ms 143.0us
-# Lock time       0   1.1ms       0 700.0us   5.6us   2.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0   1.58k       0     101    8.00     100       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-DELETE FROM last_player_score WHERE tenant_id = 84 AND competition_id = '9634634c-e317-43c2-bc25-a59bc7f84a43'\G
-
 # Query 20: ID 0x6C642D7A6D30AA17
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     158
-# Exec time       0  89.3ms 110.0us   5.1ms 565.3us   2.4ms 183.0us
-# Lock time       0 198.0us       0  22.0us   1.3us   2.0us   1.0us
+# Count           0     162
+# Exec time       0 116.5ms 107.0us   8.3ms 719.4us   2.9ms 202.0us
+# Lock time       0 183.0us       0   2.0us   1.1us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0     158       1       1    1.00       1       1
+# Rows examined   0     162       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-UPDATE competition SET finished_at = 1658559899, updated_at = 1658559899 WHERE id = '2993354d-ba61-4bdb-a5b8-a428c96b934c'\G
+UPDATE competition SET finished_at = 1658562216, updated_at = 1658562216 WHERE id = '68b169c9-1a44-45eb-84e1-11e32ada5b51'\G
 
 # Query 21: ID 0x6E5D84A8CC6E9DB3
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     171
-# Exec time       0  87.4ms  88.0us  18.5ms 511.2us   2.1ms 127.0us
-# Lock time       0 538.0us       0 344.0us   3.1us   2.0us   1.0us
+# Count           0     176
+# Exec time       0 113.0ms  84.0us  11.9ms 642.2us   3.6ms 135.0us
+# Lock time       0 200.0us       0   2.0us   1.1us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_at) VALUES ('0c948155-b00b-4313-868f-fd5c88f6c777', 301, 'マンゴスチンドリブン', NULL, 1658559882, 1658559882)\G
+INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_at) VALUES ('17b1f825-1f4a-47bd-898f-f72aa2299d93', 363, 'パパイヤ文庫', NULL, 1658562228, 1658562228)\G
 
-# Query 22: ID 0x813031B8BBC3B329
+# Query 22: ID 0xCE0293B4FFBDE858
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     221
-# Exec time       0  52.5ms  35.0us   5.2ms 237.5us 712.0us  67.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-COMMIT\G
-
-# Query 23: ID 0xCE0293B4FFBDE858
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     117
-# Exec time       0  50.9ms 131.0us   4.5ms 435.3us   1.6ms 191.0us
-# Lock time       0 138.0us       0   3.0us   1.2us   2.0us   1.0us
-# Rows sent       0  12.84k     102     114  109.00     113     110
-# Rows examined   0  12.84k     102     114  109.00     113     110
+# Count           0     116
+# Exec time       0  47.0ms 137.0us   4.0ms 405.0us   1.4ms 194.0us
+# Lock time       0 136.0us       0   5.0us   1.2us   2.0us   1.0us
+# Rows sent       0  12.72k     101     114  109.00     113     110
+# Rows examined   0  12.72k     101     114  109.00     113     110
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 SELECT * FROM tenant ORDER BY id DESC\G
 
-# Query 24: ID 0x13425781EDD3EB5A
+# Query 23: ID 0xB711A299ADC32792
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  33.6ms  33.6ms  33.6ms  33.6ms  33.6ms  33.6ms
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO `competition` VALUES ('103836525',28,'エンジョイブルーベリー海岸大会',NULL,1651798591,1652684894),('10740e22b',27,'パッションフルーツ丼 vol.4',NULL,1651804866,1652236647),('10c826747',35,'横浜倶楽部大会',NULL,1651813684,1653830848),('1109b4b19',15,'ミニトマト騎士団',1653516935,1651820558,1653516935),('11805077e',33,'第1回 第3ネギ店',1653045930,1651832995,1653045930),('1193fd146',8,'西いちじくず',1652218798,1651835058,1652218798),('11990626b',21,'第9回 ドラゴンフルーツ野郎',NULL,1651835586,1653218553),('12339ae82',15,'箱出しモリスメランコリー',1651863417,1651851795,1651863417),('125ca9262',15,'三軒茶屋オペレーションズカップ',NULL,1651856100,1653396097),('127cddcaf',41,'エールだもの',1652849328,1651859477,1652849328),('127f6e835',30,'-rf鎌倉だねえ杯',1651971768,1651859746,1651971768),('12998634c',22,'和光市中毒 #7',1652176623,1651862482,1652176623),('12b8b3297',34,'シークワーサークラッシャーカップ',NULL,1651865751,1652264645),('12d6549d3',44,'桜木町のお茶会杯',1653912945,1651868858,1653912945),('136372179',21,'JSON色付け計画大会',1653454951,1651883655,1653454951),('138628d31',30,'カジュアルライチマニア大会',1652573577,1651887295,1652573577),('13bfdb55c',30,'おばさんもどき #7',1652389424,1651893345,1652389424),('13cfe357d',33,'大統一渋谷コミック杯',NULL,1651895026,1653675009),('13f4c440f',14,'広尾乙女杯',NULL,1651898893,1653969794),('13f6ceb68',19,'第1回 表参道株式会社',NULL,1651899107,1653963812),('146785b3a',31,'枝豆は諦めたカップ',NULL,1651910926,1653032336),('14714c229',32,'リッチ自作キーボード野郎 #4',NULL,1651911951,1652224945),('1485fdfe8',2,'プレミアムキレまみれ杯',1651938482,1651914121,1651938482),('14d7c5086',36,'リアクティブスマホ劇場杯',1653038937,1651922696,1653038937),('14e3cbaa3',48,'第9回 すべからく魔剤支部',1652121209,1651923957,1652121209),('14e57bc88',18,'第4回 会えるかぼちゃテーマパーク',1653750664,1651924134,1653750664),('14fc7ee53',25,'リッチ東京組 vol.0',NULL,1651926547,1652066675),('155bc48ec',36,'トンポーローキックカップ',NULL,1651936537,1652221720),('155bf560c',3,'業務中にエビチリ部カップ',NULL,1651936557,1653383797),('1562e1d87',19,'スライディング課金システム #2',NULL,1651937283,1653429612),('1588887fd',45,'りんご勢カップ',1652764248,1651941231,1652764248),('15a76c3b4',5,'トマトは諦めた杯',NULL,1651944470,1653478410),('15a88ec1e',45,'第5回 シークワーサー風',NULL,1651944589,1652020995),('15c1690cd',42,'すこしマンゴーマニア vol.0',1653775538,1651947195,1653775538),('15e88c97a',14,'麻婆ブランデー段階',NULL,1651951299,1652920926),('15f0c2a29',20,'甘口ロードアベレージスターズ',NULL,1651952160,1653315589),('161b13288',21,'荻窪本舗大会',NULL,1651956597,1652086675),('1668799cc',25,'今夜は立川ごはん杯',NULL,1651964713,1652560175),('16799ccfb',6,'プロセス同盟カップ',NULL,1651966510,1652967921),('16a837f98',30,'第7回 新宿の如し',NULL,1651971397,1652903829),('16dbd26db',47,'二子玉川商事カップ',1652256508,1651976808,1652256508),('16df8a920',15,'赤ボルダリング工房 #6',NULL,1651977198,1652564058),('16ff4a03b',42,'第3回 リリー大好き',1652533967,1651980527,1652533967),('1700d7f64',49,'白ペペロンチーノ工場カップ',1653890681,1651980690,1653890681),('171992842',43,'プレミアムC10K党 #8',1653248853,1651983283,1653248853),('1724e4789',54,'必勝のモンゴ組 #3',NULL,1651984470,1653617622),('173494944',3,'スピリチュアル町田に全振りカップ',1653236118,1651986115,1653236118),('1748f5dd8',33,'北もやしTHAN',NULL,1651988252,1652114270),('174f069ca',1,'第3回 隠れ家的サーバ都市',1653340832,1651988888,1653340832),('17ad3fb60',14,'第7回 スペシャルココナッツオペレーションズ',1653278042,1651998768,1653278042),('17b0dcfc5',55,'カニします',NULL,1651999147,1652669419),('17b2046a0',19,'やっぱりうどん出張所 #7',1653105215,1651999268,1653105215),('17fd87779',57,'第9回 池袋ラボ',1653149496,1652007186,1653149496),('1818b579a',55,'第9回 椅子C10Kの森',1652434448,1652010036,1652434448),('183992901',12,'すべからくオレンジ合衆国',NULL,1652013482,1652697489),('184b9b3e1',59,'第2回 ほうれん草百貨店',NULL,1652015373,1652546907),('186e1eb48',54,'パッションフルーツ整骨院カップ',NULL,1652018992,1653727147),('187691c88',44,'会えるカメラ書房 #6',1652710498,1652019878,1652710498),('188b48883',55,'徹底的マンゴー乙女',1652877756,1652022050,1652877756),('188fc18d3',39,'第3タゴ無双カップ',1653829647,1652022519,1653829647),('189eae582',39,'第3回 非同期白菜症候群',1653663719,1652024084,1653663719),('18bc2b289',15,'第5回 赤羽から始めるXSUCON',1652742843,1652027176,1652742843),('18cf95e14',42,'北千住テーマパーク大会',NULL,1652029212,1653338729),('18dd69e9d',13,'イスレンジャー',NULL,1652030662,1652528265),('1901eb9e1',33,'自由が丘.js大会',NULL,1652034490,1652730975),('19750eb75',36,'第2回 羽つき浸透依存症',1652329824,1652046563,1652329824),('1976843d5',37,'第3回 無農薬解体茶',1653230814,1652046716,1653230814),('1998c5c8e',61,'第8回 ネギプリン',NULL,1652050308,1652739820),('19f4163d4',17,'新マスクを信じろ杯',NULL,1652059883,1653225581),('19f77b605',13,'多重レタス部',1652600642,1652060239,1652600642),('19f8ee7c0',8,'第2回 ミラで解決',NULL,1652060391,1653420810),('19feda94a',44,'エール症候群 vol.4',NULL,1652061012,1653470790),('1a0205203',1,'すべからくサーバ乃月杯',NULL,1652061344,1652215777),('1a182c84a',47,'第9回 ステージングモリス計画',NULL,1652063667,1652192313),('1a30ceb04',3,'相撲亭',1653378009,1652066250,1653378009),('1a37549b0',42,'平面的ワインの世界 #3',NULL,1652066934,1653100027),('1a5b3ef03',61,'第8回 そば百貨店',NULL,1652070700,1653119192),('1a69770f5',50,'パパイヤだねえ',1653639339,1652072191,1653639339),('1a8829f50',6,'昭和ダッシュを信じろカップ',1652785217,1652075410,1652785217),('1a9c3f914',60,'三度の飯よりペペロンチーノレンジャー大会',NULL,1652077516,1653466095),('1aa6457c9',57,'第9回 出会って5秒で吉祥寺ゼロ',NULL,1652078567,1653554608),('1ac0b9ee7',15,'バンバンジーはバランスいい大会',NULL,1652081341,1653396080),('1af57e3fd',49,'第3回 IPA派',NULL,1652086874,1653841718),('1afd6fee9',9,'ラッキーおじさん本部杯',NULL,1652087707,1652327162),('1b2445541',59,'第4回 恵比寿党',1653251084,1652091779,1653251084),('1b3870e92',22,'第9回 ミルクヶ丘',1653029811,1652093894,1653029811),('1b395669e',27,'第3回 アイドル大宮と俺',1653050939,1652093988,1653050939),('1b4b15ddc',52,'第1回 大きな舞浜する方法',NULL,1652095849,1653724637),('1b562d359',27,'枝豆の晩餐 #8',1653875586,1652097012,1653875586),('1b5d14cbf',4,'第7回 闇の洋梨家',1653744911,1652097736,1653744911),('1b71c4370',50,'ブルーベリーから始めるXSUCON #3',NULL,1652099905,1653920331),('1bb54bcd1',11,'ベンチマーク同好会カップ',1653303323,1652106986,1653303323),('1bc806bb7',8,'今夜はみたらし動物園',NULL,1652108950,1653803833),('1be97167b',65,'浦和！ #4',NULL,1652112454,1652983564),('1c05a9856',58,'第5回 焼き品川入門',NULL,1652115413,1653859603),('1c05d7e9e',39,'和風プロファイリング食べたい vol.1',NULL,1652115432,1652707742),('1c06f8006',50,'すこしキャベツがヤバい vol.8',1652286321,1652115550,1652286321),('1c2910056',44,'マルチハーの世界大会',NULL,1652119125,1653316441),('1c31c0265',8,'スパゲッティ研究所 #3',1653402924,1652120036,1653402924),('1c59b5a77',9,'無限エール単推し杯',1653452891,1652124226,1653452891),('1c8635415',26,'多段いちじく帝国 vol.9',NULL,1652128892,1653979742),('1c9538068',54,'スマホさん杯',1654010416,1652130466,1654010416),('1c957c626',57,'ようこそポンカン物語カップ',1652852462,1652130494,1652852462),('1cd550b69',67,'第3回 にんじんは諦めた',NULL,1652137187,1652391233),('1d028ec0b',36,'よしなに運営づくし #5',NULL,1652141931,1653626787),('1d204fecc',27,'あなたと白菜.js杯',1652351254,1652145051,1652351254),('1d5d20c8f',53,'第4回 腹筋クラッシャー',NULL,1652151428,1653354946),('1d855f85f',26,'限界集落三軒茶屋乃月カップ',NULL,1652155648,1652160191),('1d95b8164',29,'薔薇駆動開発杯',1652869351,1652157362,1652869351),('1d969640a',42,'世界のたまプラーザ完全理解杯',NULL,1652157453,1653564495),('1d98db4b8',71,'第8回 メイン大臀筋帝国',1653522163,1652157691,1653522163),('1de615ce1',71,'ウルトラブロッコリー共和国大会',1652416247,1652165789,1652416247),('1df4f184b',71,'第2回 洋風東京テクノロジーズ',NULL,1652167347,1653073174),('1e0a1fe5c',13,'第4回 子供用みかん絵本',NULL,1652169568,1653397781),('1e150dbd8',72,'第5回 バナナもどき',NULL,1652170714,1652233451),('1e199a485',47,'ミルクシスターズ',1653693270,1652171191,1653693270),('1e19fbef5',46,'浸透する方法',1653333296,1652171231,1653333296),('1e3dd79fd',19,'GPGPUメランコリー大会',1653844371,1652174991,1653844371),('1e3e6a1b3',12,'群馬のパブ方式',1652385054,1652175051,1652385054),('1e5c796c3',49,'大きなミニトマトできた #1',NULL,1652178203,1653286692),('1e6e75ea7',4,'第7回 マジックハードウェア効果',1652557758,1652180089,1652557758),('1e87b4518',27,'和光市食堂杯',NULL,1652182736,1652516833),('1e8f0c32e',59,'西びわの如し大会',1653322621,1652183506,1653322621),('1e9bc50c4',8,'第3回 破壊的アロエ風',1652563012,1652184840,1652563012),('1eb27c77b',44,'第8回 ネットワークしかねえ',NULL,1652187222,1652554654),('1ecea1123',26,'第6回 きゅうりで再起動',1653151402,1652190173,1653151402),('1edb96ed8',7,'第7回 よくわかるマーケティング食べたい',1652638459,1652191532,1652638459),('1efd0dd1d',8,'すべからく寿司中毒 #8',1652423871,1652195041,1652423871),('1f0070890',52,'クライアント家族 vol.3',1652916743,1652195396,1652916743),('1f12597a2',47,'第8回 千葉のアワビごはん',1652214487,1652197274,1652214487),('1f1edc9f3',14,'第2回 アイドルfast中毒',1652957123,1652198586,1652957123),('1f3aa950e',31,'パブ.pl大会',1653506108,1652201501,1653506108),('1f3b3958e',21,'ライブの缶詰 #6',NULL,1652201560,1652245493),('1f43b3c6d',19,'第3回 藤沢通信社',1652460678,1652202449,1652460678),('1f5e876eb',71,'できたて無職屋',NULL,1652205262,1652629722),('1f9082d8b',77,'第6回 あの浦和！',NULL,1652210503,1653491210),('1fa13d113',67,'あわよくばエラービーチ杯',1653691574,1652212257,1653691574),('1fa601c8f',66,'第4回 ミネストローネ部',1652776242,1652212757,1652776242),('1fd2b7172',48,'第5回 マンゴスチン同好会',1654013754,1652217445,1654013754),('1fed020a8',56,'いっけな〜いスイカ神社杯',NULL,1652220202,1652334219),('200bb9d45',61,'マスカット地獄杯',1652321559,1652223423,1652321559),('203f1c1f6',60,'奇跡のチェンソーの如し大会',1652956203,1652228811,1652956203),('204b1b693',79,'秋葉原夜会杯',1653953731,1652230069,1653953731),('20690889d',40,'荻窪興信所杯',1653188944,1652233207,1653188944),('20913b0e8',36,'第5運営株式会社 vol.2',1653912649,1652237422,1653912649),('20a3c045b',19,'山の甘みシステム杯',1652258269,1652239364,1652258269),('20d2ce2a7',65,'元祖サーバ完全理解カップ',NULL,1652244298,1652798097),('20e8f0aed',14,'勝利の年収倶楽部カップ',1653464672,1652246619,1653464672),('20eb46d41',48,'さいたま新都心鎮魂歌 vol.9',NULL,1652246864,1653549116),('20f006a24',44,'青山一丁目大好き #5',1653486848,1652247362,1653486848),('211429239',35,'柿劇場 #6',NULL,1652251151,1653000467),('211a8a6e8',36,'第4回 がんばれマスカット家族',NULL,1652251820,1652582373),('2121ec17e',61,'半二重ブルーベリーオペレーションズカップ',NULL,1652252594,1652595485),('21333657b',67,'スターフルーツ堂大会',1652957707,1652254407,1652957707),('213dd12fa',74,'スキニーアワビ理論 #8',NULL,1652255519,1652951908),('2140caeac',73,'限界集落立川興信所 #3',1652701099,1652255831,1652701099),('2148efdfd',82,'ぶどう本舗大会',NULL,1652256685,1652780751),('214f07ec1',44,'第2回 自動桜木町家族',NULL,1652257324,1654025591),('21a27cad0',24,'実はマーケティング大学 #4',1652724675,1652266075,1652724675),('21a44536e',28,'ハードウェアドーナツカップ',1653615112,1652266262,1653615112),('21b7a899b',82,'インデックスの晩餐 vol.5',1653637746,1652268295,1653637746),('21bd4428f',54,'スライディングProtocolテーマパーク大会',NULL,1652268883,1652321940),('2203ea170',49,'レタスがいる #4',1652317292,1652276291,1652317292),('2226b1e3d',44,'キャベツだねえ杯',NULL,1652279938,1653596543),('22288df9e',39,'第2回 本家川崎整骨院',1653243954,1652280133,1653243954),('22346ff49',60,'第3大宮.pl杯',1653369732,1652281379,1653369732),('223971b13',74,'インデックス同好会杯',1653648751,1652281904,1653648751),('2260a8c04',31,'本番寿司.rb #2',NULL,1652286016,1653275555),('22624078e',57,'最高運営BETTER vol.2',NULL,1652286183,1653417360),('227fb86e8',82,'はやくもピルスナー90%オフ vol.2',NULL,1652289273,1653227567),('228b42893',76,'第2回 無職メランコリー',NULL,1652290483,1653631525),('2293b0b93',44,'アロエしてもろて',1653228249,1652291367,1653228249),('22c60dce0',14,'甘口立川企画',1652369565,1652296648,1652369565),('22cc62e27',16,'データベース海岸大会',NULL,1652297312,1653533022),('230fa61f6',67,'キャベツの世界',NULL,1652304365,1653836062),('2320a998d',26,'第7回 年収人生',NULL,1652306149,1653856204),('23356055c',54,'みなとみらいちゃん vol.2',1653358422,1652308321,1653358422),('23465c797',67,'大人のペットボトル地獄 #4',NULL,1652310102,1653641340),('235516022',78,'第5回 相撲の会',1652811649,1652311646,1652811649),('235feb6f9',5,'第4回 たまプラーザで再起動',1653755543,1652312782,1653755543),('2365e8a82',63,'第8回 野生のgRPC.js',1653421147,1652313410,1653421147),('237ec2f27',54,'栃木の春巻き屋 vol.0',1652748615,1652316016,1652748615),('239d820bf',26,'さあメロン同好会大会',NULL,1652319240,1653840583),('23a6656fb',27,'勝てるたまねぎ本部',NULL,1652320172,1653858405),('23ac36ae9',4,'静的おばさん組合',NULL,1652320782,1653618369),('23c568e63',24,'第5回 表参道はともだち',NULL,1652323424,1653994676),('23d397453',65,'第8回 モリス共和国',1653455880,1652324911,1653455880),('23d484103',59,'りんご役場大会',NULL,1652325008,1652686554),('23df8a56d',50,'ラガー館大会',NULL,1652326164,1652342387),('23e7b4315',19,'オレンジ乗り過ごし大会',NULL,1652327020,1653200385),('23e852dd3',65,'白ライブ整骨院大会',1652936401,1652327085,1652936401),('23edd11d6',36,'キレで再起動杯',NULL,1652327661,1653800702),('240feb98b',72,'自由が丘テクノロジーズ大会',NULL,1652331237,1653139182),('241ab4d51',66,'第5回 秋葉原党',NULL,1652332368,1653974921),('241b4ea29',28,'第5回 量子キウイTHAN',1652425236,1652332431,1652425236),('243d99ed1',16,'第4回 川口効果',1653630969,1652336027,1653630969),('244e20e46',83,'ロックアワビ効果大会',1654029962,1652337760,1654029962),('24867b281',19,'第4回 夜のかぼちゃ地獄',NULL,1652343669,1653798159),('24ae9c956',32,'第1回 マンゴーちゃん',NULL,1652347877,1653819258),('24cae0eea',67,'野生の中野PERFECT vol.5',1653451371,1652350841,1653451371),('24d0b22ea',27,'激辛レンコンタウン #6',NULL,1652351451,1652683953),('24d3df28c',36,'あのセンシティブなら負けない #9',NULL,1652351784,1653821208),('24d81d961',55,'並列サーバレスレンジャー #2',NULL,1652352229,1653252189),('2502fbb57',73,'コーヒーヒーローズ大会',1653237364,1652356724,1653237364),('250ae3a48',85,'第5回 モリス（仮）',NULL,1652357553,1652539238),('250b62996',82,'トンポーロー酒店杯',1653707673,1652357605,1653707673),('2518e612f',66,'カニ5期生カップ',NULL,1652359022,1652562020),('2526909ac',65,'RE:餃子丼',1653967314,1652360455,1653967314),('25587879a',49,'すもも神社',1653934937,1652365688,1653934937),('25875f537',80,'ポンカン完全理解 vol.7',NULL,1652370606,1653658090),('25963d79c',68,'failする方法 #1',NULL,1652372165,1652418403),('259da18ca',88,'第3回 広尾鎮魂歌',NULL,1652372940,1653274636),('25cc8fba8',84,'野生のカルボナーラ厳しいカップ',1653632725,1652377861,1653632725),('25d6c1973',79,'鎌倉クラブカップ',1652931191,1652378930,1652931191),('25dc1da4b',23,'やわらかラガーシンポジウム vol.2',1653708945,1652379492,1653708945),('25e7f3720',43,'ポンカン風杯',NULL,1652380733,1652701309),('25e7f3721',52,'チーズ乗り過ごし杯',1652784140,1652380733,1652784140),('25eaa3e83',72,'顔が良いサービスドロップカップ',1653678507,1652381015,1653678507),('25ee9435f',52,'町田穏健派 #2',NULL,1652381428,1652810868),('25f27fa27',67,'光のさいたま新都心がいる大会',NULL,1652381839,1653716447),('25fb7ddec',77,'第6回 Protocolできた',1652920674,1652382782,1652920674),('2600efecc',77,'すももはバランスいい大会',1653397560,1652383353,1653397560),('2619aa7b2',13,'新卒サービス中毒 #0',1653183691,1652385946,1653183691),('262491035',13,'ウィスキー効果大会',1654024023,1652387089,1654024023),('265d8c6bf',28,'第8回 冬のランブータン5期生',NULL,1652393064,1653564535),('265e8cc6b',80,'リッチキレ教室杯',1653137033,1652393169,1653137033),('2668bc303',71,'みたらしの彼方',NULL,1652394237,1653062932),('267069859',88,'エフェクティブNAT.py #3',NULL,1652395042,1653410857),('267d496c3',52,'ノンアルメモリ風大会',1652783276,1652396392,1652783276),('26847076a',56,'第7回 寿司しかねえ',NULL,1652397142,1653006086),('268d3b700',38,'バ美肉支部大会',1652410211,1652398064,1652410211),('26a42623d',19,'第6回 そば乃月',1652827534,1652400467,1652827534),('26b5d2118',76,'勝てるリキュールの楽園杯',1653329563,1652402320,1653329563),('26c62d181',87,'ミラ家 #4',1653964946,1652404035,1653964946),('26c85e9b4',76,'マスクドチーズ亭 vol.9',NULL,1652404265,1653837596),('26d0eefe2',67,'マネージドドラゴンフルーツコミック杯',NULL,1652405163,1652486633),('26d6d63b0',84,'令和パブちゃんカップ',NULL,1652405782,1652628593),('26d92ecf7',8,'池袋組カップ',1653207573,1652406028,1653207573),('26fa07047',68,'なすのお茶会大会',NULL,1652409472,1652774707),('26fec6d6b',76,'目黒同好会杯',1652727488,1652409970,1652727488),('272c1d498',82,'ようこそハンバーガー連合 #6',NULL,1652414724,1653004529),('273017592',60,'かなり洋梨駆動開発 vol.6',NULL,1652415141,1653293263),('2736e4129',68,'今夜は海老名倶楽部杯',NULL,1652415854,1652969845),('274489ba0',63,'バーチャルGPGPUネイティブ杯',1653245395,1652417285,1653245395),('279120a7c',39,'大人用パブ製作所',NULL,1652425316,1653547485),('27ae98981',75,'鏡整骨院',NULL,1652428406,1653530584),('27c705086',25,'待って甘み探偵大会',1653351093,1652430967,1653351093),('27d0a1fb7',58,'太麺_all杯',1653557843,1652431975,1653557843),('27d0fec26',69,'そばの如し vol.3',NULL,1652432013,1653565441),('27d3e00c4',42,'第7回 苦み高校',1653007278,1652432315,1653007278),('27f659baf',32,'荻窪大好き vol.1',NULL,1652435930,1653933136),('28164ee3b',39,'夏みかん百貨店 vol.7',1653339302,1652439281,1653339302),('281e800ec',65,'マネージドバナナオンライン',1653442292,1652440140,1653442292),('28211f74b',37,'第4回 パワーの缶詰',NULL,1652440415,1654034489),('286e09613',47,'おじさんPERFECTカップ',NULL,1652448480,1652775859),('286ff1a93',29,'船橋劇場 vol.0',1653179802,1652448680,1653179802),('28916fe15',31,'私の清酒の惨劇 #9',NULL,1652452192,1653554791),('289c20b2a',87,'自称レタス株式会社大会',1652912858,1652453313,1652912858),('28b421b8d',26,'グレー...\G
-
-# Query 25: ID 0xB711A299ADC32792
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     221
-# Exec time       0  33.3ms  46.0us   1.5ms 150.8us 628.0us  59.0us
+# Count           0     227
+# Exec time       0  45.8ms  43.0us   4.8ms 201.7us 677.0us  63.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -452,11 +424,109 @@ INSERT INTO `competition` VALUES ('103836525',28,'エンジョイブルーベリ
 # EXPLAIN /*!50100 PARTITIONS*/
 Prepare\G
 
-# Query 26: ID 0x34E11DDE0FBF5564
+# Query 24: ID 0x813031B8BBC3B329
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0     221
-# Exec time       0  31.8ms  19.0us   5.3ms 144.1us 677.0us  27.0us
+# Count           0     227
+# Exec time       0  39.4ms  31.0us   1.7ms 173.5us 711.0us  64.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+COMMIT\G
+
+# Query 25: ID 0xC8CCC170F178D27C
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  31.9ms  31.9ms  31.9ms  31.9ms  31.9ms  31.9ms
+# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+DROP TABLE IF EXISTS `last_player_score`\G
+
+# Query 26: ID 0x911658842DA64DC4
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  27.3ms  27.3ms  27.3ms  27.3ms  27.3ms  27.3ms
+# Lock time       0 453.0us 453.0us 453.0us 453.0us 453.0us 453.0us
+# Rows sent       0     651     651     651  651.00     651     651
+# Rows examined   0     651     651     651  651.00     651     651
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW VARIABLES\G
+
+# Query 27: ID 0x13425781EDD3EB5A
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  27.1ms  27.1ms  27.1ms  27.1ms  27.1ms  27.1ms
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+INSERT INTO `competition` VALUES ('103836525',28,'エンジョイブルーベリー海岸大会',NULL,1651798591,1652684894),('10740e22b',27,'パッションフルーツ丼 vol.4',NULL,1651804866,1652236647),('10c826747',35,'横浜倶楽部大会',NULL,1651813684,1653830848),('1109b4b19',15,'ミニトマト騎士団',1653516935,1651820558,1653516935),('11805077e',33,'第1回 第3ネギ店',1653045930,1651832995,1653045930),('1193fd146',8,'西いちじくず',1652218798,1651835058,1652218798),('11990626b',21,'第9回 ドラゴンフルーツ野郎',NULL,1651835586,1653218553),('12339ae82',15,'箱出しモリスメランコリー',1651863417,1651851795,1651863417),('125ca9262',15,'三軒茶屋オペレーションズカップ',NULL,1651856100,1653396097),('127cddcaf',41,'エールだもの',1652849328,1651859477,1652849328),('127f6e835',30,'-rf鎌倉だねえ杯',1651971768,1651859746,1651971768),('12998634c',22,'和光市中毒 #7',1652176623,1651862482,1652176623),('12b8b3297',34,'シークワーサークラッシャーカップ',NULL,1651865751,1652264645),('12d6549d3',44,'桜木町のお茶会杯',1653912945,1651868858,1653912945),('136372179',21,'JSON色付け計画大会',1653454951,1651883655,1653454951),('138628d31',30,'カジュアルライチマニア大会',1652573577,1651887295,1652573577),('13bfdb55c',30,'おばさんもどき #7',1652389424,1651893345,1652389424),('13cfe357d',33,'大統一渋谷コミック杯',NULL,1651895026,1653675009),('13f4c440f',14,'広尾乙女杯',NULL,1651898893,1653969794),('13f6ceb68',19,'第1回 表参道株式会社',NULL,1651899107,1653963812),('146785b3a',31,'枝豆は諦めたカップ',NULL,1651910926,1653032336),('14714c229',32,'リッチ自作キーボード野郎 #4',NULL,1651911951,1652224945),('1485fdfe8',2,'プレミアムキレまみれ杯',1651938482,1651914121,1651938482),('14d7c5086',36,'リアクティブスマホ劇場杯',1653038937,1651922696,1653038937),('14e3cbaa3',48,'第9回 すべからく魔剤支部',1652121209,1651923957,1652121209),('14e57bc88',18,'第4回 会えるかぼちゃテーマパーク',1653750664,1651924134,1653750664),('14fc7ee53',25,'リッチ東京組 vol.0',NULL,1651926547,1652066675),('155bc48ec',36,'トンポーローキックカップ',NULL,1651936537,1652221720),('155bf560c',3,'業務中にエビチリ部カップ',NULL,1651936557,1653383797),('1562e1d87',19,'スライディング課金システム #2',NULL,1651937283,1653429612),('1588887fd',45,'りんご勢カップ',1652764248,1651941231,1652764248),('15a76c3b4',5,'トマトは諦めた杯',NULL,1651944470,1653478410),('15a88ec1e',45,'第5回 シークワーサー風',NULL,1651944589,1652020995),('15c1690cd',42,'すこしマンゴーマニア vol.0',1653775538,1651947195,1653775538),('15e88c97a',14,'麻婆ブランデー段階',NULL,1651951299,1652920926),('15f0c2a29',20,'甘口ロードアベレージスターズ',NULL,1651952160,1653315589),('161b13288',21,'荻窪本舗大会',NULL,1651956597,1652086675),('1668799cc',25,'今夜は立川ごはん杯',NULL,1651964713,1652560175),('16799ccfb',6,'プロセス同盟カップ',NULL,1651966510,1652967921),('16a837f98',30,'第7回 新宿の如し',NULL,1651971397,1652903829),('16dbd26db',47,'二子玉川商事カップ',1652256508,1651976808,1652256508),('16df8a920',15,'赤ボルダリング工房 #6',NULL,1651977198,1652564058),('16ff4a03b',42,'第3回 リリー大好き',1652533967,1651980527,1652533967),('1700d7f64',49,'白ペペロンチーノ工場カップ',1653890681,1651980690,1653890681),('171992842',43,'プレミアムC10K党 #8',1653248853,1651983283,1653248853),('1724e4789',54,'必勝のモンゴ組 #3',NULL,1651984470,1653617622),('173494944',3,'スピリチュアル町田に全振りカップ',1653236118,1651986115,1653236118),('1748f5dd8',33,'北もやしTHAN',NULL,1651988252,1652114270),('174f069ca',1,'第3回 隠れ家的サーバ都市',1653340832,1651988888,1653340832),('17ad3fb60',14,'第7回 スペシャルココナッツオペレーションズ',1653278042,1651998768,1653278042),('17b0dcfc5',55,'カニします',NULL,1651999147,1652669419),('17b2046a0',19,'やっぱりうどん出張所 #7',1653105215,1651999268,1653105215),('17fd87779',57,'第9回 池袋ラボ',1653149496,1652007186,1653149496),('1818b579a',55,'第9回 椅子C10Kの森',1652434448,1652010036,1652434448),('183992901',12,'すべからくオレンジ合衆国',NULL,1652013482,1652697489),('184b9b3e1',59,'第2回 ほうれん草百貨店',NULL,1652015373,1652546907),('186e1eb48',54,'パッションフルーツ整骨院カップ',NULL,1652018992,1653727147),('187691c88',44,'会えるカメラ書房 #6',1652710498,1652019878,1652710498),('188b48883',55,'徹底的マンゴー乙女',1652877756,1652022050,1652877756),('188fc18d3',39,'第3タゴ無双カップ',1653829647,1652022519,1653829647),('189eae582',39,'第3回 非同期白菜症候群',1653663719,1652024084,1653663719),('18bc2b289',15,'第5回 赤羽から始めるXSUCON',1652742843,1652027176,1652742843),('18cf95e14',42,'北千住テーマパーク大会',NULL,1652029212,1653338729),('18dd69e9d',13,'イスレンジャー',NULL,1652030662,1652528265),('1901eb9e1',33,'自由が丘.js大会',NULL,1652034490,1652730975),('19750eb75',36,'第2回 羽つき浸透依存症',1652329824,1652046563,1652329824),('1976843d5',37,'第3回 無農薬解体茶',1653230814,1652046716,1653230814),('1998c5c8e',61,'第8回 ネギプリン',NULL,1652050308,1652739820),('19f4163d4',17,'新マスクを信じろ杯',NULL,1652059883,1653225581),('19f77b605',13,'多重レタス部',1652600642,1652060239,1652600642),('19f8ee7c0',8,'第2回 ミラで解決',NULL,1652060391,1653420810),('19feda94a',44,'エール症候群 vol.4',NULL,1652061012,1653470790),('1a0205203',1,'すべからくサーバ乃月杯',NULL,1652061344,1652215777),('1a182c84a',47,'第9回 ステージングモリス計画',NULL,1652063667,1652192313),('1a30ceb04',3,'相撲亭',1653378009,1652066250,1653378009),('1a37549b0',42,'平面的ワインの世界 #3',NULL,1652066934,1653100027),('1a5b3ef03',61,'第8回 そば百貨店',NULL,1652070700,1653119192),('1a69770f5',50,'パパイヤだねえ',1653639339,1652072191,1653639339),('1a8829f50',6,'昭和ダッシュを信じろカップ',1652785217,1652075410,1652785217),('1a9c3f914',60,'三度の飯よりペペロンチーノレンジャー大会',NULL,1652077516,1653466095),('1aa6457c9',57,'第9回 出会って5秒で吉祥寺ゼロ',NULL,1652078567,1653554608),('1ac0b9ee7',15,'バンバンジーはバランスいい大会',NULL,1652081341,1653396080),('1af57e3fd',49,'第3回 IPA派',NULL,1652086874,1653841718),('1afd6fee9',9,'ラッキーおじさん本部杯',NULL,1652087707,1652327162),('1b2445541',59,'第4回 恵比寿党',1653251084,1652091779,1653251084),('1b3870e92',22,'第9回 ミルクヶ丘',1653029811,1652093894,1653029811),('1b395669e',27,'第3回 アイドル大宮と俺',1653050939,1652093988,1653050939),('1b4b15ddc',52,'第1回 大きな舞浜する方法',NULL,1652095849,1653724637),('1b562d359',27,'枝豆の晩餐 #8',1653875586,1652097012,1653875586),('1b5d14cbf',4,'第7回 闇の洋梨家',1653744911,1652097736,1653744911),('1b71c4370',50,'ブルーベリーから始めるXSUCON #3',NULL,1652099905,1653920331),('1bb54bcd1',11,'ベンチマーク同好会カップ',1653303323,1652106986,1653303323),('1bc806bb7',8,'今夜はみたらし動物園',NULL,1652108950,1653803833),('1be97167b',65,'浦和！ #4',NULL,1652112454,1652983564),('1c05a9856',58,'第5回 焼き品川入門',NULL,1652115413,1653859603),('1c05d7e9e',39,'和風プロファイリング食べたい vol.1',NULL,1652115432,1652707742),('1c06f8006',50,'すこしキャベツがヤバい vol.8',1652286321,1652115550,1652286321),('1c2910056',44,'マルチハーの世界大会',NULL,1652119125,1653316441),('1c31c0265',8,'スパゲッティ研究所 #3',1653402924,1652120036,1653402924),('1c59b5a77',9,'無限エール単推し杯',1653452891,1652124226,1653452891),('1c8635415',26,'多段いちじく帝国 vol.9',NULL,1652128892,1653979742),('1c9538068',54,'スマホさん杯',1654010416,1652130466,1654010416),('1c957c626',57,'ようこそポンカン物語カップ',1652852462,1652130494,1652852462),('1cd550b69',67,'第3回 にんじんは諦めた',NULL,1652137187,1652391233),('1d028ec0b',36,'よしなに運営づくし #5',NULL,1652141931,1653626787),('1d204fecc',27,'あなたと白菜.js杯',1652351254,1652145051,1652351254),('1d5d20c8f',53,'第4回 腹筋クラッシャー',NULL,1652151428,1653354946),('1d855f85f',26,'限界集落三軒茶屋乃月カップ',NULL,1652155648,1652160191),('1d95b8164',29,'薔薇駆動開発杯',1652869351,1652157362,1652869351),('1d969640a',42,'世界のたまプラーザ完全理解杯',NULL,1652157453,1653564495),('1d98db4b8',71,'第8回 メイン大臀筋帝国',1653522163,1652157691,1653522163),('1de615ce1',71,'ウルトラブロッコリー共和国大会',1652416247,1652165789,1652416247),('1df4f184b',71,'第2回 洋風東京テクノロジーズ',NULL,1652167347,1653073174),('1e0a1fe5c',13,'第4回 子供用みかん絵本',NULL,1652169568,1653397781),('1e150dbd8',72,'第5回 バナナもどき',NULL,1652170714,1652233451),('1e199a485',47,'ミルクシスターズ',1653693270,1652171191,1653693270),('1e19fbef5',46,'浸透する方法',1653333296,1652171231,1653333296),('1e3dd79fd',19,'GPGPUメランコリー大会',1653844371,1652174991,1653844371),('1e3e6a1b3',12,'群馬のパブ方式',1652385054,1652175051,1652385054),('1e5c796c3',49,'大きなミニトマトできた #1',NULL,1652178203,1653286692),('1e6e75ea7',4,'第7回 マジックハードウェア効果',1652557758,1652180089,1652557758),('1e87b4518',27,'和光市食堂杯',NULL,1652182736,1652516833),('1e8f0c32e',59,'西びわの如し大会',1653322621,1652183506,1653322621),('1e9bc50c4',8,'第3回 破壊的アロエ風',1652563012,1652184840,1652563012),('1eb27c77b',44,'第8回 ネットワークしかねえ',NULL,1652187222,1652554654),('1ecea1123',26,'第6回 きゅうりで再起動',1653151402,1652190173,1653151402),('1edb96ed8',7,'第7回 よくわかるマーケティング食べたい',1652638459,1652191532,1652638459),('1efd0dd1d',8,'すべからく寿司中毒 #8',1652423871,1652195041,1652423871),('1f0070890',52,'クライアント家族 vol.3',1652916743,1652195396,1652916743),('1f12597a2',47,'第8回 千葉のアワビごはん',1652214487,1652197274,1652214487),('1f1edc9f3',14,'第2回 アイドルfast中毒',1652957123,1652198586,1652957123),('1f3aa950e',31,'パブ.pl大会',1653506108,1652201501,1653506108),('1f3b3958e',21,'ライブの缶詰 #6',NULL,1652201560,1652245493),('1f43b3c6d',19,'第3回 藤沢通信社',1652460678,1652202449,1652460678),('1f5e876eb',71,'できたて無職屋',NULL,1652205262,1652629722),('1f9082d8b',77,'第6回 あの浦和！',NULL,1652210503,1653491210),('1fa13d113',67,'あわよくばエラービーチ杯',1653691574,1652212257,1653691574),('1fa601c8f',66,'第4回 ミネストローネ部',1652776242,1652212757,1652776242),('1fd2b7172',48,'第5回 マンゴスチン同好会',1654013754,1652217445,1654013754),('1fed020a8',56,'いっけな〜いスイカ神社杯',NULL,1652220202,1652334219),('200bb9d45',61,'マスカット地獄杯',1652321559,1652223423,1652321559),('203f1c1f6',60,'奇跡のチェンソーの如し大会',1652956203,1652228811,1652956203),('204b1b693',79,'秋葉原夜会杯',1653953731,1652230069,1653953731),('20690889d',40,'荻窪興信所杯',1653188944,1652233207,1653188944),('20913b0e8',36,'第5運営株式会社 vol.2',1653912649,1652237422,1653912649),('20a3c045b',19,'山の甘みシステム杯',1652258269,1652239364,1652258269),('20d2ce2a7',65,'元祖サーバ完全理解カップ',NULL,1652244298,1652798097),('20e8f0aed',14,'勝利の年収倶楽部カップ',1653464672,1652246619,1653464672),('20eb46d41',48,'さいたま新都心鎮魂歌 vol.9',NULL,1652246864,1653549116),('20f006a24',44,'青山一丁目大好き #5',1653486848,1652247362,1653486848),('211429239',35,'柿劇場 #6',NULL,1652251151,1653000467),('211a8a6e8',36,'第4回 がんばれマスカット家族',NULL,1652251820,1652582373),('2121ec17e',61,'半二重ブルーベリーオペレーションズカップ',NULL,1652252594,1652595485),('21333657b',67,'スターフルーツ堂大会',1652957707,1652254407,1652957707),('213dd12fa',74,'スキニーアワビ理論 #8',NULL,1652255519,1652951908),('2140caeac',73,'限界集落立川興信所 #3',1652701099,1652255831,1652701099),('2148efdfd',82,'ぶどう本舗大会',NULL,1652256685,1652780751),('214f07ec1',44,'第2回 自動桜木町家族',NULL,1652257324,1654025591),('21a27cad0',24,'実はマーケティング大学 #4',1652724675,1652266075,1652724675),('21a44536e',28,'ハードウェアドーナツカップ',1653615112,1652266262,1653615112),('21b7a899b',82,'インデックスの晩餐 vol.5',1653637746,1652268295,1653637746),('21bd4428f',54,'スライディングProtocolテーマパーク大会',NULL,1652268883,1652321940),('2203ea170',49,'レタスがいる #4',1652317292,1652276291,1652317292),('2226b1e3d',44,'キャベツだねえ杯',NULL,1652279938,1653596543),('22288df9e',39,'第2回 本家川崎整骨院',1653243954,1652280133,1653243954),('22346ff49',60,'第3大宮.pl杯',1653369732,1652281379,1653369732),('223971b13',74,'インデックス同好会杯',1653648751,1652281904,1653648751),('2260a8c04',31,'本番寿司.rb #2',NULL,1652286016,1653275555),('22624078e',57,'最高運営BETTER vol.2',NULL,1652286183,1653417360),('227fb86e8',82,'はやくもピルスナー90%オフ vol.2',NULL,1652289273,1653227567),('228b42893',76,'第2回 無職メランコリー',NULL,1652290483,1653631525),('2293b0b93',44,'アロエしてもろて',1653228249,1652291367,1653228249),('22c60dce0',14,'甘口立川企画',1652369565,1652296648,1652369565),('22cc62e27',16,'データベース海岸大会',NULL,1652297312,1653533022),('230fa61f6',67,'キャベツの世界',NULL,1652304365,1653836062),('2320a998d',26,'第7回 年収人生',NULL,1652306149,1653856204),('23356055c',54,'みなとみらいちゃん vol.2',1653358422,1652308321,1653358422),('23465c797',67,'大人のペットボトル地獄 #4',NULL,1652310102,1653641340),('235516022',78,'第5回 相撲の会',1652811649,1652311646,1652811649),('235feb6f9',5,'第4回 たまプラーザで再起動',1653755543,1652312782,1653755543),('2365e8a82',63,'第8回 野生のgRPC.js',1653421147,1652313410,1653421147),('237ec2f27',54,'栃木の春巻き屋 vol.0',1652748615,1652316016,1652748615),('239d820bf',26,'さあメロン同好会大会',NULL,1652319240,1653840583),('23a6656fb',27,'勝てるたまねぎ本部',NULL,1652320172,1653858405),('23ac36ae9',4,'静的おばさん組合',NULL,1652320782,1653618369),('23c568e63',24,'第5回 表参道はともだち',NULL,1652323424,1653994676),('23d397453',65,'第8回 モリス共和国',1653455880,1652324911,1653455880),('23d484103',59,'りんご役場大会',NULL,1652325008,1652686554),('23df8a56d',50,'ラガー館大会',NULL,1652326164,1652342387),('23e7b4315',19,'オレンジ乗り過ごし大会',NULL,1652327020,1653200385),('23e852dd3',65,'白ライブ整骨院大会',1652936401,1652327085,1652936401),('23edd11d6',36,'キレで再起動杯',NULL,1652327661,1653800702),('240feb98b',72,'自由が丘テクノロジーズ大会',NULL,1652331237,1653139182),('241ab4d51',66,'第5回 秋葉原党',NULL,1652332368,1653974921),('241b4ea29',28,'第5回 量子キウイTHAN',1652425236,1652332431,1652425236),('243d99ed1',16,'第4回 川口効果',1653630969,1652336027,1653630969),('244e20e46',83,'ロックアワビ効果大会',1654029962,1652337760,1654029962),('24867b281',19,'第4回 夜のかぼちゃ地獄',NULL,1652343669,1653798159),('24ae9c956',32,'第1回 マンゴーちゃん',NULL,1652347877,1653819258),('24cae0eea',67,'野生の中野PERFECT vol.5',1653451371,1652350841,1653451371),('24d0b22ea',27,'激辛レンコンタウン #6',NULL,1652351451,1652683953),('24d3df28c',36,'あのセンシティブなら負けない #9',NULL,1652351784,1653821208),('24d81d961',55,'並列サーバレスレンジャー #2',NULL,1652352229,1653252189),('2502fbb57',73,'コーヒーヒーローズ大会',1653237364,1652356724,1653237364),('250ae3a48',85,'第5回 モリス（仮）',NULL,1652357553,1652539238),('250b62996',82,'トンポーロー酒店杯',1653707673,1652357605,1653707673),('2518e612f',66,'カニ5期生カップ',NULL,1652359022,1652562020),('2526909ac',65,'RE:餃子丼',1653967314,1652360455,1653967314),('25587879a',49,'すもも神社',1653934937,1652365688,1653934937),('25875f537',80,'ポンカン完全理解 vol.7',NULL,1652370606,1653658090),('25963d79c',68,'failする方法 #1',NULL,1652372165,1652418403),('259da18ca',88,'第3回 広尾鎮魂歌',NULL,1652372940,1653274636),('25cc8fba8',84,'野生のカルボナーラ厳しいカップ',1653632725,1652377861,1653632725),('25d6c1973',79,'鎌倉クラブカップ',1652931191,1652378930,1652931191),('25dc1da4b',23,'やわらかラガーシンポジウム vol.2',1653708945,1652379492,1653708945),('25e7f3720',43,'ポンカン風杯',NULL,1652380733,1652701309),('25e7f3721',52,'チーズ乗り過ごし杯',1652784140,1652380733,1652784140),('25eaa3e83',72,'顔が良いサービスドロップカップ',1653678507,1652381015,1653678507),('25ee9435f',52,'町田穏健派 #2',NULL,1652381428,1652810868),('25f27fa27',67,'光のさいたま新都心がいる大会',NULL,1652381839,1653716447),('25fb7ddec',77,'第6回 Protocolできた',1652920674,1652382782,1652920674),('2600efecc',77,'すももはバランスいい大会',1653397560,1652383353,1653397560),('2619aa7b2',13,'新卒サービス中毒 #0',1653183691,1652385946,1653183691),('262491035',13,'ウィスキー効果大会',1654024023,1652387089,1654024023),('265d8c6bf',28,'第8回 冬のランブータン5期生',NULL,1652393064,1653564535),('265e8cc6b',80,'リッチキレ教室杯',1653137033,1652393169,1653137033),('2668bc303',71,'みたらしの彼方',NULL,1652394237,1653062932),('267069859',88,'エフェクティブNAT.py #3',NULL,1652395042,1653410857),('267d496c3',52,'ノンアルメモリ風大会',1652783276,1652396392,1652783276),('26847076a',56,'第7回 寿司しかねえ',NULL,1652397142,1653006086),('268d3b700',38,'バ美肉支部大会',1652410211,1652398064,1652410211),('26a42623d',19,'第6回 そば乃月',1652827534,1652400467,1652827534),('26b5d2118',76,'勝てるリキュールの楽園杯',1653329563,1652402320,1653329563),('26c62d181',87,'ミラ家 #4',1653964946,1652404035,1653964946),('26c85e9b4',76,'マスクドチーズ亭 vol.9',NULL,1652404265,1653837596),('26d0eefe2',67,'マネージドドラゴンフルーツコミック杯',NULL,1652405163,1652486633),('26d6d63b0',84,'令和パブちゃんカップ',NULL,1652405782,1652628593),('26d92ecf7',8,'池袋組カップ',1653207573,1652406028,1653207573),('26fa07047',68,'なすのお茶会大会',NULL,1652409472,1652774707),('26fec6d6b',76,'目黒同好会杯',1652727488,1652409970,1652727488),('272c1d498',82,'ようこそハンバーガー連合 #6',NULL,1652414724,1653004529),('273017592',60,'かなり洋梨駆動開発 vol.6',NULL,1652415141,1653293263),('2736e4129',68,'今夜は海老名倶楽部杯',NULL,1652415854,1652969845),('274489ba0',63,'バーチャルGPGPUネイティブ杯',1653245395,1652417285,1653245395),('279120a7c',39,'大人用パブ製作所',NULL,1652425316,1653547485),('27ae98981',75,'鏡整骨院',NULL,1652428406,1653530584),('27c705086',25,'待って甘み探偵大会',1653351093,1652430967,1653351093),('27d0a1fb7',58,'太麺_all杯',1653557843,1652431975,1653557843),('27d0fec26',69,'そばの如し vol.3',NULL,1652432013,1653565441),('27d3e00c4',42,'第7回 苦み高校',1653007278,1652432315,1653007278),('27f659baf',32,'荻窪大好き vol.1',NULL,1652435930,1653933136),('28164ee3b',39,'夏みかん百貨店 vol.7',1653339302,1652439281,1653339302),('281e800ec',65,'マネージドバナナオンライン',1653442292,1652440140,1653442292),('28211f74b',37,'第4回 パワーの缶詰',NULL,1652440415,1654034489),('286e09613',47,'おじさんPERFECTカップ',NULL,1652448480,1652775859),('286ff1a93',29,'船橋劇場 vol.0',1653179802,1652448680,1653179802),('28916fe15',31,'私の清酒の惨劇 #9',NULL,1652452192,1653554791),('289c20b2a',87,'自称レタス株式会社大会',1652912858,1652453313,1652912858),('28b421b8d',26,'グレー...\G
+
+# Query 28: ID 0xE7D5FE66D3400A27
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  25.3ms  25.3ms  25.3ms  25.3ms  25.3ms  25.3ms
+# Lock time       0   7.0us   7.0us   7.0us   7.0us   7.0us   7.0us
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0     131     131     131  131.00     131     131
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT ENGINE,SUM(DATA_LENGTH+INDEX_LENGTH),COUNT(ENGINE),SUM(DATA_LENGTH),SUM(INDEX_LENGTH) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema', 'performance_schema', 'mysql') AND ENGINE IS NOT NULL GROUP BY ENGINE ORDER BY ENGINE ASC\G
+
+# Query 29: ID 0xE87A1F1BB1358261
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  23.7ms  23.7ms  23.7ms  23.7ms  23.7ms  23.7ms
+# Lock time       0   9.0us   9.0us   9.0us   9.0us   9.0us   9.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+TRUNCATE TABLE visit\G
+
+# Query 30: ID 0x5CBA2034458B5BC9
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       2
+# Exec time       0  18.5ms 435.0us  18.1ms   9.3ms  18.1ms  18.1ms
+# Lock time       0   6.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0      10       5       5    5.00       5       5
+# Rows examined   0      42      21      21   21.00      21      21
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW DATABASES\G
+
+# Query 31: ID 0x34E11DDE0FBF5564
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0     227
+# Exec time       0  18.1ms  19.0us   1.7ms  79.9us 264.0us  28.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -466,40 +536,26 @@ Prepare\G
 # EXPLAIN /*!50100 PARTITIONS*/
 START TRANSACTION\G
 
-# Query 27: ID 0xC8CCC170F178D27C
+# Query 32: ID 0xA32F20DF9C2ADA38
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  30.7ms  30.7ms  30.7ms  30.7ms  30.7ms  30.7ms
-# Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
+# Count           0      19
+# Exec time       0  16.0ms 116.0us   4.0ms 844.4us   4.0ms 348.0us
+# Lock time       0  22.0us   1.0us   2.0us   1.2us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
+# Rows examined   0      18       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-DROP TABLE IF EXISTS `last_player_score`\G
+UPDATE player SET is_disqualified = 1, updated_at = 1658562185 WHERE id = '635b92596'\G
 
-# Query 28: ID 0xE87A1F1BB1358261
+# Query 33: ID 0xE50C5678DE5242F0
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  19.1ms  19.1ms  19.1ms  19.1ms  19.1ms  19.1ms
-# Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-TRUNCATE TABLE visit\G
-
-# Query 29: ID 0xE50C5678DE5242F0
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  15.2ms  15.2ms  15.2ms  15.2ms  15.2ms  15.2ms
-# Lock time       0  32.0us  32.0us  32.0us  32.0us  32.0us  32.0us
+# Exec time       0  14.7ms  14.7ms  14.7ms  14.7ms  14.7ms  14.7ms
+# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -518,26 +574,12 @@ CREATE TABLE `last_player_score` (
   KEY `last_player_score_idx1` (`tenant_id`,`competition_id`,`score` DESC,`row_num`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 30: ID 0x90F72AD1188B60BA
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0      15
-# Exec time       0  13.3ms 102.0us   7.8ms 885.5us   7.8ms 152.0us
-# Lock time       0  29.0us   1.0us   8.0us   1.9us   8.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('y-dkucff-1658559862', 'カメラ入門', 1658559862, 1658559862)\G
-
-# Query 31: ID 0xD1728D93BC031D69
+# Query 34: ID 0xD1728D93BC031D69
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  12.2ms  12.2ms  12.2ms  12.2ms  12.2ms  12.2ms
-# Lock time       0   9.0us   9.0us   9.0us   9.0us   9.0us   9.0us
+# Exec time       0  12.3ms  12.3ms  12.3ms  12.3ms  12.3ms  12.3ms
+# Lock time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -554,12 +596,26 @@ CREATE TABLE `player` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 32: ID 0xB5BAC17B1AEBDAD3
+# Query 35: ID 0x31DA25F95494CA95
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  10.0ms  10.0ms  10.0ms  10.0ms  10.0ms  10.0ms
-# Lock time       0  11.0us  11.0us  11.0us  11.0us  11.0us  11.0us
+# Exec time       0  11.7ms  11.7ms  11.7ms  11.7ms  11.7ms  11.7ms
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0     483     483     483  483.00     483     483
+# Rows examined   0     483     483     483  483.00     483     483
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW STATUS\G
+
+# Query 36: ID 0xB5BAC17B1AEBDAD3
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0  10.5ms  10.5ms  10.5ms  10.5ms  10.5ms  10.5ms
+# Lock time       0  13.0us  13.0us  13.0us  13.0us  13.0us  13.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -576,12 +632,12 @@ CREATE TABLE `competition` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci\G
 
-# Query 33: ID 0x49E901B289AC257D
+# Query 37: ID 0x49E901B289AC257D
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   7.8ms   7.8ms   7.8ms   7.8ms   7.8ms   7.8ms
-# Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
+# Exec time       0   8.7ms   8.7ms   8.7ms   8.7ms   8.7ms   8.7ms
+# Lock time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -590,81 +646,25 @@ CREATE TABLE `competition` (
 # EXPLAIN /*!50100 PARTITIONS*/
 DROP TABLE IF EXISTS `player`\G
 
-# Query 34: ID 0x911658842DA64DC4
+# Query 38: ID 0xA3C958A64E1E64AB
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   5.6ms   5.6ms   5.6ms   5.6ms   5.6ms   5.6ms
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0     651     651     651  651.00     651     651
-# Rows examined   0     651     651     651  651.00     651     651
+# Exec time       0   7.3ms   7.3ms   7.3ms   7.3ms   7.3ms   7.3ms
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0       9       9       9    9.00       9       9
+# Rows examined   0       9       9       9    9.00       9       9
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SHOW VARIABLES\G
-
-# Query 35: ID 0xA32F20DF9C2ADA38
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0      19
-# Exec time       0   4.5ms  96.0us   1.1ms 235.5us   1.1ms 135.0us
-# Lock time       0  21.0us       0   2.0us   1.1us   2.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0      18       0       1       0       1       1
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-UPDATE player SET is_disqualified = 1, updated_at = 1658559850 WHERE id = '634be992b'\G
-
-# Query 36: ID 0x6AC7EC870DA0766D
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   4.4ms   4.4ms   4.4ms   4.4ms   4.4ms   4.4ms
-# Lock time       0   8.0us   8.0us   8.0us   8.0us   8.0us   8.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-DROP TABLE IF EXISTS `competition`\G
-
-# Query 37: ID 0x40A5548652B4DFDB
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   3.8ms   3.8ms   3.8ms   3.8ms   3.8ms   3.8ms
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0     110     110     110  110.00     110     110
-# Rows examined   0     332     332     332  332.00     332     332
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `performance_schema`\G
-
-# Query 38: ID 0x0C45BAAA21BF497C
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0     221
-# Exec time       0   2.0ms   4.0us 259.0us   9.2us  14.0us   6.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-Close stmt\G
+SHOW ENGINES\G
 
 # Query 39: ID 0x791C5370A1021F19
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   1.9ms   1.9ms   1.9ms   1.9ms   1.9ms   1.9ms
+# Exec time       0   6.8ms   6.8ms   6.8ms   6.8ms   6.8ms   6.8ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -674,81 +674,11 @@ Close stmt\G
 # EXPLAIN /*!50100 PARTITIONS*/
 SHOW SLAVE STATUS\G
 
-# Query 40: ID 0x82548DE9C4F3E046
+# Query 40: ID 0x0C45BAAA21BF497C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0     101     101     101  101.00     101     101
-# Rows examined   0     206     206     206  206.00     206     206
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `sys`\G
-
-# Query 41: ID 0xD57560CE9D0852EE
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0      37      37      37   37.00      37      37
-# Rows examined   0     217     217     217  217.00     217     217
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `mysql`\G
-
-# Query 42: ID 0x5CBC6BF26D494691
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   1.6ms 757.0us 801.0us 779.0us 801.0us 801.0us
-# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0     738     369     369  369.00     369     369
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT IFNULL(SUM(INDEX_LENGTH),0) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema') AND ENGINE = 'MyISAM'\G
-
-# Query 43: ID 0xE7D5FE66D3400A27
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0   1.5ms   1.5ms   1.5ms   1.5ms   1.5ms   1.5ms
-# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
-# Rows sent       0       1       1       1    1.00       1       1
-# Rows examined   0     541     541     541  541.00     541     541
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT ENGINE,SUM(DATA_LENGTH+INDEX_LENGTH),COUNT(ENGINE),SUM(DATA_LENGTH),SUM(INDEX_LENGTH) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema', 'performance_schema', 'mysql') AND ENGINE IS NOT NULL GROUP BY ENGINE ORDER BY ENGINE ASC\G
-
-# Query 44: ID 0xE3A3649C5FAC418D
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0      31
-# Exec time       0   1.4ms  35.0us  94.0us  45.4us  88.0us  37.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0      31       1       1    1.00       1       1
-# Rows examined   0      31       1       1    1.00       1       1
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-select @@version_comment limit 1\G
-
-# Query 45: ID 0x591DCE6A753564F4
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0   1.3ms  46.0us   1.2ms 420.7us   1.2ms  57.0us
+# Count           0     227
+# Exec time       0   6.1ms   4.0us   2.0ms  26.7us  13.0us   6.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -756,14 +686,42 @@ select @@version_comment limit 1\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */\G
+Close stmt\G
 
-# Query 46: ID 0xDC5AC4F51E1A7597
+# Query 41: ID 0x40A5548652B4DFDB
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   1.2ms   1.2ms   1.2ms   1.2ms   1.2ms   1.2ms
-# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Exec time       0   5.9ms   5.9ms   5.9ms   5.9ms   5.9ms   5.9ms
+# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
+# Rows sent       0     110     110     110  110.00     110     110
+# Rows examined   0     332     332     332  332.00     332     332
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `performance_schema`\G
+
+# Query 42: ID 0x90F72AD1188B60BA
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0      15
+# Exec time       0   4.2ms 109.0us 987.0us 277.5us 987.0us 137.0us
+# Lock time       0  21.0us   1.0us   3.0us   1.4us   3.0us   1.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('badrequest-tenantid', 'name_badrequest-tenantid', 1658562165, 1658562165)\G
+
+# Query 43: ID 0xDC5AC4F51E1A7597
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   4.1ms   4.1ms   4.1ms   4.1ms   4.1ms   4.1ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
 # Rows sent       0     628     628     628  628.00     628     628
 # Rows examined   0     628     628     628  628.00     628     628
 # String:
@@ -772,277 +730,53 @@ select @@version_comment limit 1\G
 # EXPLAIN /*!50100 PARTITIONS*/
 SHOW GLOBAL VARIABLES\G
 
-# Query 47: ID 0x64C4F2AE6B6B9BD4
+# Query 44: ID 0x6AC7EC870DA0766D
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 868.0us 868.0us 868.0us 868.0us 868.0us 868.0us
-# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0       8       8       8    8.00       8       8
-# Rows examined   0      34      34      34   34.00      34      34
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `isuports`\G
-
-# Query 48: ID 0x4783AE1E60184291
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 846.0us 846.0us 846.0us 846.0us 846.0us 846.0us
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0     133     133     133  133.00     133     133
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT CONCAT(CONCAT(TABLE_SCHEMA, '.'), TABLE_NAME),DATA_FREE FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema','performance_schema', 'mysql') AND DATA_LENGTH/1024/1024>100 AND DATA_FREE*100/(DATA_LENGTH+INDEX_LENGTH+DATA_FREE) > 10 AND NOT ENGINE='MEMORY'\G
-
-# Query 49: ID 0x5CBA2034458B5BC9
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0 797.0us 389.0us 408.0us 398.5us 408.0us 408.0us
-# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0      10       5       5    5.00       5       5
-# Rows examined   0      42      21      21   21.00      21      21
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW DATABASES\G
-
-# Query 50: ID 0x31DA25F95494CA95
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 679.0us 679.0us 679.0us 679.0us 679.0us 679.0us
-# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0     483     483     483  483.00     483     483
-# Rows examined   0     483     483     483  483.00     483     483
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW STATUS\G
-
-# Query 51: ID 0x28FC5B5D583E2DA6
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 580.0us 580.0us 580.0us 580.0us 580.0us 580.0us
-# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0     478     478     478  478.00     478     478
-# Rows examined   0     478     478     478  478.00     478     478
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW GLOBAL STATUS\G
-
-# Query 52: ID 0x73036F33D790BF39
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 546.0us 546.0us 546.0us 546.0us 546.0us 546.0us
-# Lock time       0   7.0us   7.0us   7.0us   7.0us   7.0us   7.0us
+# Exec time       0   4.0ms   4.0ms   4.0ms   4.0ms   4.0ms   4.0ms
+# Lock time       0   9.0us   9.0us   9.0us   9.0us   9.0us   9.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-LOCK TABLES `last_player_score` WRITE\G
+DROP TABLE IF EXISTS `competition`\G
 
-# Query 53: ID 0x41FB9AE43520EACA
+# Query 45: ID 0x7047E58B2A5815B3
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 496.0us 496.0us 496.0us 496.0us 496.0us 496.0us
-# Lock time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-LOCK TABLES `competition` WRITE\G
-
-# Query 54: ID 0x930E954F280EC5B1
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 492.0us 492.0us 492.0us 492.0us 492.0us 492.0us
-# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-LOCK TABLES `player` WRITE\G
-
-# Query 55: ID 0x90D18133B56F55D4
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       6
-# Exec time       0 397.0us  63.0us  69.0us  66.2us  69.0us  67.0us
+# Exec time       0   3.5ms   3.5ms   3.5ms   3.5ms   3.5ms   3.5ms
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW ENGINE PERFORMANCE_SCHEMA STATUS\G
-
-# Query 56: ID 0x6CCBD6845398A3D8
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 294.0us 294.0us 294.0us 294.0us 294.0us 294.0us
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0       0       0       0       0       0       0
+# Rows sent       0       1       1       1    1.00       1       1
 # Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-UPDATE id_generator SET id=2678400000 WHERE stub='a'\G
+SELECT VERSION()\G
 
-# Query 57: ID 0xD91A15ED91D39170
+# Query 46: ID 0x5CBC6BF26D494691
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       2
+# Exec time       0   3.4ms 988.0us   2.4ms   1.7ms   2.4ms   2.4ms
+# Lock time       0   6.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0       2       1       1    1.00       1       1
+# Rows examined   0     588     294     294  294.00     294     294
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT IFNULL(SUM(INDEX_LENGTH),0) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema') AND ENGINE = 'MyISAM'\G
+
+# Query 47: ID 0x2CFF86204BE26813
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0 257.0us 257.0us 257.0us 257.0us 257.0us 257.0us
-# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0      14      14      14   14.00      14      14
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-DELETE FROM tenant WHERE id > 100\G
-
-# Query 58: ID 0x98A511337022B422
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 170.0us  55.0us  58.0us  56.7us  58.0us  57.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET character_set_client = @saved_cs_client */\G
-
-# Query 59: ID 0x2AE2B3044B313A97
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 163.0us  43.0us  61.0us  54.3us  61.0us  59.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */\G
-
-# Query 60: ID 0x23E3E3AAC552EBC7
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 159.0us  43.0us  61.0us  53.0us  61.0us  55.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-UNLOCK TABLES\G
-
-# Query 61: ID 0xCECC8C8C21B7B656
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 152.0us  38.0us  69.0us  50.7us  69.0us  45.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @saved_cs_client     = @@character_set_client */\G
-
-# Query 62: ID 0xA21600B51919C17E
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 128.0us  40.0us  45.0us  42.7us  45.0us  43.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!50503 SET character_set_client = utf8mb4 */\G
-
-# Query 63: ID 0x576EF5EB51F5D753
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 116.0us  30.0us  44.0us  38.7us  44.0us  42.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */\G
-
-# Query 64: ID 0x7B8FDA41126FA26B
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 110.0us  32.0us  44.0us  36.7us  44.0us  34.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */\G
-
-# Query 65: ID 0x880B089EBD9A2CAD
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 110.0us  34.0us  39.0us  36.7us  39.0us  37.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!50503 SET NAMES utf8mb4 */\G
-
-# Query 66: ID 0x2CFF86204BE26813
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0 109.0us 109.0us 109.0us 109.0us 109.0us 109.0us
+# Exec time       0   3.3ms   3.3ms   3.3ms   3.3ms   3.3ms   3.3ms
 # Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
 # Rows sent       0       9       9       9    9.00       9       9
 # Rows examined   0      18      18      18   18.00      18      18
@@ -1052,11 +786,25 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 
-# Query 67: ID 0x404C7B72CAF91ECA
+# Query 48: ID 0xD57560CE9D0852EE
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 102.0us  32.0us  37.0us  34.0us  37.0us  33.0us
+# Count           0       1
+# Exec time       0   2.9ms   2.9ms   2.9ms   2.9ms   2.9ms   2.9ms
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0      37      37      37   37.00      37      37
+# Rows examined   0     217     217     217  217.00     217     217
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `mysql`\G
+
+# Query 49: ID 0x90D18133B56F55D4
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       6
+# Exec time       0   2.7ms  65.0us   2.3ms 450.8us   2.3ms  72.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1064,13 +812,13 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */\G
+SHOW ENGINE PERFORMANCE_SCHEMA STATUS\G
 
-# Query 68: ID 0xCF298A80F7E31AF9
+# Query 50: ID 0xD68A038797A4135C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0 102.0us  29.0us  41.0us  34.0us  41.0us  32.0us
+# Count           0       1
+# Exec time       0   2.0ms   2.0ms   2.0ms   2.0ms   2.0ms   2.0ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1078,13 +826,279 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */\G
+SHOW SLAVE HOSTS\G
 
-# Query 69: ID 0xD9F25F1131019AB8
+# Query 51: ID 0xE3A3649C5FAC418D
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0      31
+# Exec time       0   1.8ms  40.0us 119.0us  58.1us  78.0us  56.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0      31       1       1    1.00       1       1
+# Rows examined   0      31       1       1    1.00       1       1
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+select @@version_comment limit 1\G
+
+# Query 52: ID 0x64C4F2AE6B6B9BD4
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0       8       8       8    8.00       8       8
+# Rows examined   0      34      34      34   34.00      34      34
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `isuports`\G
+
+# Query 53: ID 0x82548DE9C4F3E046
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0     101     101     101  101.00     101     101
+# Rows examined   0     206     206     206  206.00     206     206
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `sys`\G
+
+# Query 54: ID 0x0C25EDC6C64F42DC
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms   1.6ms
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+select DATABASE(), USER() limit 1\G
+
+# Query 55: ID 0x4783AE1E60184291
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   1.3ms   1.3ms   1.3ms   1.3ms   1.3ms   1.3ms
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0     133     133     133  133.00     133     133
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT CONCAT(CONCAT(TABLE_SCHEMA, '.'), TABLE_NAME),DATA_FREE FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema','performance_schema', 'mysql') AND DATA_LENGTH/1024/1024>100 AND DATA_FREE*100/(DATA_LENGTH+INDEX_LENGTH+DATA_FREE) > 10 AND NOT ENGINE='MEMORY'\G
+
+# Query 56: ID 0x28FC5B5D583E2DA6
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 649.0us 649.0us 649.0us 649.0us 649.0us 649.0us
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0     478     478     478  478.00     478     478
+# Rows examined   0     478     478     478  478.00     478     478
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW GLOBAL STATUS\G
+
+# Query 57: ID 0x73036F33D790BF39
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 580.0us 580.0us 580.0us 580.0us 580.0us 580.0us
+# Lock time       0   8.0us   8.0us   8.0us   8.0us   8.0us   8.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+LOCK TABLES `last_player_score` WRITE\G
+
+# Query 58: ID 0x41FB9AE43520EACA
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 556.0us 556.0us 556.0us 556.0us 556.0us 556.0us
+# Lock time       0   7.0us   7.0us   7.0us   7.0us   7.0us   7.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+LOCK TABLES `competition` WRITE\G
+
+# Query 59: ID 0x930E954F280EC5B1
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 553.0us 553.0us 553.0us 553.0us 553.0us 553.0us
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+LOCK TABLES `player` WRITE\G
+
+# Query 60: ID 0x6CCBD6845398A3D8
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 302.0us 302.0us 302.0us 302.0us 302.0us 302.0us
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       1       1       1    1.00       1       1
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+UPDATE id_generator SET id=2678400000 WHERE stub='a'\G
+
+# Query 61: ID 0xD91A15ED91D39170
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 229.0us 229.0us 229.0us 229.0us 229.0us 229.0us
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0      14      14      14   14.00      14      14
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+DELETE FROM tenant WHERE id > 100\G
+
+# Query 62: ID 0x98A511337022B422
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0 101.0us  32.0us  35.0us  33.7us  35.0us  34.0us
+# Exec time       0 178.0us  56.0us  62.0us  59.3us  62.0us  60.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET character_set_client = @saved_cs_client */\G
+
+# Query 63: ID 0x591DCE6A753564F4
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 160.0us  47.0us  59.0us  53.3us  59.0us  54.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */\G
+
+# Query 64: ID 0x2AE2B3044B313A97
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 157.0us  44.0us  57.0us  52.3us  57.0us  56.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */\G
+
+# Query 65: ID 0x23E3E3AAC552EBC7
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 153.0us  43.0us  56.0us  51.0us  56.0us  54.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+UNLOCK TABLES\G
+
+# Query 66: ID 0xCECC8C8C21B7B656
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 123.0us  39.0us  45.0us  41.0us  45.0us  39.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @saved_cs_client     = @@character_set_client */\G
+
+# Query 67: ID 0x7B8FDA41126FA26B
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 116.0us  33.0us  42.0us  38.7us  42.0us  41.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */\G
+
+# Query 68: ID 0xA21600B51919C17E
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 116.0us  38.0us  39.0us  38.7us  39.0us  39.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!50503 SET character_set_client = utf8mb4 */\G
+
+# Query 69: ID 0x880B089EBD9A2CAD
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 108.0us  32.0us  39.0us  36.0us  39.0us  37.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!50503 SET NAMES utf8mb4 */\G
+
+# Query 70: ID 0xD9F25F1131019AB8
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0 106.0us  32.0us  41.0us  35.3us  41.0us  33.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1094,39 +1108,11 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */\G
 
-# Query 70: ID 0x05171C9B2C3DBE62
+# Query 71: ID 0x135A37D729549779
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0  99.0us  30.0us  35.0us  33.0us  35.0us  34.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40103 SET TIME_ZONE='+00:00' */\G
-
-# Query 71: ID 0xD58C2EC55E332D45
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0  95.0us  30.0us  34.0us  31.7us  34.0us  31.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */\G
-
-# Query 72: ID 0x135A37D729549779
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0  91.0us  30.0us  31.0us  30.3us  31.0us  30.0us
+# Exec time       0 106.0us  30.0us  45.0us  35.3us  45.0us  31.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1136,11 +1122,11 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */\G
 
-# Query 73: ID 0xF3D856BFA86157CE
+# Query 72: ID 0x576EF5EB51F5D753
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0  85.0us  27.0us  29.0us  28.3us  29.0us  29.0us
+# Exec time       0 100.0us  31.0us  35.0us  33.3us  35.0us  34.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1148,13 +1134,69 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */\G
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */\G
 
-# Query 74: ID 0x7F22BBB9FF2EFA83
+# Query 73: ID 0x05171C9B2C3DBE62
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0  85.0us  28.0us  29.0us  28.3us  29.0us  28.0us
+# Exec time       0  99.0us  31.0us  35.0us  33.0us  35.0us  33.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40103 SET TIME_ZONE='+00:00' */\G
+
+# Query 74: ID 0x404C7B72CAF91ECA
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0  96.0us  31.0us  33.0us  32.0us  33.0us  32.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */\G
+
+# Query 75: ID 0xD58C2EC55E332D45
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0  95.0us  31.0us  33.0us  31.7us  33.0us  31.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */\G
+
+# Query 76: ID 0xCF298A80F7E31AF9
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0  95.0us  29.0us  34.0us  31.7us  34.0us  32.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */\G
+
+# Query 77: ID 0x7F22BBB9FF2EFA83
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0  89.0us  29.0us  31.0us  29.7us  31.0us  29.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1164,7 +1206,21 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */\G
 
-# Query 75: ID 0xC6794245484061FB
+# Query 78: ID 0xF3D856BFA86157CE
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       3
+# Exec time       0  87.0us  28.0us  30.0us  29.0us  30.0us  29.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */\G
+
+# Query 79: ID 0xC6794245484061FB
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
@@ -1178,21 +1234,7 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */\G
 
-# Query 76: ID 0x7A1208BDC805D902
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       3
-# Exec time       0  83.0us  26.0us  29.0us  27.7us  29.0us  28.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
-
-# Query 77: ID 0x7F8290E05162B254
+# Query 80: ID 0x7F8290E05162B254
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
@@ -1206,25 +1248,25 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */\G
 
-# Query 78: ID 0xA3C958A64E1E64AB
+# Query 81: ID 0x7A1208BDC805D902
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  77.0us  77.0us  77.0us  77.0us  77.0us  77.0us
+# Count           0       3
+# Exec time       0  80.0us  25.0us  28.0us  26.7us  28.0us  27.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       9       9       9    9.00       9       9
-# Rows examined   0       9       9       9    9.00       9       9
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SHOW ENGINES\G
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
 
-# Query 79: ID 0x45788F3F8DFCDAFC
+# Query 82: ID 0x45788F3F8DFCDAFC
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0  75.0us  23.0us  28.0us  25.0us  28.0us  24.0us
+# Exec time       0  76.0us  24.0us  27.0us  25.3us  27.0us  25.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1234,11 +1276,11 @@ SHOW ENGINES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */\G
 
-# Query 80: ID 0x23F6EB3A0ECD9E84
+# Query 83: ID 0x23F6EB3A0ECD9E84
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       3
-# Exec time       0  75.0us  24.0us  26.0us  25.0us  26.0us  25.0us
+# Exec time       0  76.0us  25.0us  26.0us  25.3us  26.0us  25.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -1248,53 +1290,25 @@ SHOW ENGINES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */\G
 
-# Query 81: ID 0xD68A038797A4135C
+# Query 84: ID 0x8ED794C0D5413D5A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  69.0us  69.0us  69.0us  69.0us  69.0us  69.0us
+# Count           0      29
+# Exec time       0  57.0us   1.0us   4.0us   2.0us   3.0us   2.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW SLAVE HOSTS\G
-
-# Query 82: ID 0x8ED794C0D5413D5A
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0      28
-# Exec time       0  43.0us   1.0us   3.0us   1.5us   3.0us   1.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0   4.50k       0     651  160.00     628      21
+# Rows examined   0   3.93k       0     651  135.00     628       9
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 Quit\G
 
-# Query 83: ID 0x7047E58B2A5815B3
+# Query 85: ID 0xEBA5220D6ABC29D5
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  32.0us  32.0us  32.0us  32.0us  32.0us  32.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       1       1       1    1.00       1       1
-# Rows examined   0       1       1       1    1.00       1       1
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT VERSION()\G
-
-# Query 84: ID 0xEBA5220D6ABC29D5
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  32.0us  32.0us  32.0us  32.0us  32.0us  32.0us
+# Exec time       0  50.0us  50.0us  50.0us  50.0us  50.0us  50.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       1       1       1    1.00       1       1
 # Rows examined   0       1       1       1    1.00       1       1
@@ -1304,25 +1318,11 @@ SELECT VERSION()\G
 # EXPLAIN /*!50100 PARTITIONS*/
 select @@character_set_client, @@character_set_connection, @@character_set_server, @@character_set_database limit 1\G
 
-# Query 85: ID 0x0C25EDC6C64F42DC
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       1
-# Exec time       0  31.0us  31.0us  31.0us  31.0us  31.0us  31.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       1       1       1    1.00       1       1
-# Rows examined   0       1       1       1    1.00       1       1
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-select DATABASE(), USER() limit 1\G
-
 # Query 86: ID 0xD7288668D3824DC6
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  24.0us  24.0us  24.0us  24.0us  24.0us  24.0us
+# Exec time       0  26.0us  26.0us  26.0us  26.0us  26.0us  26.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       1       1       1    1.00       1       1
 # Rows examined   0       1       1       1    1.00       1       1
@@ -1350,7 +1350,7 @@ Statistics\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
+# Exec time       0   8.0us   8.0us   8.0us   8.0us   8.0us   8.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0

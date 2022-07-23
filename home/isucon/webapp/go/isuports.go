@@ -980,6 +980,8 @@ func competitionScoreHandler(c echo.Context) error {
 
 	var rowNum int64
 	playerScoreRows := []PlayerScoreRow{}
+	playerIdMap := make(map[string]struct{})
+	now := time.Now().Unix()
 	for {
 		rowNum++
 		row, err := r.Read()
@@ -993,15 +995,18 @@ func competitionScoreHandler(c echo.Context) error {
 			return fmt.Errorf("row must have two columns: %#v", row)
 		}
 		playerID, scoreStr := row[0], row[1]
-		if _, err := retrievePlayer(ctx, playerID); err != nil {
-			// 存在しない参加者が含まれている
-			if errors.Is(err, sql.ErrNoRows) {
-				return echo.NewHTTPError(
-					http.StatusBadRequest,
-					fmt.Sprintf("player not found: %s", playerID),
-				)
+		if _, ok := playerIdMap[playerID]; !ok {
+			if _, err := retrievePlayer(ctx, playerID); err != nil {
+				// 存在しない参加者が含まれている
+				if errors.Is(err, sql.ErrNoRows) {
+					return echo.NewHTTPError(
+						http.StatusBadRequest,
+						fmt.Sprintf("player not found: %s", playerID),
+					)
+				}
+				return fmt.Errorf("error retrievePlayer: %w", err)
 			}
-			return fmt.Errorf("error retrievePlayer: %w", err)
+			playerIdMap[playerID] = struct{}{}
 		}
 		var score int64
 		if score, err = strconv.ParseInt(scoreStr, 10, 64); err != nil {
@@ -1014,7 +1019,6 @@ func competitionScoreHandler(c echo.Context) error {
 		if err != nil {
 			return fmt.Errorf("error dispenseID: %w", err)
 		}
-		now := time.Now().Unix()
 		playerScoreRows = append(playerScoreRows, PlayerScoreRow{
 			ID:            id,
 			TenantID:      v.tenantID,
@@ -1033,15 +1037,6 @@ func competitionScoreHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	if _, err := tx.ExecContext(
-		ctx,
-		"DELETE FROM last_player_score WHERE tenant_id = ? AND competition_id = ?",
-		v.tenantID,
-		competitionID,
-	); err != nil {
-		return fmt.Errorf("error Delete player_score: tenantID=%d, competitionID=%s, %w", v.tenantID, competitionID, err)
-	}
-
 	stmt, err := tx.PrepareContext(ctx, "REPLACE INTO last_player_score (tenant_id, player_id, competition_id, score, row_num, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)")
 	if err != nil {
 		return fmt.Errorf("error prepare last_player_score: tenantID=%d, competitionID=%s, %w", v.tenantID, competitionID, err)
@@ -1059,6 +1054,16 @@ func competitionScoreHandler(c echo.Context) error {
 			)
 
 		}
+	}
+
+	if _, err := tx.ExecContext(
+		ctx,
+		"DELETE FROM last_player_score WHERE tenant_id = ? AND competition_id = ? AND created_at < ?",
+		v.tenantID,
+		competitionID,
+		now,
+	); err != nil {
+		return fmt.Errorf("error Delete player_score: tenantID=%d, competitionID=%s, %w", v.tenantID, competitionID, err)
 	}
 
 	if err := tx.Commit(); err != nil {

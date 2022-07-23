@@ -34,8 +34,8 @@
 [OK] NO SECURITY CVE FOUND FOR YOUR VERSION
  
 -------- Performance Metrics -----------------------------------------------------------------------
-[--] Up for: 54m 0s (1M q [492.079 qps], 206 conn, TX: 1G, RX: 290M)
-[--] Reads / Writes: 77% / 23%
+[--] Up for: 1h 33m 5s (2M q [459.515 qps], 302 conn, TX: 1G, RX: 456M)
+[--] Reads / Writes: 75% / 25%
 [--] Binary logging is disabled
 [--] Physical Memory     : 3.6G
 [--] Max MySQL memory    : 891.1M
@@ -46,17 +46,17 @@
 [OK] Maximum reached memory usage: 630.5M (16.98% of installed RAM)
 [OK] Maximum possible memory usage: 891.1M (24.00% of installed RAM)
 [OK] Overall possible memory usage with other process is compatible with memory available
-[!!] Slow queries: 100% (1M/1M)
+[!!] Slow queries: 100% (2M/2M)
 [OK] Highest usage of available connections: 7% (12/151)
-[OK] Aborted connections: 0.00%  (0/206)
+[OK] Aborted connections: 0.00%  (0/302)
 [--] Query cache have been removed in MySQL 8
 [OK] Sorts requiring temporary tables: 0% (0 temp sorts / 7K sorts)
-[!!] Joins performed without indexes: 10
-[!!] Temporary tables created on disk: 26% (9 on disk / 34 total)
-[OK] Thread cache hit rate: 91% (18 created / 206 connections)
-[OK] Table cache hit rate: 66% (784 open / 1K opened)
+[OK] No joins without indexes
+[!!] Temporary tables created on disk: 30% (14 on disk / 46 total)
+[OK] Thread cache hit rate: 92% (22 created / 302 connections)
+[OK] Table cache hit rate: 55% (793 open / 1K opened)
 [OK] Open file limit used: 0% (1/10K)
-[OK] Table locks acquired immediately: 100% (16 immediate / 16 locks)
+[OK] Table locks acquired immediately: 100% (20 immediate / 20 locks)
  
 -------- Performance schema ------------------------------------------------------------------------
 [--] Memory used by P_S: 72B
@@ -77,9 +77,9 @@
 [OK] InnoDB buffer pool instances: 1
 [--] Number of InnoDB Buffer Pool Chunk : 4 for 1 Buffer Pool Instance(s)
 [OK] Innodb_buffer_pool_size aligned with Innodb_buffer_pool_chunk_size & Innodb_buffer_pool_instances
-[OK] InnoDB Read buffer efficiency: 99.99% (245277189 hits/ 245293036 total)
-[OK] InnoDB Write log efficiency: 96.48% (9983190 hits/ 10346901 total)
-[OK] InnoDB log waits: 0.00% (0 waits / 363711 writes)
+[OK] InnoDB Read buffer efficiency: 100.00% (386398266 hits/ 386414165 total)
+[OK] InnoDB Write log efficiency: 96.31% (15472763 hits/ 16065214 total)
+[OK] InnoDB log waits: 0.00% (0 waits / 592451 writes)
  
 -------- AriaDB Metrics ----------------------------------------------------------------------------
 [--] AriaDB is disabled.
@@ -105,10 +105,8 @@
 -------- Recommendations ---------------------------------------------------------------------------
 General recommendations:
     MySQL was started within the last 24 hours - recommendations may be inaccurate
-    Adjust your join queries to always utilize indexes
     When making adjustments, make tmp_table_size/max_heap_table_size equal
     Reduce your SELECT DISTINCT queries which have no LIMIT clause
 Variables to adjust:
-    join_buffer_size (> 256.0K, or always use indexes with JOINs)
     tmp_table_size (> 64M)
     max_heap_table_size (> 64M)
