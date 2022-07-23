@@ -1,62 +1,62 @@
 
-# Current date: Sat Jul 23 03:53:57 2022
+# Current date: Sat Jul 23 05:09:38 2022
 # Hostname: ip-192-168-0-11
 # Files: /dev/stdin
-# Overall: 46.85k total, 38 unique
+# Overall: 44.85k total, 38 unique
 # Attribute          total     min     max     avg     95%  median
 # =============    ======= ======= ======= ======= ======= =======
-# Exec time         32.70s   1.0us  22.78s 698.0us 262.0us  59.0us
-# Lock time         21.7ms       0  87.0us 462.4ns   2.0us       0
-# Rows sent          2.56M       0   5.00k   54.00     161       1
-# Rows examined      9.05M       0   3.22M  193.00     161       1
+# Exec time         31.83s   1.0us  22.89s 709.7us 250.0us  58.0us
+# Lock time         20.5ms       0 204.0us 456.9ns   2.0us       0
+# Rows sent          2.58M       0   5.00k   57.00     162       1
+# Rows examined      9.08M       0   3.22M  202.00     163       1
 
 # Profile
 # Rank Query ID           Response time  Calls R/Call
 # ==== ================== ============== ===== =======
-#    1 0x65A4D9734693DCF5 22.7801  69.7%     1 22.7801 INSERT visit_history visit
-#    2 0x91AF3FDB050EDC72  3.7521  11.5%  1791 0.0021 INSERT visit
-#    3 0x348974B3D332E575  2.2205   6.8%     1 2.2205 DELETE visit_history
-#    4 0x8CFEA9CD31A70652  2.0355   6.2%  7452 0.0003 SELECT visit
-#    5 0xB711A299ADC32792  1.0392   3.2% 15333 0.0001 PREPARE
-#    6 0x3635BEFFE5F2117E  0.3961   1.2%  4289 0.0001 SELECT tenant
-#    7 0xA0719EAF93CC4D19  0.1441   0.4%  1791 0.0001 SELECT tenant
-#    8 0x90F72AD1188B60BA  0.1186   0.4%    10 0.0119 INSERT tenant
-#    9 0x0C45BAAA21BF497C  0.0831   0.3% 15333 0.0000 CLOSE
-#   10 0xE87A1F1BB1358261  0.0510   0.2%     1 0.0510 TRUNCATE TABLE visit
-#   11 0x40A5548652B4DFDB  0.0135   0.0%     2 0.0067 SHOW 
-#   12 0xCE0293B4FFBDE858  0.0128   0.0%    64 0.0002 SELECT tenant
-#   13 0xE7D5FE66D3400A27  0.0109   0.0%     2 0.0055 SELECT information_schema.TABLES
-#   14 0xDC5AC4F51E1A7597  0.0049   0.0%     2 0.0024 SHOW 
-#   15 0x911658842DA64DC4  0.0047   0.0%     2 0.0024 SHOW 
-#   16 0xD91A15ED91D39170  0.0040   0.0%     1 0.0040 DELETE tenant
-#   17 0x5CBC6BF26D494691  0.0037   0.0%     4 0.0009 SELECT information_schema.TABLES
-#   18 0x791C5370A1021F19  0.0036   0.0%     2 0.0018 SHOW
-#   19 0x82548DE9C4F3E046  0.0035   0.0%     2 0.0018 SHOW 
-#   20 0xD57560CE9D0852EE  0.0034   0.0%     2 0.0017 SHOW 
-#   21 0x6CCBD6845398A3D8  0.0032   0.0%     1 0.0032 UPDATE id_generator
-#   22 0xE3A3649C5FAC418D  0.0022   0.0%    55 0.0000 SELECT 
-#   23 0x28FC5B5D583E2DA6  0.0020   0.0%     2 0.0010 SHOW 
-#   24 0x4783AE1E60184291  0.0019   0.0%     2 0.0010 SELECT information_schema.TABLES
-#   25 0x64C4F2AE6B6B9BD4  0.0018   0.0%     2 0.0009 SHOW 
-#   26 0x5CBA2034458B5BC9  0.0017   0.0%     4 0.0004 SHOW 
-#   27 0x31DA25F95494CA95  0.0014   0.0%     2 0.0007 SHOW 
-#   28 0x8ED794C0D5413D5A  0.0011   0.0%   671 0.0000 QUIT
-#   29 0x90D18133B56F55D4  0.0008   0.0%    12 0.0001 SHOW
-#   30 0x2CFF86204BE26813  0.0002   0.0%     2 0.0001 SELECT information_schema.ENGINES
-#   31 0xA3C958A64E1E64AB  0.0002   0.0%     2 0.0001 SHOW 
-#   32 0xD68A038797A4135C  0.0001   0.0%     2 0.0001 SHOW
-#   33 0xEBA5220D6ABC29D5  0.0001   0.0%     2 0.0000 SELECT 
-#   34 0x0C25EDC6C64F42DC  0.0001   0.0%     2 0.0000 SELECT 
-#   35 0x7047E58B2A5815B3  0.0001   0.0%     2 0.0000 SELECT 
-#   36 0xD7288668D3824DC6  0.0000   0.0%     2 0.0000 SELECT 
-#   37 0x876951F96EBB256F  0.0000   0.0%     2 0.0000 STATISTICS
-#   38 0x1D410B4BE5060972  0.0000   0.0%     2 0.0000 PING
+#    1 0x65A4D9734693DCF5 22.8900  71.9%     1 22.8900 INSERT visit_history visit
+#    2 0x91AF3FDB050EDC72  3.0368   9.5%  1565 0.0019 INSERT visit
+#    3 0x348974B3D332E575  2.2517   7.1%     1 2.2517 DELETE visit_history
+#    4 0x8CFEA9CD31A70652  1.9842   6.2%  7454 0.0003 SELECT visit
+#    5 0xB711A299ADC32792  0.9293   2.9% 14702 0.0001 PREPARE
+#    6 0x3635BEFFE5F2117E  0.3572   1.1%  4108 0.0001 SELECT tenant
+#    7 0xA0719EAF93CC4D19  0.1316   0.4%  1565 0.0001 SELECT tenant
+#    8 0x90F72AD1188B60BA  0.0802   0.3%    10 0.0080 INSERT tenant
+#    9 0x0C45BAAA21BF497C  0.0787   0.2% 14702 0.0000 CLOSE
+#   10 0xE87A1F1BB1358261  0.0419   0.1%     1 0.0419 TRUNCATE TABLE visit
+#   11 0xCE0293B4FFBDE858  0.0126   0.0%    64 0.0002 SELECT tenant
+#   12 0x40A5548652B4DFDB  0.0063   0.0%     1 0.0063 SHOW 
+#   13 0xD91A15ED91D39170  0.0038   0.0%     1 0.0038 DELETE tenant
+#   14 0x6CCBD6845398A3D8  0.0030   0.0%     1 0.0030 UPDATE id_generator
+#   15 0x5CBC6BF26D494691  0.0018   0.0%     2 0.0009 SELECT information_schema.TABLES
+#   16 0x791C5370A1021F19  0.0018   0.0%     1 0.0018 SHOW
+#   17 0x911658842DA64DC4  0.0018   0.0%     1 0.0018 SHOW 
+#   18 0xD57560CE9D0852EE  0.0017   0.0%     1 0.0017 SHOW 
+#   19 0x82548DE9C4F3E046  0.0017   0.0%     1 0.0017 SHOW 
+#   20 0xDC5AC4F51E1A7597  0.0015   0.0%     1 0.0015 SHOW 
+#   21 0xE3A3649C5FAC418D  0.0011   0.0%    28 0.0000 SELECT 
+#   22 0xE7D5FE66D3400A27  0.0011   0.0%     1 0.0011 SELECT information_schema.TABLES
+#   23 0x28FC5B5D583E2DA6  0.0010   0.0%     1 0.0010 SHOW 
+#   24 0x8ED794C0D5413D5A  0.0009   0.0%   613 0.0000 QUIT
+#   25 0x64C4F2AE6B6B9BD4  0.0008   0.0%     1 0.0008 SHOW 
+#   26 0x4783AE1E60184291  0.0008   0.0%     1 0.0008 SELECT information_schema.TABLES
+#   27 0x5CBA2034458B5BC9  0.0008   0.0%     2 0.0004 SHOW 
+#   28 0x31DA25F95494CA95  0.0008   0.0%     1 0.0008 SHOW 
+#   29 0x90D18133B56F55D4  0.0004   0.0%     6 0.0001 SHOW
+#   30 0x2CFF86204BE26813  0.0001   0.0%     1 0.0001 SELECT information_schema.ENGINES
+#   31 0xA3C958A64E1E64AB  0.0001   0.0%     1 0.0001 SHOW 
+#   32 0xD68A038797A4135C  0.0001   0.0%     1 0.0001 SHOW
+#   33 0xEBA5220D6ABC29D5  0.0000   0.0%     1 0.0000 SELECT 
+#   34 0x0C25EDC6C64F42DC  0.0000   0.0%     1 0.0000 SELECT 
+#   35 0x7047E58B2A5815B3  0.0000   0.0%     1 0.0000 SELECT 
+#   36 0xD7288668D3824DC6  0.0000   0.0%     1 0.0000 SELECT 
+#   37 0x876951F96EBB256F  0.0000   0.0%     1 0.0000 STATISTICS
+#   38 0x1D410B4BE5060972  0.0000   0.0%     1 0.0000 PING
 
 # Query 1: ID 0x65A4D9734693DCF5
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time      70  22.78s  22.78s  22.78s  22.78s  22.78s  22.78s
+# Exec time      72  22.89s  22.89s  22.89s  22.89s  22.89s  22.89s
 # Lock time       0   5.0us   5.0us   5.0us   5.0us   5.0us   5.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined  36   3.22M   3.22M   3.22M   3.22M   3.22M   3.22M
@@ -69,22 +69,22 @@ INSERT INTO visit (tenant_id, competition_id, player_id, created_at) SELECT tena
 # Query 2: ID 0x91AF3FDB050EDC72
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4    1791
-# Exec time      11   3.75s  75.0us  32.6ms   2.1ms   5.2ms   2.2ms
-# Lock time      12   2.5ms       0  48.0us   1.4us   2.0us   1.0us
+# Count           3    1565
+# Exec time      10   3.04s  71.0us  17.5ms   1.9ms   5.2ms   2.0ms
+# Lock time      10   2.0ms       0  23.0us   1.3us   2.0us   1.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (150, '16a3bbbc-4078-4e64-9c66-4ace40a0dcd1', '612b47e3-576d-476c-b889-2faf540a7dc3', 1658548302)\G
+INSERT INTO visit (tenant_id, competition_id, player_id, created_at) VALUES (176, 'e199f5c1-1671-4642-b866-e8ae533cbb44', 'ae85bef2-a089-4613-a072-00d2f39de67b', 1658552821)\G
 
 # Query 3: ID 0x348974B3D332E575
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       7   2.22s   2.22s   2.22s   2.22s   2.22s   2.22s
+# Exec time       7   2.25s   2.25s   2.25s   2.25s   2.25s   2.25s
 # Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined  36   3.22M   3.22M   3.22M   3.22M   3.22M   3.22M
@@ -97,22 +97,22 @@ DELETE FROM visit_history WHERE created_at >= '1654041600'\G
 # Query 4: ID 0x8CFEA9CD31A70652
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          16    7452
-# Exec time       6   2.04s 107.0us  11.6ms 273.2us 324.0us 190.0us
-# Lock time      45   9.8ms       0  87.0us   1.3us   2.0us   1.0us
-# Rows sent      50   1.27M       0   5.00k  170.00     190      80
-# Rows examined  14   1.27M       0   5.00k  170.00     190      80
+# Count          17    7454
+# Exec time       6   1.98s 108.0us   6.5ms 266.2us 320.0us 188.0us
+# Lock time      46   9.5ms       0 121.0us   1.3us   2.0us   1.0us
+# Rows sent      50   1.28M       0   5.00k  171.00     188      84
+# Rows examined  14   1.28M       0   5.00k  171.00     188      84
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 1 AND competition_id = '597488a14'\G
+SELECT player_id, created_at AS min_created_at FROM visit WHERE tenant_id = 69 AND competition_id = '4bedcf1ca'\G
 
 # Query 5: ID 0xB711A299ADC32792
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          33   15333
-# Exec time       3   1.04s  26.0us  53.6ms  67.8us  92.0us  60.0us
+# Count          33   14702
+# Exec time       3 929.3ms  27.0us   3.9ms  63.2us  93.0us  58.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -125,36 +125,36 @@ Prepare\G
 # Query 6: ID 0x3635BEFFE5F2117E
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           9    4289
-# Exec time       1 396.1ms  44.0us   6.2ms  92.4us 132.0us  85.0us
-# Lock time      31   6.7ms       0  36.0us   1.6us   2.0us   1.0us
-# Rows sent       0   4.29k       0       1       0       1       1
-# Rows examined   0   4.29k       0       1       0       1       1
+# Count           9    4108
+# Exec time       1 357.2ms  43.0us   1.8ms  86.9us 127.0us  81.0us
+# Lock time      32   6.6ms       0 204.0us   1.6us   2.0us   1.0us
+# Rows sent       0   4.11k       0       1       0       1       1
+# Rows examined   0   4.11k       0       1       0       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE name = 'xswbk-cddqfg-1658548296'\G
+SELECT * FROM tenant WHERE name = 'mcchm-h-1658552782'\G
 
 # Query 7: ID 0xA0719EAF93CC4D19
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           4    1791
-# Exec time       0 144.1ms  38.0us 457.0us  80.5us 116.0us  75.0us
-# Lock time      12   2.5ms       0  34.0us   1.4us   2.0us   1.0us
-# Rows sent       0   1.79k       1       1    1.00       1       1
-# Rows examined   0   1.79k       1       1    1.00       1       1
+# Count           3    1565
+# Exec time       0 131.6ms  49.0us   6.1ms  84.1us 111.0us  72.0us
+# Lock time      11   2.3ms       0  40.0us   1.4us   2.0us   1.0us
+# Rows sent       0   1.56k       1       1    1.00       1       1
+# Rows examined   0   1.56k       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SELECT * FROM tenant WHERE id = 148\G
+SELECT * FROM tenant WHERE id = 175\G
 
 # Query 8: ID 0x90F72AD1188B60BA
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0      10
-# Exec time       0 118.6ms   2.1ms  58.3ms  11.9ms  58.3ms   3.8ms
+# Exec time       0  80.2ms 976.0us  54.8ms   8.0ms  54.8ms   3.1ms
 # Lock time       0  17.0us   1.0us   3.0us   1.7us   3.0us   2.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -162,16 +162,16 @@ SELECT * FROM tenant WHERE id = 148\G
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('sjoar-mbpew-1658548266', '柏酒店', 1658548267, 1658548267)\G
+INSERT INTO tenant (name, display_name, created_at, updated_at) VALUES ('pyc-yzivhh-1658552756', 'サーバと俺', 1658552756, 1658552756)\G
 
 # Query 9: ID 0x0C45BAAA21BF497C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count          33   15333
-# Exec time       0  83.1ms   1.0us 197.0us   5.4us   8.0us   5.0us
+# Count          33   14702
+# Exec time       0  78.7ms   1.0us   1.2ms   5.4us   7.0us   5.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent      50   1.27M       0   5.00k   83.00     174       1
-# Rows examined  14   1.27M       0   5.00k   83.00     174       1
+# Rows sent      50   1.29M       0   5.00k   87.00     173       6
+# Rows examined  14   1.29M       0   5.00k   87.00     173       6
 # String:
 # Databases     
 # 
@@ -182,8 +182,8 @@ Close stmt\G
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0  51.0ms  51.0ms  51.0ms  51.0ms  51.0ms  51.0ms
-# Lock time       0   9.0us   9.0us   9.0us   9.0us   9.0us   9.0us
+# Exec time       0  41.9ms  41.9ms  41.9ms  41.9ms  41.9ms  41.9ms
+# Lock time       0   6.0us   6.0us   6.0us   6.0us   6.0us   6.0us
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
 # String:
@@ -192,26 +192,12 @@ Close stmt\G
 # EXPLAIN /*!50100 PARTITIONS*/
 TRUNCATE TABLE visit\G
 
-# Query 11: ID 0x40A5548652B4DFDB
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  13.5ms   6.4ms   7.1ms   6.7ms   7.1ms   7.1ms
-# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0     220     110     110  110.00     110     110
-# Rows examined   0     664     332     332  332.00     332     332
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `performance_schema`\G
-
-# Query 12: ID 0xCE0293B4FFBDE858
+# Query 11: ID 0xCE0293B4FFBDE858
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0      64
-# Exec time       0  12.8ms 155.0us 293.0us 199.7us 270.0us 195.0us
-# Lock time       0  93.0us   1.0us   3.0us   1.5us   2.0us   1.0us
+# Exec time       0  12.6ms 148.0us 395.0us 197.5us 264.0us 196.0us
+# Lock time       0  90.0us   1.0us   3.0us   1.4us   2.0us   1.0us
 # Rows sent       0   6.88k     102     109  107.00     109     108
 # Rows examined   0   6.88k     102     109  107.00     109     108
 # String:
@@ -220,81 +206,67 @@ SHOW TABLE STATUS FROM `performance_schema`\G
 # EXPLAIN /*!50100 PARTITIONS*/
 SELECT * FROM tenant ORDER BY id DESC\G
 
-# Query 13: ID 0xE7D5FE66D3400A27
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  10.9ms 923.0us  10.0ms   5.5ms  10.0ms  10.0ms
-# Lock time       0   6.0us   2.0us   4.0us   3.0us   4.0us   4.0us
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0     259     128     131  129.00     131     131
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT ENGINE,SUM(DATA_LENGTH+INDEX_LENGTH),COUNT(ENGINE),SUM(DATA_LENGTH),SUM(INDEX_LENGTH) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema', 'performance_schema', 'mysql') AND ENGINE IS NOT NULL GROUP BY ENGINE ORDER BY ENGINE ASC\G
-
-# Query 14: ID 0xDC5AC4F51E1A7597
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   4.9ms   2.4ms   2.5ms   2.4ms   2.5ms   2.5ms
-# Lock time       0   2.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0   1.26k     628     628  628.00     628     628
-# Rows examined   0   1.26k     628     628  628.00     628     628
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW GLOBAL VARIABLES\G
-
-# Query 15: ID 0x911658842DA64DC4
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   4.7ms   1.8ms   2.9ms   2.4ms   2.9ms   2.9ms
-# Lock time       0   2.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0   1.30k     651     651  651.00     651     651
-# Rows examined   0   1.30k     651     651  651.00     651     651
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW VARIABLES\G
-
-# Query 16: ID 0xD91A15ED91D39170
+# Query 12: ID 0x40A5548652B4DFDB
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   4.0ms   4.0ms   4.0ms   4.0ms   4.0ms   4.0ms
-# Lock time       0   4.0us   4.0us   4.0us   4.0us   4.0us   4.0us
+# Exec time       0   6.3ms   6.3ms   6.3ms   6.3ms   6.3ms   6.3ms
+# Lock time       0   3.0us   3.0us   3.0us   3.0us   3.0us   3.0us
+# Rows sent       0     110     110     110  110.00     110     110
+# Rows examined   0     332     332     332  332.00     332     332
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `performance_schema`\G
+
+# Query 13: ID 0xD91A15ED91D39170
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   3.8ms   3.8ms   3.8ms   3.8ms   3.8ms   3.8ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       7       7       7    7.00       7       7
+# Rows examined   0       4       4       4    4.00       4       4
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 DELETE FROM tenant WHERE id > 100\G
 
-# Query 17: ID 0x5CBC6BF26D494691
+# Query 14: ID 0x6CCBD6845398A3D8
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0   3.7ms 856.0us 989.0us 924.8us 989.0us 977.0us
-# Lock time       0   6.0us   1.0us   2.0us   1.5us   2.0us   2.0us
-# Rows sent       0       4       1       1    1.00       1       1
-# Rows examined   0   1.17k     293     293  293.00     293     293
+# Count           0       1
+# Exec time       0   3.0ms   3.0ms   3.0ms   3.0ms   3.0ms   3.0ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       1       1       1    1.00       1       1
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+UPDATE id_generator SET id=2678400000 WHERE stub='a'\G
+
+# Query 15: ID 0x5CBC6BF26D494691
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       2
+# Exec time       0   1.8ms 902.0us 935.0us 918.5us 935.0us 935.0us
+# Lock time       0   3.0us   1.0us   2.0us   1.5us   2.0us   2.0us
+# Rows sent       0       2       1       1    1.00       1       1
+# Rows examined   0     586     293     293  293.00     293     293
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 SELECT IFNULL(SUM(INDEX_LENGTH),0) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema') AND ENGINE = 'MyISAM'\G
 
-# Query 18: ID 0x791C5370A1021F19
+# Query 16: ID 0x791C5370A1021F19
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   3.6ms   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms
+# Count           0       1
+# Exec time       0   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -304,151 +276,179 @@ SELECT IFNULL(SUM(INDEX_LENGTH),0) FROM information_schema.TABLES WHERE TABLE_SC
 # EXPLAIN /*!50100 PARTITIONS*/
 SHOW SLAVE STATUS\G
 
-# Query 19: ID 0x82548DE9C4F3E046
+# Query 17: ID 0x911658842DA64DC4
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   3.5ms   1.7ms   1.8ms   1.8ms   1.8ms   1.8ms
-# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0     202     101     101  101.00     101     101
-# Rows examined   0     412     206     206  206.00     206     206
+# Count           0       1
+# Exec time       0   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms   1.8ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0     651     651     651  651.00     651     651
+# Rows examined   0     651     651     651  651.00     651     651
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `sys`\G
+SHOW VARIABLES\G
 
-# Query 20: ID 0xD57560CE9D0852EE
+# Query 18: ID 0xD57560CE9D0852EE
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   3.4ms   1.6ms   1.8ms   1.7ms   1.8ms   1.8ms
-# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
-# Rows sent       0      74      37      37   37.00      37      37
-# Rows examined   0     434     217     217  217.00     217     217
+# Count           0       1
+# Exec time       0   1.7ms   1.7ms   1.7ms   1.7ms   1.7ms   1.7ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0      37      37      37   37.00      37      37
+# Rows examined   0     217     217     217  217.00     217     217
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 SHOW TABLE STATUS FROM `mysql`\G
 
-# Query 21: ID 0x6CCBD6845398A3D8
+# Query 19: ID 0x82548DE9C4F3E046
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       1
-# Exec time       0   3.2ms   3.2ms   3.2ms   3.2ms   3.2ms   3.2ms
-# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       1       1       1    1.00       1       1
+# Exec time       0   1.7ms   1.7ms   1.7ms   1.7ms   1.7ms   1.7ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0     101     101     101  101.00     101     101
+# Rows examined   0     206     206     206  206.00     206     206
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
-UPDATE id_generator SET id=2678400000 WHERE stub='a'\G
+SHOW TABLE STATUS FROM `sys`\G
 
-# Query 22: ID 0xE3A3649C5FAC418D
+# Query 20: ID 0xDC5AC4F51E1A7597
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0      55
-# Exec time       0   2.2ms  33.0us  92.0us  39.3us  71.0us  36.0us
+# Count           0       1
+# Exec time       0   1.5ms   1.5ms   1.5ms   1.5ms   1.5ms   1.5ms
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0     628     628     628  628.00     628     628
+# Rows examined   0     628     628     628  628.00     628     628
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW GLOBAL VARIABLES\G
+
+# Query 21: ID 0xE3A3649C5FAC418D
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0      28
+# Exec time       0   1.1ms  35.0us  91.0us  39.6us  69.0us  36.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0      55       1       1    1.00       1       1
-# Rows examined   0      55       1       1    1.00       1       1
+# Rows sent       0      28       1       1    1.00       1       1
+# Rows examined   0      28       1       1    1.00       1       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 select @@version_comment limit 1\G
 
+# Query 22: ID 0xE7D5FE66D3400A27
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0   1.1ms   1.1ms   1.1ms   1.1ms   1.1ms   1.1ms
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0     131     131     131  131.00     131     131
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT ENGINE,SUM(DATA_LENGTH+INDEX_LENGTH),COUNT(ENGINE),SUM(DATA_LENGTH),SUM(INDEX_LENGTH) FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema', 'performance_schema', 'mysql') AND ENGINE IS NOT NULL GROUP BY ENGINE ORDER BY ENGINE ASC\G
+
 # Query 23: ID 0x28FC5B5D583E2DA6
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   2.0ms 943.0us   1.1ms   1.0ms   1.1ms   1.1ms
-# Lock time       0   2.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0     956     478     478  478.00     478     478
-# Rows examined   0     956     478     478  478.00     478     478
+# Count           0       1
+# Exec time       0 984.0us 984.0us 984.0us 984.0us 984.0us 984.0us
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0     478     478     478  478.00     478     478
+# Rows examined   0     478     478     478  478.00     478     478
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 SHOW GLOBAL STATUS\G
 
-# Query 24: ID 0x4783AE1E60184291
+# Query 24: ID 0x8ED794C0D5413D5A
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   1.9ms 935.0us   1.0ms 975.0us   1.0ms   1.0ms
-# Lock time       0   3.0us   1.0us   2.0us   1.5us   2.0us   2.0us
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0     260     130     130  130.00     130     130
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SELECT CONCAT(CONCAT(TABLE_SCHEMA, '.'), TABLE_NAME),DATA_FREE FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema','performance_schema', 'mysql') AND DATA_LENGTH/1024/1024>100 AND DATA_FREE*100/(DATA_LENGTH+INDEX_LENGTH+DATA_FREE) > 10 AND NOT ENGINE='MEMORY'\G
-
-# Query 25: ID 0x64C4F2AE6B6B9BD4
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   1.8ms 881.0us 919.0us 900.0us 919.0us 919.0us
-# Lock time       0   3.0us   1.0us   2.0us   1.5us   2.0us   2.0us
-# Rows sent       0      14       7       7    7.00       7       7
-# Rows examined   0      60      30      30   30.00      30      30
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW TABLE STATUS FROM `isuports`\G
-
-# Query 26: ID 0x5CBA2034458B5BC9
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0   1.7ms 307.0us 598.0us 424.5us 598.0us 445.0us
-# Lock time       0   5.0us   1.0us   2.0us   1.2us   2.0us   1.0us
-# Rows sent       0      20       5       5    5.00       5       5
-# Rows examined   0      84      21      21   21.00      21      21
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW DATABASES\G
-
-# Query 27: ID 0x31DA25F95494CA95
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0   1.4ms 699.0us 728.0us 713.5us 728.0us 728.0us
-# Lock time       0   2.0us   1.0us   1.0us   1.0us   1.0us   1.0us
-# Rows sent       0     966     483     483  483.00     483     483
-# Rows examined   0     966     483     483  483.00     483     483
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-SHOW STATUS\G
-
-# Query 28: ID 0x8ED794C0D5413D5A
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           1     671
-# Exec time       0   1.1ms   1.0us  50.0us   1.6us   3.0us   1.0us
+# Count           1     613
+# Exec time       0 920.0us   1.0us  11.0us   1.5us   2.0us   1.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
-# Rows examined   0  40.01k       0   5.00k   59.00     165       1
+# Rows examined   0  41.10k       0   5.00k   67.00     168       1
 # String:
 # Databases     
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 Quit\G
 
+# Query 25: ID 0x64C4F2AE6B6B9BD4
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 839.0us 839.0us 839.0us 839.0us 839.0us 839.0us
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       7       7       7    7.00       7       7
+# Rows examined   0      30      30      30   30.00      30      30
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW TABLE STATUS FROM `isuports`\G
+
+# Query 26: ID 0x4783AE1E60184291
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 831.0us 831.0us 831.0us 831.0us 831.0us 831.0us
+# Lock time       0   2.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0     130     130     130  130.00     130     130
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SELECT CONCAT(CONCAT(TABLE_SCHEMA, '.'), TABLE_NAME),DATA_FREE FROM information_schema.TABLES WHERE TABLE_SCHEMA NOT IN ('information_schema','performance_schema', 'mysql') AND DATA_LENGTH/1024/1024>100 AND DATA_FREE*100/(DATA_LENGTH+INDEX_LENGTH+DATA_FREE) > 10 AND NOT ENGINE='MEMORY'\G
+
+# Query 27: ID 0x5CBA2034458B5BC9
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       2
+# Exec time       0 828.0us 334.0us 494.0us 414.0us 494.0us 494.0us
+# Lock time       0   4.0us   2.0us   2.0us   2.0us   2.0us   2.0us
+# Rows sent       0      10       5       5    5.00       5       5
+# Rows examined   0      42      21      21   21.00      21      21
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW DATABASES\G
+
+# Query 28: ID 0x31DA25F95494CA95
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       1
+# Exec time       0 805.0us 805.0us 805.0us 805.0us 805.0us 805.0us
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0     483     483     483  483.00     483     483
+# Rows examined   0     483     483     483  483.00     483     483
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+SHOW STATUS\G
+
 # Query 29: ID 0x90D18133B56F55D4
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0      12
-# Exec time       0 820.0us  63.0us 110.0us  68.3us 110.0us  65.0us
+# Count           0       6
+# Exec time       0 396.0us  63.0us  70.0us  66.0us  70.0us  66.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -461,11 +461,11 @@ SHOW ENGINE PERFORMANCE_SCHEMA STATUS\G
 # Query 30: ID 0x2CFF86204BE26813
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0 212.0us  98.0us 114.0us 106.0us 114.0us 114.0us
-# Lock time       0   1.0us       0   1.0us 500.0ns   1.0us   1.0us
-# Rows sent       0      18       9       9    9.00       9       9
-# Rows examined   0      36      18      18   18.00      18      18
+# Count           0       1
+# Exec time       0  98.0us  98.0us  98.0us  98.0us  98.0us  98.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       9       9       9    9.00       9       9
+# Rows examined   0      18      18      18   18.00      18      18
 # String:
 # Databases     
 # 
@@ -475,11 +475,11 @@ SELECT ENGINE,SUPPORT FROM information_schema.ENGINES ORDER BY ENGINE ASC\G
 # Query 31: ID 0xA3C958A64E1E64AB
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0 178.0us  74.0us 104.0us  89.0us 104.0us 104.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0      18       9       9    9.00       9       9
-# Rows examined   0      18       9       9    9.00       9       9
+# Count           0       1
+# Exec time       0  78.0us  78.0us  78.0us  78.0us  78.0us  78.0us
+# Lock time       0   1.0us   1.0us   1.0us   1.0us   1.0us   1.0us
+# Rows sent       0       9       9       9    9.00       9       9
+# Rows examined   0       9       9       9    9.00       9       9
 # String:
 # Databases     
 # 
@@ -489,8 +489,8 @@ SHOW ENGINES\G
 # Query 32: ID 0xD68A038797A4135C
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0 138.0us  69.0us  69.0us  69.0us  69.0us  69.0us
+# Count           0       1
+# Exec time       0  69.0us  69.0us  69.0us  69.0us  69.0us  69.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0
@@ -503,11 +503,11 @@ SHOW SLAVE HOSTS\G
 # Query 33: ID 0xEBA5220D6ABC29D5
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  74.0us  33.0us  41.0us  37.0us  41.0us  41.0us
+# Count           0       1
+# Exec time       0  34.0us  34.0us  34.0us  34.0us  34.0us  34.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0       2       1       1    1.00       1       1
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
@@ -517,11 +517,11 @@ select @@character_set_client, @@character_set_connection, @@character_set_serve
 # Query 34: ID 0x0C25EDC6C64F42DC
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  74.0us  32.0us  42.0us  37.0us  42.0us  42.0us
+# Count           0       1
+# Exec time       0  32.0us  32.0us  32.0us  32.0us  32.0us  32.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0       2       1       1    1.00       1       1
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
@@ -531,11 +531,11 @@ select DATABASE(), USER() limit 1\G
 # Query 35: ID 0x7047E58B2A5815B3
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  62.0us  30.0us  32.0us  31.0us  32.0us  32.0us
+# Count           0       1
+# Exec time       0  30.0us  30.0us  30.0us  30.0us  30.0us  30.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0       2       1       1    1.00       1       1
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
@@ -545,11 +545,11 @@ SELECT VERSION()\G
 # Query 36: ID 0xD7288668D3824DC6
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  49.0us  24.0us  25.0us  24.5us  25.0us  25.0us
+# Count           0       1
+# Exec time       0  25.0us  25.0us  25.0us  25.0us  25.0us  25.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0       2       1       1    1.00       1       1
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
@@ -559,11 +559,11 @@ SELECT ~0\G
 # Query 37: ID 0x876951F96EBB256F
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  23.0us  11.0us  12.0us  11.5us  12.0us  12.0us
+# Count           0       1
+# Exec time       0  10.0us  10.0us  10.0us  10.0us  10.0us  10.0us
 # Lock time       0       0       0       0       0       0       0
-# Rows sent       0       2       1       1    1.00       1       1
-# Rows examined   0       2       1       1    1.00       1       1
+# Rows sent       0       1       1       1    1.00       1       1
+# Rows examined   0       1       1       1    1.00       1       1
 # String:
 # Databases     
 # 
@@ -573,8 +573,8 @@ Statistics\G
 # Query 38: ID 0x1D410B4BE5060972
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
-# Count           0       2
-# Exec time       0  15.0us   7.0us   8.0us   7.5us   8.0us   8.0us
+# Count           0       1
+# Exec time       0   8.0us   8.0us   8.0us   8.0us   8.0us   8.0us
 # Lock time       0       0       0       0       0       0       0
 # Rows sent       0       0       0       0       0       0       0
 # Rows examined   0       0       0       0       0       0       0

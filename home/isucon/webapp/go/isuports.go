@@ -13,7 +13,6 @@ import (
 	"path/filepath"
 	"reflect"
 	"regexp"
-	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -23,7 +22,7 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/labstack/gommon/log"
+	// "github.com/labstack/gommon/log"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/jwx/v2/jwt"
@@ -114,8 +113,8 @@ func SetCacheControlPrivate(next echo.HandlerFunc) echo.HandlerFunc {
 // Run は cmd/isuports/main.go から呼ばれるエントリーポイントです
 func Run() {
 	e := echo.New()
-	e.Debug = true
-	e.Logger.SetLevel(log.DEBUG)
+	e.Debug = false
+	// e.Logger.SetLevel(log.DEBUG)
 
 	var (
 		sqlLogger io.Closer
@@ -131,7 +130,7 @@ func Run() {
 	}
 	defer sqlLogger.Close()
 
-	e.Use(middleware.Logger())
+	// e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Use(SetCacheControlPrivate)
 
@@ -1265,11 +1264,11 @@ func playerHandler(c echo.Context) error {
 }
 
 type CompetitionRank struct {
-	Rank              int64  `json:"rank"`
-	Score             int64  `json:"score"`
-	PlayerID          string `json:"player_id"`
-	PlayerDisplayName string `json:"player_display_name"`
-	RowNum            int64  `json:"-"` // APIレスポンスのJSONには含まれない
+	Rank              int64  `db:"rank" json:"rank"`
+	Score             int64  `db:"score" json:"score"`
+	PlayerID          string `db:"player_id" json:"player_id"`
+	PlayerDisplayName string `db:"player_display_name" json:"player_display_name"`
+	RowNum            int64  `db:"row_num" json:"-"` // APIレスポンスのJSONには含まれない
 }
 
 type CompetitionRankingHandlerResult struct {
@@ -1345,56 +1344,28 @@ func competitionRankingHandler(c echo.Context) error {
 		return fmt.Errorf("error flockByTenantID: %w", err)
 	}
 	defer fl.Close()
-	pss := []PlayerScoreRow{}
+	pss := []CompetitionRank{}
 	if err := tenantDB.SelectContext(
 		ctx,
 		&pss,
-		"SELECT * FROM player_score WHERE tenant_id = ? AND competition_id = ? ORDER BY row_num DESC",
+		"SELECT S.player_id, P.display_name AS player_display_name, score, row_num FROM player_score S JOIN player P ON S.player_id = P.id AND S.tenant_id = P.tenant_id WHERE S.tenant_id = ? AND competition_id = ? AND (player_id, row_num) IN (SELECT player_id, MAX(row_num) FROM player_score WHERE tenant_id = ? AND competition_id = ? GROUP BY player_id) ORDER BY score DESC, row_num ASC LIMIT ? OFFSET ?",
 		tenant.ID,
 		competitionID,
+		tenant.ID,
+		competitionID,
+		100,
+		rankAfter,
 	); err != nil {
 		return fmt.Errorf("error Select player_score: tenantID=%d, competitionID=%s, %w", tenant.ID, competitionID, err)
 	}
-	ranks := make([]CompetitionRank, 0, len(pss))
-	scoredPlayerSet := make(map[string]struct{}, len(pss))
-	for _, ps := range pss {
-		// player_scoreが同一player_id内ではrow_numの降順でソートされているので
-		// 現れたのが2回目以降のplayer_idはより大きいrow_numでスコアが出ているとみなせる
-		if _, ok := scoredPlayerSet[ps.PlayerID]; ok {
-			continue
-		}
-		scoredPlayerSet[ps.PlayerID] = struct{}{}
-		p, err := retrievePlayer(ctx, tenantDB, ps.PlayerID)
-		if err != nil {
-			return fmt.Errorf("error retrievePlayer: %w", err)
-		}
-		ranks = append(ranks, CompetitionRank{
-			Score:             ps.Score,
-			PlayerID:          p.ID,
-			PlayerDisplayName: p.DisplayName,
-			RowNum:            ps.RowNum,
-		})
-	}
-	sort.Slice(ranks, func(i, j int) bool {
-		if ranks[i].Score == ranks[j].Score {
-			return ranks[i].RowNum < ranks[j].RowNum
-		}
-		return ranks[i].Score > ranks[j].Score
-	})
 	pagedRanks := make([]CompetitionRank, 0, 100)
-	for i, rank := range ranks {
-		if int64(i) < rankAfter {
-			continue
-		}
+	for i, rank := range pss {
 		pagedRanks = append(pagedRanks, CompetitionRank{
 			Rank:              int64(i + 1),
 			Score:             rank.Score,
 			PlayerID:          rank.PlayerID,
 			PlayerDisplayName: rank.PlayerDisplayName,
 		})
-		if len(pagedRanks) >= 100 {
-			break
-		}
 	}
 
 	res := SuccessResult{
