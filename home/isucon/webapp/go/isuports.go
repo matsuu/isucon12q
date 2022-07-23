@@ -981,6 +981,7 @@ func competitionScoreHandler(c echo.Context) error {
 	var rowNum int64
 	playerScoreRows := []PlayerScoreRow{}
 	playerIdMap := make(map[string]struct{})
+	var playerIds []string
 	now := time.Now().Unix()
 	for {
 		rowNum++
@@ -996,16 +997,7 @@ func competitionScoreHandler(c echo.Context) error {
 		}
 		playerID, scoreStr := row[0], row[1]
 		if _, ok := playerIdMap[playerID]; !ok {
-			if _, err := retrievePlayer(ctx, playerID); err != nil {
-				// 存在しない参加者が含まれている
-				if errors.Is(err, sql.ErrNoRows) {
-					return echo.NewHTTPError(
-						http.StatusBadRequest,
-						fmt.Sprintf("player not found: %s", playerID),
-					)
-				}
-				return fmt.Errorf("error retrievePlayer: %w", err)
-			}
+			playerIds = append(playerIds, playerID)
 			playerIdMap[playerID] = struct{}{}
 		}
 		var score int64
@@ -1029,6 +1021,23 @@ func competitionScoreHandler(c echo.Context) error {
 			CreatedAt:     now,
 			UpdatedAt:     now,
 		})
+	}
+	query, args, err := sqlx.In("SELECT COUNT(id) FROM player WHERE id IN (?)", playerIds)
+	if err != nil {
+		return fmt.Errorf("error retrievePlayer: %w", err)
+	}
+	query = adminDB.Rebind(query)
+
+	var cnt int
+	if err := adminDB.Get(&cnt, query, args...); err != nil {
+		return fmt.Errorf("error retrievePlayer: %w", err)
+	}
+	// 存在しない参加者が含まれている
+	if cnt != len(playerIds) {
+		return echo.NewHTTPError(
+			http.StatusBadRequest,
+			fmt.Sprintf("player not found"),
+		)
 	}
 
 	tx, err := adminDB.BeginTxx(ctx, nil)
