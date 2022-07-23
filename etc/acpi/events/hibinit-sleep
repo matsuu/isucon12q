@@ -1,0 +1,5 @@
+# ACPID config to power down machine if powerbutton is pressed, but only if
+# no gnome-power-manager is running
+
+event=button/sleep.*
+action=/etc/acpi/actions/sleep.sh %e

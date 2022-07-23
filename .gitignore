@@ -144,6 +144,9 @@
 /home/isucon/go/
 /home/isucon/local/
 /home/isucon/pprof/
+/home/isucon/initial_data/
+/home/isucon/tmp/
+/home/isucon/webapp/sql/admin/
 /home/isucon/.*
 
 !/result/

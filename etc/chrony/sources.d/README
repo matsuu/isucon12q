@@ -1,0 +1,12 @@
+Only NTP sources can be specified in the /etc/chrony/sources.d directory.
+Files in this directory must end with the ".sources" suffix. They can only
+contain the "peer", "pool" and "server" directives and must have all
+lines terminated by a trailing newline.
+
+There is no need to restart chronyd for these time sources to be usable,
+running 'chronyc reload sources' is sufficient.
+
+Example:
+
+# echo 'server 192.0.2.1 iburst' > /etc/chrony/sources.d/local-ntp-server.sources
+# chronyc reload sources

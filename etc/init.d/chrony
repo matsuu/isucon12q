@@ -1,0 +1,69 @@
+#! /bin/sh
+#
+# Written by Miquel van Smoorenburg <miquels@drinkel.ow.org>.
+# Modified for Debian GNU/Linux by Ian Murdock <imurdock@gnu.ai.mit.edu>.
+# Modified for Debian by Christoph Lameter <clameter@debian.org>
+# Modified for chrony by John Hasler <jhasler@debian.org> 1998-2012
+# Modified for Debian by Vincent Blut <vincent.debian@free.fr>
+
+### BEGIN INIT INFO
+# Provides:          chrony
+# Required-Start:    $remote_fs
+# Required-Stop:     $remote_fs
+# Should-Start:      $syslog $network $named $time
+# Should-Stop:       $syslog $network $named $time
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Controls chronyd NTP time daemon
+# Description:       Chronyd is the NTP time daemon in the Chrony package
+### END INIT INFO
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin
+DAEMON=/usr/sbin/chronyd
+NAME="chronyd"
+DESC="time daemon"
+PIDFILE=/run/chrony/chronyd.pid
+
+[ -x "$DAEMON" ] || exit 0
+
+. /lib/lsb/init-functions
+
+# Override this variable by editing /etc/default/chrony.
+DAEMON_OPTS=""
+if [ -f /etc/default/chrony ]; then
+    . /etc/default/chrony
+fi
+
+case "$1" in
+    start)
+        if $0 status > /dev/null ; then
+            log_success_msg "$NAME is already running"
+        else
+            log_daemon_msg "Starting $DESC" "$NAME"
+            start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- $DAEMON_OPTS
+            log_end_msg $?
+        fi
+        ;;
+
+    stop)
+        log_daemon_msg "Stopping $DESC" "$NAME"
+        start-stop-daemon --stop --quiet --oknodo --pidfile $PIDFILE --exec $DAEMON
+        log_end_msg $?
+        ;;
+
+    restart|force-reload)
+        $0 stop
+        $0 start
+        ;;
+
+    status)
+        status_of_proc -p $PIDFILE "$DAEMON" "$NAME" && exit 0 || exit $?
+        ;;
+
+    *)
+        log_action_msg "Usage: /etc/init.d/chrony {start|stop|restart|force-reload|status}"
+        exit 1
+        ;;
+esac
+
+exit 0

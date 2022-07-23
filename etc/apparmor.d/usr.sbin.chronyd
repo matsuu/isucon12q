@@ -1,0 +1,85 @@
+# vim:syntax=apparmor
+# Last Modified: Sun Sep 05 16:48:05 2021
+
+abi <abi/3.0>,
+
+#include <tunables/global>
+
+/usr/sbin/chronyd flags=(attach_disconnected) {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  # For /run/chrony to be created
+  capability chown,
+
+  # Give “root” the ability to read and write the PID file
+  capability dac_override,
+  capability dac_read_search,
+
+  # Needed to support HW timestamping
+  capability net_admin,
+
+  # Needed to allow NTP server sockets to be bound to a privileged port
+  capability net_bind_service,
+
+  # Needed to allow an NTP socket to be bound to a device using the
+  # SO_BINDTODEVICE socket option on kernels before 5.7
+  capability net_raw,
+
+  # Needed to drop privileges
+  capability setgid,
+  capability setuid,
+
+  # Needed to set the SCHED_FIFO real-time scheduler at the specified priority
+  # using the '-P' option
+  capability sys_nice,
+
+  # Needed to lock chronyd into RAM
+  capability sys_resource,
+
+  # Needed to set the system/real-time clock
+  capability sys_time,
+
+  /usr/sbin/chronyd mr,
+
+  /etc/chrony/{,**} r,
+  /var/lib/chrony/{,*} rw,
+  /var/log/chrony/{,*} rw,
+  @{run}/chrony/{,*} rw,
+  @{run}/chrony-dhcp/{,*} r,
+
+  # Using the “tempcomp” directive gives chronyd the ability to improve
+  # the stability and accuracy of the clock by compensating the temperature
+  # changes measured by a sensor close to the oscillator.
+  @{sys}/class/hwmon/hwmon[0-9]*/temp[0-9]*_input r,
+  @{sys}/devices/virtual/thermal/thermal_zone[0-9]*/hwmon[0-9]*/temp[0-9]*_input r,
+
+  # Support all paths suggested in the man page (LP: #1771028). Assume these
+  # are common use cases; others should be set as local include (see below).
+  # Configs using a 'chrony.' prefix like the tempcomp config file example
+  /etc/chrony.* r,
+  # Example gpsd socket is outside @{run}/chrony/
+  @{run}/chrony.tty{,*}.sock rw,
+  # To sign replies to MS-SNTP clients by the smbd daemon
+  /var/lib/samba/ntp_signd/socket rw,
+
+  # rtc
+  /etc/adjtime r,
+  /dev/rtc{,[0-9]*} rw,
+
+  # gps devices
+  /dev/pps[0-9]* rw,
+  /dev/ptp[0-9]* rw,
+
+  # Allow reading the chronyd configuration file that timemaster(8) generates
+  @{run}/timemaster/chrony.conf r,
+
+  # For use with clocks that report via shared memory (e.g. gpsd),
+  # you may need to give ntpd access to all of shared memory, though
+  # this can be considered dangerous. See https://launchpad.net/bugs/722815
+  # for details. To enable, add this to local/usr.sbin.chronyd:
+  #     capability ipc_owner,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.chronyd>
+}

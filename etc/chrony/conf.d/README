@@ -1,0 +1,7 @@
+Files found under the /etc/chrony/conf.d directory with the .conf suffix are
+parsed in the lexicographical order of the file names when chronyd starts up.
+This enables a fragmented configuration of chronyd.
+
+Although those files can contain any directives listed in chrony.conf(5),
+it would be wiser to add NTP sources in the /etc/chrony/sources.d
+directory. Please read /etc/chrony/sources.d/README for more information.
