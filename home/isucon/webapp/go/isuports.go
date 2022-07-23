@@ -30,7 +30,7 @@ import (
 
 const (
 	tenantDBSchemaFilePath = "../sql/tenant/10_schema.sql"
-	initializeScript       = "../sql/init.sh"
+	initializeScript       = "../sql/init_isu2.sh"
 	cookieName             = "isuports_session"
 
 	RoleAdmin     = "admin"
