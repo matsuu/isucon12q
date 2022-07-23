@@ -6,6 +6,7 @@ After=network.target
 WantedBy=multi-user.target
 
 [Service]
+StartLimitBurst=999
 Type=simple
 User=isucon
 Group=isucon

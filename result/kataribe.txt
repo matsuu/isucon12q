@@ -15,12 +15,12 @@ Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx 
    12    6.540  0.5450  1.0780  0.024  0.104  1.018  3.968  3.968  3.968     11    0    1    0       11253          0        937       1073  GET /api/admin/tenants/billing HTTP/2.0
     9    0.031  0.0034  0.0073  0.000  0.001  0.024  0.024  0.024  0.024      9    0    0    0        1263        139        140        143  GET /api/me HTTP/2.0
     4    0.001  0.0003  0.0004  0.000  0.000  0.001  0.001  0.001  0.001      4    0    0    0           0          0          0          0  POST /auth/logout HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    6.935  6.9350  0.0000  6.935  6.935  6.935  6.935  6.935  6.935      1    0    0    0          37         37         37         37  POST /initialize HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    0.002  0.0020  0.0000  0.002  0.002  0.002  0.002  0.002  0.002      1    0    0    0           0          0          0          0  POST /auth/login/organizer HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         138        138        138        138  GET /api/organizer/competitions HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Total
 Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
@@ -41,10 +41,10 @@ Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx 
     9    0.031  0.0034  0.0073  0.000  0.001  0.024  0.024  0.024  0.024      9    0    0    0        1263        139        140        143  GET /api/me HTTP/2.0
     1    0.002  0.0020  0.0000  0.002  0.002  0.002  0.002  0.002  0.002      1    0    0    0           0          0          0          0  POST /auth/login/organizer HTTP/2.0
     4    0.001  0.0003  0.0004  0.000  0.000  0.001  0.001  0.001  0.001      4    0    0    0           0          0          0          0  POST /auth/logout HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         138        138        138        138  GET /api/organizer/competitions HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Mean
 Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
@@ -65,10 +65,10 @@ Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx 
     9    0.031  0.0034  0.0073  0.000  0.001  0.024  0.024  0.024  0.024      9    0    0    0        1263        139        140        143  GET /api/me HTTP/2.0
     1    0.002  0.0020  0.0000  0.002  0.002  0.002  0.002  0.002  0.002      1    0    0    0           0          0          0          0  POST /auth/login/organizer HTTP/2.0
     4    0.001  0.0003  0.0004  0.000  0.000  0.001  0.001  0.001  0.001      4    0    0    0           0          0          0          0  POST /auth/logout HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         138        138        138        138  GET /api/organizer/competitions HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Standard Deviation
 Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
@@ -89,10 +89,10 @@ Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx 
     4    0.001  0.0003  0.0004  0.000  0.000  0.001  0.001  0.001  0.001      4    0    0    0           0          0          0          0  POST /auth/logout HTTP/2.0
     1    6.935  6.9350  0.0000  6.935  6.935  6.935  6.935  6.935  6.935      1    0    0    0          37         37         37         37  POST /initialize HTTP/2.0
     1    0.002  0.0020  0.0000  0.002  0.002  0.002  0.002  0.002  0.002      1    0    0    0           0          0          0          0  POST /auth/login/organizer HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         138        138        138        138  GET /api/organizer/competitions HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Maximum(100 Percentile)
 Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
@@ -113,10 +113,10 @@ Count    Total    Mean  Stddev    Min  P50.0  P90.0  P95.0  P99.0    Max    2xx 
     9    0.031  0.0034  0.0073  0.000  0.001  0.024  0.024  0.024  0.024      9    0    0    0        1263        139        140        143  GET /api/me HTTP/2.0
     1    0.002  0.0020  0.0000  0.002  0.002  0.002  0.002  0.002  0.002      1    0    0    0           0          0          0          0  POST /auth/login/organizer HTTP/2.0
     4    0.001  0.0003  0.0004  0.000  0.000  0.001  0.001  0.001  0.001      4    0    0    0           0          0          0          0  POST /auth/logout HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
-    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0         138        138        138        138  GET /api/organizer/competitions HTTP/2.0
+    1    0.000  0.0000  0.0000  0.000  0.000  0.000  0.000  0.000  0.000      1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 TOP 37 Slow Requests
  1  7.306  GET /api/admin/tenants/billing?before=12 HTTP/2.0
@@ -140,8 +140,8 @@ TOP 37 Slow Requests
 19  1.603  GET /api/organizer/billing HTTP/2.0
 20  1.585  GET /api/organizer/billing HTTP/2.0
 21  1.548  GET /api/organizer/billing HTTP/2.0
-22  1.534  GET /api/organizer/billing HTTP/2.0
-23  1.534  POST /api/organizer/competition/8f0722e9-2910-4a62-8832-85b839c45844/score HTTP/2.0
+22  1.534  POST /api/organizer/competition/8f0722e9-2910-4a62-8832-85b839c45844/score HTTP/2.0
+23  1.534  GET /api/organizer/billing HTTP/2.0
 24  1.526  POST /api/organizer/competition/7b20d179-8098-44c6-8622-6460847801a3/score HTTP/2.0
 25  1.511  GET /api/admin/tenants/billing?before=46 HTTP/2.0
 26  1.491  POST /api/organizer/competition/245ee414-3179-4e38-9027-6e113bdedbac/score HTTP/2.0

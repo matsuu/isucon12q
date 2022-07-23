@@ -1,5 +1,5 @@
 
-# Current date: Sat Jul 23 08:41:20 2022
+# Current date: Sat Jul 23 08:44:32 2022
 # Hostname: ip-192-168-0-11
 # Files: /dev/stdin
 # Overall: 479.16k total, 68 unique
@@ -75,8 +75,8 @@
 #   60 0xCF298A80F7E31AF9  0.0001   0.0%      4 0.0000 SET 
 #   61 0x7F22BBB9FF2EFA83  0.0001   0.0%      4 0.0000 SET 
 #   62 0xF3D856BFA86157CE  0.0001   0.0%      4 0.0000 SET 
-#   63 0x7A1208BDC805D902  0.0001   0.0%      4 0.0000 SET 
-#   64 0x7F8290E05162B254  0.0001   0.0%      4 0.0000 SET 
+#   63 0x7F8290E05162B254  0.0001   0.0%      4 0.0000 SET 
+#   64 0x7A1208BDC805D902  0.0001   0.0%      4 0.0000 SET 
 #   65 0xC6794245484061FB  0.0001   0.0%      4 0.0000 SET 
 #   66 0x23F6EB3A0ECD9E84  0.0001   0.0%      4 0.0000 SET 
 #   67 0x45788F3F8DFCDAFC  0.0001   0.0%      4 0.0000 SET 
@@ -982,21 +982,7 @@ UNLOCK TABLES\G
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */\G
 
-# Query 63: ID 0x7A1208BDC805D902
-# Attribute     pct   total     min     max     avg     95%  median
-# ============= === ======= ======= ======= ======= ======= =======
-# Count           0       4
-# Exec time       0 115.0us  28.0us  29.0us  28.8us  29.0us  29.0us
-# Lock time       0       0       0       0       0       0       0
-# Rows sent       0       0       0       0       0       0       0
-# Rows examined   0       0       0       0       0       0       0
-# String:
-# Databases     
-# 
-# EXPLAIN /*!50100 PARTITIONS*/
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
-
-# Query 64: ID 0x7F8290E05162B254
+# Query 63: ID 0x7F8290E05162B254
 # Attribute     pct   total     min     max     avg     95%  median
 # ============= === ======= ======= ======= ======= ======= =======
 # Count           0       4
@@ -1009,6 +995,20 @@ UNLOCK TABLES\G
 # 
 # EXPLAIN /*!50100 PARTITIONS*/
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */\G
+
+# Query 64: ID 0x7A1208BDC805D902
+# Attribute     pct   total     min     max     avg     95%  median
+# ============= === ======= ======= ======= ======= ======= =======
+# Count           0       4
+# Exec time       0 115.0us  28.0us  29.0us  28.8us  29.0us  29.0us
+# Lock time       0       0       0       0       0       0       0
+# Rows sent       0       0       0       0       0       0       0
+# Rows examined   0       0       0       0       0       0       0
+# String:
+# Databases     
+# 
+# EXPLAIN /*!50100 PARTITIONS*/
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */\G
 
 # Query 65: ID 0xC6794245484061FB
 # Attribute     pct   total     min     max     avg     95%  median
