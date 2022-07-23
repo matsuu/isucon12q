@@ -20,7 +20,7 @@
  
 -------- Storage Engine Statistics -----------------------------------------------------------------
 [--] Status: +ARCHIVE +BLACKHOLE +CSV -FEDERATED +InnoDB +MEMORY +MRG_MYISAM +MyISAM +PERFORMANCE_SCHEMA 
-[--] Data in InnoDB tables: 265.4M (Tables: 4)
+[--] Data in InnoDB tables: 279.0M (Tables: 5)
 [OK] Total fragmented tables: 0
  
 -------- Analysis Performance Metrics --------------------------------------------------------------
@@ -34,9 +34,9 @@
 [OK] NO SECURITY CVE FOUND FOR YOUR VERSION
  
 -------- Performance Metrics -----------------------------------------------------------------------
-[--] Up for: 15m 9s (20K q [22.429 qps], 909 conn, TX: 14M, RX: 2M)
-[--] Reads / Writes: 45% / 55%
-[--] Binary logging is enabled (GTID MODE: OFF)
+[--] Up for: 22m 45s (11K q [8.314 qps], 533 conn, TX: 28M, RX: 1M)
+[--] Reads / Writes: 88% / 12%
+[--] Binary logging is disabled
 [--] Physical Memory     : 3.6G
 [--] Max MySQL memory    : 459.1M
 [--] Other process memory: 0B
@@ -46,19 +46,18 @@
 [OK] Maximum reached memory usage: 196.6M (5.29% of installed RAM)
 [OK] Maximum possible memory usage: 459.1M (12.36% of installed RAM)
 [OK] Overall possible memory usage with other process is compatible with memory available
-[!!] Slow queries: 289% (59K/20K)
+[!!] Slow queries: 288% (32K/11K)
 [OK] Highest usage of available connections: 7% (11/151)
-[OK] Aborted connections: 0.00%  (0/909)
+[OK] Aborted connections: 0.00%  (0/533)
 [!!] name resolution is active : a reverse name resolution is made for each new connection and can reduce performance
 [--] Query cache have been removed in MySQL 8
-[OK] No Sort requiring temporary tables
+[OK] Sorts requiring temporary tables: 0% (0 temp sorts / 2 sorts)
 [OK] No joins without indexes
-[OK] Temporary tables created on disk: 0% (0 on disk / 3K total)
-[OK] Thread cache hit rate: 98% (13 created / 909 connections)
-[OK] Table cache hit rate: 64% (190 open / 295 opened)
-[OK] Open file limit used: 0% (3/10K)
+[OK] Temporary tables created on disk: 2% (3 on disk / 102 total)
+[OK] Thread cache hit rate: 97% (11 created / 533 connections)
+[OK] Table cache hit rate: 67% (195 open / 290 opened)
+[OK] Open file limit used: 0% (1/10K)
 [OK] Table locks acquired immediately: 100% (4 immediate / 4 locks)
-[OK] Binlog cache memory access: 100.00% (10519 Memory / 10519 Total)
  
 -------- Performance schema ------------------------------------------------------------------------
 [--] Memory used by P_S: 72B
@@ -74,14 +73,14 @@
 [--] InnoDB is enabled.
 [--] InnoDB Thread Concurrency: 0
 [OK] InnoDB File per table is activated
-[!!] InnoDB buffer pool / data size: 128.0M/265.4M
+[!!] InnoDB buffer pool / data size: 128.0M/279.0M
 [!!] Ratio InnoDB log file size / InnoDB Buffer pool size (75 %): 48.0M * 2/128.0M should be equal to 25%
 [OK] InnoDB buffer pool instances: 1
 [--] Number of InnoDB Buffer Pool Chunk : 1 for 1 Buffer Pool Instance(s)
 [OK] Innodb_buffer_pool_size aligned with Innodb_buffer_pool_chunk_size & Innodb_buffer_pool_instances
-[OK] InnoDB Read buffer efficiency: 99.99% (290770271 hits/ 290802299 total)
-[!!] InnoDB Write Log efficiency: 81.3% (141546 hits/ 174111 total)
-[OK] InnoDB log waits: 0.00% (0 waits / 32565 writes)
+[OK] InnoDB Read buffer efficiency: 99.91% (162091671 hits/ 162236686 total)
+[OK] InnoDB Write log efficiency: 97.85% (820219 hits/ 838214 total)
+[OK] InnoDB log waits: 0.00% (0 waits / 17995 writes)
  
 -------- AriaDB Metrics ----------------------------------------------------------------------------
 [--] AriaDB is disabled.
@@ -110,5 +109,5 @@ General recommendations:
     Configure your accounts with ip or subnets only, then update your configuration with skip-name-resolve=1
     Before changing innodb_log_file_size and/or innodb_log_files_in_group read this: https://bit.ly/2TcGgtU
 Variables to adjust:
-    innodb_buffer_pool_size (>= 265.4M) if possible.
+    innodb_buffer_pool_size (>= 279.0M) if possible.
     innodb_log_file_size should be (=16M) if possible, so InnoDB total log files size equals to 25% of buffer pool size.
