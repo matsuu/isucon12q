@@ -9,7 +9,12 @@ WantedBy=multi-user.target
 Type=simple
 User=isucon
 Group=isucon
-WorkingDirectory=/home/isucon/webapp
-ExecStart=docker compose -f docker-compose-go.yml up --build
-ExecStop=docker compose -f docker-compose-go.yml down
+WorkingDirectory=/home/isucon/webapp/rust
+Environment=ISUCON_DB_HOST=127.0.0.1
+Environment=ISUCON_DB_PORT=3306
+Environment=ISUCON_DB_USER=isucon
+Environment=ISUCON_DB_PASSWORD=isucon
+Environment=ISUCON_DB_NAME=isuports
+ExecStart=/home/isucon/webapp/rust/target/release/isuports
+#ExecStop=docker compose -f docker-compose-rust.yml down
 Restart=always

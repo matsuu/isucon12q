@@ -1,0 +1,1 @@
+open /home/isucon/kataribe.toml: no such file or directory

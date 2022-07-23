@@ -147,6 +147,7 @@
 /home/isucon/initial_data/
 /home/isucon/tmp/
 /home/isucon/webapp/sql/admin/
+/home/isucon/webapp/tenant_db/
 /home/isucon/.*
 
 !/result/
