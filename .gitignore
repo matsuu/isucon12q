@@ -148,6 +148,7 @@
 /home/isucon/tmp/
 /home/isucon/webapp/sql/admin/
 /home/isucon/webapp/tenant_db/
+/home/isucon/webapp/go/isuports
 /home/isucon/.*
 
 !/result/

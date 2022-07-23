@@ -1,148 +1,148 @@
 Top 40 Sort By Count
 Count     Total    Mean  Stddev     Min   P50.0   P90.0   P95.0   P99.0     Max  2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
-  509   846.050  1.6622  3.0660   0.002   0.104   6.582   7.961  11.884  12.413  455    0   54    0      234008          0        459        929  GET /api/player/player/:player_id
-  475  1239.205  2.6089  3.6407   0.002   0.075   7.975  11.205  12.471  12.497  431    0   44    0     3206603          0       6750       9267  GET /api/player/competition/:competition_id/ranking
-  114     1.869  0.0164  0.0130   0.001   0.014   0.036   0.040   0.055   0.056  102    0   12    0       73456         16        644       1706  GET /api/player/competitions HTTP/2.0
-   59   156.161  2.6468  2.6511   0.002   1.793   6.944   7.976  12.503  12.503   50    0    9    0        1840          0         31         52  POST /api/organizer/competition/:competition_id/score
-   42     1.485  0.0354  0.0357   0.002   0.029   0.047   0.051   0.254   0.254   41    0    1    0        4810         16        114        141  POST /api/organizer/competitions/add HTTP/2.0
-   37     0.563  0.0152  0.0060   0.004   0.015   0.022   0.027   0.036   0.036   36    0    1    0         988         16         26         27  POST /api/organizer/competition/:competition_id/finish
-   26     0.245  0.0094  0.0072   0.002   0.008   0.018   0.019   0.034   0.034   26    0    0    0      387237       4891      14893      47089  GET /api/organizer/players HTTP/2.0
-   23     6.773  0.2945  0.7168   0.002   0.022   1.380   1.706   2.982   2.982   23    0    0    0       27307        215       1187       2344  GET /api/organizer/billing HTTP/2.0
-   14     0.217  0.0155  0.0084   0.002   0.016   0.021   0.041   0.041   0.041   13    0    1    0        1442         16        103        117  POST /api/organizer/player/:player_id/disqualified
-   11   106.914  9.7195  5.4970   0.656  11.080  15.961  20.476  20.476  20.476    9    0    2    0        8534          0        775        977  GET /api/admin/tenants/billing?querystring
-   11     1.134  0.1031  0.1473   0.001   0.063   0.151   0.527   0.527   0.527    6    0    5    0         861         16         78        135  POST /api/admin/tenants/add HTTP/2.0
-    8    26.237  3.2796  1.1309   2.344   2.748   5.384   5.384   5.384   5.384    8    0    0    0       85623       7703      10702      15132  POST /api/organizer/players/add HTTP/2.0
-    1     1.000  1.0000  0.0000   1.000   1.000   1.000   1.000   1.000   1.000    0    0    1    0         166        166        166        166  \x03\x00\x00\x13\x0E\xE0\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00
+  593  1189.193  2.0054  3.4218   0.001   0.028   7.277  10.031  12.965  13.091  545    0   48    0     5380338          0       9073      14593  GET /api/player/competition/:competition_id/ranking
+  513   796.643  1.5529  3.0400   0.001   0.059   6.459   9.095  12.422  12.901  464    0   49    0      316894          0        617       2287  GET /api/player/player/:player_id
+  112     1.683  0.0150  0.0140   0.001   0.012   0.030   0.045   0.058   0.066  101    0   11    0      113039         39       1009       2689  GET /api/player/competitions HTTP/2.0
+   57   160.473  2.8153  2.6733   0.001   2.048   6.955   9.907  12.786  12.786   49    0    8    0        2838          0         49         62  POST /api/organizer/competition/:competition_id/score
+   40     1.007  0.0252  0.0076   0.010   0.023   0.037   0.041   0.041   0.041   39    0    1    0        6440         39        161        188  POST /api/organizer/competitions/add HTTP/2.0
+   36     0.484  0.0134  0.0086   0.005   0.011   0.019   0.039   0.050   0.050   35    0    1    0         774         21         21         39  POST /api/organizer/competition/:competition_id/finish
+   29     0.316  0.0109  0.0146   0.001   0.006   0.041   0.047   0.065   0.065   29    0    0    0     2948904       7650     101686     602298  GET /api/organizer/players HTTP/2.0
+   22     2.134  0.0970  0.1975   0.002   0.019   0.307   0.381   0.873   0.873   22    0    0    0       37316        320       1696       4867  GET /api/organizer/billing HTTP/2.0
+   17     0.478  0.0281  0.0738   0.002   0.010   0.017   0.323   0.323   0.323   16    0    1    0        2553         39        150        165  POST /api/organizer/player/:player_id/disqualified
+   12   109.723  9.1436  4.4329   3.065   8.849  13.287  19.161  19.161  19.161   10    0    2    0       15111          0       1259       1530  GET /api/admin/tenants/billing?querystring
+   11     0.362  0.0329  0.0282   0.001   0.050   0.067   0.072   0.072   0.072    6    0    5    0        1299         39        118        192  POST /api/admin/tenants/add HTTP/2.0
+    9    32.091  3.5657  1.8207   0.044   3.961   5.616   5.616   5.616   5.616    9    0    0    0      153318        291      17035      26716  POST /api/organizer/players/add HTTP/2.0
+    2     0.007  0.0035  0.0025   0.001   0.006   0.006   0.006   0.006   0.006    2    0    0    0        2715        177       1357       2538  GET /api/organizer/competitions HTTP/2.0
+    2     0.009  0.0045  0.0015   0.003   0.006   0.006   0.006   0.006   0.006    2    0    0    0         400        200        200        200  GET /api/me HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
+    1     3.872  3.8720  0.0000   3.872   3.872   3.872   3.872   3.872   3.872    1    0    0    0        1561       1561       1561       1561  GET /api/admin/tenants/billing HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
+    1     3.105  3.1050  0.0000   3.105   3.105   3.105   3.105   3.105   3.105    1    0    0    0          55         55         55         55  POST /initialize HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
-    1     2.629  2.6290  0.0000   2.629   2.629   2.629   2.629   2.629   2.629    1    0    0    0          38         38         38         38  POST /initialize HTTP/2.0
-    1     0.002  0.0020  0.0000   0.002   0.002   0.002   0.002   0.002   0.002    1    0    0    0         109        109        109        109  GET /api/organizer/competitions HTTP/2.0
-    1     4.187  4.1870  0.0000   4.187   4.187   4.187   4.187   4.187   4.187    1    0    0    0        1004       1004       1004       1004  GET /api/admin/tenants/billing HTTP/2.0
 
 Top 40 Sort By Total
 Count     Total    Mean  Stddev     Min   P50.0   P90.0   P95.0   P99.0     Max  2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
-  475  1239.205  2.6089  3.6407   0.002   0.075   7.975  11.205  12.471  12.497  431    0   44    0     3206603          0       6750       9267  GET /api/player/competition/:competition_id/ranking
-  509   846.050  1.6622  3.0660   0.002   0.104   6.582   7.961  11.884  12.413  455    0   54    0      234008          0        459        929  GET /api/player/player/:player_id
-   59   156.161  2.6468  2.6511   0.002   1.793   6.944   7.976  12.503  12.503   50    0    9    0        1840          0         31         52  POST /api/organizer/competition/:competition_id/score
-   11   106.914  9.7195  5.4970   0.656  11.080  15.961  20.476  20.476  20.476    9    0    2    0        8534          0        775        977  GET /api/admin/tenants/billing?querystring
-    8    26.237  3.2796  1.1309   2.344   2.748   5.384   5.384   5.384   5.384    8    0    0    0       85623       7703      10702      15132  POST /api/organizer/players/add HTTP/2.0
-   23     6.773  0.2945  0.7168   0.002   0.022   1.380   1.706   2.982   2.982   23    0    0    0       27307        215       1187       2344  GET /api/organizer/billing HTTP/2.0
-    1     4.187  4.1870  0.0000   4.187   4.187   4.187   4.187   4.187   4.187    1    0    0    0        1004       1004       1004       1004  GET /api/admin/tenants/billing HTTP/2.0
-    1     2.629  2.6290  0.0000   2.629   2.629   2.629   2.629   2.629   2.629    1    0    0    0          38         38         38         38  POST /initialize HTTP/2.0
-  114     1.869  0.0164  0.0130   0.001   0.014   0.036   0.040   0.055   0.056  102    0   12    0       73456         16        644       1706  GET /api/player/competitions HTTP/2.0
-   42     1.485  0.0354  0.0357   0.002   0.029   0.047   0.051   0.254   0.254   41    0    1    0        4810         16        114        141  POST /api/organizer/competitions/add HTTP/2.0
-   11     1.134  0.1031  0.1473   0.001   0.063   0.151   0.527   0.527   0.527    6    0    5    0         861         16         78        135  POST /api/admin/tenants/add HTTP/2.0
-    1     1.000  1.0000  0.0000   1.000   1.000   1.000   1.000   1.000   1.000    0    0    1    0         166        166        166        166  \x03\x00\x00\x13\x0E\xE0\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00
-   37     0.563  0.0152  0.0060   0.004   0.015   0.022   0.027   0.036   0.036   36    0    1    0         988         16         26         27  POST /api/organizer/competition/:competition_id/finish
-   26     0.245  0.0094  0.0072   0.002   0.008   0.018   0.019   0.034   0.034   26    0    0    0      387237       4891      14893      47089  GET /api/organizer/players HTTP/2.0
-   14     0.217  0.0155  0.0084   0.002   0.016   0.021   0.041   0.041   0.041   13    0    1    0        1442         16        103        117  POST /api/organizer/player/:player_id/disqualified
-    1     0.002  0.0020  0.0000   0.002   0.002   0.002   0.002   0.002   0.002    1    0    0    0         109        109        109        109  GET /api/organizer/competitions HTTP/2.0
+  593  1189.193  2.0054  3.4218   0.001   0.028   7.277  10.031  12.965  13.091  545    0   48    0     5380338          0       9073      14593  GET /api/player/competition/:competition_id/ranking
+  513   796.643  1.5529  3.0400   0.001   0.059   6.459   9.095  12.422  12.901  464    0   49    0      316894          0        617       2287  GET /api/player/player/:player_id
+   57   160.473  2.8153  2.6733   0.001   2.048   6.955   9.907  12.786  12.786   49    0    8    0        2838          0         49         62  POST /api/organizer/competition/:competition_id/score
+   12   109.723  9.1436  4.4329   3.065   8.849  13.287  19.161  19.161  19.161   10    0    2    0       15111          0       1259       1530  GET /api/admin/tenants/billing?querystring
+    9    32.091  3.5657  1.8207   0.044   3.961   5.616   5.616   5.616   5.616    9    0    0    0      153318        291      17035      26716  POST /api/organizer/players/add HTTP/2.0
+    1     3.872  3.8720  0.0000   3.872   3.872   3.872   3.872   3.872   3.872    1    0    0    0        1561       1561       1561       1561  GET /api/admin/tenants/billing HTTP/2.0
+    1     3.105  3.1050  0.0000   3.105   3.105   3.105   3.105   3.105   3.105    1    0    0    0          55         55         55         55  POST /initialize HTTP/2.0
+   22     2.134  0.0970  0.1975   0.002   0.019   0.307   0.381   0.873   0.873   22    0    0    0       37316        320       1696       4867  GET /api/organizer/billing HTTP/2.0
+  112     1.683  0.0150  0.0140   0.001   0.012   0.030   0.045   0.058   0.066  101    0   11    0      113039         39       1009       2689  GET /api/player/competitions HTTP/2.0
+   40     1.007  0.0252  0.0076   0.010   0.023   0.037   0.041   0.041   0.041   39    0    1    0        6440         39        161        188  POST /api/organizer/competitions/add HTTP/2.0
+   36     0.484  0.0134  0.0086   0.005   0.011   0.019   0.039   0.050   0.050   35    0    1    0         774         21         21         39  POST /api/organizer/competition/:competition_id/finish
+   17     0.478  0.0281  0.0738   0.002   0.010   0.017   0.323   0.323   0.323   16    0    1    0        2553         39        150        165  POST /api/organizer/player/:player_id/disqualified
+   11     0.362  0.0329  0.0282   0.001   0.050   0.067   0.072   0.072   0.072    6    0    5    0        1299         39        118        192  POST /api/admin/tenants/add HTTP/2.0
+   29     0.316  0.0109  0.0146   0.001   0.006   0.041   0.047   0.065   0.065   29    0    0    0     2948904       7650     101686     602298  GET /api/organizer/players HTTP/2.0
+    2     0.009  0.0045  0.0015   0.003   0.006   0.006   0.006   0.006   0.006    2    0    0    0         400        200        200        200  GET /api/me HTTP/2.0
+    2     0.007  0.0035  0.0025   0.001   0.006   0.006   0.006   0.006   0.006    2    0    0    0        2715        177       1357       2538  GET /api/organizer/competitions HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Mean
 Count     Total    Mean  Stddev     Min   P50.0   P90.0   P95.0   P99.0     Max  2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
-   11   106.914  9.7195  5.4970   0.656  11.080  15.961  20.476  20.476  20.476    9    0    2    0        8534          0        775        977  GET /api/admin/tenants/billing?querystring
-    1     4.187  4.1870  0.0000   4.187   4.187   4.187   4.187   4.187   4.187    1    0    0    0        1004       1004       1004       1004  GET /api/admin/tenants/billing HTTP/2.0
-    8    26.237  3.2796  1.1309   2.344   2.748   5.384   5.384   5.384   5.384    8    0    0    0       85623       7703      10702      15132  POST /api/organizer/players/add HTTP/2.0
-   59   156.161  2.6468  2.6511   0.002   1.793   6.944   7.976  12.503  12.503   50    0    9    0        1840          0         31         52  POST /api/organizer/competition/:competition_id/score
-    1     2.629  2.6290  0.0000   2.629   2.629   2.629   2.629   2.629   2.629    1    0    0    0          38         38         38         38  POST /initialize HTTP/2.0
-  475  1239.205  2.6089  3.6407   0.002   0.075   7.975  11.205  12.471  12.497  431    0   44    0     3206603          0       6750       9267  GET /api/player/competition/:competition_id/ranking
-  509   846.050  1.6622  3.0660   0.002   0.104   6.582   7.961  11.884  12.413  455    0   54    0      234008          0        459        929  GET /api/player/player/:player_id
-    1     1.000  1.0000  0.0000   1.000   1.000   1.000   1.000   1.000   1.000    0    0    1    0         166        166        166        166  \x03\x00\x00\x13\x0E\xE0\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00
-   23     6.773  0.2945  0.7168   0.002   0.022   1.380   1.706   2.982   2.982   23    0    0    0       27307        215       1187       2344  GET /api/organizer/billing HTTP/2.0
-   11     1.134  0.1031  0.1473   0.001   0.063   0.151   0.527   0.527   0.527    6    0    5    0         861         16         78        135  POST /api/admin/tenants/add HTTP/2.0
-   42     1.485  0.0354  0.0357   0.002   0.029   0.047   0.051   0.254   0.254   41    0    1    0        4810         16        114        141  POST /api/organizer/competitions/add HTTP/2.0
-  114     1.869  0.0164  0.0130   0.001   0.014   0.036   0.040   0.055   0.056  102    0   12    0       73456         16        644       1706  GET /api/player/competitions HTTP/2.0
-   14     0.217  0.0155  0.0084   0.002   0.016   0.021   0.041   0.041   0.041   13    0    1    0        1442         16        103        117  POST /api/organizer/player/:player_id/disqualified
-   37     0.563  0.0152  0.0060   0.004   0.015   0.022   0.027   0.036   0.036   36    0    1    0         988         16         26         27  POST /api/organizer/competition/:competition_id/finish
-   26     0.245  0.0094  0.0072   0.002   0.008   0.018   0.019   0.034   0.034   26    0    0    0      387237       4891      14893      47089  GET /api/organizer/players HTTP/2.0
-    1     0.002  0.0020  0.0000   0.002   0.002   0.002   0.002   0.002   0.002    1    0    0    0         109        109        109        109  GET /api/organizer/competitions HTTP/2.0
+   12   109.723  9.1436  4.4329   3.065   8.849  13.287  19.161  19.161  19.161   10    0    2    0       15111          0       1259       1530  GET /api/admin/tenants/billing?querystring
+    1     3.872  3.8720  0.0000   3.872   3.872   3.872   3.872   3.872   3.872    1    0    0    0        1561       1561       1561       1561  GET /api/admin/tenants/billing HTTP/2.0
+    9    32.091  3.5657  1.8207   0.044   3.961   5.616   5.616   5.616   5.616    9    0    0    0      153318        291      17035      26716  POST /api/organizer/players/add HTTP/2.0
+    1     3.105  3.1050  0.0000   3.105   3.105   3.105   3.105   3.105   3.105    1    0    0    0          55         55         55         55  POST /initialize HTTP/2.0
+   57   160.473  2.8153  2.6733   0.001   2.048   6.955   9.907  12.786  12.786   49    0    8    0        2838          0         49         62  POST /api/organizer/competition/:competition_id/score
+  593  1189.193  2.0054  3.4218   0.001   0.028   7.277  10.031  12.965  13.091  545    0   48    0     5380338          0       9073      14593  GET /api/player/competition/:competition_id/ranking
+  513   796.643  1.5529  3.0400   0.001   0.059   6.459   9.095  12.422  12.901  464    0   49    0      316894          0        617       2287  GET /api/player/player/:player_id
+   22     2.134  0.0970  0.1975   0.002   0.019   0.307   0.381   0.873   0.873   22    0    0    0       37316        320       1696       4867  GET /api/organizer/billing HTTP/2.0
+   11     0.362  0.0329  0.0282   0.001   0.050   0.067   0.072   0.072   0.072    6    0    5    0        1299         39        118        192  POST /api/admin/tenants/add HTTP/2.0
+   17     0.478  0.0281  0.0738   0.002   0.010   0.017   0.323   0.323   0.323   16    0    1    0        2553         39        150        165  POST /api/organizer/player/:player_id/disqualified
+   40     1.007  0.0252  0.0076   0.010   0.023   0.037   0.041   0.041   0.041   39    0    1    0        6440         39        161        188  POST /api/organizer/competitions/add HTTP/2.0
+  112     1.683  0.0150  0.0140   0.001   0.012   0.030   0.045   0.058   0.066  101    0   11    0      113039         39       1009       2689  GET /api/player/competitions HTTP/2.0
+   36     0.484  0.0134  0.0086   0.005   0.011   0.019   0.039   0.050   0.050   35    0    1    0         774         21         21         39  POST /api/organizer/competition/:competition_id/finish
+   29     0.316  0.0109  0.0146   0.001   0.006   0.041   0.047   0.065   0.065   29    0    0    0     2948904       7650     101686     602298  GET /api/organizer/players HTTP/2.0
+    2     0.009  0.0045  0.0015   0.003   0.006   0.006   0.006   0.006   0.006    2    0    0    0         400        200        200        200  GET /api/me HTTP/2.0
+    2     0.007  0.0035  0.0025   0.001   0.006   0.006   0.006   0.006   0.006    2    0    0    0        2715        177       1357       2538  GET /api/organizer/competitions HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Standard Deviation
 Count     Total    Mean  Stddev     Min   P50.0   P90.0   P95.0   P99.0     Max  2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
-   11   106.914  9.7195  5.4970   0.656  11.080  15.961  20.476  20.476  20.476    9    0    2    0        8534          0        775        977  GET /api/admin/tenants/billing?querystring
-  475  1239.205  2.6089  3.6407   0.002   0.075   7.975  11.205  12.471  12.497  431    0   44    0     3206603          0       6750       9267  GET /api/player/competition/:competition_id/ranking
-  509   846.050  1.6622  3.0660   0.002   0.104   6.582   7.961  11.884  12.413  455    0   54    0      234008          0        459        929  GET /api/player/player/:player_id
-   59   156.161  2.6468  2.6511   0.002   1.793   6.944   7.976  12.503  12.503   50    0    9    0        1840          0         31         52  POST /api/organizer/competition/:competition_id/score
-    8    26.237  3.2796  1.1309   2.344   2.748   5.384   5.384   5.384   5.384    8    0    0    0       85623       7703      10702      15132  POST /api/organizer/players/add HTTP/2.0
-   23     6.773  0.2945  0.7168   0.002   0.022   1.380   1.706   2.982   2.982   23    0    0    0       27307        215       1187       2344  GET /api/organizer/billing HTTP/2.0
-   11     1.134  0.1031  0.1473   0.001   0.063   0.151   0.527   0.527   0.527    6    0    5    0         861         16         78        135  POST /api/admin/tenants/add HTTP/2.0
-   42     1.485  0.0354  0.0357   0.002   0.029   0.047   0.051   0.254   0.254   41    0    1    0        4810         16        114        141  POST /api/organizer/competitions/add HTTP/2.0
-  114     1.869  0.0164  0.0130   0.001   0.014   0.036   0.040   0.055   0.056  102    0   12    0       73456         16        644       1706  GET /api/player/competitions HTTP/2.0
-   14     0.217  0.0155  0.0084   0.002   0.016   0.021   0.041   0.041   0.041   13    0    1    0        1442         16        103        117  POST /api/organizer/player/:player_id/disqualified
-   26     0.245  0.0094  0.0072   0.002   0.008   0.018   0.019   0.034   0.034   26    0    0    0      387237       4891      14893      47089  GET /api/organizer/players HTTP/2.0
-   37     0.563  0.0152  0.0060   0.004   0.015   0.022   0.027   0.036   0.036   36    0    1    0         988         16         26         27  POST /api/organizer/competition/:competition_id/finish
-    1     4.187  4.1870  0.0000   4.187   4.187   4.187   4.187   4.187   4.187    1    0    0    0        1004       1004       1004       1004  GET /api/admin/tenants/billing HTTP/2.0
-    1     1.000  1.0000  0.0000   1.000   1.000   1.000   1.000   1.000   1.000    0    0    1    0         166        166        166        166  \x03\x00\x00\x13\x0E\xE0\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00
-    1     2.629  2.6290  0.0000   2.629   2.629   2.629   2.629   2.629   2.629    1    0    0    0          38         38         38         38  POST /initialize HTTP/2.0
-    1     0.002  0.0020  0.0000   0.002   0.002   0.002   0.002   0.002   0.002    1    0    0    0         109        109        109        109  GET /api/organizer/competitions HTTP/2.0
+   12   109.723  9.1436  4.4329   3.065   8.849  13.287  19.161  19.161  19.161   10    0    2    0       15111          0       1259       1530  GET /api/admin/tenants/billing?querystring
+  593  1189.193  2.0054  3.4218   0.001   0.028   7.277  10.031  12.965  13.091  545    0   48    0     5380338          0       9073      14593  GET /api/player/competition/:competition_id/ranking
+  513   796.643  1.5529  3.0400   0.001   0.059   6.459   9.095  12.422  12.901  464    0   49    0      316894          0        617       2287  GET /api/player/player/:player_id
+   57   160.473  2.8153  2.6733   0.001   2.048   6.955   9.907  12.786  12.786   49    0    8    0        2838          0         49         62  POST /api/organizer/competition/:competition_id/score
+    9    32.091  3.5657  1.8207   0.044   3.961   5.616   5.616   5.616   5.616    9    0    0    0      153318        291      17035      26716  POST /api/organizer/players/add HTTP/2.0
+   22     2.134  0.0970  0.1975   0.002   0.019   0.307   0.381   0.873   0.873   22    0    0    0       37316        320       1696       4867  GET /api/organizer/billing HTTP/2.0
+   17     0.478  0.0281  0.0738   0.002   0.010   0.017   0.323   0.323   0.323   16    0    1    0        2553         39        150        165  POST /api/organizer/player/:player_id/disqualified
+   11     0.362  0.0329  0.0282   0.001   0.050   0.067   0.072   0.072   0.072    6    0    5    0        1299         39        118        192  POST /api/admin/tenants/add HTTP/2.0
+   29     0.316  0.0109  0.0146   0.001   0.006   0.041   0.047   0.065   0.065   29    0    0    0     2948904       7650     101686     602298  GET /api/organizer/players HTTP/2.0
+  112     1.683  0.0150  0.0140   0.001   0.012   0.030   0.045   0.058   0.066  101    0   11    0      113039         39       1009       2689  GET /api/player/competitions HTTP/2.0
+   36     0.484  0.0134  0.0086   0.005   0.011   0.019   0.039   0.050   0.050   35    0    1    0         774         21         21         39  POST /api/organizer/competition/:competition_id/finish
+   40     1.007  0.0252  0.0076   0.010   0.023   0.037   0.041   0.041   0.041   39    0    1    0        6440         39        161        188  POST /api/organizer/competitions/add HTTP/2.0
+    2     0.007  0.0035  0.0025   0.001   0.006   0.006   0.006   0.006   0.006    2    0    0    0        2715        177       1357       2538  GET /api/organizer/competitions HTTP/2.0
+    2     0.009  0.0045  0.0015   0.003   0.006   0.006   0.006   0.006   0.006    2    0    0    0         400        200        200        200  GET /api/me HTTP/2.0
+    1     3.105  3.1050  0.0000   3.105   3.105   3.105   3.105   3.105   3.105    1    0    0    0          55         55         55         55  POST /initialize HTTP/2.0
+    1     3.872  3.8720  0.0000   3.872   3.872   3.872   3.872   3.872   3.872    1    0    0    0        1561       1561       1561       1561  GET /api/admin/tenants/billing HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 Top 40 Sort By Maximum(100 Percentile)
 Count     Total    Mean  Stddev     Min   P50.0   P90.0   P95.0   P99.0     Max  2xx  3xx  4xx  5xx  TotalBytes   MinBytes  MeanBytes   MaxBytes  Request
-   11   106.914  9.7195  5.4970   0.656  11.080  15.961  20.476  20.476  20.476    9    0    2    0        8534          0        775        977  GET /api/admin/tenants/billing?querystring
-   59   156.161  2.6468  2.6511   0.002   1.793   6.944   7.976  12.503  12.503   50    0    9    0        1840          0         31         52  POST /api/organizer/competition/:competition_id/score
-  475  1239.205  2.6089  3.6407   0.002   0.075   7.975  11.205  12.471  12.497  431    0   44    0     3206603          0       6750       9267  GET /api/player/competition/:competition_id/ranking
-  509   846.050  1.6622  3.0660   0.002   0.104   6.582   7.961  11.884  12.413  455    0   54    0      234008          0        459        929  GET /api/player/player/:player_id
-    8    26.237  3.2796  1.1309   2.344   2.748   5.384   5.384   5.384   5.384    8    0    0    0       85623       7703      10702      15132  POST /api/organizer/players/add HTTP/2.0
-    1     4.187  4.1870  0.0000   4.187   4.187   4.187   4.187   4.187   4.187    1    0    0    0        1004       1004       1004       1004  GET /api/admin/tenants/billing HTTP/2.0
-   23     6.773  0.2945  0.7168   0.002   0.022   1.380   1.706   2.982   2.982   23    0    0    0       27307        215       1187       2344  GET /api/organizer/billing HTTP/2.0
-    1     2.629  2.6290  0.0000   2.629   2.629   2.629   2.629   2.629   2.629    1    0    0    0          38         38         38         38  POST /initialize HTTP/2.0
-    1     1.000  1.0000  0.0000   1.000   1.000   1.000   1.000   1.000   1.000    0    0    1    0         166        166        166        166  \x03\x00\x00\x13\x0E\xE0\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00
-   11     1.134  0.1031  0.1473   0.001   0.063   0.151   0.527   0.527   0.527    6    0    5    0         861         16         78        135  POST /api/admin/tenants/add HTTP/2.0
-   42     1.485  0.0354  0.0357   0.002   0.029   0.047   0.051   0.254   0.254   41    0    1    0        4810         16        114        141  POST /api/organizer/competitions/add HTTP/2.0
-  114     1.869  0.0164  0.0130   0.001   0.014   0.036   0.040   0.055   0.056  102    0   12    0       73456         16        644       1706  GET /api/player/competitions HTTP/2.0
-   14     0.217  0.0155  0.0084   0.002   0.016   0.021   0.041   0.041   0.041   13    0    1    0        1442         16        103        117  POST /api/organizer/player/:player_id/disqualified
-   37     0.563  0.0152  0.0060   0.004   0.015   0.022   0.027   0.036   0.036   36    0    1    0         988         16         26         27  POST /api/organizer/competition/:competition_id/finish
-   26     0.245  0.0094  0.0072   0.002   0.008   0.018   0.019   0.034   0.034   26    0    0    0      387237       4891      14893      47089  GET /api/organizer/players HTTP/2.0
-    1     0.002  0.0020  0.0000   0.002   0.002   0.002   0.002   0.002   0.002    1    0    0    0         109        109        109        109  GET /api/organizer/competitions HTTP/2.0
+   12   109.723  9.1436  4.4329   3.065   8.849  13.287  19.161  19.161  19.161   10    0    2    0       15111          0       1259       1530  GET /api/admin/tenants/billing?querystring
+  593  1189.193  2.0054  3.4218   0.001   0.028   7.277  10.031  12.965  13.091  545    0   48    0     5380338          0       9073      14593  GET /api/player/competition/:competition_id/ranking
+  513   796.643  1.5529  3.0400   0.001   0.059   6.459   9.095  12.422  12.901  464    0   49    0      316894          0        617       2287  GET /api/player/player/:player_id
+   57   160.473  2.8153  2.6733   0.001   2.048   6.955   9.907  12.786  12.786   49    0    8    0        2838          0         49         62  POST /api/organizer/competition/:competition_id/score
+    9    32.091  3.5657  1.8207   0.044   3.961   5.616   5.616   5.616   5.616    9    0    0    0      153318        291      17035      26716  POST /api/organizer/players/add HTTP/2.0
+    1     3.872  3.8720  0.0000   3.872   3.872   3.872   3.872   3.872   3.872    1    0    0    0        1561       1561       1561       1561  GET /api/admin/tenants/billing HTTP/2.0
+    1     3.105  3.1050  0.0000   3.105   3.105   3.105   3.105   3.105   3.105    1    0    0    0          55         55         55         55  POST /initialize HTTP/2.0
+   22     2.134  0.0970  0.1975   0.002   0.019   0.307   0.381   0.873   0.873   22    0    0    0       37316        320       1696       4867  GET /api/organizer/billing HTTP/2.0
+   17     0.478  0.0281  0.0738   0.002   0.010   0.017   0.323   0.323   0.323   16    0    1    0        2553         39        150        165  POST /api/organizer/player/:player_id/disqualified
+   11     0.362  0.0329  0.0282   0.001   0.050   0.067   0.072   0.072   0.072    6    0    5    0        1299         39        118        192  POST /api/admin/tenants/add HTTP/2.0
+  112     1.683  0.0150  0.0140   0.001   0.012   0.030   0.045   0.058   0.066  101    0   11    0      113039         39       1009       2689  GET /api/player/competitions HTTP/2.0
+   29     0.316  0.0109  0.0146   0.001   0.006   0.041   0.047   0.065   0.065   29    0    0    0     2948904       7650     101686     602298  GET /api/organizer/players HTTP/2.0
+   36     0.484  0.0134  0.0086   0.005   0.011   0.019   0.039   0.050   0.050   35    0    1    0         774         21         21         39  POST /api/organizer/competition/:competition_id/finish
+   40     1.007  0.0252  0.0076   0.010   0.023   0.037   0.041   0.041   0.041   39    0    1    0        6440         39        161        188  POST /api/organizer/competitions/add HTTP/2.0
+    2     0.007  0.0035  0.0025   0.001   0.006   0.006   0.006   0.006   0.006    2    0    0    0        2715        177       1357       2538  GET /api/organizer/competitions HTTP/2.0
+    2     0.009  0.0045  0.0015   0.003   0.006   0.006   0.006   0.006   0.006    2    0    0    0         400        200        200        200  GET /api/me HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0         479        479        479        479  GET /index.html HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0        4868       4868       4868       4868  GET /css/app.83b4c321.css HTTP/2.0
     1     0.000  0.0000  0.0000   0.000   0.000   0.000   0.000   0.000   0.000    1    0    0    0       33294      33294      33294      33294  GET /js/app.3a4ec98c.js HTTP/2.0
 
 TOP 37 Slow Requests
- 1  20.476  GET /api/admin/tenants/billing?before=80 HTTP/2.0
- 2  15.961  GET /api/admin/tenants/billing?before=47 HTTP/2.0
- 3  12.503  POST /api/organizer/competition/9fa54021/score HTTP/2.0
- 4  12.497  GET /api/player/competition/9fa54021/ranking HTTP/2.0
- 5  12.495  GET /api/player/competition/9fa54021/ranking HTTP/2.0
- 6  12.493  GET /api/admin/tenants/billing?before=67 HTTP/2.0
- 7  12.491  GET /api/player/competition/9fa54021/ranking HTTP/2.0
- 8  12.485  GET /api/player/competition/9fa54021/ranking HTTP/2.0
- 9  12.471  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-10  12.455  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-11  12.454  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-12  12.454  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-13  12.450  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-14  12.446  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-15  12.445  GET /api/player/competition/9fa54021/ranking HTTP/2.0
-16  12.413  GET /api/player/player/9fa52d6f HTTP/2.0
-17  12.383  GET /api/player/player/20cefb2eb HTTP/2.0
-18  12.290  GET /api/admin/tenants/billing?before=70 HTTP/2.0
-19  12.189  GET /api/player/player/1a8abd222 HTTP/2.0
-20  12.120  GET /api/player/player/3407dfb31 HTTP/2.0
-21  11.899  GET /api/player/player/38b518f77 HTTP/2.0
-22  11.884  GET /api/player/player/20f6b130f HTTP/2.0
-23  11.835  GET /api/player/player/9fa535b8 HTTP/2.0
-24  11.801  GET /api/player/player/9fa52e66 HTTP/2.0
-25  11.777  GET /api/player/player/9fa52d6a HTTP/2.0
-26  11.764  GET /api/player/competition/9fa5369e/ranking HTTP/2.0
-27  11.731  GET /api/player/player/5654ad729 HTTP/2.0
-28  11.728  GET /api/player/player/1182c3e71 HTTP/2.0
-29  11.690  GET /api/player/competition/9fa5369e/ranking HTTP/2.0
-30  11.644  GET /api/player/player/9fa52e6e HTTP/2.0
-31  11.637  GET /api/player/player/55ee7dcaa HTTP/2.0
-32  11.616  GET /api/player/competition/9fa5369e/ranking HTTP/2.0
-33  11.544  GET /api/player/competition/9fa5369e/ranking HTTP/2.0
-34  11.517  GET /api/player/competition/9fa5278c/ranking HTTP/2.0
-35  11.517  GET /api/admin/tenants/billing?before=100 HTTP/2.0
-36  11.501  GET /api/player/player/1fcff5858 HTTP/2.0
-37  11.494  GET /api/player/competition/9fa5369e/ranking HTTP/2.0
+ 1  19.161  GET /api/admin/tenants/billing?before=80 HTTP/2.0
+ 2  13.287  GET /api/admin/tenants/billing?before=100 HTTP/2.0
+ 3  13.091  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+ 4  13.061  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+ 5  13.047  GET /api/player/competition/9fa5278b/ranking HTTP/2.0
+ 6  13.029  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+ 7  13.006  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+ 8  12.965  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+ 9  12.928  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+10  12.910  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+11  12.907  GET /api/admin/tenants/billing?before=70 HTTP/2.0
+12  12.901  GET /api/player/player/9fa52de5 HTTP/2.0
+13  12.893  GET /api/player/player/28ece4f82 HTTP/2.0
+14  12.863  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+15  12.849  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+16  12.830  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+17  12.801  GET /api/player/player/48df7b3cf HTTP/2.0
+18  12.786  GET /api/player/player/7233621c HTTP/2.0
+19  12.786  POST /api/organizer/competition/9fa535f8/score HTTP/2.0
+20  12.779  GET /api/player/player/9fa52c3b HTTP/2.0
+21  12.422  GET /api/player/player/61f13e063 HTTP/2.0
+22  12.135  GET /api/player/player/9fa52df9 HTTP/2.0
+23  12.025  GET /api/player/competition/9fa535f8/ranking HTTP/2.0
+24  12.018  GET /api/player/player/3e3811773 HTTP/2.0
+25  11.761  GET /api/player/player/3f24b8f6e HTTP/2.0
+26  11.562  GET /api/player/competition/5efde9c0a/ranking HTTP/2.0
+27  11.509  GET /api/player/competition/9fa52e20/ranking HTTP/2.0
+28  11.203  GET /api/admin/tenants/billing?before=70 HTTP/2.0
+29  10.498  GET /api/admin/tenants/billing?before=60 HTTP/2.0
+30  10.328  POST /api/organizer/competition/9fa54029/score HTTP/2.0
+31  10.319  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+32  10.319  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+33  10.312  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+34  10.308  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+35  10.298  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+36  10.287  GET /api/player/competition/9fa54029/ranking HTTP/2.0
+37  10.277  GET /api/player/player/9fa53587 HTTP/2.0

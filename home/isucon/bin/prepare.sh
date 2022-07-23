@@ -12,15 +12,15 @@ mysql_slow_log="/var/log/mysql/slow.log"
 mysql_error_log="/var/log/mysql/error.log"
 result_dir="/result"
 data_dir="\${result_dir}/data"
-go_binary="/home/isucon/webapp/rust/target/isuports"
+go_binary="/home/isucon/webapp/go/isuports"
 EOF
 
 . /tmp/prepared_env
 
 # app
 (
-  cd ${HOME}/webapp/rust
-  cargo build --release
+  cd ${HOME}/webapp/go
+  make
 )
 sudo systemctl restart isuports
 

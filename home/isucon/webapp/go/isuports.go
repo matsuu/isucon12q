@@ -1,4 +1,4 @@
-package isuports
+package main
 
 import (
 	"context"
