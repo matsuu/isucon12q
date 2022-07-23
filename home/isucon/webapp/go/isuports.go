@@ -1022,22 +1022,24 @@ func competitionScoreHandler(c echo.Context) error {
 			UpdatedAt:     now,
 		})
 	}
-	query, args, err := sqlx.In("SELECT COUNT(id) FROM player WHERE id IN (?)", playerIds)
-	if err != nil {
-		return fmt.Errorf("error retrievePlayer: %w", err)
-	}
-	query = adminDB.Rebind(query)
+	if len(playerIds) > 0 {
+		query, args, err := sqlx.In("SELECT COUNT(id) FROM player WHERE id IN (?)", playerIds)
+		if err != nil {
+			return fmt.Errorf("error retrievePlayer: %w", err)
+		}
+		query = adminDB.Rebind(query)
 
-	var cnt int
-	if err := adminDB.Get(&cnt, query, args...); err != nil {
-		return fmt.Errorf("error retrievePlayer: %w", err)
-	}
-	// 存在しない参加者が含まれている
-	if cnt != len(playerIds) {
-		return echo.NewHTTPError(
-			http.StatusBadRequest,
-			fmt.Sprintf("player not found"),
-		)
+		var cnt int
+		if err := adminDB.Get(&cnt, query, args...); err != nil {
+			return fmt.Errorf("error retrievePlayer: %w", err)
+		}
+		// 存在しない参加者が含まれている
+		if cnt != len(playerIds) {
+			return echo.NewHTTPError(
+				http.StatusBadRequest,
+				fmt.Sprintf("player not found"),
+			)
+		}
 	}
 
 	tx, err := adminDB.BeginTxx(ctx, nil)

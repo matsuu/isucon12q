@@ -15,8 +15,8 @@ mkdir -p "${data_dir}"
 #sudo cat "${mysql_error_log}" | xz > "${data_dir}/mysql_error.log.xz"
 
 sudo cat "${nginx_access_log}" | /home/isucon/go/bin/kataribe -f "${HOME}/kataribe.toml" > "${result_dir}/kataribe.txt"
-sudo mysqltuner > "${result_dir}/mysqltuner.txt"
-sudo cat "${mysql_slow_log}" | /home/isucon/go/bin/go-mysql-query-digest --limit 100% > "${result_dir}/pt-query-digest.txt"
+ssh 192.168.0.12 sudo mysqltuner > "${result_dir}/mysqltuner.txt"
+ssh 192.168.0.12 sudo cat "${mysql_slow_log}" | /home/isucon/go/bin/go-mysql-query-digest --limit 100% > "${result_dir}/pt-query-digest.txt"
 
 #for file in "${data_dir}"/*.pprof ; do
 #  target=`basename ${file}`

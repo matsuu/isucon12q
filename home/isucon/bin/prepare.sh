@@ -29,6 +29,8 @@ sudo systemctl restart isuports
 sudo truncate -s 0 "${mysql_slow_log}"
 sudo truncate -s 0 "${mysql_error_log}"
 # sudo systemctl restart mysql
+ssh 192.168.0.12 sudo truncate -s 0 "${mysql_slow_log}"
+ssh 192.168.0.12 sudo truncate -s 0 "${mysql_error_log}"
 
 # nginx
 sudo truncate -s 0 "${nginx_access_log}"
