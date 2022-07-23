@@ -133,31 +133,8 @@ async fn create_tenant_db(id: i64) -> Result<(), Error> {
 }
 
 // システム全体で一意なIDを生成する
-async fn dispense_id(admin_db: &sqlx::MySqlPool) -> sqlx::Result<String> {
-    let mut last_err = None;
-    for _ in 1..100 {
-        match sqlx::query("REPLACE INTO id_generator (stub) VALUES (?);")
-            .bind("a")
-            .execute(admin_db)
-            .await
-        {
-            Ok(ret) => return Ok(format!("{:x}", ret.last_insert_id())),
-            Err(e) => {
-                if let Some(database_error) = e.as_database_error() {
-                    if let Some(merr) = database_error.try_downcast_ref::<MySqlDatabaseError>() {
-                        if merr.number() == 1213 {
-                            // deadlock
-                            last_err = Some(e);
-                            continue;
-                        }
-                    }
-                }
-                return Err(e);
-            }
-        }
-    }
-
-    Err(last_err.unwrap())
+fn dispense_id(_admin_db: &sqlx::MySqlPool) -> String {
+    uuid::Uuid::new_v4().to_string()
 }
 
 #[actix_web::main]
@@ -917,14 +894,15 @@ async fn players_add_handler(
 
     let mut pds = Vec::new();
     for display_name in display_names {
-        let id = dispense_id(&admin_db).await?;
+        // let id = dispense_id(&admin_db).await?;
+        let id = dispense_id(&admin_db);
 
         let now = SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .unwrap()
             .as_secs() as i64;
         sqlx::query("INSERT INTO player (id, tenant_id, display_name, is_disqualified, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)")
-            .bind(&id)
+            .bind(id.clone())
             .bind(v.tenant_id)
             .bind(display_name)
             .bind(false)
@@ -1050,10 +1028,10 @@ async fn competitions_add_handler(
         .duration_since(UNIX_EPOCH)
         .unwrap()
         .as_secs() as i64;
-    let id = dispense_id(&admin_db).await?;
+    let id = dispense_id(&admin_db);
 
     sqlx::query("INSERT INTO competition (id, tenant_id, title, finished_at, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)")
-        .bind(&id)
+        .bind(id.clone())
         .bind(v.tenant_id)
         .bind(&title)
         .bind(Option::<i64>::None)
@@ -1226,7 +1204,7 @@ async fn competition_score_handler(
                 ));
             }
         };
-        let id = dispense_id(&admin_db).await?;
+        let id = dispense_id(&admin_db);
         let now = SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .unwrap()
