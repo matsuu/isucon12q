@@ -77,3 +77,9 @@ max_binlog_size   = 100M
 # binlog_do_db		= include_database_name
 # binlog_ignore_db	= include_database_name
 disable-log-bin
+
+innodb_log_file_size = 64M
+innodb_doublewrite = 0
+innodb_flush_log_at_trx_commit = 0
+innodb_flush_log_at_timeout = 3
+innodb_log_group_home_dir = /dev/shm
