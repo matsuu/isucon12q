@@ -1114,8 +1114,8 @@ func billingHandler(c echo.Context) error {
 }
 
 type PlayerScoreDetail struct {
-	CompetitionTitle string `json:"competition_title"`
-	Score            int64  `json:"score"`
+	CompetitionTitle string `db:"competition_title" json:"competition_title"`
+	Score            int64  `db:"score" json:"score"`
 }
 
 type PlayerHandlerResult struct {
@@ -1152,53 +1152,15 @@ func playerHandler(c echo.Context) error {
 		}
 		return fmt.Errorf("error retrievePlayer: %w", err)
 	}
-	cs := []CompetitionRow{}
+
+	psds := make([]PlayerScoreDetail, 0, 160)
 	if err := adminDB.SelectContext(
 		ctx,
-		&cs,
-		"SELECT * FROM competition WHERE tenant_id = ? ORDER BY created_at ASC",
-		v.tenantID,
+		&psds,
+		"SELECT C.title AS competition_title, S.score AS score FROM competition C JOIN last_player_score S ON C.id = S.competition_id AND C.tenant_id = S.tenant_id WHERE S.player_id = ? AND C.tenant_id = ? ORDER BY C.created_at ASC",
+		p.ID, v.tenantID,
 	); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return fmt.Errorf("error Select competition: %w", err)
-	}
-
-	// player_scoreを読んでいるときに更新が走ると不整合が起こるのでロックを取得する
-	fl, err := flockByTenantID(v.tenantID)
-	if err != nil {
-		return fmt.Errorf("error flockByTenantID: %w", err)
-	}
-	defer fl.Close()
-	pss := make([]PlayerScoreRow, 0, len(cs))
-	for _, c := range cs {
-		ps := PlayerScoreRow{}
-		if err := adminDB.GetContext(
-			ctx,
-			&ps,
-			// 最後にCSVに登場したスコアを採用する = row_numが一番大きいもの
-			"SELECT * FROM last_player_score WHERE tenant_id = ? AND competition_id = ? AND player_id = ?",
-			v.tenantID,
-			c.ID,
-			p.ID,
-		); err != nil {
-			// 行がない = スコアが記録されてない
-			if errors.Is(err, sql.ErrNoRows) {
-				continue
-			}
-			return fmt.Errorf("error Select player_score: tenantID=%d, competitionID=%s, playerID=%s, %w", v.tenantID, c.ID, p.ID, err)
-		}
-		pss = append(pss, ps)
-	}
-
-	psds := make([]PlayerScoreDetail, 0, len(pss))
-	for _, ps := range pss {
-		comp, err := retrieveCompetition(ctx, ps.CompetitionID)
-		if err != nil {
-			return fmt.Errorf("error retrieveCompetition: %w", err)
-		}
-		psds = append(psds, PlayerScoreDetail{
-			CompetitionTitle: comp.Title,
-			Score:            ps.Score,
-		})
 	}
 
 	res := SuccessResult{
